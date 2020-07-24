@@ -7,6 +7,12 @@
 :: StoryTitle
 My test story!
 
+:: StorySubtitle
+The subtitle of this story
+
+:: StoryAuthor
+Roger Recaldini, Nikolay Ivanov
+
 :: Start
 |test>[This is the first passage in a Twine game!]
 
@@ -14,11 +20,7 @@ My test story!
 
 There is a magician holding [an empty hat.]<trick|
 
-(mouseover-replace: ?trick)[Suddenly, a rabbit appears.]
-(mouseover-replace: ?test)[Suddenly, a rabbit appears.]
-
 [[This is a link|Next Passage]]
 
-
-:: Next Passage
-The player just clicked a link to get here!
+(mouseover-replace: ?trick)[Suddenly, a rabbit appears.]
+(mouseover-replace: ?test)[Suddenly, a rabbit appears.]
