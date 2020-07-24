@@ -8,7 +8,14 @@
 My test story!
 
 :: Start
-This is the first passage in a Twine game!
+|test>[This is the first passage in a Twine game!]
+
+(font: "monospace")[These words look like they came from a typewriter.]
+
+There is a magician holding [an empty hat.]<trick|
+
+(mouseover-replace: ?trick)[Suddenly, a rabbit appears.]
+(mouseover-replace: ?test)[Suddenly, a rabbit appears.]
 
 [[This is a link|Next Passage]]
 
