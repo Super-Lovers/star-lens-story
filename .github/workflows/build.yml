@@ -16,11 +16,11 @@ jobs:
         with:
           go-version: 1.13.x
 
-      - name: build game
+      - name: Build game
         run: |
           go get github.com/tmedwards/tweego
           export PATH=$PATH:$(go env GOPATH)/bin
-          tweego main.twee -o dist/project.html
+          tweego -o dist/project.html src/
 
 
       - name: Deploy
