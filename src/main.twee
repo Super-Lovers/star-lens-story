@@ -1,0 +1,17 @@
+:: StoryData
+{
+    "ifid": "BEC78A1F-A3D2-4484-B58F-46CD201F9CA0",
+    "format": "Harlowe"
+}
+
+:: StoryTitle
+My test story!
+
+:: Start
+This is the first passage in a Twine game!
+
+[[This is a link|Next Passage]]
+
+
+:: Next Passage
+The player just clicked a link to get here!
