@@ -1,7 +1,8 @@
 :: StoryData
 {
     "ifid": "BEC78A1F-A3D2-4484-B58F-46CD201F9CA0",
-    "format": "Harlowe"
+    "format": "SugarCube",
+    "format-version": "2.30.0"
 }
 
 :: StoryTitle
@@ -14,13 +15,16 @@ The subtitle of this story
 Roger Recaldini, Nikolay Ivanov
 
 :: Start
-|test>[This is the first passage in a Twine game!]
+/* You enter the jewellry store and see a beautiful set of rings,
+one <<click golden>> <<set $ring to "golden">><</click>>, <<click silver>> <<set $ring to "silver">><</click>> and <<click bronze>> <<set $ring to "bronze">> <<print $ring>><</click>>. Which do you pick? */
 
-(font: "monospace")[These words look like they came from a typewriter.]
+!Used em on me
+!!Used em on me
+!!!Used em on me
+!!!!Used em on me
 
-There is a magician holding [an empty hat.]<trick|
+# TEST
+# Another
 
-[[This is a link|Next Passage]]
-
-(mouseover-replace: ?trick)[Suddenly, a rabbit appears.]
-(mouseover-replace: ?test)[Suddenly, a rabbit appears.]
+Another everyday face.. \
+with no name!
