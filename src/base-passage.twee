@@ -1,0 +1,15 @@
+:: StoryData
+{
+    "ifid": "BEC78A1F-A3D2-4484-B58F-46CD201F9CA0",
+    "format": "SugarCube",
+    "format-version": "2.30.0"
+}
+
+:: StoryTitle
+My test story!
+
+:: StorySubtitle
+The subtitle of this story
+
+:: StoryAuthor
+Roger Recaldini, Nikolay Ivanov

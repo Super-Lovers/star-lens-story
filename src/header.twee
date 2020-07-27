@@ -1,0 +1,12 @@
+:: PassageHeader
+<<nobr>>
+<!-- the forward slashes are here because the div line produces an empty line, and the slash makes the line after it move in front of it, tehcnically replacing the empty line with the next one -->
+<</nobr>>
+\<div id="console-screen" class="screen">\
+    <<print "\\>">> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc cursus odio ut neque vulputate consectetur. Aenean ut urna nec neque ornare tristique. Aliquam varius consectetur vulputate. Mauris condimentum mauris ultricies, maximus ante quis, ornare velit. Curabitur eget massa pulvinar felis rutrum ultrices.
+</div>
+\<div id="choices-screen" class="screen">\
+    <<nobr>>
+        <<textarea "$choice" "Pick a choice">>
+    <</nobr>>
+</div>
