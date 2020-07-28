@@ -23,6 +23,8 @@ ABSTRACTS
     background-size: contain;
     background-repeat: no-repeat;
     background-color: rgba(255, 255, 255, 1);
+
+    font-size: calc(0.5em + 0.7vw);;
 }
 
 /**************************************
@@ -30,13 +32,13 @@ PASSAGES CONSOLE
 **************************************/
 #console-screen {
     background-image: url('../images/UI/concept-interface-bg.png');
-    max-width: 734px;
 
     position: relative;
 
     background-position: center top;
     background-size: contain;
     background-color: transparent;
+
 }
 
 .passage-content {
@@ -94,6 +96,8 @@ textarea:not(:disabled):hover {
 }
 
 .macro-button {
+    font-family: "D2Coding";
+
     display: block;
 
     margin-left: auto;
@@ -101,4 +105,8 @@ textarea:not(:disabled):hover {
     margin-bottom: 10px;
 
     width: 60%;
+}
+
+.choices-screen {
+    padding-top: 50px;
 }

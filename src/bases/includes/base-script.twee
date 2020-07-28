@@ -2,20 +2,30 @@
 
 UIBar.destroy();
 
-let $console_screen, $choices_screen;
-let console_padding;
+let $console_screen, $choices_screen, $passages;
+let passages_width, choices_screen_width;
+
 $(document).ready(function() {
+    $passages = $('#passages');
     $console_screen = $('#console-screen');
     $choices_screen = $('#choices-screen');
 
-    console_padding = 15 * 2;
-    const initial_width_console = 734 - console_padding;
+    passages_width = $passages.width();
+    const initial_width_console = passages_width;
     const initial_width_choices = 614;
-    $console_screen.height(initial_width_console);
-    $choices_screen.height(initial_width_choices - (initial_width_choices / 2));
+
+    $console_screen.height(initial_width_console - (passages_width / 4));
+    $console_screen.width(passages_width - (passages_width / 4));
+
+    $choices_screen.height(initial_width_console - (initial_width_console / 1.3));
 });
 
 $(window).resize(function() {
-    $console_screen.height($console_screen.width() - console_padding);
-    $choices_screen.height($choices_screen.width() - ($choices_screen.width() / 3));
+    passages_width = $passages.width();
+    choices_screen_width = $choices_screen.width();
+
+    $console_screen.width(passages_width - (passages_width / 4));
+    $console_screen.height(passages_width - (passages_width / 4));
+
+    $choices_screen.height(choices_screen_width - (choices_screen_width / 2));
 });
