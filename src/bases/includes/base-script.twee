@@ -1,3 +1,21 @@
 :: base-script [script]
 
 UIBar.destroy();
+
+let $console_screen, $choices_screen;
+let console_padding;
+$(document).ready(function() {
+    $console_screen = $('#console-screen');
+    $choices_screen = $('#choices-screen');
+
+    console_padding = 15 * 2;
+    const initial_width_console = 734 - console_padding;
+    const initial_width_choices = 614;
+    $console_screen.height(initial_width_console);
+    $choices_screen.height(initial_width_choices - (initial_width_choices / 2));
+});
+
+$(window).resize(function() {
+    $console_screen.height($console_screen.width() - console_padding);
+    $choices_screen.height($choices_screen.width() - ($choices_screen.width() / 3));
+});
