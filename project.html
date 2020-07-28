@@ -100,22 +100,74 @@ var saveAs=saveAs||navigator.msSaveBlob&&navigator.msSaveBlob.bind(navigator)||f
 		<div id="init-lacking">Your browser lacks required capabilities. Please upgrade it or switch to another to continue.</div>
 		<div id="init-loading"><div>Loading&hellip;</div></div>
 	</div>
-	<!-- UUID://BEC78A1F-A3D2-4484-B58F-46CD201F9CA0// --><tw-storydata name="My test story!" startnode="5" creator="Tweego" creator-version="2.1.1" ifid="BEC78A1F-A3D2-4484-B58F-46CD201F9CA0" zoom="1" format="SugarCube" format-version="2.30.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">.screen {
-    margin-bottom: 20px;
-    padding: 15px;
-
-    border: 1px solid #c5c5c5;
-    border-radius: 5px;
-
-    color: #000000;
-    background-color: #ffffff;
+	<!-- UUID://BEC78A1F-A3D2-4484-B58F-46CD201F9CA0// --><tw-storydata name="My test story!" startnode="5" creator="Tweego" creator-version="2.1.1" ifid="BEC78A1F-A3D2-4484-B58F-46CD201F9CA0" zoom="1" format="SugarCube" format-version="2.30.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">/**************************************
+IMPORTS
+**************************************/
+@font-face {
+    font-family: "D2Coding";
+    src: url("../fonts/d2coding.ttf");
 }
 
-#console-screen {
-    height: 300px;
+/**************************************
+ABSTRACTS
+**************************************/
+.screen {
+    font-family: "D2Coding";
 
-    /*
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23ff8c8c' fill-opacity='0.14'%3E%3Cpath opacity='.5' d='M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9z'/%3E%3Cpath d='M6 5V0H5v5H0v1h5v94h1V6h94V5H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); */
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+
+    color: #ffffff;
+    background-color: #ffffff;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+/**************************************
+PASSAGES CONSOLE
+**************************************/
+#console-screen {
+    background-image: url('../images/UI/concept-interface-bg.png');
+    max-width: 734px;
+
+    position: relative;
+
+    background-position: center top;
+    background-size: contain;
+    background-color: transparent;
+}
+
+.passage-content {
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 80%;
+
+    text-align: justify;
+}
+
+/**************************************
+CHOICES CONSOLE
+**************************************/
+#choices-screen {
+    background-image: url('../images/UI/concept-interface-console.png');
+
+    width: 60%;
+    height: 219px;
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+
+    background-position: center bottom;
+    background-color: transparent;
 }
 
 textarea {
@@ -139,16 +191,48 @@ textarea:not(:disabled):hover {
     opacity: 1;
     background-color: #c5c5c5;
     color: black;
-}</style><script role="script" id="twine-user-script" type="text/twine-javascript">UIBar.destroy();</script><tw-passagedata pid="1" name="base-player" tags="" position="100,100" size="100,100">&lt;&lt;set $choice = &quot;choice&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="2" name="StorySubtitle" tags="" position="225,100" size="100,100">The subtitle of this story</tw-passagedata><tw-passagedata pid="3" name="StoryAuthor" tags="" position="350,100" size="100,100">Roger Recaldini, Nikolay Ivanov</tw-passagedata><tw-passagedata pid="4" name="PassageHeader" tags="" position="475,100" size="100,100">&lt;&lt;nobr&gt;&gt;
+}
+
+.macro-button {
+    display: block;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+
+    width: 60%;
+}</style><script role="script" id="twine-user-script" type="text/twine-javascript">UIBar.destroy();
+
+let $console_screen, $choices_screen;
+let console_padding;
+$(document).ready(function() {
+    $console_screen = $('#console-screen');
+    $choices_screen = $('#choices-screen');
+
+    console_padding = 15 * 2;
+    const initial_width_console = 734 - console_padding;
+    const initial_width_choices = 614;
+    $console_screen.height(initial_width_console);
+    $choices_screen.height(initial_width_choices - (initial_width_choices / 2));
+});
+
+$(window).resize(function() {
+    $console_screen.height($console_screen.width() - console_padding);
+    $choices_screen.height($choices_screen.width() - ($choices_screen.width() / 3));
+});</script><tw-passagedata pid="1" name="base-player" tags="" position="100,100" size="100,100">&lt;&lt;set $choice = &quot;choice&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="2" name="StorySubtitle" tags="" position="225,100" size="100,100">The subtitle of this story</tw-passagedata><tw-passagedata pid="3" name="StoryAuthor" tags="" position="350,100" size="100,100">Roger Recaldini, Nikolay Ivanov</tw-passagedata><tw-passagedata pid="4" name="PassageHeader" tags="" position="475,100" size="100,100">&lt;&lt;nobr&gt;&gt;
 &lt;!-- the forward slashes are here because the div line produces an empty line, and the slash makes the line after it move in front of it, tehcnically replacing the empty line with the next one --&gt;
 &lt;&lt;/nobr&gt;&gt;
-\&lt;div id=&quot;console-screen&quot; class=&quot;screen&quot;&gt;\
-    &lt;&lt;print &quot;\\&gt;&quot;&gt;&gt; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc cursus odio ut neque vulputate consectetur. Aenean ut urna nec neque ornare tristique. Aliquam varius consectetur vulputate. Mauris condimentum mauris ultricies, maximus ante quis, ornare velit. Curabitur eget massa pulvinar felis rutrum ultrices.
-&lt;/div&gt;
-\&lt;div id=&quot;choices-screen&quot; class=&quot;screen&quot;&gt;\
-    &lt;&lt;nobr&gt;&gt;
-        &lt;&lt;textarea &quot;$choice&quot; &quot;Pick a choice&quot;&gt;&gt;
-    &lt;&lt;/nobr&gt;&gt;
+\&lt;div id=&quot;console-screen&quot; class=&quot;screen pattern-grid-lg&quot;&gt;\
+    &lt;div class=&quot;passage-content&quot;&gt;\
+        &lt;&lt;print &quot;\\&gt;&quot;&gt;&gt; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc cursus odio ut neque vulputate consectetur. Aenean ut urna nec neque ornare tristique. Aliquam varius consectetur vulputate. Mauris condimentum mauris ultricies, maximus ante quis, ornare velit. Curabitur eget massa pulvinar felis rutrum ultrices.
+    &lt;/div&gt;
+    \&lt;div id=&quot;choices-screen&quot; class=&quot;screen&quot;&gt;\
+        &lt;&lt;nobr&gt;&gt;
+            &lt;&lt;button &quot;Choice one&quot;&gt;&gt;&lt;&lt;/button&gt;&gt;
+            &lt;&lt;button &quot;Choice two&quot;&gt;&gt;&lt;&lt;/button&gt;&gt;
+            &lt;&lt;button &quot;Choice three&quot;&gt;&gt;&lt;&lt;/button&gt;&gt;
+        &lt;&lt;/nobr&gt;&gt;
+    &lt;/div&gt;
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="5" name="Start" tags="" position="600,100" size="100,100"></tw-passagedata></tw-storydata>
 	<script id="script-sugarcube" type="text/javascript">
 	/*! SugarCube JS */
