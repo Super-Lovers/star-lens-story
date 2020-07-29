@@ -2,6 +2,9 @@
 
 UIBar.destroy();
 
+/****************************************
+// Interface elements
+****************************************/
 let $console_screen, $choices_screen, $passages;
 let passages_width, choices_screen_width;
 
@@ -12,7 +15,6 @@ $(document).ready(function() {
 
     passages_width = $passages.width();
     const initial_width_console = passages_width;
-    const initial_width_choices = 614;
 
     $console_screen.height(initial_width_console - (passages_width / 4));
     $console_screen.width(passages_width - (passages_width / 4));
