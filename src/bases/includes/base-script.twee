@@ -3,10 +3,14 @@
 UIBar.destroy();
 
 /****************************************
-// Interface elements
+// Interface elements (including consoles)
 ****************************************/
-let $console_screen, $choices_screen, $passages;
-let passages_width, choices_screen_width;
+var $console_screen, $choices_screen, $passages;
+var passages_width;
+
+// Dimensions of consoles
+var console_screen_width, console_screen_height;
+var choices_screen_width, choices_screen_height;
 
 $(document).ready(function() {
     $passages = $('#passages');
@@ -16,18 +20,32 @@ $(document).ready(function() {
     passages_width = $passages.width();
     const initial_width_console = passages_width;
 
-    $console_screen.height(initial_width_console - (passages_width / 4));
-    $console_screen.width(passages_width - (passages_width / 4));
+    // Console screen
+    console_screen_width = passages_width - (passages_width / 4);
+    console_screen_height = initial_width_console - (passages_width / 4);
 
-    $choices_screen.height(initial_width_console - (initial_width_console / 1.3));
+    $console_screen.width(console_screen_width);
+    $console_screen.height(console_screen_height);
+
+    // Choices screen
+    choices_screen_height = initial_width_console - (initial_width_console / 1.3);
+
+    $choices_screen.height(choices_screen_height);
+    choices_screen_width = $choices_screen.width();
 });
 
 $(window).resize(function() {
     passages_width = $passages.width();
     choices_screen_width = $choices_screen.width();
+    
+    // Console screen
+    console_screen_width = passages_width - (passages_width / 4);
+    console_screen_height = passages_width - (passages_width / 4);
 
-    $console_screen.width(passages_width - (passages_width / 4));
-    $console_screen.height(passages_width - (passages_width / 4));
+    $console_screen.width(console_screen_width);
+    $console_screen.height(console_screen_height);
 
+    // Choices screen
     $choices_screen.height(choices_screen_width - (choices_screen_width / 2));
+    choices_screen_width = $choices_screen.width();
 });

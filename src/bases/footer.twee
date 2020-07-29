@@ -3,31 +3,98 @@
 // Passage elements implementation
 ****************************************-->
 <<script>>
-$(document).ready(function() {
-    const current_passage = Story.get(State.passage);
-    const $console_screen = $('#console-screen>.passage-content');
+let $console_screen, $choices_screen, $passages;
+let passages_width;
+let $passage_content;
 
+// Dimensions of consoles
+let console_screen_width, console_screen_height;
+let choices_screen_width, choices_screen_height;
+
+$(document).ready(function() {
+    $passages = $('#passages');
+    $console_screen = $('#console-screen');
+    $choices_screen = $('#choices-screen');
+
+    passages_width = $passages.width();
+    const initial_width_console = passages_width;
+
+    // Console screen
+    console_screen_width = passages_width - (passages_width / 4);
+    console_screen_height = initial_width_console - (passages_width / 4);
+
+    $console_screen.width(console_screen_width);
+    $console_screen.height(console_screen_height);
+
+    // Choices screen
+    choices_screen_height = initial_width_console - (initial_width_console / 1.3);
+
+    $choices_screen.height(choices_screen_height);
+    choices_screen_width = $choices_screen.width();
+
+    const $passage_content = $('#console-screen>.passage-content');
+
+    // Cleaning up the DOM after rendering the passage
+    $passage_content.empty();
+
+    // Displaying the current passage onto the pre-defined interface
+    const $current_passage_elements = $('.passage').contents();
     if (Config.debug == false) {
-        // Cleaning up the DOM after rendering the passage
-        $console_screen.empty();
-    
-        // Displaying the current passage onto the pre-defined interface
-        const $current_passage_elements = $('#passage-start').contents();
-    
         for (let i = 1; i < $current_passage_elements.length; i++) {
             const element = $current_passage_elements[i];
-            $console_screen.append(element);
+            $passage_content.append(element);
         }
     } else {
-        // Cleaning up the DOM after rendering the passage
-        $console_screen.empty();
-    
-        // Displaying the current passage onto the pre-defined interface
-        const $current_passage_elements = $('#passage-start').contents();
-    
         for (let i = 3; i < $current_passage_elements.length - 3; i++) {
             const element = $current_passage_elements[i];
-            $console_screen.append(element);
+            $passage_content.append(element);
+        }
+    }
+});
+
+$(window).resize(function() {
+    passages_width = $passages.width();
+    choices_screen_width = $choices_screen.width();
+    
+    // Console screen
+    console_screen_width = passages_width - (passages_width / 4);
+    console_screen_height = passages_width - (passages_width / 4);
+
+    $console_screen.width(console_screen_width);
+    $console_screen.height(console_screen_height);
+
+    // Choices screen
+    $choices_screen.height(choices_screen_width - (choices_screen_width / 2));
+    choices_screen_width = $choices_screen.width();
+});
+
+$(document).on(':passagerender', function (ev) {
+    if ($passages != null) {
+        passages_width = $passages.width();
+        choices_screen_width = $choices_screen.width();
+
+        $console_screen.width(console_screen_width);
+        $console_screen.height(console_screen_height);
+    
+        $choices_screen.height(choices_screen_width - (choices_screen_width / 2));
+
+        const $passage_content = $('#console-screen>.passage-content');
+
+        // Cleaning up the DOM after rendering the passage
+        $console_screen.empty();
+
+        // Displaying the current passage onto the pre-defined interface
+        const $current_passage_elements = $('.passage').contents();
+        if (Config.debug == false) {
+            for (let i = 1; i < $current_passage_elements.length; i++) {
+                const element = $current_passage_elements[i];
+                $passage_content.append(element);
+            }
+        } else {
+            for (let i = 3; i < $current_passage_elements.length - 3; i++) {
+                const element = $current_passage_elements[i];
+                $passage_content.append(element);
+            }
         }
     }
 });

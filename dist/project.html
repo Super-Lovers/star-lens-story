@@ -208,10 +208,14 @@ textarea:not(:disabled):hover {
 }</style><script role="script" id="twine-user-script" type="text/twine-javascript">UIBar.destroy();
 
 /****************************************
-// Interface elements
+// Interface elements (including consoles)
 ****************************************/
-let $console_screen, $choices_screen, $passages;
-let passages_width, choices_screen_width;
+var $console_screen, $choices_screen, $passages;
+var passages_width;
+
+// Dimensions of consoles
+var console_screen_width, console_screen_height;
+var choices_screen_width, choices_screen_height;
 
 $(document).ready(function() {
     $passages = $('#passages');
@@ -221,49 +225,130 @@ $(document).ready(function() {
     passages_width = $passages.width();
     const initial_width_console = passages_width;
 
-    $console_screen.height(initial_width_console - (passages_width / 4));
-    $console_screen.width(passages_width - (passages_width / 4));
+    // Console screen
+    console_screen_width = passages_width - (passages_width / 4);
+    console_screen_height = initial_width_console - (passages_width / 4);
 
-    $choices_screen.height(initial_width_console - (initial_width_console / 1.3));
+    $console_screen.width(console_screen_width);
+    $console_screen.height(console_screen_height);
+
+    // Choices screen
+    choices_screen_height = initial_width_console - (initial_width_console / 1.3);
+
+    $choices_screen.height(choices_screen_height);
+    choices_screen_width = $choices_screen.width();
 });
 
 $(window).resize(function() {
     passages_width = $passages.width();
     choices_screen_width = $choices_screen.width();
+    
+    // Console screen
+    console_screen_width = passages_width - (passages_width / 4);
+    console_screen_height = passages_width - (passages_width / 4);
 
-    $console_screen.width(passages_width - (passages_width / 4));
-    $console_screen.height(passages_width - (passages_width / 4));
+    $console_screen.width(console_screen_width);
+    $console_screen.height(console_screen_height);
 
+    // Choices screen
     $choices_screen.height(choices_screen_width - (choices_screen_width / 2));
+    choices_screen_width = $choices_screen.width();
 });</script><tw-passagedata pid="1" name="base-player" tags="" position="100,100" size="100,100">&lt;&lt;set $choice = &quot;choice&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="2" name="StorySubtitle" tags="" position="225,100" size="100,100">The subtitle of this story</tw-passagedata><tw-passagedata pid="3" name="StoryAuthor" tags="" position="350,100" size="100,100">Roger Recaldini, Nikolay Ivanov</tw-passagedata><tw-passagedata pid="4" name="PassageFooter" tags="" position="475,100" size="100,100">&lt;!--****************************************
 // Passage elements implementation
 ****************************************--&gt;
 &lt;&lt;script&gt;&gt;
-$(document).ready(function() {
-    const current_passage = Story.get(State.passage);
-    const $console_screen = $(&#39;#console-screen&gt;.passage-content&#39;);
+let $console_screen, $choices_screen, $passages;
+let passages_width;
+let $passage_content;
 
+// Dimensions of consoles
+let console_screen_width, console_screen_height;
+let choices_screen_width, choices_screen_height;
+
+$(document).ready(function() {
+    $passages = $(&#39;#passages&#39;);
+    $console_screen = $(&#39;#console-screen&#39;);
+    $choices_screen = $(&#39;#choices-screen&#39;);
+
+    passages_width = $passages.width();
+    const initial_width_console = passages_width;
+
+    // Console screen
+    console_screen_width = passages_width - (passages_width / 4);
+    console_screen_height = initial_width_console - (passages_width / 4);
+
+    $console_screen.width(console_screen_width);
+    $console_screen.height(console_screen_height);
+
+    // Choices screen
+    choices_screen_height = initial_width_console - (initial_width_console / 1.3);
+
+    $choices_screen.height(choices_screen_height);
+    choices_screen_width = $choices_screen.width();
+
+    const $passage_content = $(&#39;#console-screen&gt;.passage-content&#39;);
+
+    // Cleaning up the DOM after rendering the passage
+    $passage_content.empty();
+
+    // Displaying the current passage onto the pre-defined interface
+    const $current_passage_elements = $(&#39;.passage&#39;).contents();
     if (Config.debug == false) {
-        // Cleaning up the DOM after rendering the passage
-        $console_screen.empty();
-    
-        // Displaying the current passage onto the pre-defined interface
-        const $current_passage_elements = $(&#39;#passage-start&#39;).contents();
-    
         for (let i = 1; i &lt; $current_passage_elements.length; i++) {
             const element = $current_passage_elements[i];
-            $console_screen.append(element);
+            $passage_content.append(element);
         }
     } else {
-        // Cleaning up the DOM after rendering the passage
-        $console_screen.empty();
-    
-        // Displaying the current passage onto the pre-defined interface
-        const $current_passage_elements = $(&#39;#passage-start&#39;).contents();
-    
         for (let i = 3; i &lt; $current_passage_elements.length - 3; i++) {
             const element = $current_passage_elements[i];
-            $console_screen.append(element);
+            $passage_content.append(element);
+        }
+    }
+});
+
+$(window).resize(function() {
+    passages_width = $passages.width();
+    choices_screen_width = $choices_screen.width();
+    
+    // Console screen
+    console_screen_width = passages_width - (passages_width / 4);
+    console_screen_height = passages_width - (passages_width / 4);
+
+    $console_screen.width(console_screen_width);
+    $console_screen.height(console_screen_height);
+
+    // Choices screen
+    $choices_screen.height(choices_screen_width - (choices_screen_width / 2));
+    choices_screen_width = $choices_screen.width();
+});
+
+$(document).on(&#39;:passagerender&#39;, function (ev) {
+    if ($passages != null) {
+        passages_width = $passages.width();
+        choices_screen_width = $choices_screen.width();
+
+        $console_screen.width(console_screen_width);
+        $console_screen.height(console_screen_height);
+    
+        $choices_screen.height(choices_screen_width - (choices_screen_width / 2));
+
+        const $passage_content = $(&#39;#console-screen&gt;.passage-content&#39;);
+
+        // Cleaning up the DOM after rendering the passage
+        $console_screen.empty();
+
+        // Displaying the current passage onto the pre-defined interface
+        const $current_passage_elements = $(&#39;.passage&#39;).contents();
+        if (Config.debug == false) {
+            for (let i = 1; i &lt; $current_passage_elements.length; i++) {
+                const element = $current_passage_elements[i];
+                $passage_content.append(element);
+            }
+        } else {
+            for (let i = 3; i &lt; $current_passage_elements.length - 3; i++) {
+                const element = $current_passage_elements[i];
+                $passage_content.append(element);
+            }
         }
     }
 });
@@ -283,6 +368,7 @@ $(document).ready(function() {
     &lt;/div&gt;
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="6" name="Start" tags="" position="725,100" size="100,100">&quot;I don&#39;t want any trouble,&quot; you tell the alien, gathering your bag.
 &quot;I&#39;ll just move to this seat &lt;&lt;link [[over here-&gt;test]]&gt;&gt;&lt;&lt;/link&gt;&gt;.&quot;
+
 &lt;&lt;button &quot;Choice one&quot;&gt;&gt;&lt;&lt;/button&gt;&gt;
 Before you can even bend your knees to sit down at the new table, you can tell that you&#39;ve made a terrible mistake. There’s an invisible Naxon exactly where you were aiming to sit. As he makes himself corporeal, you can see that he&#39;s not only glaring at you, but has green goo oozing from between his fingers.</tw-passagedata><tw-passagedata pid="7" name="test" tags="" position="850,100" size="100,100">yeet</tw-passagedata></tw-storydata>
 	<script id="script-sugarcube" type="text/javascript">
