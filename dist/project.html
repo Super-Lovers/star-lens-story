@@ -382,15 +382,23 @@ $(document).on(&#39;:passagerender&#39;, function (ev) {
         }
     }
 });
-&lt;&lt;/script&gt;&gt;</tw-passagedata><tw-passagedata pid="5" name="PassageHeader" tags="" position="600,100" size="100,100">&lt;&lt;nobr&gt;&gt;
-&lt;!-- the forward slashes are here because the div line produces an empty line, and the slash makes the line after it move in front of it, tehcnically replacing the empty line with the next one --&gt;
-&lt;&lt;/nobr&gt;&gt;
-\&lt;div id=&quot;console-screen&quot; class=&quot;screen&quot;&gt;\
-    &lt;div class=&quot;passage-content&quot;&gt;\
-        &lt;&lt;print &quot;\\&gt;&quot;&gt;&gt; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc cursus odio ut neque vulputate consectetur. Aenean ut urna nec neque ornare tristique. Aliquam varius consectetur vulputate. Mauris condimentum mauris ultricies, maximus ante quis, ornare velit. Curabitur eget massa pulvinar felis rutrum ultrices.
+&lt;&lt;/script&gt;&gt;</tw-passagedata><tw-passagedata pid="5" name="PassageHeader" tags="" position="600,100" size="100,100">&lt;&lt;if passage() == &quot;test&quot;&gt;&gt;\
+    \&lt;div id=&quot;console-screen&quot; class=&quot;screen&quot; style=&quot;background-image: url(&#39;./images/UI/concept-interface-bg-2.png&#39;)&quot;&gt;\
+        &lt;div class=&quot;passage-content&quot;&gt;\
+            &lt;&lt;print &quot;\\&gt;&quot;&gt;&gt; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc cursus odio ut neque vulputate consectetur. Aenean ut urna nec neque ornare tristique. Aliquam varius consectetur vulputate. Mauris condimentum mauris ultricies, maximus ante quis, ornare velit. Curabitur eget massa pulvinar felis rutrum ultrices.
+        &lt;/div&gt;
     &lt;/div&gt;
-    \&lt;div id=&quot;choices-screen&quot; class=&quot;screen&quot;&gt;&lt;/div&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="6" name="Start" tags="" position="725,100" size="100,100">&quot;I don&#39;t want any trouble,&quot; you tell the alien, gathering your bag.
+&lt;&lt;else&gt;&gt;
+    &lt;&lt;nobr&gt;&gt;
+    &lt;!-- the forward slashes are here because the div line produces an empty line, and the slash makes the line after it move in front of it, tehcnically replacing the empty line with the next one --&gt;
+    &lt;&lt;/nobr&gt;&gt;
+    \&lt;div id=&quot;console-screen&quot; class=&quot;screen&quot;&gt;\
+        &lt;div class=&quot;passage-content&quot;&gt;\
+            &lt;&lt;print &quot;\\&gt;&quot;&gt;&gt; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc cursus odio ut neque vulputate consectetur. Aenean ut urna nec neque ornare tristique. Aliquam varius consectetur vulputate. Mauris condimentum mauris ultricies, maximus ante quis, ornare velit. Curabitur eget massa pulvinar felis rutrum ultrices.
+        &lt;/div&gt;
+        \&lt;div id=&quot;choices-screen&quot; class=&quot;screen&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+\&lt;&lt;/if&gt;&gt;\</tw-passagedata><tw-passagedata pid="6" name="Start" tags="" position="725,100" size="100,100">&quot;I don&#39;t want any trouble,&quot; you tell the alien, gathering your bag.
 &quot;I&#39;ll just move to this seat &lt;&lt;link [[over here-&gt;test]]&gt;&gt;&lt;&lt;/link&gt;&gt;.&quot;
 
 Before you can even bend your knees to sit down at the new table, you can tell that you&#39;ve made a terrible mistake. There’s an invisible Naxon exactly where you were aiming to sit. As he makes himself corporeal, you can see that he&#39;s not only glaring at you, but has green goo oozing from between his fingers.
