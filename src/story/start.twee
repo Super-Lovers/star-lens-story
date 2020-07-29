@@ -1,5 +1,5 @@
 :: Start
 "I don't want any trouble," you tell the alien, gathering your bag.
-"I'll just move to this seat."
+"I'll just move to this seat <<link [[over here->test]]>><</link>>."
 <<button "Choice one">><</button>>
 Before you can even bend your knees to sit down at the new table, you can tell that you've made a terrible mistake. There’s an invisible Naxon exactly where you were aiming to sit. As he makes himself corporeal, you can see that he's not only glaring at you, but has green goo oozing from between his fingers.

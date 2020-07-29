@@ -7,15 +7,28 @@ $(document).ready(function() {
     const current_passage = Story.get(State.passage);
     const $console_screen = $('#console-screen>.passage-content');
 
-    // Cleaning up the DOM after rendering the passage
-    $console_screen.empty();
-
-    // Displaying the current passage onto the pre-defined interface
-    const $current_passage_elements = $('#passage-start').contents();
-
-    for (let i = 1; i < $current_passage_elements.length; i++) {
-        const element = $current_passage_elements[i];
-        $console_screen.append(element);
+    if (Config.debug == false) {
+        // Cleaning up the DOM after rendering the passage
+        $console_screen.empty();
+    
+        // Displaying the current passage onto the pre-defined interface
+        const $current_passage_elements = $('#passage-start').contents();
+    
+        for (let i = 1; i < $current_passage_elements.length; i++) {
+            const element = $current_passage_elements[i];
+            $console_screen.append(element);
+        }
+    } else {
+        // Cleaning up the DOM after rendering the passage
+        $console_screen.empty();
+    
+        // Displaying the current passage onto the pre-defined interface
+        const $current_passage_elements = $('#passage-start').contents();
+    
+        for (let i = 3; i < $current_passage_elements.length - 3; i++) {
+            const element = $current_passage_elements[i];
+            $console_screen.append(element);
+        }
     }
 });
 <</script>>
