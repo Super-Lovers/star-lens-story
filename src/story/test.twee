@@ -1,2 +1,4 @@
 :: test
-yeet <<link [[back->Start]]>><</link>>
+yeet
+
+<button class="link-internal macro-button choice-button" type="button" tabindex="0">Start</button>

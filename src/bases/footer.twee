@@ -50,6 +50,21 @@ $(document).ready(function() {
             $passage_content.append(element);
         }
     }
+
+    // Moving the choice buttons to the interactable interface
+    const $choice_buttons = $('.choice-button');
+    
+    for (let i = 0; i < $choice_buttons.length; i++) {
+        const element = $choice_buttons[i];
+        
+        $choices_screen.prepend(element);
+    }
+
+    // Makes the choice buttons in the current passage
+    // interactable, so that they can take you to new passages
+    $choice_buttons.on('click', function() {
+        Engine.play($(this).text());
+    });
 });
 
 $(window).resize(function() {
@@ -95,6 +110,21 @@ $(document).on(':passagerender', function (ev) {
                 const element = $current_passage_elements[i];
                 $passage_content.append(element);
             }
+        }
+
+        // Moving the choice buttons to the interactable interface
+        const $choice_buttons = $('.choice-button');
+
+        // Makes the choice buttons in the current passage
+        // interactable, so that they can take you to new passages
+        $choice_buttons.on('click', function() {
+            Engine.play($(this).text());
+        });
+        
+        for (let i = 0; i < $choice_buttons.length; i++) {
+            const element = $choice_buttons[i];
+            
+            $choices_screen.prepend(element);
         }
     }
 });

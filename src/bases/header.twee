@@ -6,11 +6,5 @@
     <div class="passage-content">\
         <<print "\\>">> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc cursus odio ut neque vulputate consectetur. Aenean ut urna nec neque ornare tristique. Aliquam varius consectetur vulputate. Mauris condimentum mauris ultricies, maximus ante quis, ornare velit. Curabitur eget massa pulvinar felis rutrum ultrices.
     </div>
-    \<div id="choices-screen" class="screen">\
-        <<nobr>>
-            <<button "Choice one">><</button>>
-            <<button "Choice two">><</button>>
-            <<button "Choice three">><</button>>
-        <</nobr>>
-    </div>
+    \<div id="choices-screen" class="screen"></div>
 </div>
