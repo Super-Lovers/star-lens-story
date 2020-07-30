@@ -292,14 +292,23 @@ $(document).ready(function() {
     $passage_content.empty();
 
     // Displaying the current passage onto the pre-defined interface
+    let index_of_children = 3;
     const $current_passage_elements = $(&#39;.passage&#39;).contents();
+    console.log($current_passage_elements);
+    for (let i = 0; i &lt; $current_passage_elements.length; i++) {
+        const element = $current_passage_elements[i];
+        if ($(element).hasClass(&#39;screen&#39;)) {
+            index_of_children = i + 1;
+        }
+    }
+
     if (Config.debug == false) {
-        for (let i = 1; i &lt; $current_passage_elements.length; i++) {
+        for (let i = index_of_children; i &lt; $current_passage_elements.length; i++) {
             const element = $current_passage_elements[i];
             $passage_content.append(element);
         }
     } else {
-        for (let i = 3; i &lt; $current_passage_elements.length - 3; i++) {
+        for (let i = index_of_children; i &lt; $current_passage_elements.length - 3; i++) {
             const element = $current_passage_elements[i];
             $passage_content.append(element);
         }
@@ -353,14 +362,23 @@ $(document).on(&#39;:passagerender&#39;, function (ev) {
         $console_screen.empty();
 
         // Displaying the current passage onto the pre-defined interface
+        let index_of_children = 3;
         const $current_passage_elements = $(&#39;.passage&#39;).contents();
+        console.log($current_passage_elements);
+        for (let i = 0; i &lt; $current_passage_elements.length; i++) {
+            const element = $current_passage_elements[i];
+            if ($(element).hasClass(&#39;screen&#39;)) {
+                index_of_children = i + 1;
+            }
+        }
+    
         if (Config.debug == false) {
-            for (let i = 1; i &lt; $current_passage_elements.length; i++) {
+            for (let i = index_of_children; i &lt; $current_passage_elements.length; i++) {
                 const element = $current_passage_elements[i];
                 $passage_content.append(element);
             }
         } else {
-            for (let i = 3; i &lt; $current_passage_elements.length - 3; i++) {
+            for (let i = index_of_children; i &lt; $current_passage_elements.length - 3; i++) {
                 const element = $current_passage_elements[i];
                 $passage_content.append(element);
             }
