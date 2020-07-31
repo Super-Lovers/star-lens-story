@@ -1,3 +1,16 @@
 :: 2.0.1.2. Display Sign
 
-<button class="link-internal macro-button choice-button" type="button" tabindex="0" name="3.2. Pirates Approach You">Continue</button>
+<!-- WRITE PASSAGE STARTING OVER THIS LINE -->
+
+<<nobr>>
+<!-- ************************************ -->
+<!--       Bottom interface buttons       -->
+<!-- ************************************ -->
+<button
+    class="link-internal macro-button choice-button"
+    type="button"
+    tabindex="0"
+    name="3.2. Pirates Approach You">
+        Continue
+</button>
+<</nobr>>

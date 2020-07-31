@@ -1,4 +1,16 @@
 :: 3.2.0.0. Faction Good
 
+<!-- WRITE PASSAGE STARTING OVER THIS LINE -->
 
-<button class="link-internal macro-button choice-button" type="button" tabindex="0" name="3.2.1.0. Keep Distance Be Polite">Distance & Be polite</button>
+<<nobr>>
+<!-- ************************************ -->
+<!--       Bottom interface buttons       -->
+<!-- ************************************ -->
+<button
+    class="link-internal macro-button choice-button"
+    type="button"
+    tabindex="0"
+    name="3.2.1.0. Keep Distance Be Polite">
+        Distance & Be polite
+</button>
+<</nobr>>

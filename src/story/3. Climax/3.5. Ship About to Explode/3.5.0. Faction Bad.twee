@@ -1,3 +1,16 @@
 :: 3.5.0. Faction Bad
 
-<button class="link-internal macro-button choice-button" type="button" tabindex="0" name="3.5.1. Wait">Wait</button>
+<!-- WRITE PASSAGE STARTING OVER THIS LINE -->
+
+<<nobr>>
+<!-- ************************************ -->
+<!--       Bottom interface buttons       -->
+<!-- ************************************ -->
+<button
+    class="link-internal macro-button choice-button"
+    type="button"
+    tabindex="0"
+    name="3.5.1. Wait">
+        Wait
+</button>
+<</nobr>>

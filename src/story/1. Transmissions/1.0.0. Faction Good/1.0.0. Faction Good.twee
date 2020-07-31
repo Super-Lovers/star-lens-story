@@ -1,5 +1,24 @@
 :: 1.0.0. Faction Good
 
-<button class="link-internal macro-button choice-button" type="button" tabindex="0" name="1.1.0. Detour">Detour</button>
+<!-- WRITE PASSAGE STARTING OVER THIS LINE -->
 
-<button class="link-internal macro-button choice-button" type="button" tabindex="0" name="1.1.1. Move Forward">Move forward</button>
+<<nobr>>
+<!-- ************************************ -->
+<!--       Bottom interface buttons       -->
+<!-- ************************************ -->
+<button
+    class="link-internal macro-button choice-button"
+    type="button"
+    tabindex="0"
+    name="1.1.0. Detour">
+        Detour
+</button>
+
+<button
+    class="link-internal macro-button choice-button"
+    type="button"
+    tabindex="0"
+    name="1.1.1. Move Forward">
+        Move forward
+</button>
+<</nobr>>

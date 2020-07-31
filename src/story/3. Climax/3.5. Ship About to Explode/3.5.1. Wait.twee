@@ -1,3 +1,16 @@
 :: 3.5.1. Wait
 
-<button class="link-internal macro-button choice-button" type="button" tabindex="0" name="3.5.2. Explosion (Ending)">Continue</button>
+<!-- WRITE PASSAGE STARTING OVER THIS LINE -->
+
+<<nobr>>
+<!-- ************************************ -->
+<!--       Bottom interface buttons       -->
+<!-- ************************************ -->
+<button
+    class="link-internal macro-button choice-button"
+    type="button"
+    tabindex="0"
+    name="3.5.2. Explosion (Ending)">
+        Continue
+</button>
+<</nobr>>

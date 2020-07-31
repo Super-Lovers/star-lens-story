@@ -1,4 +1,16 @@
 :: 1.1.1. Move Forward
 
+<!-- WRITE PASSAGE STARTING OVER THIS LINE -->
 
-<button class="link-internal macro-button choice-button" type="button" tabindex="0" name="2.1. Pressure Damage">Pressure damage</button>
+<<nobr>>
+<!-- ************************************ -->
+<!--       Bottom interface buttons       -->
+<!-- ************************************ -->
+<button
+    class="link-internal macro-button choice-button"
+    type="button"
+    tabindex="0"
+    name="2.1. Pressure Damage">
+        Pressure damage
+</button>
+<</nobr>>

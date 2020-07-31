@@ -1,3 +1,16 @@
 :: 3.0.1.0. Signal to Faction Good
 
-<button class="link-internal macro-button choice-button" type="button" tabindex="0" name="3.0.2.0. Rescue (Ending)">Continue</button>
+<!-- WRITE PASSAGE STARTING OVER THIS LINE -->
+
+<<nobr>>
+<!-- ************************************ -->
+<!--       Bottom interface buttons       -->
+<!-- ************************************ -->
+<button
+    class="link-internal macro-button choice-button"
+    type="button"
+    tabindex="0"
+    name="3.0.2.0. Rescue (Ending)">
+        Continue
+</button>
+<</nobr>>

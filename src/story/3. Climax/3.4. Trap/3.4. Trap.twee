@@ -1,3 +1,16 @@
 :: 3.4. Trap
 
-<button class="link-internal macro-button choice-button" type="button" tabindex="0" name="3.4.0. Wreck (Ending)">Continue</button>
+<!-- WRITE PASSAGE STARTING OVER THIS LINE -->
+
+<<nobr>>
+<!-- ************************************ -->
+<!--       Bottom interface buttons       -->
+<!-- ************************************ -->
+<button
+    class="link-internal macro-button choice-button"
+    type="button"
+    tabindex="0"
+    name="3.4.0. Wreck (Ending)">
+        Continue
+</button>
+<</nobr>>

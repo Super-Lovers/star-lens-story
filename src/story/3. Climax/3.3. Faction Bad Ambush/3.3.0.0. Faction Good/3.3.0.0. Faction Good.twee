@@ -1,3 +1,16 @@
 :: 3.3.0.0. Faction Good
 
-<button class="link-internal macro-button choice-button" type="button" tabindex="0" name="3.3.1.0. Maneuver">Maneuver</button>
+<!-- WRITE PASSAGE STARTING OVER THIS LINE -->
+
+<<nobr>>
+<!-- ************************************ -->
+<!--       Bottom interface buttons       -->
+<!-- ************************************ -->
+<button
+    class="link-internal macro-button choice-button"
+    type="button"
+    tabindex="0"
+    name="3.3.1.0. Maneuver">
+        Maneuver
+</button>
+<</nobr>>

@@ -1,4 +1,16 @@
 :: 0.1.2. Death (Ending 1)
 
+<!-- WRITE PASSAGE STARTING OVER THIS LINE -->
 
-<button class="link-internal macro-button choice-button" type="button" tabindex="0" name="Start">Restart</button>
+<<nobr>>
+<!-- ************************************ -->
+<!--       Bottom interface buttons       -->
+<!-- ************************************ -->
+<button
+    class="link-internal macro-button choice-button"
+    type="button"
+    tabindex="0"
+    name="Start">
+        Restart
+</button>
+<</nobr>>

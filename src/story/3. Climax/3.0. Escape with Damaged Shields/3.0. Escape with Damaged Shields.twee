@@ -1,5 +1,24 @@
 :: 3.0. Escape with Damaged Shields
 
-<button class="link-internal macro-button choice-button" type="button" tabindex="0" name="3.0.0.0. Faction Good">Frequency (108.5)</button>
+<!-- WRITE PASSAGE STARTING OVER THIS LINE -->
 
-<button class="link-internal macro-button choice-button" type="button" tabindex="0" name="3.0.0.1. Faction Bad">Frequency (99.9)</button>
+<<nobr>>
+<!-- ************************************ -->
+<!--       Bottom interface buttons       -->
+<!-- ************************************ -->
+<button
+    class="link-internal macro-button choice-button"
+    type="button"
+    tabindex="0"
+    name="3.0.0.0. Faction Good">
+        Frequency (108.5)
+</button>
+
+<button
+    class="link-internal macro-button choice-button"
+    type="button"
+    tabindex="0"
+    name="3.0.0.1. Faction Bad">
+        Frequency (99.9)
+</button>
+<</nobr>>
