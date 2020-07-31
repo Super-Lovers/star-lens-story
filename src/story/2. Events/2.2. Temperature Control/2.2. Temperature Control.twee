@@ -1,0 +1,9 @@
+:: 2.2. Temperature Control
+
+
+
+<button class="link-internal macro-button choice-button" type="button" tabindex="0" name="2.2.0.0. Faction Good">Frequency (108.5)</button>
+
+<button class="link-internal macro-button choice-button" type="button" tabindex="0" name="2.2.0.1. Faction Bad">Frequency (99.9)</button>
+
+<button class="link-internal macro-button choice-button" type="button" tabindex="0" name="2.2.0.2. Faction Neutral">Frequency (96.3)</button>

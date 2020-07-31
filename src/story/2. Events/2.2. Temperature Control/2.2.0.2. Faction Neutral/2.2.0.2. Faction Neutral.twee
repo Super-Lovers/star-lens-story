@@ -1,0 +1,9 @@
+:: 2.2.0.2. Faction Neutral
+
+
+
+<button class="link-internal macro-button choice-button" type="button" tabindex="0" name="2.2.1.0. Autopilot and Repair">Autopilot</button>
+
+<button class="link-internal macro-button choice-button" type="button" tabindex="0" name="2.2.1.1. Overload Engine">Overload engine</button>
+
+<button class="link-internal macro-button choice-button" type="button" tabindex="0" name="2.2.1.2. Autopilot to Location">Autopilot to location</button>
