@@ -1,0 +1,7 @@
+:: 2.0.0.2. Faction Neutral
+
+<button class="link-internal macro-button choice-button" type="button" tabindex="0" name="2.0.1.0. Hide Behind Dust Clouds">Hide behind dust clouds</button>
+
+<button class="link-internal macro-button choice-button" type="button" tabindex="0" name="2.0.1.1. Proceed">Proceed</button>
+
+<button class="link-internal macro-button choice-button" type="button" tabindex="0" name="2.0.1.2. Display Sign">Display sign</button>

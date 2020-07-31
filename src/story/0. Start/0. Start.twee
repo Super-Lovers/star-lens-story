@@ -1,0 +1,7 @@
+:: Start
+
+<button class="link-internal macro-button choice-button" type="button" tabindex="0" name="0.0.0. Emergency Protocol">Emergency protocol</button>
+
+<button class="link-internal macro-button choice-button" type="button" tabindex="0" name="0.0.1. Damage Scan">Damage scan</button>
+
+<button class="link-internal macro-button choice-button" type="button" tabindex="0" name="0.0.2. Escape Pod">Escape pod</button>
