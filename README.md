@@ -50,4 +50,4 @@
     $ "C:\Users\Nikolay Ivanov\Downloads\tweego-2.1.1-windows-x64\tweego.exe" -o dist/project.html src/ --watch -t
     ````
     
-    The program will then continue running until you close it by typing CTRL-C. It will automatically detect changes in any of the files you modify in the ``src`` folder and it will build the project html file to the ``dist`` folder. Open it to look at your changes to the story.
+The program will then continue running until you close it by typing CTRL-C. It will automatically detect changes in any of the files you modify in the ``src`` folder and it will build the project html file to the ``dist`` folder. Open it to look at your changes to the story.
