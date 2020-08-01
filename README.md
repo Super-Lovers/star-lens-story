@@ -1,6 +1,6 @@
 # Starry Story  documentation
 
-## 📘 Instructions to modify and build story
+## 📘 Instructions to modify and build story for non-programmers
 
 1. First, clone the repository either by using a git client (sourcetree/git kraken), or by using the console.
 
@@ -32,3 +32,22 @@
 
 11. You can wait a minute for GitHub to build the application's new story and after that you can open it online from [here](https://super-lovers.github.io/star-lens-story/project.html) to see it and share it with others. **(If the changes don't appear right away, try F5 refreshing or CTRL-F5 refreshing)**.
 
+    
+
+## 📘 Instructions to modify and build story for programmers
+
+1. First, clone the repository either by using a git client (sourcetree/git kraken), or by using the console.
+
+       $ git clone https://github.com/Super-Lovers/star-lens-story
+
+2. Download the Tweego compiler from (https://www.motoslave.net/tweego/)[https://www.motoslave.net/tweego/] and extract the contents.
+3. Open the cloned repository and then open a git bash console from it by right clicking and selecting the Git Bash option:
+
+![](images/folder_story.png)
+
+4. In the console, run the tweego compiler with the following command:
+    ````
+    $ "C:\Users\Nikolay Ivanov\Downloads\tweego-2.1.1-windows-x64\tweego.exe" -o dist/project.html src/ --watch -t
+    ````
+    
+    The program will then continue running until you close it by typing CTRL-C. It will automatically detect changes in any of the files you modify in the ``src`` folder and it will build the project html file to the ``dist`` folder. Open it to look at your changes to the story.
