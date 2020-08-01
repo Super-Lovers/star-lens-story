@@ -1,6 +1,6 @@
 :: base-script [script]
 
-UIBar.destroy();
+// UIBar.destroy();
 
 /****************************************
 // Interface elements (including consoles)
