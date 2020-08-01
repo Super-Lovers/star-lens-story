@@ -34,6 +34,8 @@ $(document).ready(function() {
 
     const $passage_content = $('#console-screen>.passage-content');
 
+    $passage_content.height(console_screen_width - (console_screen_width / 2.5));
+
     // Cleaning up the DOM after rendering the passage
     $passage_content.empty();
 
@@ -78,6 +80,8 @@ $(document).ready(function() {
 $(window).resize(function() {
     passages_width = $passages.width();
     choices_screen_width = $choices_screen.width();
+
+    const $passage_content = $('#console-screen>.passage-content');
     
     // Console screen
     console_screen_width = passages_width - (passages_width / 4);
@@ -89,6 +93,8 @@ $(window).resize(function() {
     // Choices screen
     $choices_screen.height(choices_screen_width - (choices_screen_width / 2));
     choices_screen_width = $choices_screen.width();
+
+    $passage_content.height(console_screen_width - (console_screen_width / 2.5));
 });
 
 $(document).on(':passagerender', function (ev) {
@@ -102,6 +108,8 @@ $(document).on(':passagerender', function (ev) {
         $choices_screen.height(choices_screen_width - (choices_screen_width / 2));
 
         const $passage_content = $('#console-screen>.passage-content');
+
+        $passage_content.height(console_screen_width - (console_screen_width / 2.5));
 
         // Cleaning up the DOM after rendering the passage
         $console_screen.empty();

@@ -42,12 +42,15 @@ PASSAGES CONSOLE
 }
 
 .passage-content {
+    position: relative;
+    padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
 
     width: 80%;
 
     text-align: justify;
+    overflow-y: scroll;
 }
 
 /**************************************
@@ -105,4 +108,22 @@ textarea:not(:disabled):hover {
     margin-bottom: 10px;
 
     width: 60%;
+}
+
+/**************************************
+SCROLL BAR FOR THE MAIN CONSOLE
+**************************************/
+.passage-content::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+
+    background-color: rgba(0, 0, 0, 0.4);
+
+    border-radius: 5px;
+}
+
+.passage-content::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 255, 255, 0.3);
+
+    border-radius: 5px;
 }

@@ -100,7 +100,7 @@ var saveAs=saveAs||navigator.msSaveBlob&&navigator.msSaveBlob.bind(navigator)||f
 		<div id="init-lacking">Your browser lacks required capabilities. Please upgrade it or switch to another to continue.</div>
 		<div id="init-loading"><div>Loading&hellip;</div></div>
 	</div>
-	<!-- UUID://BEC78A1F-A3D2-4484-B58F-46CD201F9CA0// --><tw-storydata name="Starry Story" startnode="6" creator="Tweego" creator-version="2.1.1+81d1d71" ifid="BEC78A1F-A3D2-4484-B58F-46CD201F9CA0" zoom="1" format="SugarCube" format-version="2.30.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">/**************************************
+	<!-- UUID://BEC78A1F-A3D2-4484-B58F-46CD201F9CA0// --><tw-storydata name="Starry Story" startnode="6" creator="Tweego" creator-version="2.1.1+81d1d71" ifid="BEC78A1F-A3D2-4484-B58F-46CD201F9CA0" zoom="1" format="SugarCube" format-version="2.30.0" options="debug" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">/**************************************
 IMPORTS
 **************************************/
 @font-face {
@@ -142,12 +142,15 @@ PASSAGES CONSOLE
 }
 
 .passage-content {
+    position: relative;
+    padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
 
     width: 80%;
 
     text-align: justify;
+    overflow-y: scroll;
 }
 
 /**************************************
@@ -205,6 +208,24 @@ textarea:not(:disabled):hover {
     margin-bottom: 10px;
 
     width: 60%;
+}
+
+/**************************************
+SCROLL BAR FOR THE MAIN CONSOLE
+**************************************/
+.passage-content::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+
+    background-color: rgba(0, 0, 0, 0.4);
+
+    border-radius: 5px;
+}
+
+.passage-content::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 255, 255, 0.3);
+
+    border-radius: 5px;
 }</style><script role="script" id="twine-user-script" type="text/twine-javascript">// UIBar.destroy();
 
 /****************************************
@@ -288,6 +309,8 @@ $(document).ready(function() {
 
     const $passage_content = $(&#39;#console-screen&gt;.passage-content&#39;);
 
+    $passage_content.height(console_screen_width - (console_screen_width / 2.5));
+
     // Cleaning up the DOM after rendering the passage
     $passage_content.empty();
 
@@ -332,6 +355,8 @@ $(document).ready(function() {
 $(window).resize(function() {
     passages_width = $passages.width();
     choices_screen_width = $choices_screen.width();
+
+    const $passage_content = $(&#39;#console-screen&gt;.passage-content&#39;);
     
     // Console screen
     console_screen_width = passages_width - (passages_width / 4);
@@ -343,6 +368,8 @@ $(window).resize(function() {
     // Choices screen
     $choices_screen.height(choices_screen_width - (choices_screen_width / 2));
     choices_screen_width = $choices_screen.width();
+
+    $passage_content.height(console_screen_width - (console_screen_width / 2.5));
 });
 
 $(document).on(&#39;:passagerender&#39;, function (ev) {
@@ -356,6 +383,8 @@ $(document).on(&#39;:passagerender&#39;, function (ev) {
         $choices_screen.height(choices_screen_width - (choices_screen_width / 2));
 
         const $passage_content = $(&#39;#console-screen&gt;.passage-content&#39;);
+
+        $passage_content.height(console_screen_width - (console_screen_width / 2.5));
 
         // Cleaning up the DOM after rendering the passage
         $console_screen.empty();
