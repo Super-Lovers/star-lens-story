@@ -325,7 +325,9 @@ $(document).ready(function() {
     // Makes the choice buttons in the current passage
     // interactable, so that they can take you to new passages
     $choice_buttons.on(&#39;click&#39;, function() {
-        Engine.play($(this).text());
+        console.log($(this));
+        console.log($(this).attr(&#39;name&#39;));
+        Engine.play($(this).attr(&#39;name&#39;));
     });
 });
 
@@ -388,7 +390,9 @@ $(document).on(&#39;:passagerender&#39;, function (ev) {
         // Makes the choice buttons in the current passage
         // interactable, so that they can take you to new passages
         $choice_buttons.on(&#39;click&#39;, function() {
-            Engine.play($(this).text());
+            console.log($(this));
+            console.log($(this).attr(&#39;name&#39;));
+            Engine.play($(this).attr(&#39;name&#39;));
         });
         
         for (let i = 0; i &lt; $choice_buttons.length; i++) {
