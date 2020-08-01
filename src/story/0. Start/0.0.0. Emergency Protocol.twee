@@ -1,6 +1,7 @@
 :: 0.0.0. Emergency Protocol
 
-<!-- WRITE PASSAGE STARTING OVER THIS LINE -->
+This choice will forcefully start the repair system.
+This choice will reset the system to the most recent backup and lose all recent data.
 
 <<nobr>>
 <!-- ************************************ -->
@@ -11,6 +12,6 @@
     type="button"
     tabindex="0"
     name="0.1.0. Spaceship Fixed">
-        Continue
+        Syst[glitch]m Rest[glitch] 
 </button>
 <</nobr>>

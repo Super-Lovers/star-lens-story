@@ -1,6 +1,8 @@
 :: 0.0.1. Damage Scan
 
-<!-- WRITE PASSAGE STARTING OVER THIS LINE -->
+Retrieving information on damage sustained . . .
+Retrieving information on possible causes . . .
+Backing up data . . .
 
 <<nobr>>
 <!-- ************************************ -->
@@ -11,6 +13,6 @@
     type="button"
     tabindex="0"
     name="0.1.1. Get Information">
-        Get information
+        Scann[glitch] for damag[glitch] & repair
 </button>
 <</nobr>>
