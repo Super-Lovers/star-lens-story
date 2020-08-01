@@ -16,7 +16,7 @@
 
 ![](images/twine_view.png)
 
-6. Paste the contents you copied in step **2** into the Show Story Library folder from step **3 and 4**
+6. Paste the contents you copied in step **2** into the Show Story Library folder from step **3 to 5**
 7. Restart the Twine application and you should be able to see the story in the main menu:
 
 ![](images/twine_story.png)
