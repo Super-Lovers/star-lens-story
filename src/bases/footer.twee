@@ -11,6 +11,10 @@ let $passage_content;
 let console_screen_width, console_screen_height;
 let choices_screen_width, choices_screen_height;
 
+const glitch_chars = [
+    'ϟ', '!', '/', '$'
+];
+
 $(document).ready(function() {
     $passages = $('#passages');
     $console_screen = $('#console-screen');
@@ -75,6 +79,63 @@ $(document).ready(function() {
     $choice_buttons.on('click', function() {
         Engine.play($(this).attr('name'));
     });
+
+    const glitch_texts_original = $('.passage-content').find('.glitch-text').toArray();
+    const glitch_texts_original_texts = [];
+
+    for (let i = 0; i < glitch_texts_original.length; i++) {
+        const element = $(glitch_texts_original[i]).text();
+        
+        glitch_texts_original_texts.push(element);
+    }
+    const glitch_texts = $('.passage-content').find('.glitch-text');
+        
+    if (glitch_texts.length > 0) {
+        setInterval(function() {
+            for (let i = 0; i < glitch_texts.length; i++) {
+                const text = $(glitch_texts[i]);
+                let text_content = text.text();
+                const number_of_iterations = Math.floor(Math.random() * text_content.length - 1);
+                let new_text;
+
+                for (let j = 0; j < number_of_iterations; j++) {
+                    const random_char_index = Math.floor(Math.random() * text_content.length);
+
+                    let new_char;
+                    let chance_of_glitch = 90;
+                    let result = Math.floor(Math.random() * 100);
+
+                    if (result < chance_of_glitch) {
+                        new_char = glitch_chars[Math.floor(Math.random() * glitch_chars.length)];
+                    } else {
+                        new_char = $(glitch_texts_original[i]).text()[random_char_index];
+                    }
+
+                    new_text = text_content.substring(0, random_char_index) + new_char + text_content.substring(random_char_index + 1);
+
+                    text_content = new_text;
+                }
+    
+                text.text(text_content);
+            }
+        }, 100);
+
+        setInterval(function() {
+            for (let i = 0; i < glitch_texts.length; i++) {
+                const glitch_element = $(glitch_texts[i]);
+                const original_element = glitch_texts_original_texts[i];
+                
+                glitch_element.text(original_element);
+            }
+        }, 500);
+        
+        // for (let i = 0; i < glitch_texts_original.length; i++) {
+        //     const text = $(glitch_texts_original[i]);
+        //     const text_content = text.text();
+
+        //     $(glitch_texts[i]).text(text_content);
+        // }
+    }
 });
 
 $(window).resize(function() {
