@@ -55,7 +55,7 @@
 
 4. In the console, run the tweego compiler with the following command but with the path to the tweego compiler on your computer instead:
     ````
-    $ "C:\Users\Nikolay Ivanov\Downloads\tweego-2.1.1-windows-x64\tweego.exe" -o dist/project.html src/ --watch -t
+    $ "C:\Users\Nikolay Ivanov\Downloads\tweego-2.1.1-windows-x64\tweego.exe" -o dist/project.html src/ --watch
     ````
     
 
