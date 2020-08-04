@@ -1,8 +1,14 @@
-:: 0.0.1. Damage Scan
-
-Retrieving information on damage sustained . . .
-Retrieving information on possible causes . . .
-Backing up data . . .
+:: 0.0.1. Damage Scan [broken-ui]
+\> Retri<span class="glitch-text">eving information on</span> damage sustained . . .
+<<timed 800ms>>
+\> Retrieving information on possible causes . . .
+\<</timed>>
+<<timed 1000ms>>
+\> Backing up data . . .
+\<</timed>>
+<<timed 1200ms>>
+\> DONE
+<</timed>>
 
 <<nobr>>
 <!-- ************************************ -->
@@ -13,6 +19,6 @@ Backing up data . . .
     type="button"
     tabindex="0"
     name="0.1.1. Get Information">
-        Scann[glitch] for damag[glitch] & repair
-</button>
+        Re<span class="glitch-text">pair dama</span>ge 
+    </button>
 <</nobr>>

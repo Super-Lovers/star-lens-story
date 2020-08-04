@@ -1,13 +1,23 @@
-:: 0.1.1. Get Information
-
-Damage sustained - reparable
+:: 0.1.1. Get Information [fixed-ui]
+<h3>📑 REPORT</h3>\
+----
+<<timed 800ms>>\
+@@color:green;Damage sustained - repairable@@
+\<</timed>>
+<<timed 1600ms>>\
 Engine at 60% capacity
-System restored
-Likely cause -
-Outside source - 89%
+<</timed>>\
+<<timed 2400ms>>\
+<b>System restored</b>
+<</timed>>\
+<<timed 2400ms>>
+!!! Likely cause
+----
+@@color:red;Outside source - 89%@@
 System error - .2% 
 Outdated maintenance - 1%
 Other - 9.8%
+<</timed>>
 
 <<nobr>>
 <!-- ************************************ -->
@@ -18,6 +28,6 @@ Other - 9.8%
     type="button"
     tabindex="0"
     name="1. Transmissions">
-        Send distress signal
+        Distress signal
 </button>
 <</nobr>>

@@ -1,7 +1,8 @@
-:: 0.0.0. Emergency Protocol
+:: 0.0.0. Emergency Protocol [broken-ui]
 
-This choice will forcefully start the repair system.
-This choice will reset the system to the most recent backup and lose all recent data.
+\> This <span class="glitch-text">choi</span>ce will <b>fo<span class="glitch-text">rceful</span>ly restart</b> the re<span class="glitch-text">pair sy</span>stem.
+
+\> This <span class="glitch-text">choice wi</span>ll <b>reset the system</b> <span class="glitch-text">to the</span> most recent backup and lose all <span class="glitch-text">recent</span> data.
 
 <<nobr>>
 <!-- ************************************ -->
@@ -12,6 +13,6 @@ This choice will reset the system to the most recent backup and lose all recent 
     type="button"
     tabindex="0"
     name="0.1.0. Spaceship Fixed">
-        Syst[glitch]m Rest[glitch] 
+        Sy<span class="glitch-text">stem</span> rest<span class="glitch-text">art</span>
 </button>
 <</nobr>>

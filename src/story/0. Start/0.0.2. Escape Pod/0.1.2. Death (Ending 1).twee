@@ -1,19 +1,15 @@
 :: 0.1.2. Death (Ending 1)
-
+<<timed 500ms>>\
 No...this isn’t right. . .
+<</timed>>\
+<<timed 1500ms>>\
 The pod is too damaged. . .oh no, I do not want to die here
-Please,
+<</timed>>\
+<<timed 3000ms>>\
 Please
-
-<<nobr>>
-<!-- ************************************ -->
-<!--       Bottom interface buttons       -->
-<!-- ************************************ -->
-<button
-    class="link-internal macro-button choice-button"
-    type="button"
-    tabindex="0"
-    name="0. Start">
-        Restart
-</button>
-<</nobr>>
+<</timed>>\
+<<timed 4000ms>>\
+<span style="font-size: 20px;">\
+    <span class="shudder"><<link [[Please..|0. Start]]>><</link>></span>
+</span>
+<</timed>>

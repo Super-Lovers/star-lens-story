@@ -1,4 +1,8 @@
-:: 0. Start
+:: 0. Start [broken-ui]
+<span class="glitch-text">
+    mhZptEDY8l1i0OZ7JYwq
+        SzIs5Ju293IRGWPSsnO5
+</span>
 {{{
     ilD3wivqwBW8NMmD
     UZr7k5jX7NP9B
@@ -20,7 +24,6 @@ sDDGDFDBCBDGFJGHKMN
 </span>\
 
 ! SYSTEM ERROR
-!! RECOMMENDED ACTIONS ON INPUT CONSOLE
 
 <<nobr>>
 <!-- ************************************ -->
@@ -31,7 +34,7 @@ sDDGDFDBCBDGFJGHKMN
     type="button"
     tabindex="0"
     name="0.0.0. Emergency Protocol">
-        Emergency protocol
+        Emer<span class="glitch-text">gen</span>cy protocol
 </button>
 
 <button 
@@ -39,7 +42,7 @@ sDDGDFDBCBDGFJGHKMN
     type="button"
     tabindex="0"
     name="0.0.1. Damage Scan">
-        Damage scan
+    <span class="glitch-text">Damage</span> scan
 </button>
 
 <button
@@ -47,6 +50,6 @@ sDDGDFDBCBDGFJGHKMN
     type="button"
     tabindex="0"
     name="0.0.2. Escape Pod">
-        Escape pod
+        Esca<span class="glitch-text">pe po</span>d
 </button>
 <</nobr>>

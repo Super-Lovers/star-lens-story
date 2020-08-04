@@ -2,6 +2,6 @@
 
 <<timed 1s>>
     <span style="font-size: 20px;">
-        <<link [[Something's wrong..|0. Start]]>><</link>>
+        <span class="shudder"><<link [[Something's wrong..|0. Start]]>><</link>></span>
     </span>
 <</timed>>

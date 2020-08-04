@@ -1,25 +1,33 @@
 :: PassageHeader
-<<if passage() == "test">>\
-    \<div id="console-screen" class="screen" style="background-image: url('./assets/UI/concept-interface-bg-2.png')">\
+
+<<nobr>>
+<<if tags().includes("broken-ui")>>
+    <div id="console-screen" class="screen" style="background-image: url('./assets/UI/mainconsole_broken.png')">
         <div class="passage-content">\
             <<print "\\>">> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc cursus odio ut neque vulputate consectetur. Aenean ut urna nec neque ornare tristique. Aliquam varius consectetur vulputate. Mauris condimentum mauris ultricies, maximus ante quis, ornare velit. Curabitur eget massa pulvinar felis rutrum ultrices.
         </div>
+        <div id="choices-screen" class="screen" style="background-image: url('./assets/UI/bottomconsole_broken.png')"></div>
     </div>
-<<elseif passage() == "Start">>
-    \<div id="console-screen" class="screen" style="background-image: none">\
+<<elseif tags().includes("fixed-ui")>>
+    <div id="console-screen" class="screen" style="background-image: url('./assets/UI/mainconsole_fixed.png')">
+        <div class="passage-content">\
+            <<print "\\>">> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc cursus odio ut neque vulputate consectetur. Aenean ut urna nec neque ornare tristique. Aliquam varius consectetur vulputate. Mauris condimentum mauris ultricies, maximus ante quis, ornare velit. Curabitur eget massa pulvinar felis rutrum ultrices.
+        </div>
+        <div id="choices-screen" class="screen" style="background-image: url('./assets/UI/bottomconsole_fixed.png')"></div>
+    </div>
+<<elseif passage() == "Start" or passage() == "0.1.2. Death (Ending 1)">>
+    <div id="console-screen" class="screen" style="background-image: none">
         <video class="wallpaper" src="assets/0. Start/videos/blank.mp4" playsinline autoplay muted loop></video>
-        <div class="passage-content" style="overflow-y: hidden;">\
+        <div class="passage-content" style="overflow-y: hidden; background: none;">
             <<print "\\>">> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc cursus odio ut neque vulputate consectetur. Aenean ut urna nec neque ornare tristique. Aliquam varius consectetur vulputate. Mauris condimentum mauris ultricies, maximus ante quis, ornare velit. Curabitur eget massa pulvinar felis rutrum ultrices.
         </div>
     </div>
 <<else>>
-    <<nobr>>
-    <!-- the forward slashes are here because the div line produces an empty line, and the slash makes the line after it move in front of it, tehcnically replacing the empty line with the next one -->
-    <</nobr>>
-    \<div id="console-screen" class="screen">\
+    <div id="console-screen" class="screen" style="background-image: url('./assets/UI/mainconsole_fixed.png')">
         <div class="passage-content">\
             <<print "\\>">> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc cursus odio ut neque vulputate consectetur. Aenean ut urna nec neque ornare tristique. Aliquam varius consectetur vulputate. Mauris condimentum mauris ultricies, maximus ante quis, ornare velit. Curabitur eget massa pulvinar felis rutrum ultrices.
         </div>
-        \<div id="choices-screen" class="screen"></div>
+        <div id="choices-screen" class="screen" style="background-image: url('./assets/UI/bottomconsole_fixed.png')"></div>
     </div>
-\<</if>>\
+<</if>>
+<</nobr>>

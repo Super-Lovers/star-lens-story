@@ -1,9 +1,16 @@
 :: 1. Transmissions
+<<timed 500ms>>\
+<h3>📡 SIGNALS ACQUIRED</h3>\
+----
+<</timed>>\
+<<timed 800ms>>
+\> @@color:green;You have received @@@@color:red;<b>[3]</b>@@@@color:green; new transmissions.@@
+<</timed>>\
+<<timed 1600ms>>
+\> We are currently on the quickest route to the rescue station.
 
-You have received [3] transmissions.
-
-We are currently on the quickest route to the rescue station.
-Please be warned we are entering dangerous territory. Caution is advised.
+@@color:orange;Please be warned, we are entering dangerous territory. Caution is advised.@@
+<</timed>>\
 
 <<nobr>>
 <!-- ************************************ -->

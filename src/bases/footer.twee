@@ -85,7 +85,7 @@ $(document).ready(function() {
         Engine.play($(this).attr('name'));
     });
 
-    const glitch_texts_original = $('.passage-content').find('.glitch-text').toArray();
+    const glitch_texts_original = $('body').find('.glitch-text').toArray();
     const glitch_texts_original_texts = [];
 
     for (let i = 0; i < glitch_texts_original.length; i++) {
@@ -93,7 +93,7 @@ $(document).ready(function() {
         
         glitch_texts_original_texts.push(element);
     }
-    const glitch_texts = $('.passage-content').find('.glitch-text');
+    const glitch_texts = $('body').find('.glitch-text');
         
     if (glitch_texts.length > 0) {
         setInterval(function() {

@@ -13,12 +13,15 @@ IMPORTS
     src: url("./fonts/cozette.woff");
 }
 
+@font-face {
+    font-family: "Cordata";
+    src: url("./fonts/cordata_ppc.woff");
+}
+
 /**************************************
 ABSTRACTS
 **************************************/
 .screen {
-    font-family: "VT323";
-
     margin-left: auto;
     margin-right: auto;
     padding: 15px;
@@ -40,7 +43,7 @@ ABSTRACTS
 PASSAGES CONSOLE
 **************************************/
 #console-screen {
-    background-image: url('./assets/UI/concept-interface-bg.png');
+    background-image: url('./assets/UI/mainconsole_fixed.png');
 
     position: relative;
 
@@ -51,16 +54,25 @@ PASSAGES CONSOLE
 }
 
 .passage-content {
+    font-family: "Cordata";
+    text-transform: uppercase;
+
     position: relative;
-    padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
+    padding: 15px;
+    padding-bottom: 60px;
 
     width: 80%;
 
     /* text-align: justify; */
     overflow-y: scroll;
     overflow-x: hidden;
+
+    border-radius: 5px;
+    background-color: #000000;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%230400ff' fill-opacity='0.29'%3E%3Cpath opacity='.5' d='M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9z'/%3E%3Cpath d='M6 5V0H5v5H0v1h5v94h1V6h94V5H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    /* background: rgba(0, 0, 30, 1); */
 }
 
 h1,
@@ -79,6 +91,10 @@ h6 {
     color: #e43f5a;
 }
 
+a {
+    text-decoration: none !important;
+}
+
 .macro-link:hover {
     color: lightcoral;
 }
@@ -87,27 +103,28 @@ pre {
     padding-top: 5px;
     padding-bottom: 5px;
 
-    background-color: rgba(0, 0, 0, 0.5);
+    /* background-color: rgba(0, 0, 0, 0.5); */
     
     border-radius: 5px;
 }
 
 pre > code {
     font-family: "Cozette";
-    font-size:  calc(0.5em + 0.7vw);
+    font-size:  calc(0.4em + 0.7vw);
 
     color: #e43f5a;
 }
 
 .glitch-text {
     /* TODO: Make glitch text more glitchy */
+    font-weight: bold;
 }
 
 /**************************************
 CHOICES CONSOLE
 **************************************/
 #choices-screen {
-    background-image: url('./assets/UI/concept-interface-console.png');
+    background-image: url('./assets/UI/bottomconsole_fixed.png');
 
     width: 60%;
     height: 219px;
@@ -149,15 +166,30 @@ textarea:not(:disabled):hover {
 }
 
 #choices-screen > span > span > .macro-button, #choices-screen > .macro-button {
-    font-family: "D2Coding";
-
     display: block;
 
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 10px;
+    padding: 10px;
 
     width: 60%;
+
+    background-color: transparent;
+    border: none;
+    background-image: url('./assets/UI/longbutton_selected.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    font-family: "Cordata";
+    font-size: calc(0.4em + 0.7vw);
+    border: none;
+}
+
+#choices-screen > span > span > .macro-button:hover, #choices-screen > .macro-button:hover {
+    opacity: 0.7;
+    /* background-image: url('./assets/UI/longbutton_selected.png'); */
 }
 
 /**************************************
@@ -173,7 +205,28 @@ SCROLL BAR FOR THE MAIN CONSOLE
 }
 
 .passage-content::-webkit-scrollbar-thumb {
-    background-color: rgba(0, 255, 255, 0.3);
+    background-color: rgba(0, 100, 255, 0.6);
 
     border-radius: 5px;
+}
+
+/**************************************
+TEXT STYLES
+**************************************/
+@-webkit-keyframes shudder {
+	50% {
+		-webkit-transform: translateX(0.2em);
+		transform: translateX(0.2em)
+	}
+}
+@keyframes shudder {
+	50% {
+		-webkit-transform: translateX(0.2em);
+		transform: translateX(0.2em)
+	}
+}
+.shudder {
+	-webkit-animation: shudder linear 0.1s 0s infinite;
+	animation: shudder linear 0.1s 0s infinite;
+	display: inline-block;
 }
