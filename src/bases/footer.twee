@@ -3,7 +3,7 @@
 // Passage elements implementation
 ****************************************-->
 <<script>>
-let $console_screen, $choices_screen, $passages;
+let $console_screen, $choices_screen, $passages, $wallpaper;
 let passages_width;
 let $passage_content;
 
@@ -19,6 +19,7 @@ $(document).ready(function() {
     $passages = $('#passages');
     $console_screen = $('#console-screen');
     $choices_screen = $('#choices-screen');
+    $wallpaper = $('.wallpaper');
 
     passages_width = $passages.width();
     const initial_width_console = passages_width;
@@ -39,6 +40,10 @@ $(document).ready(function() {
     const $passage_content = $('#console-screen>.passage-content');
 
     $passage_content.height(console_screen_width - (console_screen_width / 2.5));
+
+    // Wallpaper
+    $wallpaper.width($console_screen);
+    $wallpaper.height($console_screen);
 
     // Cleaning up the DOM after rendering the passage
     $passage_content.empty();
@@ -143,6 +148,7 @@ $(window).resize(function() {
     choices_screen_width = $choices_screen.width();
 
     const $passage_content = $('#console-screen>.passage-content');
+    $wallpaper = $('.wallpaper');
     
     // Console screen
     console_screen_width = passages_width - (passages_width / 4);
@@ -156,6 +162,10 @@ $(window).resize(function() {
     choices_screen_width = $choices_screen.width();
 
     $passage_content.height(console_screen_width - (console_screen_width / 2.5));
+
+    // Wallpaper
+    $wallpaper.width($console_screen);
+    $wallpaper.height($console_screen);
 });
 
 $(document).on(':passagerender', function (ev) {
@@ -171,7 +181,12 @@ $(document).on(':passagerender', function (ev) {
         const $passage_content = $('#console-screen>.passage-content');
 
         $passage_content.height(console_screen_width - (console_screen_width / 2.5));
+        
+        $wallpaper = $('.wallpaper');
 
+        // Wallpaper
+        $wallpaper.width($console_screen);
+        $wallpaper.height($console_screen);
         // Cleaning up the DOM after rendering the passage
         $console_screen.empty();
 

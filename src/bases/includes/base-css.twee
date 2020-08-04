@@ -4,15 +4,20 @@
 IMPORTS
 **************************************/
 @font-face {
-    font-family: "D2Coding";
-    src: url("./fonts/d2coding.ttf");
+    font-family: "VT323";
+    src: url("./fonts/VT323-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Cozette";
+    src: url("./fonts/cozette.woff");
 }
 
 /**************************************
 ABSTRACTS
 **************************************/
 .screen {
-    font-family: "D2Coding";
+    font-family: "VT323";
 
     margin-left: auto;
     margin-right: auto;
@@ -24,14 +29,18 @@ ABSTRACTS
     background-repeat: no-repeat;
     background-color: rgba(255, 255, 255, 1);
 
-    font-size: calc(0.5em + 0.7vw);;
+    font-size: calc(0.5em + 0.7vw);
+}
+
+.wallpaper {
+    position: absolute;
 }
 
 /**************************************
 PASSAGES CONSOLE
 **************************************/
 #console-screen {
-    background-image: url('./images/UI/concept-interface-bg.png');
+    background-image: url('./assets/UI/concept-interface-bg.png');
 
     position: relative;
 
@@ -49,15 +58,56 @@ PASSAGES CONSOLE
 
     width: 80%;
 
-    text-align: justify;
+    /* text-align: justify; */
     overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 5px;
+    margin-bottom: 0;
+
+    font-weight: normal;
+}
+
+.macro-link {
+    color: #e43f5a;
+}
+
+.macro-link:hover {
+    color: lightcoral;
+}
+
+pre {
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    background-color: rgba(0, 0, 0, 0.5);
+    
+    border-radius: 5px;
+}
+
+pre > code {
+    font-family: "Cozette";
+    font-size:  calc(0.5em + 0.7vw);
+
+    color: #e43f5a;
+}
+
+.glitch-text {
+    /* TODO: Make glitch text more glitchy */
 }
 
 /**************************************
 CHOICES CONSOLE
 **************************************/
 #choices-screen {
-    background-image: url('./images/UI/concept-interface-console.png');
+    background-image: url('./assets/UI/concept-interface-console.png');
 
     width: 60%;
     height: 219px;

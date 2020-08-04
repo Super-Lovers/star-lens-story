@@ -13,7 +13,7 @@ Please
     class="link-internal macro-button choice-button"
     type="button"
     tabindex="0"
-    name="Start">
+    name="0. Start">
         Restart
 </button>
 <</nobr>>

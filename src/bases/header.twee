@@ -1,7 +1,14 @@
 :: PassageHeader
 <<if passage() == "test">>\
-    \<div id="console-screen" class="screen" style="background-image: url('./images/UI/concept-interface-bg-2.png')">\
+    \<div id="console-screen" class="screen" style="background-image: url('./assets/UI/concept-interface-bg-2.png')">\
         <div class="passage-content">\
+            <<print "\\>">> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc cursus odio ut neque vulputate consectetur. Aenean ut urna nec neque ornare tristique. Aliquam varius consectetur vulputate. Mauris condimentum mauris ultricies, maximus ante quis, ornare velit. Curabitur eget massa pulvinar felis rutrum ultrices.
+        </div>
+    </div>
+<<elseif passage() == "Start">>
+    \<div id="console-screen" class="screen" style="background-image: none">\
+        <video class="wallpaper" src="assets/0. Start/videos/blank.mp4" playsinline autoplay muted loop></video>
+        <div class="passage-content" style="overflow-y: hidden;">\
             <<print "\\>">> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc cursus odio ut neque vulputate consectetur. Aenean ut urna nec neque ornare tristique. Aliquam varius consectetur vulputate. Mauris condimentum mauris ultricies, maximus ante quis, ornare velit. Curabitur eget massa pulvinar felis rutrum ultrices.
         </div>
     </div>
