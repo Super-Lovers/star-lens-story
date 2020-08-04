@@ -1,5 +1,5 @@
 :: 1. Transmissions
-<<timed 500ms>>\
+<<timed 400ms>>\
 <h3>📡 SIGNALS ACQUIRED</h3>\
 ----
 <</timed>>\

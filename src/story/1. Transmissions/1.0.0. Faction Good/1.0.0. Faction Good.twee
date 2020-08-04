@@ -1,18 +1,54 @@
 :: 1.0.0. Faction Good
-
+<<timed 400ms>>\
+    <h3>👽 FREQUENCY 108.5</h3>\
+----
+<</timed>>\
+<<timed 1s>>\
 Hey bro, we got your signal. We are the rescue crew of this area, so you can count on us to help you out!
+
+<<timed 3s>>\
 . . .
+<</timed>>\
+
+<</timed>>\
+<<timed 4s>>\
 So here’s the thing.
+
+<</timed>>\
+<<timed 6s>>\
 Normally, we’d swoop right in and carry you to the station to help you with whatever, right? Except we are kinda spread thin right now. Some new group’s been looting travellers ‘n shit, ruining everyone’s vibes.
+
+<</timed>>\
+<<timed 14s>>\
 So we are all outta ships for now! Everyone’s busy.
+
+<</timed>>\
+<<timed 16s>>\
 I can send someone on your way ASAP. Totally.
+
+<</timed>>\
+<<timed 18s>>\
 Maybe.
+
+<</timed>>\
+<<timed 19s>>\
 Look, I'll just guide you here, ok?
 It’s totally gonna be cool, bro. Trust me.
 . . .
+
+<</timed>>\
+<<timed 22s>>\
 Now, I know your ship probs put you on the straightest path here but, you’re gonna have to take a detour. There’s like a massive asteroid belt on the way and there’s no way you’re gonna make it, so you’re gonna have to take the long way ‘round through the X-2453 pathway.
+<</timed>>\
+<<timed 40s>>\
 . . .
+
 You won’t be able to pick up our signal until you get through tho, but you’ll be totally fine, promise! See you on the other side, dude. 
+<</timed>>\
+----
+<<timed 43s>>\
+    <h3>❌ @@color:red;ENDED TRANSMISSION 108.5@@</h3>\
+<</timed>>\
 
 <<nobr>>
 <!-- ************************************ -->
