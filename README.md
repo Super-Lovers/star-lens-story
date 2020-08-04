@@ -51,7 +51,7 @@
 2. Download the Tweego compiler from (https://www.motoslave.net/tweego/)[https://www.motoslave.net/tweego/] and extract the contents.
 3. Open the cloned repository and then open a git bash console from it by right clicking and selecting the Git Bash option:
 
-![](images/folder_story.png)
+![](images/properties.png)
 
 4. In the console, run the tweego compiler with the following command but with the path to the tweego compiler on your computer instead:
     ````
