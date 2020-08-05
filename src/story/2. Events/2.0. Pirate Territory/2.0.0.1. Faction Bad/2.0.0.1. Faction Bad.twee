@@ -1,10 +1,31 @@
 :: 2.0.0.1. Faction Bad
-<<timed 400ms>>\
-    <<type 40ms skipkey "Control">>\
-        <h3>👨‍🚀 FREQUENCY 99.9</h3>\
+<<type 40ms skipkey "Control">>\
+    <h3>👨‍🚀 FREQUENCY 99.9</h3>\
 ----
-    <</type>>\
-<</timed>>\
+<</type>>\
+<<type 100ms skipkey "Control">>\
+Ulisse, how did you turn up here?
+Is everything alright?
+
+...
+
+We have less hands in this sector to extend to you, but nevertheless.
+<</type>>
+<<type 40ms skipkey "Control">>\
+Our outpost is coming up, so you need to follow the course we send you to get to us right away. It will help you avoid the pirates that lurk in this region!
+<</type>>\
+<<type 40ms skipkey "Control">>\
+----
+    <h3>❌ @@color:red;ENDED TRANSMISSION 99.9@@</h3>\
+<</type>>\
+<<type 40ms skipkey "Control">>\
+----
+!!!! 💡 Scanners notification
+----
+<</type>>\
+<<type 40ms skipkey "Control">>\
+    \> ☁️ Dust clouds have been spotted in this area
+<</type>>\
 
 <<nobr>>
 <!-- ************************************ -->
@@ -15,7 +36,7 @@
     type="button"
     tabindex="0"
     name="2.0.1.0. Hide Behind Dust Clouds">
-        Hide behind dust clouds
+        Hide behind clouds
 </button>
 
 <button
