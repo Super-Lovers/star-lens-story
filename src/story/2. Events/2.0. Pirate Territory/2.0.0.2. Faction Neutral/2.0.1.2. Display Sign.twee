@@ -1,6 +1,27 @@
 :: 2.0.1.2. Display Sign
 
-<!-- WRITE PASSAGE STARTING OVER THIS LINE -->
+<<type 40ms skipkey "Control">>\
+    \> Thrusting Ulisse past the pirates
+<</type>>\
+<<type 40ms skipkey "Control">>\
+    ...
+<</type>>\
+<<timed 3s>>\
+    <<type 40ms skipkey "Control">>\
+        \> Ulisse is being scanned
+    <</type>>\
+    <<type 40ms skipkey "Control">>\
+        \> 📡 Sending identity signature..
+    <</type>>\
+    <<type 40ms skipkey "Control">>\
+----
+!!!! ✔️ Signature approved
+    <</type>>\
+    <<type 40ms skipkey "Control">>\
+----
+        \> @@color:orange;Pirate ships maintaining safe proximity@@
+    <</type>>
+<</timed>>\
 
 <<nobr>>
 <!-- ************************************ -->

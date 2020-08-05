@@ -15,6 +15,13 @@
         </div>
         <div id="choices-screen" class="screen" style="background-image: url('./assets/UI/bottomconsole_fixed.png')"></div>
     </div>
+<<elseif tags().includes("semifixed-ui")>>
+    <div id="console-screen" class="screen" style="background-image: url('./assets/UI/mainconsole_broken.png')">
+        <div class="passage-content">\
+            <<print "\\>">> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc cursus odio ut neque vulputate consectetur. Aenean ut urna nec neque ornare tristique. Aliquam varius consectetur vulputate. Mauris condimentum mauris ultricies, maximus ante quis, ornare velit. Curabitur eget massa pulvinar felis rutrum ultrices.
+        </div>
+        <div id="choices-screen" class="screen" style="background-image: url('./assets/UI/bottomconsole_fixed.png')"></div>
+    </div>
 <<elseif passage() == "Start" or passage() == "0.1.2. Death (Ending 1)">>
     <div id="console-screen" class="screen" style="background-image: none">
         <video class="wallpaper" src="assets/0. Start/videos/blank.mp4" playsinline autoplay muted loop></video>

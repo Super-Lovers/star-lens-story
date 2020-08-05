@@ -1,6 +1,24 @@
-:: 3.1. You Are Attacked
-
-<!-- WRITE PASSAGE STARTING OVER THIS LINE -->
+:: 3.1. You Are Attacked [semifixed-ui]
+<<type 40ms skipkey "Control">>\
+\> ⚠️ Pirate missiles incoming
+<</type>>\
+<<timed 2s>>\
+<span class="boom-title pulse">''@@color:orange;B@@ @@color:red;O@@ 💥 @@color:red;O@@ @@color:orange;M@@''</span>
+<</timed>>\
+<<timed 3s>>\
+    <<type 40ms skipkey "Control">>\
+!!! 📑 DAMAGE REPORT
+----
+* Engine - ✔️ @@color:green;OK@@
+* Navigation - ❌ @@color:red;NEEDS REPAIRS@@
+* Sensors - ✔️ @@color:green;OK@@
+* Shields - ⚡ @@color:orange;Damaged@@
+* Life-support - ⚡ @@color:orange;Damaged@@
+----
+!!! 📡 YOU HAVE RECEIVED @@color:green;[2]@@ NEW TRANSMISSIONS.
+...
+    <</type>>\
+<</timed>>\
 
 <<nobr>>
 <!-- ************************************ -->

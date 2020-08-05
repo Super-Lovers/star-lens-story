@@ -343,6 +343,35 @@ TEXT STYLES
 	display: inline-block;
 	transform: scaleX(-1);
 	-webkit-transform: scaleX(-1);
+}
+
+.boom-title {
+	display: inline-block;
+
+    width: 100%;
+    text-align: center;
+    font-size: calc(2.5em + 0.7vw);
+}
+
+@-webkit-keyframes pulse {
+	0%  { -webkit-transform: scale(0, 0); transform: scale(0, 0) }
+	20% { -webkit-transform: scale(1.2, 1.2); transform: scale(1.2, 1.2) }
+	40% { -webkit-transform: scale(0.9, 0.9); transform: scale(0.9, 0.9) }
+	60% { -webkit-transform: scale(1.05, 1.05); transform: scale(1.05, 1.05) }
+	80% { -webkit-transform: scale(0.925, 0.925); transform:scale(0.925, 0.925) }
+	to  { -webkit-transform: scale(1, 1); transform: scale(1, 1) }
+}
+@keyframes pulse {
+	0%  { -webkit-transform: scale(0, 0); transform: scale(0, 0) }
+	20% { -webkit-transform: scale(1.2, 1.2); transform: scale(1.2, 1.2) }
+	40% { -webkit-transform: scale(0.9, 0.9); transform: scale(0.9, 0.9) }
+	60% { -webkit-transform: scale(1.05, 1.05); transform: scale(1.05, 1.05) }
+	80% { -webkit-transform: scale(0.925, 0.925); transform: scale(0.925, 0.925) }
+	to  { -webkit-transform: scale(1, 1); transform: scale(1, 1) }
+}
+.pulse {
+	-webkit-animation: pulse 0.8s;
+	animation: pulse 0.8s;
 }</style><script role="script" id="twine-user-script" type="text/twine-javascript">// UIBar.destroy();
 // UI.alert("test");
 
@@ -631,6 +660,13 @@ $(document).on(&#39;:passagerender&#39;, function (ev) {
     &lt;/div&gt;
 &lt;&lt;elseif tags().includes(&quot;fixed-ui&quot;)&gt;&gt;
     &lt;div id=&quot;console-screen&quot; class=&quot;screen&quot; style=&quot;background-image: url(&#39;./assets/UI/mainconsole_fixed.png&#39;)&quot;&gt;
+        &lt;div class=&quot;passage-content&quot;&gt;\
+            &lt;&lt;print &quot;\\&gt;&quot;&gt;&gt; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc cursus odio ut neque vulputate consectetur. Aenean ut urna nec neque ornare tristique. Aliquam varius consectetur vulputate. Mauris condimentum mauris ultricies, maximus ante quis, ornare velit. Curabitur eget massa pulvinar felis rutrum ultrices.
+        &lt;/div&gt;
+        &lt;div id=&quot;choices-screen&quot; class=&quot;screen&quot; style=&quot;background-image: url(&#39;./assets/UI/bottomconsole_fixed.png&#39;)&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+&lt;&lt;elseif tags().includes(&quot;semifixed-ui&quot;)&gt;&gt;
+    &lt;div id=&quot;console-screen&quot; class=&quot;screen&quot; style=&quot;background-image: url(&#39;./assets/UI/mainconsole_broken.png&#39;)&quot;&gt;
         &lt;div class=&quot;passage-content&quot;&gt;\
             &lt;&lt;print &quot;\\&gt;&quot;&gt;&gt; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc cursus odio ut neque vulputate consectetur. Aenean ut urna nec neque ornare tristique. Aliquam varius consectetur vulputate. Mauris condimentum mauris ultricies, maximus ante quis, ornare velit. Curabitur eget massa pulvinar felis rutrum ultrices.
         &lt;/div&gt;
@@ -1462,7 +1498,28 @@ We use it sometimes to get out of thick situations!
     name=&quot;2.0.1.2. Display Sign&quot;&gt;
         Use signature
 &lt;/button&gt;
-&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="27" name="2.0.1.2. Display Sign" tags="" position="850,350" size="100,100">&lt;!-- WRITE PASSAGE STARTING OVER THIS LINE --&gt;
+&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="27" name="2.0.1.2. Display Sign" tags="" position="850,350" size="100,100">&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+    \&gt; Thrusting Ulisse past the pirates
+&lt;&lt;/type&gt;&gt;\
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+    ...
+&lt;&lt;/type&gt;&gt;\
+&lt;&lt;timed 3s&gt;&gt;\
+    &lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+        \&gt; Ulisse is being scanned
+    &lt;&lt;/type&gt;&gt;\
+    &lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+        \&gt; 📡 Sending identity signature..
+    &lt;&lt;/type&gt;&gt;\
+    &lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+----
+!!!! ✔️ Signature approved
+    &lt;&lt;/type&gt;&gt;\
+    &lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+----
+        \&gt; @@color:orange;Pirate ships maintaining safe proximity@@
+    &lt;&lt;/type&gt;&gt;
+&lt;&lt;/timed&gt;&gt;\
 
 &lt;&lt;nobr&gt;&gt;
 &lt;!-- ************************************ --&gt;
@@ -1782,7 +1839,28 @@ Goodbye.
     name=&quot;3.6.0. Faction Neutral&quot;&gt;
         Continue
 &lt;/button&gt;
-&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="41" name="3.0. Escape with Damaged Shields" tags="" position="100,600" size="100,100">&lt;!-- WRITE PASSAGE STARTING OVER THIS LINE --&gt;
+&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="41" name="3.0. Escape with Damaged Shields" tags="semifixed-ui" position="100,600" size="100,100">&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+\&gt; Exited dust clouds
+&lt;&lt;/type&gt;&gt;\
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+\&gt; Scanning immediate area..
+&lt;&lt;/type&gt;&gt;\
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+\&gt; Analyzing damage to Ulisse..
+&lt;&lt;/type&gt;&gt;\
+&lt;&lt;timed 5s&gt;&gt;\
+----
+    &lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+* Engine - ✔️ @@color:green;OK@@
+* Navigation - ✔️ @@color:green;OK@@
+* Sensors - ✔️ @@color:green;OK@@
+* Shields - ⚡ @@color:orange;Damaged@@
+* Life-support - ✔️ @@color:green;OK@@
+----
+!!! 📡 YOU HAVE RECEIVED @@color:green;[2]@@ NEW TRANSMISSIONS.
+...
+    &lt;&lt;/type&gt;&gt;\
+&lt;&lt;/timed&gt;&gt;\
 
 &lt;&lt;nobr&gt;&gt;
 &lt;!-- ************************************ --&gt;
@@ -1855,7 +1933,26 @@ Goodbye.
     name=&quot;3.0.2.1. Ambush and Join Rescuers (Ending)&quot;&gt;
         Continue
 &lt;/button&gt;
-&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="47" name="3.0.2.1. Ambush and Join Rescuers (Ending)" tags="" position="850,600" size="100,100"></tw-passagedata><tw-passagedata pid="48" name="3.1. You Are Attacked" tags="" position="975,600" size="100,100">&lt;!-- WRITE PASSAGE STARTING OVER THIS LINE --&gt;
+&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="47" name="3.0.2.1. Ambush and Join Rescuers (Ending)" tags="" position="850,600" size="100,100"></tw-passagedata><tw-passagedata pid="48" name="3.1. You Are Attacked" tags="semifixed-ui" position="975,600" size="100,100">&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+\&gt; ⚠️ Pirate missiles incoming
+&lt;&lt;/type&gt;&gt;\
+&lt;&lt;timed 2s&gt;&gt;\
+&lt;span class=&quot;boom-title pulse&quot;&gt;&#39;&#39;@@color:orange;B@@ @@color:red;O@@ 💥 @@color:red;O@@ @@color:orange;M@@&#39;&#39;&lt;/span&gt;
+&lt;&lt;/timed&gt;&gt;\
+&lt;&lt;timed 3s&gt;&gt;\
+    &lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+!!! 📑 DAMAGE REPORT
+----
+* Engine - ✔️ @@color:green;OK@@
+* Navigation - ❌ @@color:red;NEEDS REPAIRS@@
+* Sensors - ✔️ @@color:green;OK@@
+* Shields - ⚡ @@color:orange;Damaged@@
+* Life-support - ⚡ @@color:orange;Damaged@@
+----
+!!! 📡 YOU HAVE RECEIVED @@color:green;[2]@@ NEW TRANSMISSIONS.
+...
+    &lt;&lt;/type&gt;&gt;\
+&lt;&lt;/timed&gt;&gt;\
 
 &lt;&lt;nobr&gt;&gt;
 &lt;!-- ************************************ --&gt;
