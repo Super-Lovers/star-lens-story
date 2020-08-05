@@ -1,6 +1,19 @@
 :: 3.3.0.0. Faction Good
 
-<!-- WRITE PASSAGE STARTING OVER THIS LINE -->
+Bro, holy fuck!
+
+First of all, good job making it this far, man. I'd have straight up died by now.
+Secondly, what?
+
+Oh.
+Oh dude no.
+
+Those are the pirates that have been stirring shit around here lately. Do NOT let them get closer.
+We are sending someone your way, move to the coordinates I'm sending you right now and you should see them soon.
+If your ship's shields still work you should use them.
+
+Hold on there, mate!
+We are coming for you!
 
 <<nobr>>
 <!-- ************************************ -->
@@ -11,6 +24,6 @@
     type="button"
     tabindex="0"
     name="3.3.1.0. Maneuver">
-        Maneuver
+        Maneuver and raise shields
 </button>
 <</nobr>>
