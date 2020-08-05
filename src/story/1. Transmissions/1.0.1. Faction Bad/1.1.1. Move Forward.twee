@@ -1,6 +1,13 @@
 :: 1.1.1. Move Forward
 
-<!-- WRITE PASSAGE STARTING OVER THIS LINE -->
+DATA ANALYSIS OF ASTEROID BELT IN PROGRESS. . . 
+DATA ANALYSIS COMPLETED
+
+WARNING - DIRECT ROUTE SELECTED INCREASES RISK OF ADDITIONAL DAMAGES TO SHIP BY 64%
+LIKELIHOOD OF IRREVERSIBLE DAMAGE - 30%
+The selected route is potentially the most dangerous, however it is the shortest to the destination.
+
+PROCEED?
 
 <<nobr>>
 <!-- ************************************ -->
@@ -11,6 +18,6 @@
     type="button"
     tabindex="0"
     name="2.1. Pressure Damage">
-        Pressure damage
+        Continue
 </button>
 <</nobr>>
