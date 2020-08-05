@@ -1,21 +1,27 @@
 :: 0.1.0. Spaceship Fixed [fixed-ui]
-<h3>📑 REPORT</h3>\
+<<type 40ms skipkey "Control">>\
+    <h3>📑 REPORT</h3>\
 ----
+<</type>>\
 <<timed 500ms>>\
-\> @@color:green;System restored and online@@ - 70% capacity
-\<</timed>>
+    <<type 40ms skipkey "Control">>\
+\       > @@color:green;System restored and online@@ - 70% capacity
+    <</type>>\
+\<</timed>>\
 <<timed 1000ms>>\
-\> Critical errors [03]
-<</timed>>
-<<timed 2000ms>>\
-\> <b>@@color:red;Critical stop at rescue station is required.@@</b> Nearest station located at Pathos 125E.
+    <<type 40ms skipkey "Control">>\
+        \> Critical errors [03]
+    <</type>>
 <</timed>>\
-<<timed 2500ms>>\
+<<timed 2000ms>>\
+    <<type 40ms skipkey "Control">>\
+        \> <b>@@color:red;Critical stop at rescue station is required.@@</b> Nearest station located at Pathos 125E.
 ----
-\> OBJECTIVE ACQUIRED - reach Pathos 125E
+        \> ✔️ OBJECTIVE ACQUIRED - reach Pathos 125E
 
-@@color:orange;Warning  - all routes to the rescue station are marked as dangerous on intergalactic databases. Assistance might be required to cross the territory.@@
-\<</timed>>
+        @@color:orange;Warning  - all routes to the rescue station are marked as dangerous on intergalactic databases. Assistance might be required to cross the territory.@@
+    <</type>>\
+<</timed>>\
 
 <<nobr>>
 <!-- ************************************ -->

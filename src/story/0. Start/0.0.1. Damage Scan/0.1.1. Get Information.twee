@@ -1,23 +1,36 @@
 :: 0.1.1. Get Information [fixed-ui]
-<h3>📑 REPORT</h3>\
+<<type 40ms skipkey "Control">>\
+    <h3>📑 REPORT</h3>\
 ----
+<</type>>\
 <<timed 800ms>>\
-@@color:green;Damage sustained - repairable@@
-\<</timed>>
+    <<type 40ms skipkey "Control">>\
+        \> Damage sustained - @@color:green;repairable@@
+    <</type>>\
+<</timed>>\
 <<timed 1600ms>>\
-Engine at 60% capacity
+    <<type 40ms skipkey "Control">>\
+        \> Engine at @@color:orange;60%@@ capacity
+    <</type>>\
 <</timed>>\
 <<timed 2400ms>>\
-<b>System restored</b>
+    <<type 40ms skipkey "Control">>\
+        \> <b>Operating System restored</b>
+    <</type>>\
 <</timed>>\
 <<timed 2400ms>>
-!!! Likely cause
+    <<type 40ms skipkey "Control">>\
+!!! 🔎 Likely cause
 ----
-@@color:red;Outside source - 89%@@
-System error - .2% 
-Outdated maintenance - 1%
-Other - 9.8%
-<</timed>>
+        \> @@color:red;Outside source - 89%@@
+
+        \> System error - .2% 
+
+        \> Outdated maintenance - 1%
+
+        \> Other - 9.8%
+    <</type>>\
+<</timed>>\
 
 <<nobr>>
 <!-- ************************************ -->

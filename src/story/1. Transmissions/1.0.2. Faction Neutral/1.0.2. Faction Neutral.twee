@@ -1,45 +1,58 @@
 :: 1.0.2. Faction Neutral
 <<timed 400ms>>\
-    <h3>🐔 FREQUENCY 96.3</h3>\
+    <<type 40ms skipkey "Control">>\
+        <h3>🐔 FREQUENCY 96.3</h3>\
 ----
+    <</type>>\
 <</timed>>\
 <<timed 1s>>\
-Hey, we received your distress signal. 
-
+    <<type 40ms skipkey "Control">>\
+        Hey, we received your distress signal. 
+    <</type>>
 <</timed>>\
 <<timed 2.5s>>\
-We can’t come pick you up right now, but we can guide you somewhere safe. 
-
+    <<type 40ms skipkey "Control">>\
+        We can’t come pick you up right now, but we can guide you somewhere safe. 
+    <</type>>
 <</timed>>\
 <<timed 5s>>\
-We know this area like the palms of our hands.
-
+    <<type 40ms skipkey "Control">>\
+        We know this area like the palms of our hands.
+    <</type>>
 <</timed>>\
 <<timed 7s>>\
-And we have many hands.
-. . .
-
+    <<type 40ms skipkey "Control">>\
+        And we have many hands.
+    . . .
+    <</type>>
 <</timed>>\
 <<timed 9s>>\
-The local rescue team is pretty busy generally, and you are kind of far off from their station, so they won’t be able to help you right away.
-
+    <<type 40ms skipkey "Control">>\
+        The local rescue team is pretty busy generally, and you are kind of far off from their station, so they won’t be able to help you right away.
+    <</type>>
 <</timed>>\
 <<timed 14s>>\
-If you want, we are on the way to the rescue station, though. You should be able to reach us just fine and wait for them here. 
+    <<type 40ms skipkey "Control">>\
+        If you want, we are on the way to the rescue station, though. You should be able to reach us just fine and wait for them here. 
+    <</type>>
 <</timed>>\
 <<timed 19s>>\
-We are waiting for you.
-. . .
-
+    <<type 40ms skipkey "Control">>\
+        We are waiting for you.
+        . . .
+    <</type>>
 <</timed>>\
 <<timed 21s>>\
-Now, there’s an asteroid belt on the way, and the rescue team usually tells travellers like you to take a detour, but that’s because y’all don’t know the trick to getting through. You can absolutely try on your own if you want, but if you want to make it, you should get in through the bottom layer of the belt. Much less asteroids there.
+    <<type 40ms skipkey "Control">>\
+        Now, there’s an asteroid belt on the way, and the rescue team usually tells travellers like you to take a detour, but that’s because y’all don’t know the trick to getting through. You can absolutely try on your own if you want, but if you want to make it, you should get in through the bottom layer of the belt. Much less asteroids there.
+    <</type>>
 <</timed>>\
-
 <<timed 36s>>\
-Good luck. We will see you on the other side. If you survive.
+    <<type 40ms skipkey "Control">>\
+    Good luck. We will see you on the other side. If you survive.
 ----
-    <h3>❌ @@color:red;ENDED TRANSMISSION 96.3@@</h3>\
+        <h3>❌ @@color:red;ENDED TRANSMISSION 96.3@@</h3>\
+    <</type>>\
 <</timed>>\
 
 <<nobr>>

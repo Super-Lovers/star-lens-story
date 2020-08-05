@@ -1,15 +1,21 @@
 :: 1. Transmissions
 <<timed 400ms>>\
-<h3>📡 SIGNALS ACQUIRED</h3>\
+    <<type 40ms skipkey "Control">>\
+        <h3>📡 SIGNALS ACQUIRED</h3>\
 ----
+    <</type>>\
 <</timed>>\
-<<timed 800ms>>
-\> @@color:green;You have received @@@@color:red;<b>[3]</b>@@@@color:green; new transmissions.@@
+<<timed 800ms>>\
+    <<type 40ms skipkey "Control">>\
+        \> @@color:green;You have received @@@@color:red;<b>[3]</b>@@@@color:green; new transmissions.@@
+    <</type>>\
 <</timed>>\
-<<timed 1600ms>>
-\> We are currently on the quickest route to the rescue station.
+<<timed 1600ms>>\
+    <<type 40ms skipkey "Control">>\
+        \> We are currently on the quickest route to the rescue station.
 
-@@color:orange;Please be warned, we are entering dangerous territory. Caution is advised.@@
+        @@color:orange;Please be warned, we are entering dangerous territory. Caution is advised.@@
+    <</type>>\
 <</timed>>\
 
 <<nobr>>

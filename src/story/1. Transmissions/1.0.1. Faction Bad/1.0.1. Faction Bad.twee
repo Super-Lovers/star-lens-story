@@ -1,29 +1,40 @@
 :: 1.0.1. Faction Bad
 <<timed 400ms>>\
-    <h3>👨‍🚀 FREQUENCY 99.9</h3>\
+    <<type 40ms skipkey "Control">>\
+        <h3>👨‍🚀 FREQUENCY 99.9</h3>\
 ----
+    <</type>>\
 <</timed>>\
 <<timed 800ms>>\
-Hello? 
+    <<type 40ms skipkey "Control">>\
+        Hello? 
+    <</type>>
 <</timed>>\
 <<timed 1.8s>>\
-This is the local rescue team speaking. 
-
+    <<type 40ms skipkey "Control">>\
+        This is the local rescue team speaking. 
+    <</type>>
 <</timed>>\
 <<timed 3.5s>>\
-We are sorry, but due to unavailability of resources, currently we cannot physically reach you. However, we will be able to guide you towards our station until one of our ships becomes available.
-
+    <<type 40ms skipkey "Control">>\
+        We are sorry, but due to unavailability of resources, currently we cannot physically reach you. However, we will be able to guide you towards our station until one of our ships becomes available.
+    <</type>>
 <</timed>>\
 <<timed 10s>>\
-Considering the extent of the damage on your spaceship, we recommend you stay on course and avoid detours.
-
+    <<type 40ms skipkey "Control">>\
+        Considering the extent of the damage on your spaceship, we recommend you stay on course and avoid detours.
+    <</type>>
 <</timed>>\
 <<timed 14s>>\
-One last thing, there is a group of pirates sending out transmissions impersonating us. We recommend you do not engage with them.
+    <<type 40ms skipkey "Control">>\
+        One last thing, there is a group of pirates sending out transmissions impersonating us. We recommend you do not engage with them.
+    <</type>>\
 <</timed>>\
 <<timed 16s>>\
+    <<type 40ms skipkey "Control">>\
 ----
-    <h3>❌ @@color:red;ENDED TRANSMISSION 99.9@@</h3>\
+        <h3>❌ @@color:red;ENDED TRANSMISSION 99.9@@</h3>\
+    <</type>>\
 <</timed>>\
 
 <<nobr>>
