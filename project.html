@@ -192,11 +192,19 @@ h6 {
     color: #e43f5a;
 }
 
+.macro-link:hover {
+    color: lightcoral;
+}
+
 a {
     text-decoration: none !important;
 }
 
-.macro-link:hover {
+.mirror > .link-internal {
+    color: #e43f5a;
+}
+
+.mirror > .link-internal:hover {
     color: lightcoral;
 }
 
@@ -330,6 +338,11 @@ TEXT STYLES
 	-webkit-animation: shudder linear 0.1s 0s infinite;
 	animation: shudder linear 0.1s 0s infinite;
 	display: inline-block;
+}
+.mirror {
+	display: inline-block;
+	transform: scaleX(-1);
+	-webkit-transform: scaleX(-1);
 }</style><script role="script" id="twine-user-script" type="text/twine-javascript">// UIBar.destroy();
 // UI.alert("test");
 
@@ -630,6 +643,13 @@ $(document).on(&#39;:passagerender&#39;, function (ev) {
             &lt;&lt;print &quot;\\&gt;&quot;&gt;&gt; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc cursus odio ut neque vulputate consectetur. Aenean ut urna nec neque ornare tristique. Aliquam varius consectetur vulputate. Mauris condimentum mauris ultricies, maximus ante quis, ornare velit. Curabitur eget massa pulvinar felis rutrum ultrices.
         &lt;/div&gt;
     &lt;/div&gt;
+&lt;&lt;elseif passage() == &quot;Start&quot; or passage() == &quot;2.0.1.0. Hide Behind Dust Clouds&quot;&gt;&gt;
+    &lt;div id=&quot;console-screen&quot; class=&quot;screen&quot; style=&quot;background-image: none&quot;&gt;
+        &lt;video class=&quot;wallpaper&quot; src=&quot;assets/2. Events/videos/dust_clouds.mp4&quot; playsinline autoplay muted loop&gt;&lt;/video&gt;
+        &lt;div class=&quot;passage-content&quot; style=&quot;overflow-y: hidden; background: none;&quot;&gt;
+            &lt;&lt;print &quot;\\&gt;&quot;&gt;&gt; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc cursus odio ut neque vulputate consectetur. Aenean ut urna nec neque ornare tristique. Aliquam varius consectetur vulputate. Mauris condimentum mauris ultricies, maximus ante quis, ornare velit. Curabitur eget massa pulvinar felis rutrum ultrices.
+        &lt;/div&gt;
+    &lt;/div&gt;
 &lt;&lt;else&gt;&gt;
     &lt;div id=&quot;console-screen&quot; class=&quot;screen&quot; style=&quot;background-image: url(&#39;./assets/UI/mainconsole_fixed.png&#39;)&quot;&gt;
         &lt;div class=&quot;passage-content&quot;&gt;\
@@ -729,7 +749,7 @@ sDDGDFDBCBDGFJGHKMN
         Re&lt;span class=&quot;glitch-text&quot;&gt;pair dama&lt;/span&gt;ge 
     &lt;/button&gt;
 &lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="9" name="0.1.1. Get Information" tags="fixed-ui" position="1100,100" size="100,100">&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
-    &lt;h3&gt;📑 REPORT&lt;/h3&gt;\
+!!! 📑 REPORT
 ----
 &lt;&lt;/type&gt;&gt;\
 &lt;&lt;timed 800ms&gt;&gt;\
@@ -1290,20 +1310,19 @@ Dude, It&#39;s your call.
     name=&quot;2.0.1.1. Proceed&quot;&gt;
         Proceed
 &lt;/button&gt;
-&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="23" name="2.0.1.0. Hide Behind Dust Clouds" tags="" position="350,350" size="100,100">&lt;!-- WRITE PASSAGE STARTING OVER THIS LINE --&gt;
+&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="23" name="2.0.1.0. Hide Behind Dust Clouds" tags="" position="350,350" size="100,100">&lt;div style=&quot;text-align:center;&quot;&gt;
+//As &lt;span class=&quot;glitch-text&quot;&gt;you sit&lt;/span&gt; tightly..
+quietly in your chair..
 
-&lt;&lt;nobr&gt;&gt;
-&lt;!-- ************************************ --&gt;
-&lt;!--       Bottom interface buttons       --&gt;
-&lt;!-- ************************************ --&gt;
-&lt;button
-    class=&quot;link-internal macro-button choice-button&quot;
-    type=&quot;button&quot;
-    tabindex=&quot;0&quot;
-    name=&quot;3.0. Escape with Damaged Shields&quot;&gt;
-        Continue
-&lt;/button&gt;
-&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="24" name="2.0.0.1. Faction Bad" tags="" position="475,350" size="100,100">&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+the &lt;span class=&quot;glitch-text&quot;&gt;ship trembles and&lt;/span&gt; the noise of
+
+dust p&lt;span class=&quot;glitch-text&quot;&gt;articl&lt;/span&gt;es scratching off Ulisse
+
+fills &lt;span class=&quot;glitch-text&quot;&gt;up the&lt;/span&gt; cockpit.
+
+&lt;span class=&quot;mirror&quot;&gt;[[you see void...|3.0. Escape with Damaged Shields]]&lt;/span&gt;
+// 
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="24" name="2.0.0.1. Faction Bad" tags="" position="475,350" size="100,100">&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
     &lt;h3&gt;👨‍🚀 FREQUENCY 99.9&lt;/h3&gt;\
 ----
 &lt;&lt;/type&gt;&gt;\
@@ -1329,6 +1348,8 @@ Our outpost is coming up, so you need to follow the course we send you to get to
 &lt;&lt;/type&gt;&gt;\
 &lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
     \&gt; ☁️ Dust clouds have been spotted in this area
+----
+    \&gt; 📚 Dust clouds might damage systems of your ship and slow you down.
 &lt;&lt;/type&gt;&gt;\
 
 &lt;&lt;nobr&gt;&gt;
@@ -1350,7 +1371,24 @@ Our outpost is coming up, so you need to follow the course we send you to get to
     name=&quot;2.0.1.1. Proceed&quot;&gt;
         Proceed
 &lt;/button&gt;
-&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="25" name="2.0.1.1. Proceed" tags="" position="600,350" size="100,100">&lt;!-- WRITE PASSAGE STARTING OVER THIS LINE --&gt;
+&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="25" name="2.0.1.1. Proceed" tags="" position="600,350" size="100,100">&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+    \&gt; Thrusting Ulisse past the pirates
+&lt;&lt;/type&gt;&gt;\
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+    ...
+&lt;&lt;/type&gt;&gt;\
+&lt;&lt;timed 3s&gt;&gt;\
+    &lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+        \&gt; Ulisse is being scanned
+    &lt;&lt;/type&gt;&gt;\
+    &lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+        ...
+    &lt;&lt;/type&gt;&gt;\
+    &lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+----
+!!! 🛑 @@color:red;Pirate ships entered weapons proximity@@
+    &lt;&lt;/type&gt;&gt;
+&lt;&lt;/timed&gt;&gt;\
 
 &lt;&lt;nobr&gt;&gt;
 &lt;!-- ************************************ --&gt;
@@ -1380,7 +1418,7 @@ We use it sometimes to get out of thick situations!
 &lt;&lt;/type&gt;&gt;\
 &lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
 ----
-    &lt;h3&gt;✔️ Received identity signature&lt;/h3&gt;\
+    &lt;h5&gt;✔️ Received identity signature&lt;/h5&gt;\
 &lt;&lt;/type&gt;&gt;\
 &lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
 ----
@@ -1393,6 +1431,8 @@ We use it sometimes to get out of thick situations!
 &lt;&lt;/type&gt;&gt;\
 &lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
     \&gt; ☁️ Dust clouds have been spotted in this area
+&lt;hr style=&quot;border-top: 1px solid rgba(255, 255, 255, 0.2);&quot;&gt;
+    \&gt; 📚 Dust clouds might damage systems of your ship and slow you down.
 &lt;&lt;/type&gt;&gt;\
 
 &lt;&lt;nobr&gt;&gt;
