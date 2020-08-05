@@ -1,6 +1,39 @@
 :: 3.0.0.1. Faction Bad
-
-<!-- WRITE PASSAGE STARTING OVER THIS LINE -->
+<<type 40ms skipkey "Control">>\
+    <h3>👨‍🚀 FREQUENCY 99.9</h3>\
+----
+<</type>>\
+<<type 40ms skipkey "Control">>\
+    Ulisse, we are glad you made it this close to out rescuer outpost, but we need your help if possible! 
+<</type>>
+<<type 40ms skipkey "Control">>\
+    There is a damaged ship nearby and we need help to make sure everybody onboard is safely escorted to our rescue outpost. 
+<</type>>
+<<type 40ms skipkey "Control">>\
+    Can you give us a hand or do you prefer to wait for us to escort you to the outpost?
+<</type>>\
+<<type 40ms skipkey "Control">>\
+----
+    <h3>❌ @@color:red;ENDED TRANSMISSION 99.9@@</h3>\
+<</type>>\
+<<type 40ms skipkey "Control">>\
+!!!! 💡 Scanners notification
+----
+<</type>>\
+<<type 40ms skipkey "Control">>\
+    \> Unidentified ship 🛰️ detected
+<</type>>\
+<<type 40ms skipkey "Control">>\
+    \> Scanning ship status
+    ...
+<</type>>\
+<<type 40ms skipkey "Control">>\
+* Engine - ❌ @@color:red;Needs repairs@@
+* Navigation - ❌ @@color:red;Needs repairs@@
+* Sensors - ⚡ @@color:orange;Damaged@@
+* Shields - ⚡ @@color:orange;Damaged@@
+* Life-support - ✔️ @@color:green;OK@@
+<</type>>\
 
 <<nobr>>
 <!-- ************************************ -->
@@ -10,7 +43,14 @@
     class="link-internal macro-button choice-button"
     type="button"
     tabindex="0"
-    name="3.0.1.1. Stop to Help">
+    name="3.0.1.0. Signal to Faction Good">
+        Signal to rescuers and continue
+</button>
+<button
+    class="link-internal macro-button choice-button"
+    type="button"
+    tabindex="0"
+    name="3.0.1.0. Signal to Faction Good">
         Stop to help
 </button>
 <</nobr>>

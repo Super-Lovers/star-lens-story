@@ -182,20 +182,19 @@ textarea:not(:disabled):hover {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 10px;
-    padding: 10px;
+    padding: 5px 10px;
 
     width: 60%;
 
     background-color: transparent;
     border: none;
-    background-image: url('./assets/UI/longbutton_selected.png');
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-color: #3693fa;
 
     font-family: "Cordata";
     font-size: calc(0.4em + 0.7vw);
-    border: none;
+    line-height: 18px;
+    border: 2px solid #1871d4;
+    border-radius: 5px;
 }
 
 #choices-screen > span > span > .macro-button:hover, #choices-screen > .macro-button:hover {

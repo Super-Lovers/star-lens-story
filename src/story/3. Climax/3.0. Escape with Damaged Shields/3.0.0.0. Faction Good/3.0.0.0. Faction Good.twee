@@ -1,6 +1,42 @@
 :: 3.0.0.0. Faction Good
-
-<!-- WRITE PASSAGE STARTING OVER THIS LINE -->
+<<type 40ms skipkey "Control">>\
+    <h3>👽 FREQUENCY 108.5</h3>\
+----
+<</type>>\
+<<type 40ms skipkey "Control">>\
+    Dang, bro, you made it past the pirates, didn't you? We knew it would work this time!
+<</type>>
+<<type 40ms skipkey "Control">>\
+    Our scans show your shields have weakened, but thankfully you passed the pirates so they aren't necessary.
+<</type>>
+<<type 40ms skipkey "Control">>\
+    This region should be outside the pirates' borders, so it's just a matter of time before you're safe with us!
+<</type>>
+<<type 40ms skipkey "Control">>\
+    Our outpost is close ahead, so get moving, we are waiting for you.
+<</type>>\
+<<type 40ms skipkey "Control">>\
+----
+    <h3>❌ @@color:red;ENDED TRANSMISSION 108.5@@</h3>\
+<</type>>\
+<<type 40ms skipkey "Control">>\
+!!!! 💡 Scanners notification
+----
+<</type>>\
+<<type 40ms skipkey "Control">>\
+    \> Unidentified ship 🛰️ detected
+<</type>>\
+<<type 40ms skipkey "Control">>\
+    \> Scanning ship status
+    ...
+<</type>>\
+<<type 40ms skipkey "Control">>\
+* Engine - ❌ @@color:red;Needs repairs@@
+* Navigation - ❌ @@color:red;Needs repairs@@
+* Sensors - ⚡ @@color:orange;Damaged@@
+* Shields - ⚡ @@color:orange;Damaged@@
+* Life-support - ✔️ @@color:green;OK@@
+<</type>>\
 
 <<nobr>>
 <!-- ************************************ -->
@@ -11,6 +47,13 @@
     type="button"
     tabindex="0"
     name="3.0.1.0. Signal to Faction Good">
-        Signal to faction Good
+        Signal to rescuers and continue
+</button>
+<button
+    class="link-internal macro-button choice-button"
+    type="button"
+    tabindex="0"
+    name="3.0.1.0. Signal to Faction Good">
+        Stop to help
 </button>
 <</nobr>>
