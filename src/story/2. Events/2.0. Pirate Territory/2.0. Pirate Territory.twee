@@ -1,8 +1,19 @@
 :: 2.0. Pirate Territory
 
 <<type 40ms skipkey "Control">>
-	Type characters from this content every 40 milliseconds, using the Control (CTRL) key as the skip key.
-<</type>>
+    \> Asteroid belt has successfully been passed.
+
+    \> No damage was caused in the maneuver.
+<</type>>\
+<<timed 3s>>\
+----
+    <<type 40ms skipkey "Control">>\
+        <h3>📡 SIGNALS ACQUIRED</h3>\
+!!! ⚠️ WARNING
+----
+        \> @@color:orange;Scans have revealed the presence of <b>pirate signatures</b> in this region of space.@@ Caution is advised.
+    <</type>>
+<</timed>>\
 
 <<nobr>>
 <!-- ************************************ -->

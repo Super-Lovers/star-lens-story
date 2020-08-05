@@ -1,6 +1,39 @@
 :: 2.0.0.0. Faction Good
+<<type 40ms skipkey "Control">>\
+    <h3>👽 FREQUENCY 108.5</h3>\
+----
+<</type>>\
+<<type 40ms skipkey "Control">>\
+Look at that! You made it through the belt bro. I'm sorry for not being there to help you..
 
-<!-- WRITE PASSAGE STARTING OVER THIS LINE -->
+<</type>>\
+<<type 40ms skipkey "Control">>\
+What.
+
+<</type>>\
+<<type 40ms skipkey "Control">>\
+<span class="shudder">Oh ma god</span>, you're telling me there are @@color:red;pirates@@ in this area? 
+
+...
+
+<</type>>\
+<<type 40ms skipkey "Control">>\
+Ok, they don't see you yet right, so you still have a chance. There's a pocket of dust clouds nearby that you can use to pass through undetected, however..
+
+<</type>>\
+<<type 40ms skipkey "Control">>\
+Chief, @@color:red;dust clouds affect ship systems@@ in different ways, there's no telling how your baby will fly afterwards, but to me it looks safer than taking your chances with the pirates.
+
+...
+
+<</type>>\
+<<type 40ms skipkey "Control">>\
+Dude, It's your call.
+<</type>>\
+<<type 40ms skipkey "Control">>\
+----
+    <h3>❌ @@color:red;ENDED TRANSMISSION 108.5@@</h3>\
+<</type>>\
 
 <<nobr>>
 <!-- ************************************ -->
@@ -11,7 +44,7 @@
     type="button"
     tabindex="0"
     name="2.0.1.0. Hide Behind Dust Clouds">
-        Hide behind dust clouds
+        Hide behind clouds
 </button>
 
 <button

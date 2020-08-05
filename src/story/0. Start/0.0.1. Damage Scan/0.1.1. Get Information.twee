@@ -20,7 +20,7 @@
 <</timed>>\
 <<timed 2400ms>>
     <<type 40ms skipkey "Control">>\
-!!! 🔎 Likely cause
+!!!! 💡 Likely cause
 ----
         \> @@color:red;Outside source - 89%@@
 

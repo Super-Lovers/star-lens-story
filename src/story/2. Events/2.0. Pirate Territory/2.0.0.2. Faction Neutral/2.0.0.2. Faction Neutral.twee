@@ -1,6 +1,35 @@
 :: 2.0.0.2. Faction Neutral
+<<type 40ms skipkey "Control">>\
+    <h3>🐔 FREQUENCY 96.3</h3>\
+----
+<</type>>\
+<<type 40ms skipkey "Control">>\
+You made it through the asteroid belt, impressive. Unfortunately, you exited through a different pocket so now you're stuck in the region infamous for its pirate presence.
+<</type>>
+<<type 40ms skipkey "Control">>\
+Well.. if you don't want our help, that's fine.
+<</type>>
+<<type 40ms skipkey "Control">>\
+We can't get to you from here, but we can at least give you a digital signature that pirates use to recognize you as one of them. 
 
-<!-- WRITE PASSAGE STARTING OVER THIS LINE -->
+We use it sometimes to get out of thick situations!
+<</type>>\
+<<type 40ms skipkey "Control">>\
+----
+    <h3>✔️ Received identity signature</h3>\
+<</type>>\
+<<type 40ms skipkey "Control">>\
+----
+    <h3>❌ @@color:red;ENDED TRANSMISSION 96.3@@</h3>\
+<</type>>\
+<<type 40ms skipkey "Control">>\
+----
+!!!! 💡 Scanners notification
+----
+<</type>>\
+<<type 40ms skipkey "Control">>\
+    \> ☁️ Dust clouds have been spotted in this area
+<</type>>\
 
 <<nobr>>
 <!-- ************************************ -->
@@ -11,7 +40,7 @@
     type="button"
     tabindex="0"
     name="2.0.1.0. Hide Behind Dust Clouds">
-        Hide behind dust clouds
+        Hide behind clouds
 </button>
 
 <button
@@ -27,6 +56,6 @@
     type="button"
     tabindex="0"
     name="2.0.1.2. Display Sign">
-        Display sign
+        Use signature
 </button>
 <</nobr>>
