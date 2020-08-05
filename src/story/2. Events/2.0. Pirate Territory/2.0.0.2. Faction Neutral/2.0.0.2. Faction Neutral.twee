@@ -16,7 +16,7 @@ We use it sometimes to get out of thick situations!
 <</type>>\
 <<type 40ms skipkey "Control">>\
 ----
-    <h3>✔️ Received identity signature</h3>\
+    <h5>✔️ Received identity signature</h5>\
 <</type>>\
 <<type 40ms skipkey "Control">>\
 ----
@@ -29,6 +29,8 @@ We use it sometimes to get out of thick situations!
 <</type>>\
 <<type 40ms skipkey "Control">>\
     \> ☁️ Dust clouds have been spotted in this area
+<hr style="border-top: 1px solid rgba(255, 255, 255, 0.2);">
+    \> 📚 Dust clouds might damage systems of your ship and slow you down.
 <</type>>\
 
 <<nobr>>

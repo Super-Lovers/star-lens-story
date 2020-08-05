@@ -1,6 +1,6 @@
 :: 0.1.1. Get Information [fixed-ui]
 <<type 40ms skipkey "Control">>\
-    <h3>📑 REPORT</h3>\
+!!! 📑 REPORT
 ----
 <</type>>\
 <<timed 800ms>>\

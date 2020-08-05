@@ -94,11 +94,19 @@ h6 {
     color: #e43f5a;
 }
 
+.macro-link:hover {
+    color: lightcoral;
+}
+
 a {
     text-decoration: none !important;
 }
 
-.macro-link:hover {
+.mirror > .link-internal {
+    color: #e43f5a;
+}
+
+.mirror > .link-internal:hover {
     color: lightcoral;
 }
 
@@ -232,4 +240,9 @@ TEXT STYLES
 	-webkit-animation: shudder linear 0.1s 0s infinite;
 	animation: shudder linear 0.1s 0s infinite;
 	display: inline-block;
+}
+.mirror {
+	display: inline-block;
+	transform: scaleX(-1);
+	-webkit-transform: scaleX(-1);
 }

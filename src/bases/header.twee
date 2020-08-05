@@ -22,6 +22,13 @@
             <<print "\\>">> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc cursus odio ut neque vulputate consectetur. Aenean ut urna nec neque ornare tristique. Aliquam varius consectetur vulputate. Mauris condimentum mauris ultricies, maximus ante quis, ornare velit. Curabitur eget massa pulvinar felis rutrum ultrices.
         </div>
     </div>
+<<elseif passage() == "Start" or passage() == "2.0.1.0. Hide Behind Dust Clouds">>
+    <div id="console-screen" class="screen" style="background-image: none">
+        <video class="wallpaper" src="assets/2. Events/videos/dust_clouds.mp4" playsinline autoplay muted loop></video>
+        <div class="passage-content" style="overflow-y: hidden; background: none;">
+            <<print "\\>">> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc cursus odio ut neque vulputate consectetur. Aenean ut urna nec neque ornare tristique. Aliquam varius consectetur vulputate. Mauris condimentum mauris ultricies, maximus ante quis, ornare velit. Curabitur eget massa pulvinar felis rutrum ultrices.
+        </div>
+    </div>
 <<else>>
     <div id="console-screen" class="screen" style="background-image: url('./assets/UI/mainconsole_fixed.png')">
         <div class="passage-content">\
