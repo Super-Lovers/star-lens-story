@@ -8,11 +8,8 @@
 <<timed 1s>>\
     <<type 40ms skipkey "Control">>\
         Hey bro, we got your signal. We are the rescue crew of this area, so you can count on us to help you out!
+        . . .
     <</type>>
-<<timed 3s>>\
-. . .
-<</timed>>\
-
 <</timed>>\
 <<timed 4s>>\
     <<type 40ms skipkey "Control">>\

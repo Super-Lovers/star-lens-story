@@ -1,6 +1,10 @@
 :: 2.0.0.2. Faction Neutral
-
-<!-- WRITE PASSAGE STARTING OVER THIS LINE -->
+<<timed 400ms>>\
+    <<type 40ms skipkey "Control">>\
+        <h3>🐔 FREQUENCY 96.3</h3>\
+----
+    <</type>>\
+<</timed>>\
 
 <<nobr>>
 <!-- ************************************ -->

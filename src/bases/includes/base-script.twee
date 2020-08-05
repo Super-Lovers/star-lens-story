@@ -1,6 +1,7 @@
 :: base-script [script]
 
 // UIBar.destroy();
+// UI.alert("test");
 
 /****************************************
 // Interface elements (including consoles)
