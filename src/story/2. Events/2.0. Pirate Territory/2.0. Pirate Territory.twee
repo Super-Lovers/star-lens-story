@@ -1,6 +1,8 @@
 :: 2.0. Pirate Territory
 
-<!-- WRITE PASSAGE STARTING OVER THIS LINE -->
+<<type 40ms skipkey "Control">>
+	Type characters from this content every 40 milliseconds, using the Control (CTRL) key as the skip key.
+<</type>>
 
 <<nobr>>
 <!-- ************************************ -->

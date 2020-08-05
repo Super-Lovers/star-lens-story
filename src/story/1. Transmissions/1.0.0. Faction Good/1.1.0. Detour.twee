@@ -1,6 +1,37 @@
 :: 1.1.0. Detour
 
-<!-- WRITE PASSAGE STARTING OVER THIS LINE -->
+<<timed 0.5s>>\
+    <<type 40ms skipkey "Control">>\
+        \> Receiving data on analysis of asteroid belt...
+    <</type>>
+<</timed>>\
+<<timed 2.5s>>\
+    <<type 40ms skipkey "Control">>\
+!!! ✔️ DATA PACKAGE RECEIVED
+----
+    <</type>>\
+<</timed>>\
+<<timed 3.0s>>\
+    <<type 40ms skipkey "Control">>\
+        \> Directions to least-harmful regions of belt
+    <</type>>\
+<</timed>>\
+<<timed 5.0s>>\
+    <<type 40ms skipkey "Control">>\
+        \> Gravity Assist patterns of asteroids
+    <</type>>
+<</timed>>\
+<<timed 7s>>\
+    <<type 40ms skipkey "Control">>\
+----
+        <h3>❌ @@color:red;ENDED PACKAGE STREAM@@</h3>\
+    <</type>>\
+<</timed>>\
+<<timed 7s>>\
+    <<type 40ms skipkey "Control">>\
+        \> Confirm performing "Rich Purnell" Maneuver.
+    <</type>>\
+<</timed>>\
 
 <<nobr>>
 <!-- ************************************ -->
@@ -11,6 +42,6 @@
     type="button"
     tabindex="0"
     name="2.0. Pirate Territory">
-        Pirate territory
+        Confirm
 </button>
 <</nobr>>
