@@ -331,6 +331,7 @@ TEXT STYLES
 	animation: shudder linear 0.1s 0s infinite;
 	display: inline-block;
 }</style><script role="script" id="twine-user-script" type="text/twine-javascript">// UIBar.destroy();
+// UI.alert("test");
 
 /****************************************
 // Interface elements (including consoles)
@@ -903,11 +904,8 @@ Please
 &lt;&lt;timed 1s&gt;&gt;\
     &lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
         Hey bro, we got your signal. We are the rescue crew of this area, so you can count on us to help you out!
+        . . .
     &lt;&lt;/type&gt;&gt;
-&lt;&lt;timed 3s&gt;&gt;\
-. . .
-&lt;&lt;/timed&gt;&gt;\
-
 &lt;&lt;/timed&gt;&gt;\
 &lt;&lt;timed 4s&gt;&gt;\
     &lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
@@ -1189,8 +1187,19 @@ Please
         Temperature control
 &lt;/button&gt;
 &lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="21" name="2.0. Pirate Territory" tags="" position="100,350" size="100,100">&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;
-	Type characters from this content every 40 milliseconds, using the Control (CTRL) key as the skip key.
-&lt;&lt;/type&gt;&gt;
+    \&gt; Asteroid belt has successfully been passed.
+
+    \&gt; No damage was caused in the maneuver.
+&lt;&lt;/type&gt;&gt;\
+&lt;&lt;timed 3s&gt;&gt;\
+----
+    &lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+        &lt;h3&gt;📡 SIGNALS ACQUIRED&lt;/h3&gt;\
+!!! ⚠️ WARNING
+----
+        \&gt; @@color:orange;Scans have revealed the presence of &lt;b&gt;pirate signatures&lt;/b&gt; in this region of space.@@ Caution is advised.
+    &lt;&lt;/type&gt;&gt;
+&lt;&lt;/timed&gt;&gt;\
 
 &lt;&lt;nobr&gt;&gt;
 &lt;!-- ************************************ --&gt;
@@ -1219,7 +1228,41 @@ Please
     name=&quot;2.0.0.2. Faction Neutral&quot;&gt;
         Frequency (96.3)
 &lt;/button&gt;
-&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="22" name="2.0.0.0. Faction Good" tags="" position="225,350" size="100,100">&lt;!-- WRITE PASSAGE STARTING OVER THIS LINE --&gt;
+&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="22" name="2.0.0.0. Faction Good" tags="" position="225,350" size="100,100">&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+    &lt;h3&gt;👽 FREQUENCY 108.5&lt;/h3&gt;\
+----
+&lt;&lt;/type&gt;&gt;\
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+Look at that! You made it through the belt bro. I&#39;m sorry for not being there to help you..
+
+&lt;&lt;/type&gt;&gt;\
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+What.
+
+&lt;&lt;/type&gt;&gt;\
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+&lt;span class=&quot;shudder&quot;&gt;Oh ma god&lt;/span&gt;, you&#39;re telling me there are @@color:red;pirates@@ in this area? 
+
+...
+
+&lt;&lt;/type&gt;&gt;\
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+Ok, they don&#39;t see you yet right, so you still have a chance. There&#39;s a pocket of dust clouds nearby that you can use to pass through undetected, however..
+
+&lt;&lt;/type&gt;&gt;\
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+Chief, @@color:red;dust clouds affect ship systems@@ in different ways, there&#39;s no telling how your baby will fly afterwards, but to me it looks safer than taking your chances with the pirates.
+
+...
+
+&lt;&lt;/type&gt;&gt;\
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+Dude, It&#39;s your call.
+&lt;&lt;/type&gt;&gt;\
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+----
+    &lt;h3&gt;❌ @@color:red;ENDED TRANSMISSION 108.5@@&lt;/h3&gt;\
+&lt;&lt;/type&gt;&gt;\
 
 &lt;&lt;nobr&gt;&gt;
 &lt;!-- ************************************ --&gt;
@@ -1253,7 +1296,12 @@ Please
     name=&quot;3.0. Escape with Damaged Shields&quot;&gt;
         Continue
 &lt;/button&gt;
-&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="24" name="2.0.0.1. Faction Bad" tags="" position="475,350" size="100,100">&lt;!-- WRITE PASSAGE STARTING OVER THIS LINE --&gt;
+&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="24" name="2.0.0.1. Faction Bad" tags="" position="475,350" size="100,100">&lt;&lt;timed 400ms&gt;&gt;\
+    &lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+        &lt;h3&gt;👨‍🚀 FREQUENCY 99.9&lt;/h3&gt;\
+----
+    &lt;&lt;/type&gt;&gt;\
+&lt;&lt;/timed&gt;&gt;\
 
 &lt;&lt;nobr&gt;&gt;
 &lt;!-- ************************************ --&gt;
@@ -1287,7 +1335,12 @@ Please
     name=&quot;3.1. You Are Attacked&quot;&gt;
         Continue
 &lt;/button&gt;
-&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="26" name="2.0.0.2. Faction Neutral" tags="" position="725,350" size="100,100">&lt;!-- WRITE PASSAGE STARTING OVER THIS LINE --&gt;
+&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="26" name="2.0.0.2. Faction Neutral" tags="" position="725,350" size="100,100">&lt;&lt;timed 400ms&gt;&gt;\
+    &lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+        &lt;h3&gt;🐔 FREQUENCY 96.3&lt;/h3&gt;\
+----
+    &lt;&lt;/type&gt;&gt;\
+&lt;&lt;/timed&gt;&gt;\
 
 &lt;&lt;nobr&gt;&gt;
 &lt;!-- ************************************ --&gt;
