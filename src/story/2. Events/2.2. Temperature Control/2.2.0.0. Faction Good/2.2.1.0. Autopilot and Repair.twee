@@ -1,6 +1,18 @@
 :: 2.2.1.0. Autopilot and Repair
 
-<!-- WRITE PASSAGE STARTING OVER THIS LINE -->
+ENTERING EMERGENCY REPAIR MODE.
+
+AUTOPILOT ENGAGED TO PRESET DESTINATION.
+THIS MODE ENGAGES AUTOMATICALLY TO PREVENT ADDITIONAL DAMAGES AND ENSURE THE SAFETY OF THE CARGO.
+
+You may experience a shift in temperature at this time.
+
+\> Initiating system repair. . .
+\> System repair in progress. . .
+\> System repair complete
+\> Calibrating temperature control
+
+TEMPERATURE CONTROL STATUS - ONLINE AND OPERATIONAL
 
 <<nobr>>
 <!-- ************************************ -->
