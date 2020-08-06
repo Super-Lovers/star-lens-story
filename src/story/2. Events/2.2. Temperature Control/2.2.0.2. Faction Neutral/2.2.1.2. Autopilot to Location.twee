@@ -1,6 +1,30 @@
 :: 2.2.1.2. Autopilot to Location
 
-<!-- WRITE PASSAGE STARTING OVER THIS LINE -->
+\> New coordinates received
+
+\> Analysing new coordinates
+
+\> Analysis complete.
+
+\> Inputting new route. . .
+
+\> Route changed.
+
+WARNING - ENTERING EMERGENCY PATCH MODE?
+THIS MODE SUPPLIES AN EMERGENCY TEMPORARY SYSTEM REPAIR AND IS ADVISED AS A SHORT TERM SOLUTION ONLY.
+
+\> Entering emergency patch mode. . .
+AUTOPILOT ENGAGED TO PRESET DESTINATION.
+THIS MODE ENGAGES AUTOMATICALLY TO PREVENT ADDITIONAL DAMAGES AND ENSURE THE SAFETY OF THE CARGO.
+
+You may experience a shift in temperature at this time.
+
+\> Initiating system patch. . .
+\> System patch in progress. . .
+\> System patch complete
+\> Calibrating temperature control
+
+TEMPERATURE CONTROL STATUS - OPERATIONAL AT 65% CAPACITY
 
 <<nobr>>
 <!-- ************************************ -->
