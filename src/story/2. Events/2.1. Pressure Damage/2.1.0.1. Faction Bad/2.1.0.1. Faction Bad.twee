@@ -1,13 +1,24 @@
 :: 2.1.0.1. Faction Bad
-
-Hello, it seems you have made it. 
-It is unfortunate that your ship sustained additional damage.
-At this time, your ship will be requesting immediate repairs. Please, disregard those warnings.
-
-You are almost at your destination. Heeding those warnings will only delay your rescue and expose you to unnecessary dangers.
-You almost made it. You can push your ship a little further.
-
-
+<<type 40ms skipkey "Control">>\
+    <h3>👨‍🚀 FREQUENCY 99.9</h3>\
+----
+<</type>>\
+<<type 40ms skipkey "Control">>
+    \@@color:gray;>@@ Hello, it seems you have made it. 
+<</type>>
+<<type 40ms skipkey "Control">>
+    \@@color:gray;>@@ It is unfortunate that your ship sustained additional damage. At this time, your ship will be requesting immediate repairs. Please, disregard those warnings.
+<</type>>
+<<type 40ms skipkey "Control">>
+    \@@color:gray;>@@ You are almost at your destination. Heeding those warnings will only delay your rescue and expose you to unnecessary dangers.
+<</type>>
+<<type 40ms skipkey "Control">>
+    \@@color:gray;>@@ You almost made it. You can push your ship a little further.
+<</type>>\
+<<type 40ms skipkey "Control">>\
+----
+    <h3>❌ @@color:red;ENDED TRANSMISSION 99.9@@</h3>\
+<</type>>\
 
 <<nobr>>
 <!-- ************************************ -->

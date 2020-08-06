@@ -1,22 +1,37 @@
 :: 2.1. Pressure Damage
-
+<<type 40ms skipkey "Control">>\
 . . .
+<</type>>
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ 🌑 ASTEROID BELT CLEARED.
+<</type>>\
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ The route chosen has granted passage in minimal time. Approximated arrival time 2 hours.
+<</type>>
+<<type 40ms skipkey "Control">>\
+----
+    \@@color:gray;>@@ Analysing damage received. . . 
+<</type>>\
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ ✔️ Analysis complete.
+<</type>>
+<<type 40ms skipkey "Control">>\
+----
+!!! @@color:orange; ⚠️ WARNING - CRITICAL DAMAGE TO PRESSURIZING SYSTEM DETECTED.@@
+<</type>>\
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ @@color:red;IMMEDIATE ACTION REQUIRED.@@
 
-ASTEROID BELT CLEARED.
-The route chosen has granted passage in minimal time. Approximated arrival time 2 hours.
+    \@@color:gray;>@@ SUGGESTED ACTION: CRITICAL REPAIR.
 
-Analysing damage received. . . 
-
-Analysis complete.
-
-WARNING - CRITICAL DAMAGE TO PRESSURIZING SYSTEM DETECTED.
-
-IMMEDIATE ACTION REQUIRED.
-SUGGESTED ACTION: CRITICAL REPAIR.
-
-YOU HAVE RECEIVED [3] NEW TRANSMISSIONS.
-
-PLEASE BE WARNED, EXCESSIVE DELAY MAY CAUSE IRREVERSIBLE DAMAGE TO THE SHIP.
+----
+<</type>>\
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ @@color:green;You have 📡 received @@@@color:red;<b>[3]</b>@@@@color:green; new transmissions.@@
+<</type>>\
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ @@color:orange;PLEASE BE WARNED, EXCESSIVE DELAY MAY CAUSE IRREVERSIBLE DAMAGE TO THE SHIP.@@
+<</type>>
 
 <<nobr>>
 <!-- ************************************ -->

@@ -1,17 +1,36 @@
 :: 2.1.0.0. Faction Good
-
-Hello? Hello??
-Hey, if you receive this, we hope you are okay.
-
-We followed your signal THROUGH THE ASTEROID BELT, MAN. WHAT THE HELL.
-
-How are you alive????
-There is no way your spaceship didn't get banged up in there???
-Please bro just. No more bullshit like this.
-
-If there's any critical damage you should follow your ship's instruction and avoid getting into trouble.
-Our bros are almost back with the carrier ship so we'll be able to come for your as long as you SURVIVE.
-UNBELIEVABLE.
+<<type 40ms skipkey "Control">>\
+    <h3>👽 FREQUENCY 108.5</h3>\
+----
+<</type>>\
+<<type 40ms skipkey "Control">>
+    \@@color:gray;>@@ Hello? Hello??
+<</type>>
+<<type 40ms skipkey "Control">>
+    \@@color:gray;>@@ Hey, if you receive this, we hope you are okay.
+<</type>>
+<<type 40ms skipkey "Control">>
+    \@@color:gray;>@@ We followed your signal THROUGH THE 🌑 ASTEROID BELT, MAN. WHAT THE HELL.
+<</type>>
+<<type 40ms skipkey "Control">>
+    \@@color:gray;>@@ How are you alive????
+<</type>>
+<<type 40ms skipkey "Control">>
+    \@@color:gray;>@@ There is no way your spaceship didn't get banged up in there??? Please bro just. No more bullshit like this.
+<</type>>
+<<type 40ms skipkey "Control">>
+    \@@color:gray;>@@ If there's any critical damage you should follow your ship's instruction and avoid getting into trouble.
+<</type>>
+<<type 40ms skipkey "Control">>
+    \@@color:gray;>@@ Our bros are almost back with the carrier ship so we'll be able to come for your as long as you SURVIVE.
+<</type>>
+<<type 40ms skipkey "Control">>
+    \@@color:gray;>@@ UNBELIEVABLE.
+<</type>>\
+<<type 40ms skipkey "Control">>\
+----
+    <h3>❌ @@color:red;ENDED TRANSMISSION 108.5@@</h3>\
+<</type>>\
 
 <<nobr>>
 <!-- ************************************ -->

@@ -1,13 +1,24 @@
 :: 1.1.1. Move Forward
-
-DATA ANALYSIS OF ASTEROID BELT IN PROGRESS. . . 
-DATA ANALYSIS COMPLETED
-
-WARNING - DIRECT ROUTE SELECTED INCREASES RISK OF ADDITIONAL DAMAGES TO SHIP BY 64%
-LIKELIHOOD OF IRREVERSIBLE DAMAGE - 30%
-The selected route is potentially the most dangerous, however it is the shortest to the destination.
-
-PROCEED?
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ DATA ANALYSIS OF 🌑 ASTEROID BELT IN PROGRESS. . . 
+<</type>>\
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ ✔️ DATA ANALYSIS COMPLETED
+----
+<</type>>\
+<<type 40ms skipkey "Control">>\
+!!! ⚠️ @@color:orange;WARNING - DIRECT ROUTE SELECTED INCREASES RISK OF ADDITIONAL DAMAGES TO SHIP BY 64%@@
+----
+<</type>>\
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ LIKELIHOOD OF IRREVERSIBLE DAMAGE - 30%
+<</type>>\
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ The selected route is @@color:red;potentially the most dangerous@@, however it is the shortest to the destination.
+<</type>>\
+<<type 40ms skipkey "Control">>\
+\@@color:gray;>@@ PROCEED?
+<</type>>\
 
 <<nobr>>
 <!-- ************************************ -->

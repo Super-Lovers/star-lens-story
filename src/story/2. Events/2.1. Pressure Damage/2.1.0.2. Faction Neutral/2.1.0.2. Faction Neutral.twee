@@ -1,13 +1,27 @@
 :: 2.1.0.2. Faction Neutral
-
-Ah.
-So you made it through the belt. Impressive.
-But you won't last much longer.
-
-Someone is coming for you. They won't be friendly.
-Maybe you are dead already.
-
-Goodbye.
+<<type 40ms skipkey "Control">>\
+    <h3>🐔 FREQUENCY 96.3</h3>\
+----
+<</type>>\
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ Ah.
+<</type>>
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ So you made it through the 🌑 belt. Impressive. But you won't last much longer.
+<</type>>
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ Someone is coming for you. They won't be friendly.
+<</type>>
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ @@color:red;Maybe you are dead already.@@
+<</type>>
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ Goodbye.
+<</type>>\
+<<type 40ms skipkey "Control">>\
+----
+    <h3>❌ @@color:red;ENDED TRANSMISSION 96.3@@</h3>\
+<</type>>\
 
 <<nobr>>
 <!-- ************************************ -->

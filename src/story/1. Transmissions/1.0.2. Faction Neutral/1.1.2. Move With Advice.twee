@@ -1,6 +1,6 @@
 :: 1.1.2. Move With Advice
 <<type 40ms skipkey "Control">>\
-    \@@color:gray;>@@ Receiving data on analysis of asteroid belt...
+    \@@color:gray;>@@ Receiving data on analysis of 🌑 asteroid belt...
 <</type>>\
 <<type 40ms skipkey "Control">>\
 ----
@@ -10,11 +10,12 @@
     \@@color:gray;>@@ Data analysis in progress. . .
 <</type>>\
 <<type 40ms skipkey "Control">>\
-    \@@color:gray;>@@ Data analysis completed ✔️
+    \@@color:gray;>@@ ✔️ Data analysis completed
 ----
 <</type>>\
 <<type 40ms skipkey "Control">>\
     <h3> ⚠️ @@color:orange; WARNING - PROBABILITY OF COLLISION CALCULATED AT 12% @@</h3>\
+----
     \@@color:gray;>@@ Engage new trajectory?
 <</type>>\
 

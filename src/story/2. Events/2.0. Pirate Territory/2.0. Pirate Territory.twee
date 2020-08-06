@@ -1,7 +1,7 @@
 :: 2.0. Pirate Territory
 
 <<type 40ms skipkey "Control">>
-    \@@color:gray;>@@ Asteroid belt has successfully been passed.
+    \@@color:gray;>@@ 🌑 Asteroid belt has successfully been passed.
 
     \@@color:gray;>@@ No damage was caused in the maneuver.
 <</type>>\
