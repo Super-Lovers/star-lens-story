@@ -1,6 +1,36 @@
 :: 1.1.2. Move With Advice
 
-<!-- WRITE PASSAGE STARTING OVER THIS LINE -->
+<<timed 0.5s>>\
+    <<type 40ms skipkey "Control">>\
+        \> Receiving data on analysis of asteroid belt...
+    <</type>>
+<</timed>>\
+<<timed 2.5s>>\
+    <<type 40ms skipkey "Control">>\
+!!! ✔️ DATA PACKAGE RECEIVED
+----
+    <</type>>\
+<</timed>>\
+
+<<timed 3.0s>>\
+    <<type 40ms skipkey "Control">>\
+        \> Data analysis in progress. . .
+<</type>>\
+<</timed>>\
+<<timed 5.0s>>\
+    <<type 40ms skipkey "Control">>\
+        \> Data analysis completed ✔️
+    <</type>>
+<</timed>>\
+
+----
+
+<<timed 7s>>\
+    <<type 40ms skipkey "Control">>\
+        <h3> @@color:orange; WARNING - PROBABILITY OF COLLISION CALCULATED AT 12% @@</h3>\
+Engage new trajectory?
+<</type>>\
+<</timed>>\
 
 <<nobr>>
 <!-- ************************************ -->
@@ -11,6 +41,6 @@
     type="button"
     tabindex="0"
     name="2.2. Temperature Control">
-        Temperature control
+        Continue
 </button>
 <</nobr>>
