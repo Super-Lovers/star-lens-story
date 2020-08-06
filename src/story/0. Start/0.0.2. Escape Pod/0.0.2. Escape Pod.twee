@@ -1,9 +1,9 @@
 :: 0.0.2. Escape Pod [broken-ui]
 ----
-\> 60% function- <span class="glitch-text">oigjdfoigjfsioggdfopgjgpdfgpdfogdfopgdpfogkdfpobkhdfopgkfsdogp</span>
+\@@color:gray;>@@ 60% function- <span class="glitch-text">oigjdfoigjfsioggdfopgjgpdfgpdfogdfopgdpfogkdfpobkhdfopgkfsdogp</span>
 
-\> Disemba<span class="glitch-text">rk  recommended </span>
-\> Proceed?
+\@@color:gray;>@@ Disemba<span class="glitch-text">rk  recommended </span>
+\@@color:gray;>@@ Proceed?
 
 <<nobr>>
 <!-- ************************************ -->

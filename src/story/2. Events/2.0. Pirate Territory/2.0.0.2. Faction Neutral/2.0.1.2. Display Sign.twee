@@ -1,17 +1,17 @@
 :: 2.0.1.2. Display Sign
 
 <<type 40ms skipkey "Control">>\
-    \> Thrusting Ulisse past the pirates
+    \@@color:gray;>@@ Thrusting Ulisse past the pirates
 <</type>>\
 <<type 40ms skipkey "Control">>\
     ...
 <</type>>\
 <<timed 3s>>\
     <<type 40ms skipkey "Control">>\
-        \> Ulisse is being scanned
+        \@@color:gray;>@@ Ulisse is being scanned
     <</type>>\
     <<type 40ms skipkey "Control">>\
-        \> 📡 Sending identity signature..
+        \@@color:gray;>@@ 📡 Sending identity signature..
     <</type>>\
     <<type 40ms skipkey "Control">>\
 ----
@@ -19,7 +19,7 @@
     <</type>>\
     <<type 40ms skipkey "Control">>\
 ----
-        \> @@color:orange;Pirate ships maintaining safe proximity@@
+        \@@color:gray;>@@ @@color:orange;Pirate ships maintaining safe proximity@@
     <</type>>
 <</timed>>\
 

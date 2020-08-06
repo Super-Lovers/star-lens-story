@@ -1,6 +1,6 @@
 :: 3.1. You Are Attacked [semifixed-ui]
 <<type 40ms skipkey "Control">>\
-\> ⚠️ Pirate missiles incoming
+\@@color:gray;>@@ ⚠️ Pirate missiles incoming
 <</type>>\
 <<timed 2s>>\
 <span class="boom-title pulse">''@@color:orange;B@@ @@color:red;O@@ 💥 @@color:red;O@@ @@color:orange;M@@''</span>
@@ -14,6 +14,7 @@
 * Sensors - ✔️ @@color:green;OK@@
 * Shields - ⚡ @@color:orange;Damaged@@
 * Life-support - ⚡ @@color:orange;Damaged@@
+* Weapons - ⚡ @@color:orange;Damaged@@
 ----
 !!! 📡 YOU HAVE RECEIVED @@color:green;[2]@@ NEW TRANSMISSIONS.
 ...

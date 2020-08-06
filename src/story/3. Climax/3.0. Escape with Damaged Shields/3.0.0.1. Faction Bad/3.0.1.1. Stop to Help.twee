@@ -1,6 +1,30 @@
 :: 3.0.1.1. Stop to Help
-
-<!-- WRITE PASSAGE STARTING OVER THIS LINE -->
+<<type 40ms skipkey "Control">>\
+!!! ✍️ Writing message to 🛰️ ship..
+----
+<</type>>\
+//\
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ Hey!
+<</type>>
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ This is the 🚢 Ulisse speaking to you, I'm coming in hot to assist you in repairing your ship. 
+<</type>>
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ Please don't activate your weapons system!
+<</type>>
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ My ship is damaged but can still fly, and if I wanted to destroy you, I would have done it by now since my scans revealed your engine is offline, so you can't dodge my attacks.
+<</type>>
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ Please trust that I am here to help you since the rescuers are not able to come themselves yet!
+<</type>>\
+//
+<<type 40ms skipkey "Control">>\
+----
+!!! 📡 Sending transmisson to 🛰️ ship..
+\@@color:gray;>@@ Approaching to assist..
+<</type>>\
 
 <<nobr>>
 <!-- ************************************ -->

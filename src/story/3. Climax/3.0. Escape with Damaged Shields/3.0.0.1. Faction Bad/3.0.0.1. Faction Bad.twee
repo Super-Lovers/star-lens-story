@@ -21,10 +21,10 @@
 ----
 <</type>>\
 <<type 40ms skipkey "Control">>\
-    \> Unidentified ship 🛰️ detected
+    \@@color:gray;>@@ Unidentified ship 🛰️ detected
 <</type>>\
 <<type 40ms skipkey "Control">>\
-    \> Scanning ship status
+    \@@color:gray;>@@ Scanning ship status
     ...
 <</type>>\
 <<type 40ms skipkey "Control">>\
@@ -33,6 +33,7 @@
 * Sensors - ⚡ @@color:orange;Damaged@@
 * Shields - ⚡ @@color:orange;Damaged@@
 * Life-support - ✔️ @@color:green;OK@@
+* Weapons - ✔️ @@color:green;OK@@
 <</type>>\
 
 <<nobr>>
@@ -50,7 +51,7 @@
     class="link-internal macro-button choice-button"
     type="button"
     tabindex="0"
-    name="3.0.1.0. Signal to Faction Good">
+    name="3.0.1.1. Stop to Help">
         Stop to help
 </button>
 <</nobr>>

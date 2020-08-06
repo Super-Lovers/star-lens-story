@@ -5,30 +5,30 @@
 <</type>>\
 <<timed 800ms>>\
     <<type 40ms skipkey "Control">>\
-        \> Damage sustained - @@color:green;repairable@@
+        \@@color:gray;>@@ Damage sustained - @@color:green;repairable@@
     <</type>>\
 <</timed>>\
 <<timed 1600ms>>\
     <<type 40ms skipkey "Control">>\
-        \> Engine at @@color:orange;60%@@ capacity
+        \@@color:gray;>@@ Engine at @@color:orange;60%@@ capacity
     <</type>>\
 <</timed>>\
 <<timed 2400ms>>\
     <<type 40ms skipkey "Control">>\
-        \> <b>Operating System restored</b>
+        \@@color:gray;>@@ <b>Operating System restored</b>
     <</type>>\
 <</timed>>\
 <<timed 2400ms>>
     <<type 40ms skipkey "Control">>\
 !!!! 💡 Likely cause
 ----
-        \> @@color:red;Outside source - 89%@@
+        \@@color:gray;>@@ @@color:red;Outside source - 89%@@
 
-        \> System error - .2% 
+        \@@color:gray;>@@ System error - .2% 
 
-        \> Outdated maintenance - 1%
+        \@@color:gray;>@@ Outdated maintenance - 1%
 
-        \> Other - 9.8%
+        \@@color:gray;>@@ Other - 9.8%
     <</type>>\
 <</timed>>\
 

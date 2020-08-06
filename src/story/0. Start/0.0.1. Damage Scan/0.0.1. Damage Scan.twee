@@ -1,13 +1,13 @@
 :: 0.0.1. Damage Scan [broken-ui]
-\> Retri<span class="glitch-text">eving information on</span> damage sustained . . .
+\@@color:gray;>@@ Retri<span class="glitch-text">eving information on</span> damage sustained . . .
 <<timed 800ms>>
-\> Retrieving information on possible causes . . .
+\@@color:gray;>@@ Retrieving information on possible causes . . .
 \<</timed>>
 <<timed 1000ms>>
-\> Backing up data . . .
+\@@color:gray;>@@ Backing up data . . .
 \<</timed>>
 <<timed 1200ms>>
-\> DONE
+\@@color:gray;>@@ DONE
 <</timed>>
 
 <<nobr>>

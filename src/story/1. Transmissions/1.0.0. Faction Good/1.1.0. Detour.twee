@@ -2,7 +2,7 @@
 
 <<timed 0.5s>>\
     <<type 40ms skipkey "Control">>\
-        \> Receiving data on analysis of asteroid belt...
+        \@@color:gray;>@@ Receiving data on analysis of asteroid belt...
     <</type>>
 <</timed>>\
 <<timed 2.5s>>\
@@ -13,12 +13,12 @@
 <</timed>>\
 <<timed 3.0s>>\
     <<type 40ms skipkey "Control">>\
-        \> Directions to least-harmful regions of belt
+        \@@color:gray;>@@ Directions to least-harmful regions of belt
     <</type>>\
 <</timed>>\
 <<timed 5.0s>>\
     <<type 40ms skipkey "Control">>\
-        \> Gravity Assist patterns of asteroids
+        \@@color:gray;>@@ Gravity Assist patterns of asteroids
     <</type>>
 <</timed>>\
 <<timed 7s>>\
@@ -29,7 +29,7 @@
 <</timed>>\
 <<timed 7s>>\
     <<type 40ms skipkey "Control">>\
-        \> Confirm performing "Rich Purnell" Maneuver.
+        \@@color:gray;>@@ Confirm performing "Rich Purnell" Maneuver.
     <</type>>\
 <</timed>>\
 

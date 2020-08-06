@@ -1,13 +1,13 @@
 :: 3.0. Escape with Damaged Shields [semifixed-ui]
 
 <<type 40ms skipkey "Control">>\
-\> Exited dust clouds
+\@@color:gray;>@@ Exited dust clouds
 <</type>>\
 <<type 40ms skipkey "Control">>\
-\> Scanning immediate area..
+\@@color:gray;>@@ Scanning immediate area..
 <</type>>\
 <<type 40ms skipkey "Control">>\
-\> Analyzing damage to Ulisse..
+\@@color:gray;>@@ Analyzing damage to Ulisse..
 <</type>>\
 <<timed 5s>>\
 ----
@@ -17,8 +17,9 @@
 * Sensors - ✔️ @@color:green;OK@@
 * Shields - ⚡ @@color:orange;Damaged@@
 * Life-support - ✔️ @@color:green;OK@@
+* Weapons - ⚡ @@color:orange;Damaged@@
 
-\> 🛠️ Scheduled repairs to shields
+\@@color:gray;>@@ 🛠️ Scheduled repairs to shields
 ----
 !!! 📡 YOU HAVE RECEIVED @@color:green;[2]@@ NEW TRANSMISSIONS.
 ...

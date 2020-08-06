@@ -10,14 +10,14 @@
 \<</timed>>\
 <<timed 1000ms>>\
     <<type 40ms skipkey "Control">>\
-        \> Critical errors [03]
+        \@@color:gray;>@@ Critical errors [03]
     <</type>>
 <</timed>>\
 <<timed 2000ms>>\
     <<type 40ms skipkey "Control">>\
-        \> <b>@@color:red;Critical stop at rescue station is required.@@</b> Nearest station located at Pathos 125E.
+        \@@color:gray;>@@ <b>@@color:red;Critical stop at rescue station is required.@@</b> Nearest station located at Pathos 125E.
 ----
-        \> ✔️ OBJECTIVE ACQUIRED - reach Pathos 125E
+        \@@color:gray;>@@ ✔️ OBJECTIVE ACQUIRED - reach Pathos 125E
 
         @@color:orange;Warning  - all routes to the rescue station are marked as dangerous on intergalactic databases. Assistance might be required to cross the territory.@@
     <</type>>\
