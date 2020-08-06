@@ -4,15 +4,16 @@
 ----
 <</type>>\
 <<type 100ms skipkey "Control">>\
-Ulisse, how did you turn up here?
-Is everything alright?
+    \@@color:gray;>@@ Ulisse, how did you turn up here?
+    \@@color:gray;>@@ Is everything alright?
 
 ...
-
-We have less hands in this sector to extend to you, but nevertheless.
+<</type>>
+<<type 100ms skipkey "Control">>\
+    \@@color:gray;>@@ We have less hands in this sector to extend to you, but nevertheless.
 <</type>>
 <<type 40ms skipkey "Control">>\
-Our outpost is coming up, so you need to follow the course we send you to get to us right away. It will help you avoid the pirates that lurk in this region!
+    \@@color:gray;>@@ Our outpost is coming up, so you need to follow the course we send you to get to us right away. It will help you avoid the pirates that lurk in this region!
 <</type>>\
 <<type 40ms skipkey "Control">>\
 ----

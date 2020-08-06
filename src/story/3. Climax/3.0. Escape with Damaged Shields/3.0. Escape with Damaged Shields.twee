@@ -1,13 +1,13 @@
 :: 3.0. Escape with Damaged Shields [semifixed-ui]
 
 <<type 40ms skipkey "Control">>\
-\@@color:gray;>@@ Exited dust clouds
+    \@@color:gray;>@@ Exited dust clouds
 <</type>>\
 <<type 40ms skipkey "Control">>\
-\@@color:gray;>@@ Scanning immediate area..
+    \@@color:gray;>@@ Scanning immediate area..
 <</type>>\
 <<type 40ms skipkey "Control">>\
-\@@color:gray;>@@ Analyzing damage to Ulisse..
+    \@@color:gray;>@@ Analyzing damage to Ulisse..
 <</type>>\
 <<timed 5s>>\
 ----

@@ -4,13 +4,13 @@
 ----
 <</type>>\
 <<type 40ms skipkey "Control">>\
-    Ulisse, we are glad you made it this close to out rescuer outpost, but we need your help if possible! 
+    \@@color:gray;>@@ Ulisse, we are glad you made it this close to out rescuer outpost, but we need your help if possible! 
 <</type>>
 <<type 40ms skipkey "Control">>\
-    There is a damaged ship nearby and we need help to make sure everybody onboard is safely escorted to our rescue outpost. 
+    \@@color:gray;>@@ There is a damaged ship nearby and we need help to make sure everybody onboard is safely escorted to our rescue outpost. 
 <</type>>
 <<type 40ms skipkey "Control">>\
-    Can you give us a hand or do you prefer to wait for us to escort you to the outpost?
+    \@@color:gray;>@@ Can you give us a hand or do you prefer to wait for us to escort you to the outpost?
 <</type>>\
 <<type 40ms skipkey "Control">>\
 ----

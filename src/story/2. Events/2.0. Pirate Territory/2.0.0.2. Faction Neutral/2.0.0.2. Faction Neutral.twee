@@ -4,15 +4,16 @@
 ----
 <</type>>\
 <<type 40ms skipkey "Control">>\
-You made it through the asteroid belt, impressive. Unfortunately, you exited through a different pocket so now you're stuck in the region infamous for its pirate presence.
+    \@@color:gray;>@@ You made it through the asteroid belt, impressive. Unfortunately, you exited through a different pocket so now you're stuck in the region infamous for its pirate presence.
 <</type>>
 <<type 40ms skipkey "Control">>\
-Well.. if you don't want our help, that's fine.
+    \@@color:gray;>@@ Well.. if you don't want our help, that's fine.
 <</type>>
 <<type 40ms skipkey "Control">>\
-We can't get to you from here, but we can at least give you a digital signature that pirates use to recognize you as one of them. 
-
-We use it sometimes to get out of thick situations!
+    \@@color:gray;>@@ We can't get to you from here, but we can at least give you a digital signature that pirates use to recognize you as one of them. 
+<</type>>
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ We use it sometimes to get out of thick situations!
 <</type>>\
 <<type 40ms skipkey "Control">>\
 ----

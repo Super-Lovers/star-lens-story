@@ -7,27 +7,27 @@
 <</timed>>\
 <<timed 800ms>>\
     <<type 40ms skipkey "Control">>\
-        Hello? 
+        \@@color:gray;>@@ Hello? 
     <</type>>
 <</timed>>\
 <<timed 1.8s>>\
     <<type 40ms skipkey "Control">>\
-        This is the local rescue team speaking. 
+        \@@color:gray;>@@ This is the local rescue team speaking. 
     <</type>>
 <</timed>>\
 <<timed 3.5s>>\
     <<type 40ms skipkey "Control">>\
-        We are sorry, but due to unavailability of resources, currently we cannot physically reach you. However, we will be able to guide you towards our station until one of our ships becomes available.
+        \@@color:gray;>@@ We are sorry, but due to unavailability of resources, currently we cannot physically reach you. However, we will be able to guide you towards our station until one of our ships becomes available.
     <</type>>
 <</timed>>\
 <<timed 10s>>\
     <<type 40ms skipkey "Control">>\
-        Considering the extent of the damage on your spaceship, we recommend you stay on course and avoid detours.
+        \@@color:gray;>@@ Considering the extent of the damage on your spaceship, we recommend you stay on course and avoid detours.
     <</type>>
 <</timed>>\
 <<timed 14s>>\
     <<type 40ms skipkey "Control">>\
-        One last thing, there is a group of pirates sending out transmissions impersonating us. We recommend you do not engage with them.
+        \@@color:gray;>@@ One last thing, there is a group of pirates sending out transmissions impersonating us. We recommend you do not engage with them.
     <</type>>\
 <</timed>>\
 <<timed 16s>>\

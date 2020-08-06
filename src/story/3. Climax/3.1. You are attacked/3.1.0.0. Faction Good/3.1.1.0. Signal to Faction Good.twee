@@ -1,4 +1,4 @@
-:: 3.1.1.0. Signal to Faction Good
+:: 3.1.1.0. Signal to Faction Good [broken-ui]
 <<type 40ms skipkey "Control">>\
 !!! ✍️ Writing message to 🛰️ ship..
 ----

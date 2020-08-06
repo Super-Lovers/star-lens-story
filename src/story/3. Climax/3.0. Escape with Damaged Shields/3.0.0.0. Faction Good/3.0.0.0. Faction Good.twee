@@ -4,16 +4,16 @@
 ----
 <</type>>\
 <<type 40ms skipkey "Control">>\
-    Dang, bro, you made it past the pirates, didn't you? We knew it would work this time!
+    \@@color:gray;>@@ Dang, bro, you made it past the pirates, didn't you? We knew it would work this time!
 <</type>>
 <<type 40ms skipkey "Control">>\
-    Our scans show your shields have weakened, but thankfully you passed the pirates so they aren't necessary.
+    \@@color:gray;>@@ Our scans show your shields have weakened, but thankfully you passed the pirates so they aren't necessary.
 <</type>>
 <<type 40ms skipkey "Control">>\
-    This region should be outside the pirates' borders, so it's just a matter of time before you're safe with us!
+    \@@color:gray;>@@ This region should be outside the pirates' borders, so it's just a matter of time before you're safe with us!
 <</type>>
 <<type 40ms skipkey "Control">>\
-    Our outpost is close ahead, so get moving, we are waiting for you.
+    \@@color:gray;>@@ Our outpost is close ahead, so get moving, we are waiting for you.
 <</type>>\
 <<type 40ms skipkey "Control">>\
 ----

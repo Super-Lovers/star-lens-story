@@ -1,6 +1,18 @@
 :: 3.2. Pirates Approach You
-
-<!-- WRITE PASSAGE STARTING OVER THIS LINE -->
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ Pirate ships maintaining safe proximity
+<</type>>\
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ @@color:orange;Pirate ships scanning 🚢 Ulisse@@
+----
+<</type>>\
+<<type 40ms skipkey "Control">>\
+    <h3>📡 SIGNALS ACQUIRED</h3>\
+----
+<</type>>\
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ @@color:green;You have received @@@@color:red;<b>[2]</b>@@@@color:green; new transmissions.@@
+<</type>>\
 
 <<nobr>>
 <!-- ************************************ -->
@@ -13,7 +25,6 @@
     name="3.2.0.0. Faction Good">
         Frequency (108.5)
 </button>
-
 <button
     class="link-internal macro-button choice-button"
     type="button"

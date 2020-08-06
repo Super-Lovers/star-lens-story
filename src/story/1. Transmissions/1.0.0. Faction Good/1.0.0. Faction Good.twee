@@ -7,51 +7,50 @@
 <</timed>>\
 <<timed 1s>>\
     <<type 40ms skipkey "Control">>\
-        Hey bro, we got your signal. We are the rescue crew of this area, so you can count on us to help you out!
+        \@@color:gray;>@@ Hey bro, we got your signal. We are the rescue crew of this area, so you can count on us to help you out!
         . . .
     <</type>>
 <</timed>>\
 <<timed 4s>>\
     <<type 40ms skipkey "Control">>\
-        So here’s the thing.
+        \@@color:gray;>@@ So here’s the thing.
     <</type>>
 <</timed>>\
 <<timed 6s>>\
     <<type 40ms skipkey "Control">>\
-        Normally, we’d swoop right in and carry you to the station to help you with whatever, right? Except we are kinda spread thin right now. Some new group’s been looting travellers ‘n shit, ruining everyone’s vibes.
+        \@@color:gray;>@@ Normally, we’d swoop right in and carry you to the station to help you with whatever, right? Except we are kinda spread thin right now. Some new group’s been looting travellers ‘n shit, ruining everyone’s vibes.
     <</type>>
 <</timed>>\
 <<timed 14s>>\
     <<type 40ms skipkey "Control">>\
-        So we are all outta ships for now! Everyone’s busy.
+        \@@color:gray;>@@ So we are all outta ships for now! Everyone’s busy.
     <</type>>
 <</timed>>\
 <<timed 16s>>\
     <<type 40ms skipkey "Control">>\
-        I can send someone on your way ASAP. Totally.
+        \@@color:gray;>@@ I can send someone on your way ASAP. Totally.
     <</type>>
 <</timed>>\
 <<timed 18s>>\
     <<type 40ms skipkey "Control">>\
-        Maybe.
+        \@@color:gray;>@@ Maybe.
     <</type>>
 <</timed>>\
 <<timed 19s>>\
     <<type 40ms skipkey "Control">>\
-        Look, I'll just guide you here, ok?
-        It’s totally gonna be cool, bro. Trust me.
+        \@@color:gray;>@@ Look, I'll just guide you here, ok? It’s totally gonna be cool, bro. Trust me.
         . . .
     <</type>>
 <</timed>>\
 <<timed 22s>>\
     <<type 40ms skipkey "Control">>\
-        Now, I know your ship probs put you on the straightest path here but, you’re gonna have to take a detour. There’s like a massive asteroid belt on the way and there’s no way you’re gonna make it, so you’re gonna have to take the long way ‘round through the X-2453 pathway.
+        \@@color:gray;>@@ Now, I know your ship probs put you on the straightest path here but, you’re gonna have to take a detour. There’s like a massive asteroid belt on the way and there’s no way you’re gonna make it, so you’re gonna have to take the long way ‘round through the X-2453 pathway.
     <</type>>
 <</timed>>\
 <<timed 40s>>\
     <<type 40ms skipkey "Control">>\
         . . .
-        You won’t be able to pick up our signal until you get through tho, but you’ll be totally fine, promise! See you on the other side, dude. 
+        \@@color:gray;>@@ You won’t be able to pick up our signal until you get through tho, but you’ll be totally fine, promise! See you on the other side, dude. 
     <</type>>
 <</timed>>\
 <<timed 43s>>\

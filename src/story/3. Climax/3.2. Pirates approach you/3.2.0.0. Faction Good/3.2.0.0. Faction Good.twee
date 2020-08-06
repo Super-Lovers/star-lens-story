@@ -1,6 +1,24 @@
 :: 3.2.0.0. Faction Good
-
-<!-- WRITE PASSAGE STARTING OVER THIS LINE -->
+<<type 40ms skipkey "Control">>\
+    <h3>👽 FREQUENCY 108.5</h3>\
+----
+<</type>>\
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ Bro, ay, did you just fool the pirates into thinking youre one of them. I sense great potential in you, man.
+<</type>>
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ Ok, this is the easy part, just keep your head down and you'll be out of this mess in no time.
+<</type>>
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ These pirates think you're probably a super strong guy, bro, since to have that signature, you either have to beat another pirate, or are one yourself. Although your ship probably makes them think it's the former.
+<</type>>
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ Good luck!
+<</type>>\
+<<type 40ms skipkey "Control">>\
+----
+    <h3>❌ @@color:red;ENDED TRANSMISSION 108.5@@</h3>\
+<</type>>\
 
 <<nobr>>
 <!-- ************************************ -->
@@ -12,5 +30,12 @@
     tabindex="0"
     name="3.2.1.0. Keep Distance Be Polite">
         Distance & Be polite
+</button>
+<button
+    class="link-internal macro-button choice-button"
+    type="button"
+    tabindex="0"
+    name="3.2. Pirates Approach You">
+        Back
 </button>
 <</nobr>>

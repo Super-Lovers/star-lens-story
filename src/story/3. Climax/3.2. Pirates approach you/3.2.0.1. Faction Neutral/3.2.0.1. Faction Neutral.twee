@@ -1,6 +1,33 @@
 :: 3.2.0.1. Faction Neutral
-
-<!-- WRITE PASSAGE STARTING OVER THIS LINE -->
+<<type 40ms skipkey "Control">>\
+    <h3>🐔 FREQUENCY 96.3</h3>\
+----
+<</type>>\
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ You, your ship is not one that pirates would pilot, where did you get that ship and digital signature?
+<</type>>
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ Just because you have a signature, doesn't excuse you from not following a pirate's "dress code". Signatures have been stolen before too.
+<</type>>
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ Although, to have stolen one, it shows that you are strong. Very interesting.
+<</type>>
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ Why do I speak like a pirate? Thats because I am friends with some of the 96.3 folk.
+<</type>>
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ It's easier to make contact and recruit since you don't get blown up. You seem like the strong type, @@color:green;why don't you join us@@? We are looking for more folk to join the pirates since the rescuers are spreading us thin..
+<</type>>
+<<type 40ms skipkey "Control">>\
+    If you agree, we can explore the galaxy together and you'll make lots of new, although naughty friends! Not to mention you'll receive new equipment and loot 😉
+<</type>>
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ What say you?
+<</type>>\
+<<type 40ms skipkey "Control">>\
+----
+    <h3>❌ @@color:red;ENDED TRANSMISSION 99.9@@</h3>\
+<</type>>\
 
 <<nobr>>
 <!-- ************************************ -->
@@ -12,5 +39,12 @@
     tabindex="0"
     name="3.2.1.1. Befriend Them">
         Befriend Them
+</button>
+<button
+    class="link-internal macro-button choice-button"
+    type="button"
+    tabindex="0"
+    name="3.2. Pirates Approach You">
+        Back
 </button>
 <</nobr>>

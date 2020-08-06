@@ -1,9 +1,13 @@
-:: 3.1. You Are Attacked [semifixed-ui]
+:: 3.1. You Are Attacked
 <<type 40ms skipkey "Control">>\
 \@@color:gray;>@@ ⚠️ Pirate missiles incoming
 <</type>>\
 <<timed 2s>>\
-<span class="boom-title pulse">''@@color:orange;B@@ @@color:red;O@@ 💥 @@color:red;O@@ @@color:orange;M@@''</span>
+    <span class="boom-title pulse">''@@color:orange;B@@ @@color:red;O@@ 💥 @@color:red;O@@ @@color:orange;M@@''</span>
+    <<script>>
+        $('#console-screen').css('backgroundImage', 'url("./assets/UI/mainconsole_broken.png")');
+        $('#choices-screen').css('backgroundImage', 'url("./assets/UI/bottomconsole_broken.png")');
+    <</script>>
 <</timed>>\
 <<timed 3s>>\
     <<type 40ms skipkey "Control">>\

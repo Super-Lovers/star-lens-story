@@ -1,6 +1,18 @@
 :: 3.2.1.1. Befriend Them
-
-<!-- WRITE PASSAGE STARTING OVER THIS LINE -->
+<<type 40ms skipkey "Control">>\
+    <h3>🐔 FREQUENCY 96.3</h3>\
+----
+<</type>>\
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ Oh, you really decided to join us? I was sure after all the trouble your ship and you went through, that you wouldn't even come close.
+<</type>>
+<<type 40ms skipkey "Control">>\
+!!! ''@@color:gray;>@@ Welcome to the ☠️ pirates faction!''
+<</type>>
+<<type 40ms skipkey "Control">>\
+----
+    <h3>❌ @@color:red;ENDED TRANSMISSION 99.9@@</h3>\
+<</type>>\
 
 <<nobr>>
 <!-- ************************************ -->
@@ -11,6 +23,6 @@
     type="button"
     tabindex="0"
     name="3.2.2.1. Join Pirates (Ending)">
-        Continue
+        Follow pirate
 </button>
 <</nobr>>
