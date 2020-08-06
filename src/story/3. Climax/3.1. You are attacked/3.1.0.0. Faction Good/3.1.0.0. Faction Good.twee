@@ -1,6 +1,46 @@
 :: 3.1.0.0. Faction Good
-
-<!-- WRITE PASSAGE STARTING OVER THIS LINE -->
+<<type 40ms skipkey "Control">>\
+    <h3>👽 FREQUENCY 108.5</h3>\
+----
+<</type>>\
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ Damn, bro, are you ok?
+<</type>>
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ Guess you were scared of the dust clouds eh, we noticed those pirates firing at you, our sensors picked up the blast from over there..
+<</type>>
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ Our outpost is just up ahead, but as I said before, there are no ships available since they're still travelling, and the pirates will get to you long before you, or we, make it there.
+<</type>>
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ If you can buy enough time by maxing out your engines and trying to evade the pirates, we might come in time to save you!
+<</type>>
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ It's probably your best shot, chief. We hope to see you soon!
+<</type>>\
+<<type 40ms skipkey "Control">>\
+----
+    <h3>❌ @@color:red;ENDED TRANSMISSION 108.5@@</h3>\
+<</type>>\
+<<type 40ms skipkey "Control">>\
+!!!! 💡 Scanners notification
+----
+<</type>>\
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ Unidentified ship 🛰️ detected
+<</type>>\
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ Scanning ship status
+    ...
+<</type>>\
+<<type 40ms skipkey "Control">>\
+* Engine - ❌ @@color:red;Needs repairs@@
+* Navigation - ❌ @@color:red;Needs repairs@@
+* Sensors - ⚡ @@color:orange;Damaged@@
+* Shields - ⚡ @@color:orange;Damaged@@
+* Life-support - ✔️ @@color:green;OK@@
+* Weapons - ✔️ @@color:green;OK@@
+<</type>>\
 
 <<nobr>>
 <!-- ************************************ -->
@@ -12,5 +52,12 @@
     tabindex="0"
     name="3.1.1.0. Signal to Faction Good">
         Signal to faction good
+</button>
+<button
+    class="link-internal macro-button choice-button"
+    type="button"
+    tabindex="0"
+    name="3.1.1.1. Maximize Engines">
+        Maximize engines
 </button>
 <</nobr>>

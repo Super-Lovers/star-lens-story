@@ -1,6 +1,26 @@
 :: 3.1.1.0. Signal to Faction Good
-
-<!-- WRITE PASSAGE STARTING OVER THIS LINE -->
+<<type 40ms skipkey "Control">>\
+!!! ✍️ Writing message to 🛰️ ship..
+----
+<</type>>\
+//\
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ Hey!
+<</type>>
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ This is the 🚢 Ulisse speaking to you, I have contacted rescuers in frequency 108.5 to come for you.
+<</type>>
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ My ship is damaged but can still fly, so when I make it to the outpost, they will send help to you as soon as they have somebody available!
+<</type>>
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ Good luck!
+<</type>>\
+//
+<<type 40ms skipkey "Control">>\
+----
+!!! 📡 Sending transmisson to 🛰️ ship..
+<</type>>
 
 <<nobr>>
 <!-- ************************************ -->

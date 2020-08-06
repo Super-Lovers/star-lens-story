@@ -1,6 +1,37 @@
 :: 3.1.0.1. Faction Bad
-
-<!-- WRITE PASSAGE STARTING OVER THIS LINE -->
+<<type 40ms skipkey "Control">>\
+    <h3>☠️ FREQUENCY 99.9</h3>\
+----
+<</type>>\
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ Sorry to disappoint you, maggot, but you're ours now, stand your weapons down and prepare to be boarded.
+<</type>>
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ If you don't do as we say, we are going to blow you to smithereens!
+<</type>>\
+<<type 40ms skipkey "Control">>\
+----
+    <h3>❌ @@color:red;ENDED TRANSMISSION 99.9@@</h3>\
+<</type>>\
+<<type 40ms skipkey "Control">>\
+!!!! 💡 Scanners notification
+----
+<</type>>\
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ Unidentified ship 🛰️ detected
+<</type>>\
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ Scanning ship status
+    ...
+<</type>>\
+<<type 40ms skipkey "Control">>\
+* Engine - ❌ @@color:red;Needs repairs@@
+* Navigation - ❌ @@color:red;Needs repairs@@
+* Sensors - ⚡ @@color:orange;Damaged@@
+* Shields - ⚡ @@color:orange;Damaged@@
+* Life-support - ✔️ @@color:green;OK@@
+* Weapons - ✔️ @@color:green;OK@@
+<</type>>\
 
 <<nobr>>
 <!-- ************************************ -->
@@ -12,5 +43,12 @@
     tabindex="0"
     name="3.1.1.0. Signal to Faction Good">
         Signal to faction good
+</button>
+<button
+    class="link-internal macro-button choice-button"
+    type="button"
+    tabindex="0"
+    name="3.1.1.2. Surrender to Pirates">
+        Surrender to pirates
 </button>
 <</nobr>>

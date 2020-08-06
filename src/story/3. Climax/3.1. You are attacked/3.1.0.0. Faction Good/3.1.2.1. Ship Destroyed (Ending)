@@ -1,0 +1,16 @@
+:: 3.1.2.1. Ship Destroyed (Ending)
+
+<!-- WRITE PASSAGE STARTING OVER THIS LINE -->
+
+<<nobr>>
+<!-- ************************************ -->
+<!--       Bottom interface buttons       -->
+<!-- ************************************ -->
+<button
+    class="link-internal macro-button choice-button"
+    type="button"
+    tabindex="0"
+    name="3.1.2.2. Ship Destroyed (Ending)">
+        Continue
+</button>
+<</nobr>>

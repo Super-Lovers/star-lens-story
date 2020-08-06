@@ -1,0 +1,41 @@
+:: 3.1.1.2. Surrender to Pirates
+<<type 40ms skipkey "Control">>\
+!!! ✍️ Writing message to ☠️ pirates..
+----
+<</type>>\
+//\
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ Okay! fine, I surrender..
+<</type>>
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ Just don't destroy me or my ship, take whatever you want and leave!
+<</type>>\
+//\
+<<type 40ms skipkey "Control">>\
+----
+!!! 📡 Sending transmisson to 🛰️ ship..
+<</type>>\
+<<type 40ms skipkey "Control">>\
+    <h3>☠️ FREQUENCY 99.9</h3>\
+----
+<</type>>\
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ Good, we will, and don't try anything stupid.
+<</type>>\
+<<type 40ms skipkey "Control">>\
+----
+    <h3>❌ @@color:red;ENDED TRANSMISSION 99.9@@</h3>\
+<</type>>\
+
+<<nobr>>
+<!-- ************************************ -->
+<!--       Bottom interface buttons       -->
+<!-- ************************************ -->
+<button
+    class="link-internal macro-button choice-button"
+    type="button"
+    tabindex="0"
+    name="3.1.2.1. Ship Destroyed (Ending)">
+        Continue
+</button>
+<</nobr>>

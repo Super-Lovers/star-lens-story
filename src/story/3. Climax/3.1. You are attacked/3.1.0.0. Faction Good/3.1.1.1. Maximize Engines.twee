@@ -1,0 +1,42 @@
+:: 3.1.1.1. Maximize Engines
+
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ Engines to maximum
+<</type>>\
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ Executing evasive pattern delta
+<</type>>\
+<<type 40ms skipkey "Control">>\
+    ...
+<</type>>
+<<type 40ms skipkey "Control">>\
+📑 Battle Updates
+----
+⚠️ @@color:red;[2]@@ Incoming missles detected
+<</type>>\
+<<type 40ms skipkey "Control">>\
+    ✔️ @@color:red;[1]@@ Evaded
+<</type>>\
+<<type 40ms skipkey "Control">>\
+    ...
+<</type>>\
+<<type 0ms skipkey "Control">>\
+    <span class="boom-title pulse">''@@color:orange;B@@ @@color:red;O@@ 💥 @@color:red;O@@ @@color:orange;M@@''</span>
+    <<script>>
+        $('#console-screen').css('backgroundImage', 'url("./assets/UI/mainconsole_broken.png")');
+        $('#choices-screen').css('backgroundImage', 'url("./assets/UI/bottomconsole_broken.png")');
+    <</script>>
+<</type>>\
+
+<<nobr>>
+<!-- ************************************ -->
+<!--       Bottom interface buttons       -->
+<!-- ************************************ -->
+<button
+    class="link-internal macro-button choice-button"
+    type="button"
+    tabindex="0"
+    name="3.1.2.1. Ship Destroyed (Ending)">
+        Continue
+</button>
+<</nobr>>
