@@ -1,37 +1,24 @@
 :: 1.1.0. Detour
-
-<<timed 0.5s>>\
-    <<type 40ms skipkey "Control">>\
-        \@@color:gray;>@@ Receiving data on analysis of asteroid belt...
-    <</type>>
-<</timed>>\
-<<timed 2.5s>>\
-    <<type 40ms skipkey "Control">>\
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ Receiving data on analysis of asteroid belt...
+<</type>>\
+<<type 40ms skipkey "Control">>\
 !!! ✔️ DATA PACKAGE RECEIVED
 ----
-    <</type>>\
-<</timed>>\
-<<timed 3.0s>>\
-    <<type 40ms skipkey "Control">>\
-        \@@color:gray;>@@ Directions to least-harmful regions of belt
-    <</type>>\
-<</timed>>\
-<<timed 5.0s>>\
-    <<type 40ms skipkey "Control">>\
-        \@@color:gray;>@@ Gravity Assist patterns of asteroids
-    <</type>>
-<</timed>>\
-<<timed 7s>>\
-    <<type 40ms skipkey "Control">>\
+<</type>>\
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ Directions to least-harmful regions of belt
+<</type>>\
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ Gravity Assist patterns of asteroids
+<</type>>
+<<type 40ms skipkey "Control">>\
 ----
-        <h3>❌ @@color:red;ENDED PACKAGE STREAM@@</h3>\
-    <</type>>\
-<</timed>>\
-<<timed 7s>>\
-    <<type 40ms skipkey "Control">>\
-        \@@color:gray;>@@ Confirm performing "Rich Purnell" Maneuver.
-    <</type>>\
-<</timed>>\
+    <h3>❌ @@color:red;ENDED PACKAGE STREAM@@</h3>\
+<</type>>\
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ Confirm performing "Rich Purnell" Maneuver.
+<</type>>\
 
 <<nobr>>
 <!-- ************************************ -->

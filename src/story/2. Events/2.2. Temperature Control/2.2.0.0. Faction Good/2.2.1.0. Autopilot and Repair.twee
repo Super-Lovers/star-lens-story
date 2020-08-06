@@ -7,10 +7,10 @@ THIS MODE ENGAGES AUTOMATICALLY TO PREVENT ADDITIONAL DAMAGES AND ENSURE THE SAF
 
 You may experience a shift in temperature at this time.
 
-\> Initiating system repair. . .
-\> System repair in progress. . .
-\> System repair complete
-\> Calibrating temperature control
+\@@color:gray;>@@ Initiating system repair. . .
+\@@color:gray;>@@ System repair in progress. . .
+\@@color:gray;>@@ System repair complete
+\@@color:gray;>@@ Calibrating temperature control
 
 TEMPERATURE CONTROL STATUS - ONLINE AND OPERATIONAL
 

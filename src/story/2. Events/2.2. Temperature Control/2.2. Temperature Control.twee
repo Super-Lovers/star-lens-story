@@ -1,19 +1,19 @@
 :: 2.2. Temperature Control
 
-\> Asteroid belt has successfully been passed.
+\@@color:gray;>@@ Asteroid belt has successfully been passed.
 
-\> Analysing damage received. . . 
+\@@color:gray;>@@ Analysing damage received. . . 
 
-\> Analysis complete.
+\@@color:gray;>@@ Analysis complete.
 
 WARNING - ISSUE WITHIN THE TEMPERATURE CONTROL SYSTEM DETECTED.
 The temperature control system is part of the vital apparatus of the ship. 
 
-\> CAUSE ANALYSIS. . .
+\@@color:gray;>@@ CAUSE ANALYSIS. . .
 
 LIKELY CAUSE
 
-\> OUTSIDE SOURCE (ASTEROID GRAZING) - 100%
+\@@color:gray;>@@ OUTSIDE SOURCE (ASTEROID GRAZING) - 100%
 
 IMMEDIATE ACTION REQUIRED.
 SUGGESTED ACTION: CRITICAL REPAIR.

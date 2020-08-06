@@ -5,15 +5,14 @@
 
     \@@color:gray;>@@ No damage was caused in the maneuver.
 <</type>>\
-<<timed 3s>>\
 ----
-    <<type 40ms skipkey "Control">>\
-        <h3>📡 SIGNALS ACQUIRED</h3>\
+<<type 40ms skipkey "Control">>\
+    <h3>📡 SIGNALS ACQUIRED</h3>\
+    \@@color:gray;>@@ @@color:green;You have received@@ @@color:red;[3]@@ @@color:green;new transmissions.@@
 !!! ⚠️ WARNING
 ----
-        \@@color:gray;>@@ @@color:orange;Scans have revealed the presence of <b>pirate signatures</b> in this region of space.@@ Caution is advised.
-    <</type>>
-<</timed>>\
+    \@@color:gray;>@@ @@color:orange;Scans have revealed the presence of <b>pirate signatures</b> in this region of space.@@ Caution is advised.
+<</type>>
 
 <<nobr>>
 <!-- ************************************ -->

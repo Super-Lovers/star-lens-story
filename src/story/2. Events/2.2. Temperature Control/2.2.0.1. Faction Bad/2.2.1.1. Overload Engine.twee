@@ -1,10 +1,10 @@
 :: 2.2.1.1. Overload Engine
 
-\> New instructions received
+\@@color:gray;>@@ New instructions received
 
-\> Analysing new instructions
+\@@color:gray;>@@ Analysing new instructions
 
-\> Analysis complete.
+\@@color:gray;>@@ Analysis complete.
 
 WARNING - ENGINE OVERLOAD
 THE SELECTED COURSE OF ACTION MIGHT RESULT IN CRITICAL SYSTEM FAILURE AND/OR DEATH.

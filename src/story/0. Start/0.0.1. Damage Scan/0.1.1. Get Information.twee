@@ -3,34 +3,31 @@
 !!! 📑 REPORT
 ----
 <</type>>\
-<<timed 800ms>>\
-    <<type 40ms skipkey "Control">>\
-        \@@color:gray;>@@ Damage sustained - @@color:green;repairable@@
-    <</type>>\
-<</timed>>\
-<<timed 1600ms>>\
-    <<type 40ms skipkey "Control">>\
-        \@@color:gray;>@@ Engine at @@color:orange;60%@@ capacity
-    <</type>>\
-<</timed>>\
-<<timed 2400ms>>\
-    <<type 40ms skipkey "Control">>\
-        \@@color:gray;>@@ <b>Operating System restored</b>
-    <</type>>\
-<</timed>>\
-<<timed 2400ms>>
-    <<type 40ms skipkey "Control">>\
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ Damage sustained - @@color:green;repairable@@
+<</type>>\
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ Engine at @@color:orange;60%@@ capacity
+<</type>>\
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ <b>Operating System restored</b>
+<</type>>\
+<<type 40ms skipkey "Control">>\
 !!!! 💡 Likely cause
 ----
-        \@@color:gray;>@@ @@color:red;Outside source - 89%@@
-
-        \@@color:gray;>@@ System error - .2% 
-
-        \@@color:gray;>@@ Outdated maintenance - 1%
-
-        \@@color:gray;>@@ Other - 9.8%
-    <</type>>\
-<</timed>>\
+<</type>>\
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ @@color:red;Outside source - 89%@@
+<</type>>\
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ System error - .2% 
+<</type>>\
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ Outdated maintenance - 1%
+<</type>>\
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ Other - 9.8%
+<</type>>\
 
 <<nobr>>
 <!-- ************************************ -->

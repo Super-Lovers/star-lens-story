@@ -3,25 +3,21 @@
     <h3>📑 REPORT</h3>\
 ----
 <</type>>\
-<<timed 500ms>>\
-    <<type 40ms skipkey "Control">>\
+<<type 40ms skipkey "Control">>\
 \       > @@color:green;System restored and online@@ - 70% capacity
-    <</type>>\
-\<</timed>>\
-<<timed 1000ms>>\
-    <<type 40ms skipkey "Control">>\
-        \@@color:gray;>@@ Critical errors [03]
-    <</type>>
-<</timed>>\
-<<timed 2000ms>>\
-    <<type 40ms skipkey "Control">>\
-        \@@color:gray;>@@ <b>@@color:red;Critical stop at rescue station is required.@@</b> Nearest station located at Pathos 125E.
+<</type>>\
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ Critical errors [03]
+<</type>>
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ <b>@@color:red;Critical stop at rescue station is required.@@</b> Nearest station located at Pathos 125E.
+<</type>>\
+<<type 40ms skipkey "Control">>\
 ----
-        \@@color:gray;>@@ ✔️ OBJECTIVE ACQUIRED - reach Pathos 125E
+    \@@color:gray;>@@ ✔️ OBJECTIVE ACQUIRED - reach Pathos 125E
 
-        @@color:orange;Warning  - all routes to the rescue station are marked as dangerous on intergalactic databases. Assistance might be required to cross the territory.@@
-    <</type>>\
-<</timed>>\
+    ⚠️ @@color:orange;Warning  - all routes to the rescue station are marked as dangerous on intergalactic databases. Assistance might be required to cross the territory.@@
+<</type>>\
 
 <<nobr>>
 <!-- ************************************ -->
