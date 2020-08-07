@@ -1,19 +1,39 @@
 :: 3.3.0.0. Faction Good
-
-Bro, holy fuck!
-
-First of all, good job making it this far, man. I'd have straight up died by now.
-Secondly, what?
-
-Oh.
-Oh dude no.
-
-Those are the pirates that have been stirring shit around here lately. Do NOT let them get closer.
-We are sending someone your way, move to the coordinates I'm sending you right now and you should see them soon.
-If your ship's shields still work you should use them.
-
-Hold on there, mate!
-We are coming for you!
+<<type 40ms skipkey "Control">>\
+    <h3>👽 FREQUENCY 108.5</h3>\
+----
+<</type>>\
+<<type 40ms skipkey "Control">>
+    \@@color:gray;>@@ Bro, holy fuck!
+<</type>>
+<<type 40ms skipkey "Control">>
+    \@@color:gray;>@@ First of all, good job making it this far, man. I'd have straight up died by now.
+<</type>>
+<<type 40ms skipkey "Control">>
+    \@@color:gray;>@@ Secondly, what?
+<</type>>
+<<type 40ms skipkey "Control">>
+    \@@color:gray;>@@ Oh.
+<</type>>\
+<<type 40ms skipkey "Control">>
+    \@@color:gray;>@@ Oh dude no.
+<</type>>
+<<type 40ms skipkey "Control">>
+    \@@color:gray;>@@ Those are the pirates that have been stirring shit around here lately. Do NOT let them get closer.
+<</type>>
+<<type 40ms skipkey "Control">>
+    \@@color:gray;>@@ We are sending someone your way, move to the coordinates I'm sending you right now and you should see them soon. If your ship's shields still work you should use them.
+<</type>>
+<<type 40ms skipkey "Control">>
+    \@@color:gray;>@@ Hold on there, mate!
+<</type>>\
+<<type 40ms skipkey "Control">>
+    \@@color:gray;>@@ We are coming for you!
+<</type>>\
+<<type 40ms skipkey "Control">>\
+----
+    <h3>❌ @@color:red;ENDED TRANSMISSION 108.5@@</h3>\
+<</type>>\
 
 <<nobr>>
 <!-- ************************************ -->

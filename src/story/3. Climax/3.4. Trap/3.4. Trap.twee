@@ -1,12 +1,27 @@
 :: 3.4. Trap
-
-WARNING - CRITICAL SYSTEM FAILURE
-DAMAGE TO THE PRESSURIZATION SYSTEM HAS EXCEEDED 80%
-ALL SYSTEMS AND LIFEFORMS DEPENDANT ON IT WILL CEASE SHORTLY.
-
-CHANCE OF SURVIVAL: 0%
-
-INITIATING SHUT DOWN
+<<type 40ms skipkey "Control">>\
+!!! ⚠️ @@color:orange;WARNING - CRITICAL SYSTEM FAILURE @@
+<</type>>\
+<<type 40ms skipkey "Control">>\
+----
+    \@@color:gray;>@@ DAMAGE TO THE PRESSURIZATION SYSTEM HAS EXCEEDED 80%
+<</type>>\
+<<type 40ms skipkey "Control">>
+    \@@color:gray;>@@ ALL SYSTEMS AND LIFEFORMS DEPENDANT ON IT @@color:red;WILL CEASE@@ SHORTLY.
+<</type>>\
+<<type 40ms skipkey "Control">>
+    \@@color:gray;>@@ CHANCE OF SURVIVAL: @@color:red;0@@%
+<</type>>
+<<type 40ms skipkey "Control">>\
+    ...
+<</type>>\
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ INITIATING SHUT DOWN
+    <<script>>
+        $('#console-screen').css('backgroundImage', 'url("./assets/UI/mainconsole_broken.png")');
+        $('#choices-screen').css('backgroundImage', 'url("./assets/UI/bottomconsole_broken.png")');
+    <</script>>
+<</type>>\
 
 <<nobr>>
 <!-- ************************************ -->

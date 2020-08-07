@@ -1,17 +1,34 @@
 :: 2.2.0.2. Faction Neutral
-
-Congratulations, you made it.
+<<type 40ms skipkey "Control">>\
+    <h3>🐔 FREQUENCY 96.3</h3>\
+----
+<</type>>\
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ Congratulations, you made it.
 That's quite the feat for a stranger. We are impressed.
-
-Ah. Your spaceship was damaged? That's not surprising. The belt is unforgiving, and you are new here.
-You are close to our site, but you won't make it in your condition. 
-Some quick repairs should let you reach us in one piece. 
-We are close, so there is no need to waste too much time on them, being out there in the open exposes you to unnecessary dangers.
-
-We are sending you our location, mind you we do not share it lightly, but you impressed us.
-If you want to, you can come to us. But that is up to you.
-
-We'll be waiting.
+<</type>>
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ Ah. Your spaceship was damaged? That's not surprising. The belt is unforgiving, and you are new here.
+<</type>>
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ You are close to our site, but you won't make it in your condition.
+<</type>>
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ Some quick repairs should let you reach us in one piece. 
+<</type>>
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ We are close, so there is no need to waste too much time on them, being out there in the open exposes you to unnecessary dangers.
+<</type>>
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ We are sending you our location, mind you we do not share it lightly, but you impressed us. If you want to, you can come to us. But that is up to you.
+<</type>>
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ We'll be waiting.
+<</type>>\
+<<type 40ms skipkey "Control">>\
+----
+    <h3>❌ @@color:red;ENDED TRANSMISSION 96.3@@</h3>\
+<</type>>\
 
 <<nobr>>
 <!-- ************************************ -->

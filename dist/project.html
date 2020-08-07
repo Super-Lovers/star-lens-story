@@ -791,7 +791,7 @@ sDDGDFDBCBDGFJGHKMN
     \@@color:gray;&gt;@@ Damage sustained - @@color:green;repairable@@
 &lt;&lt;/type&gt;&gt;\
 &lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
-    \@@color:gray;&gt;@@ Engine at @@color:orange;60%@@ capacity
+    \@@color:gray;&gt;@@ Engine ⚙️ at @@color:orange;60%@@ capacity
 &lt;&lt;/type&gt;&gt;\
 &lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
     \@@color:gray;&gt;@@ &lt;b&gt;Operating System restored&lt;/b&gt;
@@ -1591,11 +1591,16 @@ Please
     name=&quot;2.1.1.1. Push Forward&quot;&gt;
         Push forward
 &lt;/button&gt;
-&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="30" name="2.1.1.0. Put Ship on Autopilot" tags="" position="1225,350" size="100,100">ENTERING EMERGENCY REPAIR MODE.
-
-AUTOPILOT ENGAGED TO PRESET DESTINATION.
-THIS MODE ENGAGES AUTOMATICALLY TO PREVENT ADDITIONAL DAMAGES AND ENSURE THE SAFETY OF THE CARGO.
-
+&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="30" name="2.1.1.0. Put Ship on Autopilot" tags="" position="1225,350" size="100,100">&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;
+    \@@color:gray;&gt;@@ @@color:orange;ENTERING EMERGENCY 🛠️ REPAIR MODE.@@
+&lt;&lt;/type&gt;&gt;\
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;
+    \@@color:gray;&gt;@@ AUTOPILOT ENGAGED TO PRESET DESTINATION.
+&lt;&lt;/type&gt;&gt;\
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;
+----
+    \@@color:gray;&gt;@@ @@color:cyan; 💬 THIS MODE ENGAGES AUTOMATICALLY TO PREVENT ADDITIONAL DAMAGES AND ENSURE THE SAFETY OF THE CARGO.@@
+&lt;&lt;/type&gt;&gt;\
 
 &lt;&lt;nobr&gt;&gt;
 &lt;!-- ************************************ --&gt;
@@ -1648,12 +1653,19 @@ THIS MODE ENGAGES AUTOMATICALLY TO PREVENT ADDITIONAL DAMAGES AND ENSURE THE SAF
     name=&quot;2.1.1.1. Push Forward&quot;&gt;
         Push forward
 &lt;/button&gt;
-&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="32" name="2.1.1.1. Push Forward" tags="" position="225,475" size="100,100">WARNING - CRITICAL DAMAGE
-THE PRESSURIZATION SYSTEM HAS RECEIVED CRITICAL DAMAGE AND IT WILL SHUT DOWN SOON.
-CONTINUING THIS COURSE OF ACTION MIGHT CAUSE IRREVERSIBLE DAMAGE TO THE SHIP AND/OR THE PASSENGERS.
-THIS ACTION IS NOT ADVISED.
-
-PROCEED ANYWAY?
+&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="32" name="2.1.1.1. Push Forward" tags="" position="225,475" size="100,100">&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+!!! ⚠️ @@color:orange;WARNING - CRITICAL DAMAGE@@
+&lt;&lt;/type&gt;&gt;\
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+----
+    \@@color:gray;&gt;@@ THE PRESSURIZATION SYSTEM HAS RECEIVED @@color:red;CRITICAL DAMAGE@@ AND IT WILL SHUT DOWN SOON.
+&lt;&lt;/type&gt;&gt;
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+    \@@color:gray;&gt;@@ CONTINUING THIS COURSE OF ACTION MIGHT CAUSE IRREVERSIBLE DAMAGE TO THE SHIP AND/OR THE PASSENGERS. @@color:red;THIS ACTION IS NOT ADVISED.@@
+&lt;&lt;/type&gt;&gt;
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+    \@@color:gray;&gt;@@ PROCEED REGARDLESS?
+&lt;&lt;/type&gt;&gt;\
 
 &lt;&lt;nobr&gt;&gt;
 &lt;!-- ************************************ --&gt;
@@ -1709,27 +1721,44 @@ PROCEED ANYWAY?
     name=&quot;2.1.1.1. Push Forward&quot;&gt;
         Push forward
 &lt;/button&gt;
-&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="34" name="2.2. Temperature Control" tags="" position="475,475" size="100,100">\@@color:gray;&gt;@@ 🌑 Asteroid belt has successfully been passed.
+&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="34" name="2.2. Temperature Control" tags="" position="475,475" size="100,100">&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+    \@@color:gray;&gt;@@ 🌑 Asteroid belt has successfully been passed.
+&lt;&lt;/type&gt;&gt;\
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+    \@@color:gray;&gt;@@ Analysing damage received. . . 
+&lt;&lt;/type&gt;&gt;\
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+    \@@color:gray;&gt;@@ ✔️ Analysis complete.
+&lt;&lt;/type&gt;&gt;
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+----
+!!! ⚠️ @@color:orange; WARNING - ISSUE WITHIN THE TEMPERATURE 🌡️ CONTROL SYSTEM DETECTED.@@
 
-\@@color:gray;&gt;@@ Analysing damage received. . . 
 
-\@@color:gray;&gt;@@ Analysis complete.
+    \@@color:gray;&gt;@@ The temperature 🌡️ control system is part of the vital apparatus of the ship. 
+&lt;&lt;/type&gt;&gt;\
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+    \@@color:gray;&gt;@@ CAUSE ANALYSIS. . .
+&lt;&lt;/type&gt;&gt;
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+----
+!!! 📝 LIKELY CAUSE
+&lt;&lt;/type&gt;&gt;\
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+    \@@color:gray;&gt;@@ OUTSIDE SOURCE (ASTEROID GRAZING) - 100%
+&lt;&lt;/type&gt;&gt;\
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+    \@@color:gray;&gt;@@ @@color:red;IMMEDIATE ACTION REQUIRED.@@
 
-WARNING - ISSUE WITHIN THE TEMPERATURE CONTROL SYSTEM DETECTED.
-The temperature control system is part of the vital apparatus of the ship. 
-
-\@@color:gray;&gt;@@ CAUSE ANALYSIS. . .
-
-LIKELY CAUSE
-
-\@@color:gray;&gt;@@ OUTSIDE SOURCE (ASTEROID GRAZING) - 100%
-
-IMMEDIATE ACTION REQUIRED.
-SUGGESTED ACTION: CRITICAL REPAIR.
-
-YOU HAVE RECEIVED [3] NEW TRANSMISSIONS.
-
-PLEASE BE WARNED, EXCESSIVE DELAY MAY CAUSE IRREVERSIBLE DAMAGE TO THE SHIP.
+    \@@color:gray;&gt;@@ SUGGESTED ACTION: CRITICAL REPAIR.
+&lt;&lt;/type&gt;&gt;
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+    \@@color:gray;&gt;@@ @@color:green;You have 📡 received @@@@color:red;&lt;b&gt;[3]&lt;/b&gt;@@@@color:green; new transmissions.@@
+&lt;&lt;/type&gt;&gt;
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+----
+!!! ⚠️ @@color:orange; PLEASE BE WARNED, EXCESSIVE DELAY MAY CAUSE IRREVERSIBLE DAMAGE TO THE SHIP.@@
+&lt;&lt;/type&gt;&gt;
 
 &lt;&lt;nobr&gt;&gt;
 &lt;!-- ************************************ --&gt;
@@ -1758,17 +1787,38 @@ PLEASE BE WARNED, EXCESSIVE DELAY MAY CAUSE IRREVERSIBLE DAMAGE TO THE SHIP.
     name=&quot;2.2.0.2. Faction Neutral&quot;&gt;
         Frequency (96.3)
 &lt;/button&gt;
-&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="35" name="2.2.0.0. Faction Good" tags="" position="600,475" size="100,100">Hello? Hello??
-Hey, if you receive this, we hope you are okay.
-
-We followed your signal THROUGH THE 🌑 ASTEROID BELT, MAN. WHAT THE HELL. THAT WAS SICK.
-HOW DID YOU DO THAT?? Scratch that, how are you alive????
-
-If there&#39;s any critical damage you should follow your ship&#39;s instruction and avoid getting into trouble.
-Our bros are almost back with the carrier ship so we&#39;ll be able to come for your as long as you SURVIVE.
-ALTHO THAT WAS SICK, SO WHO KNOWS WHAT ELSE YOU CAN DO MAN.
-
-PEACE OUT.
+&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="35" name="2.2.0.0. Faction Good" tags="" position="600,475" size="100,100">&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+    &lt;h3&gt;👽 FREQUENCY 108.5&lt;/h3&gt;\
+----
+&lt;&lt;/type&gt;&gt;\
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+    \@@color:gray;&gt;@@ Hello? Hello??
+&lt;&lt;/type&gt;&gt;
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;
+    \@@color:gray;&gt;@@ Hey, if you receive this, we hope you are okay.
+&lt;&lt;/type&gt;&gt;
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;
+    \@@color:gray;&gt;@@ We followed your signal THROUGH THE 🌑 ASTEROID BELT, MAN. WHAT THE HELL. THAT WAS SICK.
+&lt;&lt;/type&gt;&gt;
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;
+    \@@color:gray;&gt;@@ HOW DID YOU DO THAT?? Scratch that, how are you alive????
+&lt;&lt;/type&gt;&gt;
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;
+    \@@color:gray;&gt;@@ If there&#39;s any critical damage you should follow your ship&#39;s instruction and avoid getting into trouble.
+&lt;&lt;/type&gt;&gt;
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;
+    \@@color:gray;&gt;@@ Our bros are almost back with the carrier ship so we&#39;ll be able to come for your as long as you SURVIVE.
+&lt;&lt;/type&gt;&gt;
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;
+    \@@color:gray;&gt;@@ ALTHO THAT WAS SICK, SO WHO KNOWS WHAT ELSE YOU CAN DO MAN.
+&lt;&lt;/type&gt;&gt;
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;
+    \@@color:gray;&gt;@@ ✌️ PEACE OUT.
+&lt;&lt;/type&gt;&gt;\
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+----
+    &lt;h3&gt;❌ @@color:red;ENDED TRANSMISSION 108.5@@&lt;/h3&gt;\
+&lt;&lt;/type&gt;&gt;\
 
 &lt;&lt;nobr&gt;&gt;
 &lt;!-- ************************************ --&gt;
@@ -1789,19 +1839,31 @@ PEACE OUT.
     name=&quot;2.2.1.1. Overload Engine&quot;&gt;
         Overload engine
 &lt;/button&gt;
-&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="36" name="2.2.1.0. Autopilot and Repair" tags="" position="725,475" size="100,100">ENTERING EMERGENCY REPAIR MODE.
+&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="36" name="2.2.1.0. Autopilot and Repair" tags="" position="725,475" size="100,100">&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+\@@color:gray;&gt;@@ @@color:orange;ENTERING EMERGENCY 🛠️ REPAIR MODE.@@
+&lt;&lt;/type&gt;&gt;\
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+\@@color:gray;&gt;@@ AUTOPILOT ENGAGED TO PRESET DESTINATION.
+&lt;&lt;/type&gt;&gt;
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+----
+!!!! @@color:cyan; 💬 THIS MODE ENGAGES AUTOMATICALLY TO PREVENT ADDITIONAL DAMAGES AND ENSURE THE SAFETY OF THE CARGO.@@
 
-AUTOPILOT ENGAGED TO PRESET DESTINATION.
-THIS MODE ENGAGES AUTOMATICALLY TO PREVENT ADDITIONAL DAMAGES AND ENSURE THE SAFETY OF THE CARGO.
+@@color:orange;You may experience a shift in temperature at this time.@@
+&lt;&lt;/type&gt;&gt;\
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+----
+\@@color:gray;&gt;@@ Initiating system 🛠️ repair. . .
 
-You may experience a shift in temperature at this time.
-
-\@@color:gray;&gt;@@ Initiating system repair. . .
 \@@color:gray;&gt;@@ System repair in progress. . .
-\@@color:gray;&gt;@@ System repair complete
-\@@color:gray;&gt;@@ Calibrating temperature control
 
-TEMPERATURE CONTROL STATUS - ONLINE AND OPERATIONAL
+\@@color:gray;&gt;@@ System repair ✔️ complete
+
+\@@color:gray;&gt;@@ Calibrating temperature 🌡️ control
+&lt;&lt;/type&gt;&gt;
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+!!!! @@color:green;TEMPERATURE 🌡️ CONTROL STATUS - ✔️ ONLINE AND OPERATIONAL@@
+&lt;&lt;/type&gt;&gt;\
 
 &lt;&lt;nobr&gt;&gt;
 &lt;!-- ************************************ --&gt;
@@ -1814,15 +1876,32 @@ TEMPERATURE CONTROL STATUS - ONLINE AND OPERATIONAL
     name=&quot;3.3. Faction Bad Ambush&quot;&gt;
         Continue
 &lt;/button&gt;
-&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="37" name="2.2.0.1. Faction Bad" tags="" position="850,475" size="100,100">Hello? Somehow, it seems you have made it. 
-This is unbelievable - I mean, good. Unbelievably good.
-We were not aware you were familiar with the territory.
-
-Unfortunately, it seems your ship has sustained damage. There is no time for you to initiate proper system repairs.
-An emergency maneuver will be necessary. Simply overloading your ship&#39;s engine should compensate for the drop in temperature you are about to experience.
-As you are almost at your destination, this is for certain a viable option.
-
-You almost made it. Your ship can carry you a little further.
+&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="37" name="2.2.0.1. Faction Bad" tags="" position="850,475" size="100,100">&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+    &lt;h3&gt;👨‍🚀 FREQUENCY 99.9&lt;/h3&gt;\
+----
+&lt;&lt;/type&gt;&gt;\
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+    \@@color:gray;&gt;@@ Hello? Somehow, it seems you have made it. 
+&lt;&lt;/type&gt;&gt;
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+    \@@color:gray;&gt;@@ This is unbelievable - I mean, good. Unbelievably good. We were not aware you were familiar with the territory.
+&lt;&lt;/type&gt;&gt;
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+    \@@color:gray;&gt;@@ Unfortunately, it seems your ship has sustained damage. There is no time for you to initiate proper system repairs.
+&lt;&lt;/type&gt;&gt;
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+    \@@color:gray;&gt;@@ An emergency maneuver will be necessary. Simply overloading your ship&#39;s engine should compensate for the drop in temperature you are about to experience.
+&lt;&lt;/type&gt;&gt;
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+    \@@color:gray;&gt;@@ As you are almost at your destination, this is for certain a viable option.
+&lt;&lt;/type&gt;&gt;
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+    \@@color:gray;&gt;@@ You almost made it. Your ship can carry you a little further.
+&lt;&lt;/type&gt;&gt;\
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+----
+    &lt;h3&gt;❌ @@color:red;ENDED TRANSMISSION 99.9@@&lt;/h3&gt;\
+&lt;&lt;/type&gt;&gt;\
 
 &lt;&lt;nobr&gt;&gt;
 &lt;!-- ************************************ --&gt;
@@ -1843,17 +1922,28 @@ You almost made it. Your ship can carry you a little further.
     name=&quot;2.2.1.1. Overload Engine&quot;&gt;
         Overload engine
 &lt;/button&gt;
-&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="38" name="2.2.1.1. Overload Engine" tags="" position="975,475" size="100,100">\@@color:gray;&gt;@@ New instructions received
+&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="38" name="2.2.1.1. Overload Engine" tags="" position="975,475" size="100,100">&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+    \@@color:gray;&gt;@@ New instructions ✔️ received
 
-\@@color:gray;&gt;@@ Analysing new instructions
+    \@@color:gray;&gt;@@ Analysing new instructions
+&lt;&lt;/type&gt;&gt;\
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+    \@@color:gray;&gt;@@ Analysis ✔️ complete.
+&lt;&lt;/type&gt;&gt;
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+----
+!!! ⚠️ @@color:orange; WARNING - ⚙️ ENGINE OVERLOAD@@
 
-\@@color:gray;&gt;@@ Analysis complete.
 
-WARNING - ENGINE OVERLOAD
-THE SELECTED COURSE OF ACTION MIGHT RESULT IN CRITICAL SYSTEM FAILURE AND/OR DEATH.
-Overloading the engine can cause critical system failure and/or death and is not recommended unless other rescue systems are in place.
-
-OVERLOAD ENGINE?
+    \@@color:gray;&gt;@@ THE SELECTED COURSE OF ACTION @@color:red;MIGHT RESULT IN CRITICAL SYSTEM FAILURE AND/OR DEATH.@@
+&lt;&lt;/type&gt;&gt;
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+    \@@color:gray;&gt;@@ Overloading the ⚙️ engine @@color:red;can cause critical system failure and/or death@@ and is not recommended unless other rescue systems are in place.
+&lt;&lt;/type&gt;&gt;
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+----
+OVERLOAD ⚙️ ENGINE?
+&lt;&lt;/type&gt;&gt;\
 
 &lt;&lt;nobr&gt;&gt;
 &lt;!-- ************************************ --&gt;
@@ -1863,21 +1953,39 @@ OVERLOAD ENGINE?
     class=&quot;link-internal macro-button choice-button&quot;
     type=&quot;button&quot;
     tabindex=&quot;0&quot;
-    name=&quot;3.5.0. Faction Bad&quot;&gt;
+    name=&quot;3.5. Ship About to Explode&quot;&gt;
         Continue
 &lt;/button&gt;
-&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="39" name="2.2.0.2. Faction Neutral" tags="" position="1100,475" size="100,100">Congratulations, you made it.
+&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="39" name="2.2.0.2. Faction Neutral" tags="" position="1100,475" size="100,100">&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+    &lt;h3&gt;🐔 FREQUENCY 96.3&lt;/h3&gt;\
+----
+&lt;&lt;/type&gt;&gt;\
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+    \@@color:gray;&gt;@@ Congratulations, you made it.
 That&#39;s quite the feat for a stranger. We are impressed.
-
-Ah. Your spaceship was damaged? That&#39;s not surprising. The belt is unforgiving, and you are new here.
-You are close to our site, but you won&#39;t make it in your condition. 
-Some quick repairs should let you reach us in one piece. 
-We are close, so there is no need to waste too much time on them, being out there in the open exposes you to unnecessary dangers.
-
-We are sending you our location, mind you we do not share it lightly, but you impressed us.
-If you want to, you can come to us. But that is up to you.
-
-We&#39;ll be waiting.
+&lt;&lt;/type&gt;&gt;
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+    \@@color:gray;&gt;@@ Ah. Your spaceship was damaged? That&#39;s not surprising. The belt is unforgiving, and you are new here.
+&lt;&lt;/type&gt;&gt;
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+    \@@color:gray;&gt;@@ You are close to our site, but you won&#39;t make it in your condition.
+&lt;&lt;/type&gt;&gt;
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+    \@@color:gray;&gt;@@ Some quick repairs should let you reach us in one piece. 
+&lt;&lt;/type&gt;&gt;
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+    \@@color:gray;&gt;@@ We are close, so there is no need to waste too much time on them, being out there in the open exposes you to unnecessary dangers.
+&lt;&lt;/type&gt;&gt;
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+    \@@color:gray;&gt;@@ We are sending you our location, mind you we do not share it lightly, but you impressed us. If you want to, you can come to us. But that is up to you.
+&lt;&lt;/type&gt;&gt;
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+    \@@color:gray;&gt;@@ We&#39;ll be waiting.
+&lt;&lt;/type&gt;&gt;\
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+----
+    &lt;h3&gt;❌ @@color:red;ENDED TRANSMISSION 96.3@@&lt;/h3&gt;\
+&lt;&lt;/type&gt;&gt;\
 
 &lt;&lt;nobr&gt;&gt;
 &lt;!-- ************************************ --&gt;
@@ -1906,31 +2014,55 @@ We&#39;ll be waiting.
     name=&quot;2.2.1.2. Autopilot to Location&quot;&gt;
         Autopilot to location
 &lt;/button&gt;
-&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="40" name="2.2.1.2. Autopilot to Location" tags="" position="1225,475" size="100,100">\@@color:gray;&gt;@@ New coordinates received
+&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="40" name="2.2.1.2. Autopilot to Location" tags="" position="1225,475" size="100,100">&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+    \@@color:gray;&gt;@@ New coordinates received
 
-\@@color:gray;&gt;@@ Analysing new coordinates
+    \@@color:gray;&gt;@@ Analysing new coordinates
 
-\@@color:gray;&gt;@@ Analysis complete.
+    \@@color:gray;&gt;@@ Analysis ✔️ complete.
 
-\@@color:gray;&gt;@@ Inputting new route. . .
+    ...
+&lt;&lt;/type&gt;&gt;
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+    \@@color:gray;&gt;@@ Inputting new route. . .
 
-\@@color:gray;&gt;@@ Route changed.
+    \@@color:gray;&gt;@@ Route changed.
+&lt;&lt;/type&gt;&gt;
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+----
+!!! ⚠️ @@color:orange;WARNING - ENTERING EMERGENCY PATCH MODE?@@
 
-WARNING - ENTERING EMERGENCY PATCH MODE?
-THIS MODE SUPPLIES AN EMERGENCY TEMPORARY SYSTEM REPAIR AND IS ADVISED AS A SHORT TERM SOLUTION ONLY.
 
-\@@color:gray;&gt;@@ Entering emergency patch mode. . .
-AUTOPILOT ENGAGED TO PRESET DESTINATION.
-THIS MODE ENGAGES AUTOMATICALLY TO PREVENT ADDITIONAL DAMAGES AND ENSURE THE SAFETY OF THE CARGO.
+    \@@color:gray;&gt;@@ 💬 @@color:cyan;THIS MODE SUPPLIES AN EMERGENCY TEMPORARY SYSTEM REPAIR AND IS ADVISED AS A SHORT TERM SOLUTION ONLY.@@
+&lt;&lt;/type&gt;&gt;
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+----
+    \@@color:gray;&gt;@@ Entering emergency patch mode. . .
 
-You may experience a shift in temperature at this time.
+    \@@color:gray;&gt;@@ AUTOPILOT ENGAGED TO PRESET DESTINATION.
+&lt;&lt;/type&gt;&gt;
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+----
+    \@@color:gray;&gt;@@ 💬  @@color:cyan;THIS MODE ENGAGES AUTOMATICALLY TO PREVENT ADDITIONAL DAMAGES AND ENSURE THE SAFETY OF THE CARGO.@@
 
-\@@color:gray;&gt;@@ Initiating system patch. . .
-\@@color:gray;&gt;@@ System patch in progress. . .
-\@@color:gray;&gt;@@ System patch complete
-\@@color:gray;&gt;@@ Calibrating temperature control
 
-TEMPERATURE CONTROL STATUS - OPERATIONAL AT 65% CAPACITY
+    \@@color:gray;&gt;@@ @@color:orange;You may experience a shift in temperature 🌡️ at this time.@@
+&lt;&lt;/type&gt;&gt;
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+----
+    \@@color:gray;&gt;@@ Initiating system patch. . .
+
+    \@@color:gray;&gt;@@ System patch in progress. . .
+&lt;&lt;/type&gt;&gt;\
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+    \@@color:gray;&gt;@@ System patch ✔️ complete
+
+    \@@color:gray;&gt;@@ Calibrating temperature 🌡️ control..
+&lt;&lt;/type&gt;&gt;
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+----
+    \@@color:gray;&gt;@@ TEMPERATURE 🌡️ CONTROL STATUS - OPERATIONAL AT 65% CAPACITY
+&lt;&lt;/type&gt;&gt;\
 
 &lt;&lt;nobr&gt;&gt;
 &lt;!-- ************************************ --&gt;
@@ -2602,14 +2734,26 @@ TEMPERATURE CONTROL STATUS - OPERATIONAL AT 65% CAPACITY
     name=&quot;3.2.2.1. Join Pirates (Ending)&quot;&gt;
         Follow pirate
 &lt;/button&gt;
-&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="61" name="3.2.2.1. Join Pirates (Ending)" tags="" position="100,850" size="100,100"></tw-passagedata><tw-passagedata pid="62" name="3.3. Faction Bad Ambush" tags="" position="225,850" size="100,100">PRESSURIZATION SYSTEM OPERATIONAL
-SYSTEM RESTORED - 40% CAPACITY
-
-WARNING - UNKNOWN SPACESHIP INCOMING
-SEVERAL UNAUTHORIZED WEAPONS DETECTED
-ADDITIONAL DAMAGE MIGHT COMPROMISE THE SHIP FUNCTIONALITY INDEFINITELY
-
-YOU HAVE RECEIVED [2] NEW TRANSMISSIONS
+&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="61" name="3.2.2.1. Join Pirates (Ending)" tags="" position="100,850" size="100,100"></tw-passagedata><tw-passagedata pid="62" name="3.3. Faction Bad Ambush" tags="" position="225,850" size="100,100">&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;
+    \@@color:gray;&gt;@@ PRESSURIZATION SYSTEM ✔️ OPERATIONAL
+    
+    \@@color:gray;&gt;@@ SYSTEM RESTORED - @@color:orange;40@@% CAPACITY
+&lt;&lt;/type&gt;&gt;\
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;
+----
+!!! @@color:orange; ⚠️ WARNING - UNKNOWN SPACESHIP INCOMING@@
+&lt;&lt;/type&gt;&gt;\
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+----
+\@@color:gray;&gt;@@ SEVERAL UNAUTHORIZED WEAPONS DETECTED
+&lt;&lt;/type&gt;&gt;\
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;
+    \@@color:gray;&gt;@@ @@color:red;ADDITIONAL DAMAGE MIGHT COMPROMISE THE SHIP@@ FUNCTIONALITY INDEFINITELY
+&lt;&lt;/type&gt;&gt;\
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;
+----
+    \@@color:gray;&gt;@@ @@color:green;You have 📡 received @@@@color:red;&lt;b&gt;[2]&lt;/b&gt;@@@@color:green; new transmissions.@@
+&lt;&lt;/type&gt;&gt;\
 
 
 &lt;&lt;nobr&gt;&gt;
@@ -2631,20 +2775,41 @@ YOU HAVE RECEIVED [2] NEW TRANSMISSIONS
     name=&quot;3.3.0.1. Faction Bad&quot;&gt;
         Frequency (99.9)
 &lt;/button&gt;
-&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="63" name="3.3.0.0. Faction Good" tags="" position="350,850" size="100,100">Bro, holy fuck!
-
-First of all, good job making it this far, man. I&#39;d have straight up died by now.
-Secondly, what?
-
-Oh.
-Oh dude no.
-
-Those are the pirates that have been stirring shit around here lately. Do NOT let them get closer.
-We are sending someone your way, move to the coordinates I&#39;m sending you right now and you should see them soon.
-If your ship&#39;s shields still work you should use them.
-
-Hold on there, mate!
-We are coming for you!
+&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="63" name="3.3.0.0. Faction Good" tags="" position="350,850" size="100,100">&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+    &lt;h3&gt;👽 FREQUENCY 108.5&lt;/h3&gt;\
+----
+&lt;&lt;/type&gt;&gt;\
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;
+    \@@color:gray;&gt;@@ Bro, holy fuck!
+&lt;&lt;/type&gt;&gt;
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;
+    \@@color:gray;&gt;@@ First of all, good job making it this far, man. I&#39;d have straight up died by now.
+&lt;&lt;/type&gt;&gt;
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;
+    \@@color:gray;&gt;@@ Secondly, what?
+&lt;&lt;/type&gt;&gt;
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;
+    \@@color:gray;&gt;@@ Oh.
+&lt;&lt;/type&gt;&gt;\
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;
+    \@@color:gray;&gt;@@ Oh dude no.
+&lt;&lt;/type&gt;&gt;
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;
+    \@@color:gray;&gt;@@ Those are the pirates that have been stirring shit around here lately. Do NOT let them get closer.
+&lt;&lt;/type&gt;&gt;
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;
+    \@@color:gray;&gt;@@ We are sending someone your way, move to the coordinates I&#39;m sending you right now and you should see them soon. If your ship&#39;s shields still work you should use them.
+&lt;&lt;/type&gt;&gt;
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;
+    \@@color:gray;&gt;@@ Hold on there, mate!
+&lt;&lt;/type&gt;&gt;\
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;
+    \@@color:gray;&gt;@@ We are coming for you!
+&lt;&lt;/type&gt;&gt;\
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+----
+    &lt;h3&gt;❌ @@color:red;ENDED TRANSMISSION 108.5@@&lt;/h3&gt;\
+&lt;&lt;/type&gt;&gt;\
 
 &lt;&lt;nobr&gt;&gt;
 &lt;!-- ************************************ --&gt;
@@ -2657,18 +2822,32 @@ We are coming for you!
     name=&quot;3.3.1.0. Maneuver&quot;&gt;
         Maneuver and raise shields
 &lt;/button&gt;
-&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="64" name="3.3.1.0. Maneuver" tags="" position="475,850" size="100,100">WARNING - UNKNOWN SPACESHIP INCOMING
-SEVERAL UNAUTHORIZED WEAPONS DETECTED
-ADDITIONAL DAMAGE MIGHT COMPROMISE THE SHIP FUNCTIONALITY INDEFINITELY
+&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="64" name="3.3.1.0. Maneuver" tags="" position="475,850" size="100,100">&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+!!! ⚠️ @@color:orange;WARNING - UNKNOWN SPACESHIP INCOMING@@
+&lt;&lt;/type&gt;&gt;\
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+----
+    \@@color:gray;&gt;@@ SEVERAL UNAUTHORIZED WEAPONS DETECTED
 
-Estimated survival rate - 30%
+    \@@color:gray;&gt;@@ ADDITIONAL DAMAGE MIGHT @@color:red;COMPROMISE THE SHIP@@ FUNCTIONALITY INDEFINITELY
+&lt;&lt;/type&gt;&gt;\
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+    \@@color:gray;&gt;@@ Estimated survival rate - @@color:orange;30@@%
+&lt;&lt;/type&gt;&gt;
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+    \@@color:gray;&gt;@@ ENGAGE SHIELDS
 
-ENGAGE SHIELDS
-SHIELDS EFFICACY - 70%
-Engaging the shields will increase your survival rate of approximately 30%
+    \@@color:gray;&gt;@@ SHIELDS EFFICACY - @@color:green;70@@%
+&lt;&lt;/type&gt;&gt;\
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+----
+!!! Engaging the shields will increase your survival rate of approximately @@color:green;30@@%
+&lt;&lt;/type&gt;&gt;
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+    \@@color:gray;&gt;@@ EXTERNAL COORDINATES ✔️ RECEIVED
 
-EXTERNAL COORDINATES RECEIVED
-Commencing rerouting. . .
+    \@@color:gray;&gt;@@ Commencing rerouting. . .
+&lt;&lt;/type&gt;&gt;\
  
 
 &lt;&lt;nobr&gt;&gt;
@@ -2693,16 +2872,35 @@ Now hold on tight, we are linking to your ship so we can carry it back home. . .
 
 You can come out once we pull you in the carrier! We got food and first aid if you&#39;re injured. And you can sit with us up in the control room and tell us how the fuck you even ended here.
 
-&lt;&lt;link [[Man, imagine how it could&#39;ve ended if you&#39;d made different choices along the way. . .|Start]]&gt;&gt;&lt;&lt;/link&gt;&gt;</tw-passagedata><tw-passagedata pid="66" name="3.3.0.1. Faction Bad" tags="" position="725,850" size="100,100">Hello~
-
-So, question. Why won&#39;t you die? We have been really trying to get you out of our way, but you just can&#39;t seem to get the memo.
-It&#39;s getting really annoying.
-
-Yes, yes, we know. You thought you could &quot;trust us&quot;, but isn&#39;t it your own fault for trusting the first transmission your ship received?
-And then again and again while you kept failing?
-
-So, we have decided to take a more direct approach. Don&#39;t worry, we will make it just as painfull as you&#39;ve been annoying.
-Now sit tight, and wait for death.
+&lt;&lt;link [[Man, imagine how it could&#39;ve ended if you&#39;d made different choices along the way. . .|Start]]&gt;&gt;&lt;&lt;/link&gt;&gt;</tw-passagedata><tw-passagedata pid="66" name="3.3.0.1. Faction Bad" tags="" position="725,850" size="100,100">&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+    &lt;h3&gt;👨‍🚀 FREQUENCY 99.9&lt;/h3&gt;\
+----
+&lt;&lt;/type&gt;&gt;\
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;
+    \@@color:gray;&gt;@@ Hello~
+&lt;&lt;/type&gt;&gt;
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;
+    \@@color:gray;&gt;@@ So, question. Why won&#39;t you die? We have been really trying to get you out of our way, but you just can&#39;t seem to get the memo.
+&lt;&lt;/type&gt;&gt;
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;
+    \@@color:gray;&gt;@@ It&#39;s getting really annoying.
+&lt;&lt;/type&gt;&gt;
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;
+    \@@color:gray;&gt;@@ Yes, yes, we know. You thought you could &quot;trust us&quot;, but isn&#39;t it your own fault for trusting the first transmission your ship received?
+&lt;&lt;/type&gt;&gt;
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;
+    \@@color:gray;&gt;@@ And then again and again while you kept failing?
+&lt;&lt;/type&gt;&gt;
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;
+    \@@color:gray;&gt;@@ So, we have decided to take a more direct approach. Don&#39;t worry, we will make it just as painfull as you&#39;ve been annoying.
+&lt;&lt;/type&gt;&gt;
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;
+    \@@color:gray;&gt;@@ Now sit tight, and wait for death.
+&lt;&lt;/type&gt;&gt;\
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+----
+    &lt;h3&gt;❌ @@color:red;ENDED TRANSMISSION 99.9@@&lt;/h3&gt;\
+&lt;&lt;/type&gt;&gt;\
 
 &lt;&lt;nobr&gt;&gt;
 &lt;!-- ************************************ --&gt;
@@ -2715,25 +2913,57 @@ Now sit tight, and wait for death.
     name=&quot;3.3.1.1. Wait&quot;&gt;
         Continue
 &lt;/button&gt;
-&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="67" name="3.3.1.1. Wait" tags="" position="850,850" size="100,100">WARNING - INCOMING ATTACK DETECTED
-ENGAGE SHIELDS
-SHIELDS EFFICACY - 70%
-This is an automated response from the system
+&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="67" name="3.3.1.1. Wait" tags="" position="850,850" size="100,100">&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+!!! ⚠️ @@color:orange;WARNING - INCOMING ATTACK DETECTED@@
 
-WARNING - COLLISION REGISTERED ON RIGHT [R] ENGINE
+...
+&lt;&lt;/type&gt;&gt;\
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+    \@@color:gray;&gt;@@ ENGAGE SHIELDS
 
-Analysing damage received. . . 
+    \@@color:gray;&gt;@@ SHIELDS EFFICIENCY - 70%
+&lt;&lt;/type&gt;&gt;
+&lt;&lt;type 0ms skipkey &quot;Control&quot;&gt;&gt;\
+    &lt;span class=&quot;boom-title pulse&quot;&gt;&#39;&#39;@@color:orange;B@@ @@color:red;O@@ 💥 @@color:red;O@@ @@color:orange;M@@&#39;&#39;&lt;/span&gt;
+    &lt;&lt;script&gt;&gt;
+        $(&#39;#choices-screen&#39;).css(&#39;backgroundImage&#39;, &#39;url(&quot;./assets/UI/bottomconsole_broken.png&quot;)&#39;);
+    &lt;&lt;/script&gt;&gt;
+&lt;&lt;/type&gt;&gt;\
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+----
+\@@color:gray;&gt;@@ This is an automated response from the system
+&lt;&lt;/type&gt;&gt;\
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+!!! ⚠️ @@color:orange;WARNING - COLLISION REGISTERED ON RIGHT [R] ENGINE@@
+&lt;&lt;/type&gt;&gt;\
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+    \@@color:gray;&gt;@@ Analysing damage received. . . 
+&lt;&lt;/type&gt;&gt;\
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+    \@@color:gray;&gt;@@ Analysis ✔️ complete. 
+&lt;&lt;/type&gt;&gt;\
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+    \@@color:gray;&gt;@@ SYSTEM AT 30% CAPACITY
+&lt;&lt;/type&gt;&gt;
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+----
+!!! ⚠️ @@color:orange;WARNING - INCOMING ATTACK DETECTED@@
 
-Analysis complete. 
-
-SYSTEM AT 30% CAPACITY
-
-WARNING - INCOMING ATTACK DETECTED
-SHIELDS EFFICACY - 30%
-
-WARNING - IRREVERSIBLE DAMAGE DETECTED
-
-SYSTEM SHUT DOWN IMMINENT
+\@@color:gray;&gt;@@ SHIELDS EFFICACY - 30%
+&lt;&lt;/type&gt;&gt;
+&lt;&lt;type 0ms skipkey &quot;Control&quot;&gt;&gt;\
+    &lt;span class=&quot;boom-title pulse&quot;&gt;&#39;&#39;@@color:orange;B@@ @@color:red;O@@ 💥 @@color:red;O@@ @@color:orange;M@@&#39;&#39;&lt;/span&gt;
+    &lt;&lt;script&gt;&gt;
+        $(&#39;#console-screen&#39;).css(&#39;backgroundImage&#39;, &#39;url(&quot;./assets/UI/mainconsole_broken.png&quot;)&#39;);
+    &lt;&lt;/script&gt;&gt;
+&lt;&lt;/type&gt;&gt;
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+----
+!!! ⚠️ @@color:orange;WARNING - IRREVERSIBLE DAMAGE DETECTED@@
+&lt;&lt;/type&gt;&gt;\
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+    \@@color:gray;&gt;@@ @@color:red;SYSTEM SHUT DOWN IMMINENT@@
+&lt;&lt;/type&gt;&gt;\
 
 &lt;&lt;nobr&gt;&gt;
 &lt;!-- ************************************ --&gt;
@@ -2750,13 +2980,29 @@ SYSTEM SHUT DOWN IMMINENT
 Is this how I die?
 Is this really the end for me?
 
-&lt;&lt;link [[I don&#39;t want to die here. . .|Start]]&gt;&gt;&lt;&lt;/link&gt;&gt;</tw-passagedata><tw-passagedata pid="69" name="3.4. Trap" tags="" position="1100,850" size="100,100">WARNING - CRITICAL SYSTEM FAILURE
-DAMAGE TO THE PRESSURIZATION SYSTEM HAS EXCEEDED 80%
-ALL SYSTEMS AND LIFEFORMS DEPENDANT ON IT WILL CEASE SHORTLY.
-
-CHANCE OF SURVIVAL: 0%
-
-INITIATING SHUT DOWN
+&lt;&lt;link [[I don&#39;t want to die here. . .|Start]]&gt;&gt;&lt;&lt;/link&gt;&gt;</tw-passagedata><tw-passagedata pid="69" name="3.4. Trap" tags="" position="1100,850" size="100,100">&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+!!! ⚠️ @@color:orange;WARNING - CRITICAL SYSTEM FAILURE @@
+&lt;&lt;/type&gt;&gt;\
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+----
+    \@@color:gray;&gt;@@ DAMAGE TO THE PRESSURIZATION SYSTEM HAS EXCEEDED 80%
+&lt;&lt;/type&gt;&gt;\
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;
+    \@@color:gray;&gt;@@ ALL SYSTEMS AND LIFEFORMS DEPENDANT ON IT @@color:red;WILL CEASE@@ SHORTLY.
+&lt;&lt;/type&gt;&gt;\
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;
+    \@@color:gray;&gt;@@ CHANCE OF SURVIVAL: @@color:red;0@@%
+&lt;&lt;/type&gt;&gt;
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+    ...
+&lt;&lt;/type&gt;&gt;\
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+    \@@color:gray;&gt;@@ INITIATING SHUT DOWN
+    &lt;&lt;script&gt;&gt;
+        $(&#39;#console-screen&#39;).css(&#39;backgroundImage&#39;, &#39;url(&quot;./assets/UI/mainconsole_broken.png&quot;)&#39;);
+        $(&#39;#choices-screen&#39;).css(&#39;backgroundImage&#39;, &#39;url(&quot;./assets/UI/bottomconsole_broken.png&quot;)&#39;);
+    &lt;&lt;/script&gt;&gt;
+&lt;&lt;/type&gt;&gt;\
 
 &lt;&lt;nobr&gt;&gt;
 &lt;!-- ************************************ --&gt;
@@ -2781,7 +3027,20 @@ Unfortunately you survived the first attack, so we had to get a bit creative.
 
 How unfortunate for you, you really did almost make it.
 
-&lt;&lt;link [[Too bad, so sad..|Start]]&gt;&gt;&lt;&lt;/link&gt;&gt;</tw-passagedata><tw-passagedata pid="71" name="3.5.0. Faction Bad" tags="" position="100,975" size="100,100">&lt;!-- WRITE PASSAGE STARTING OVER THIS LINE --&gt;
+&lt;&lt;link [[Too bad, so sad..|Start]]&gt;&gt;&lt;&lt;/link&gt;&gt;</tw-passagedata><tw-passagedata pid="71" name="3.5. Ship About to Explode" tags="" position="100,975" size="100,100">&lt;!-- WRITE PASSAGE STARTING OVER THIS LINE --&gt;
+
+&lt;&lt;nobr&gt;&gt;
+&lt;!-- ************************************ --&gt;
+&lt;!--       Bottom interface buttons       --&gt;
+&lt;!-- ************************************ --&gt;
+&lt;button
+    class=&quot;link-internal macro-button choice-button&quot;
+    type=&quot;button&quot;
+    tabindex=&quot;0&quot;
+    name=&quot;3.5.0. Faction Bad&quot;&gt;
+        Frequency (99.9)
+&lt;/button&gt;
+&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="72" name="3.5.0. Faction Bad" tags="" position="225,975" size="100,100">&lt;!-- WRITE PASSAGE STARTING OVER THIS LINE --&gt;
 
 &lt;&lt;nobr&gt;&gt;
 &lt;!-- ************************************ --&gt;
@@ -2794,7 +3053,7 @@ How unfortunate for you, you really did almost make it.
     name=&quot;3.5.1. Wait&quot;&gt;
         Wait
 &lt;/button&gt;
-&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="72" name="3.5.1. Wait" tags="" position="225,975" size="100,100">&lt;!-- WRITE PASSAGE STARTING OVER THIS LINE --&gt;
+&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="73" name="3.5.1. Wait" tags="" position="350,975" size="100,100">&lt;!-- WRITE PASSAGE STARTING OVER THIS LINE --&gt;
 
 &lt;&lt;nobr&gt;&gt;
 &lt;!-- ************************************ --&gt;
@@ -2807,7 +3066,7 @@ How unfortunate for you, you really did almost make it.
     name=&quot;3.5.2. Explosion (Ending)&quot;&gt;
         Continue
 &lt;/button&gt;
-&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="73" name="3.5.2. Explosion (Ending)" tags="" position="350,975" size="100,100"></tw-passagedata><tw-passagedata pid="74" name="3.6.0. Faction Neutral" tags="" position="475,975" size="100,100">&lt;!-- WRITE PASSAGE STARTING OVER THIS LINE --&gt;
+&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="74" name="3.5.2. Explosion (Ending)" tags="" position="475,975" size="100,100"></tw-passagedata><tw-passagedata pid="75" name="3.6.0. Faction Neutral" tags="" position="600,975" size="100,100">&lt;!-- WRITE PASSAGE STARTING OVER THIS LINE --&gt;
 
 &lt;&lt;nobr&gt;&gt;
 &lt;!-- ************************************ --&gt;
@@ -2820,7 +3079,7 @@ How unfortunate for you, you really did almost make it.
     name=&quot;3.6.1. Join Faction Neutral&quot;&gt;
         Join faction Neutral
 &lt;/button&gt;
-&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="75" name="3.6.1. Join Faction Neutral" tags="" position="600,975" size="100,100">&lt;!-- WRITE PASSAGE STARTING OVER THIS LINE --&gt;
+&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="76" name="3.6.1. Join Faction Neutral" tags="" position="725,975" size="100,100">&lt;!-- WRITE PASSAGE STARTING OVER THIS LINE --&gt;
 
 &lt;&lt;nobr&gt;&gt;
 &lt;!-- ************************************ --&gt;
@@ -2833,7 +3092,7 @@ How unfortunate for you, you really did almost make it.
     name=&quot;3.6.2. Join Faction Neutral (Ending)&quot;&gt;
         Continue
 &lt;/button&gt;
-&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="76" name="3.6.2. Join Faction Neutral (Ending)" tags="" position="725,975" size="100,100"></tw-passagedata></tw-storydata>
+&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="77" name="3.6.2. Join Faction Neutral (Ending)" tags="" position="850,975" size="100,100"></tw-passagedata></tw-storydata>
 	<script id="script-sugarcube" type="text/javascript">
 	/*! SugarCube JS */
 	if(document.documentElement.getAttribute("data-init")==="loading"){!function(window,document,jQuery,undefined){"use strict";function _classCallCheck(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,r=Array(e.length);t<e.length;t++)r[t]=e[t];return r}return Array.from(e)}var _createClass=function(){function e(e,t){for(var r=0;r<t.length;r++){var n=t[r];n.enumerable=n.enumerable||!1,n.configurable=!0,"value"in n&&(n.writable=!0),Object.defineProperty(e,n.key,n)}}return function(t,r,n){return r&&e(t.prototype,r),n&&e(t,n),t}}(),_slicedToArray=function(){function e(e,t){var r=[],n=!0,a=!1,i=undefined;try{for(var o,s=e[Symbol.iterator]();!(n=(o=s.next()).done)&&(r.push(o.value),!t||r.length!==t);n=!0);}catch(e){a=!0,i=e}finally{try{!n&&s.return&&s.return()}finally{if(a)throw i}}return r}return function(t,r){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return e(t,r);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},errorPrologRegExp=/^(?:(?:uncaught\s+(?:exception:\s+)?)?\w*(?:error|exception|_err):\s+)+/i,Alert=function(){function e(e,t,r,n){var a="fatal"===e,i="Apologies! "+(a?"A fatal":"An")+" error has occurred.";i+=a?" Aborting.":" You may be able to continue, but some parts may not work properly.",null==t&&null==r||(i+="\n\nError",null!=t&&(i+=" ["+t+"]"),i+=null!=r?": "+r.replace(errorPrologRegExp,"")+".":": unknown error."),"object"===(void 0===n?"undefined":_typeof(n))&&null!==n&&n.stack&&(i+="\n\nStack Trace:\n"+n.stack),window.alert(i)}function t(t,r,n){e(null,t,r,n)}function r(t,r,n){e("fatal",t,r,n)}return function(e){window.onerror=function(n,a,i,o,s){"complete"===document.readyState?t(null,n,s):(r(null,n,s),window.onerror=e,"function"==typeof window.onerror&&window.onerror.apply(this,arguments))}}(window.onerror),Object.freeze(Object.defineProperties({},{error:{value:t},fatal:{value:r}}))}(),Patterns=function(){var e=function(){var e=new Map([[" ","\\u0020"],["\f","\\f"],["\n","\\n"],["\r","\\r"],["\t","\\t"],["\v","\\v"],[" ","\\u00a0"],[" ","\\u1680"],["᠎","\\u180e"],[" ","\\u2000"],[" ","\\u2001"],[" ","\\u2002"],[" ","\\u2003"],[" ","\\u2004"],[" ","\\u2005"],[" ","\\u2006"],[" ","\\u2007"],[" ","\\u2008"],[" ","\\u2009"],[" ","\\u200a"],["\u2028","\\u2028"],["\u2029","\\u2029"],[" ","\\u202f"],[" ","\\u205f"],["　","\\u3000"],["\ufeff","\\ufeff"]]),t=/^\s$/,r="";return e.forEach(function(e,n){t.test(n)||(r+=e)}),r?"[\\s"+r+"]":"\\s"}(),t="[\\u0020\\f\\t\\v\\u00a0\\u1680\\u180e\\u2000-\\u200a\\u202f\\u205f\\u3000\\ufeff]",r="\\s"===e?"\\S":e.replace(/^\[/,"[^"),n="[0-9A-Z_a-z\\-\\u00c0-\\u00d6\\u00d8-\\u00f6\\u00f8-\\u00ff\\u0150\\u0170\\u0151\\u0171]",a=n.replace("\\-",""),i=function(){return"("+n+"+)\\(([^\\)\\|\\n]+)\\):|"+t+"*("+n+"+)"+t+"*:([^;\\|\\n]+);|"+t+"*((?:[#.]"+n+"+"+t+"*)+);"}();return Object.freeze({space:e,spaceNoTerminator:t,lineTerminator:"[\\n\\r\\u2028\\u2029]",notSpace:r,anyChar:"(?:.|[\\n\\r\\u2028\\u2029])",anyLetter:n,anyLetterStrict:a,identifierFirstChar:"[$A-Z_a-z]",identifierNextChar:"[$0-9A-Z_a-z]",identifier:"[$A-Z_a-z][$0-9A-Z_a-z]*",variableSigil:"[$_]",variable:"[$_][$A-Z_a-z][$0-9A-Z_a-z]*",macroName:"[A-Za-z][\\w-]*|[=-]",templateName:"[A-Za-z][\\w-]*",cssIdOrClassSigil:"[#.]",cssImage:"\\[[<>]?[Ii][Mm][Gg]\\[(?:\\s|\\S)*?\\]\\]+",inlineCss:i,url:"(?:file|https?|mailto|ftp|javascript|irc|news|data):[^\\s'\"]+"})}();!function(){function e(e,t){var r=Number.parseInt(e,10)||0;if(r<1)return"";var n=void 0===t?"":String(t);for(""===n&&(n=" ");n.length<r;){var a=n.length,i=r-a;n+=a>i?n.slice(0,i):n}return n.length>r&&(n=n.slice(0,r)),n}var t=function(){function e(e,n){var a=String(e);if(!a)return a;switch(n){case"start":return t.test(a)?a.replace(t,""):a;case"end":return r.test(a)?a.replace(r,""):a;default:throw new Error('_trimString called with incorrect where parameter value: "'+n+'"')}}var t=new RegExp("^"+Patterns.space+Patterns.space+"*"),r=new RegExp(""+Patterns.space+Patterns.space+"*$");return e}();Array.prototype.flat||Object.defineProperty(Array.prototype,"flat",{configurable:!0,writable:!0,value:function(){function e(){if(null==this)throw new TypeError("Array.prototype.flat called on null or undefined");var t=0===arguments.length?1:Number(arguments[0])||0;return t<1?Array.prototype.slice.call(this):Array.prototype.reduce.call(this,function(r,n){return n instanceof Array?r.push.apply(r,_toConsumableArray(e.call(n,t-1))):r.push(n),r},[])}return e}()}),Array.prototype.flatMap||Object.defineProperty(Array.prototype,"flatMap",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.flatMap called on null or undefined");return Array.prototype.map.apply(this,arguments).flat()}}),Array.prototype.includes||Object.defineProperty(Array.prototype,"includes",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.includes called on null or undefined");if(0===arguments.length)return!1;var e=this.length>>>0;if(0===e)return!1;var t=arguments[0],r=Number(arguments[1])||0;for(r<0&&(r=Math.max(0,e+r));r<e;++r){var n=this[r];if(n===t||n!==n&&t!==t)return!0}return!1}}),Object.entries||Object.defineProperty(Object,"entries",{configurable:!0,writable:!0,value:function(e){if("object"!==(void 0===e?"undefined":_typeof(e))||null===e)throw new TypeError("Object.entries object parameter must be an object");return Object.keys(e).map(function(t){return[t,e[t]]})}}),Object.fromEntries||Object.defineProperty(Object,"fromEntries",{configurable:!0,writable:!0,value:function(e){return Array.from(e).reduce(function(e,t){if(Object(t)!==t)throw new TypeError("Object.fromEntries iterable parameter must yield objects");return t[0]in e?Object.defineProperty(e,t[0],{configurable:!0,enumerable:!0,writable:!0,value:t[1]}):e[t[0]]=t[1],e},{})}}),Object.getOwnPropertyDescriptors||Object.defineProperty(Object,"getOwnPropertyDescriptors",{configurable:!0,writable:!0,value:function(e){if(null==e)throw new TypeError("Object.getOwnPropertyDescriptors object parameter is null or undefined");var t=Object(e);return Reflect.ownKeys(t).reduce(function(e,r){var n=Object.getOwnPropertyDescriptor(t,r);return void 0!==n&&(r in e?Object.defineProperty(e,r,{configurable:!0,enumerable:!0,writable:!0,value:n}):e[r]=n),e},{})}}),Object.values||Object.defineProperty(Object,"values",{configurable:!0,writable:!0,value:function(e){if("object"!==(void 0===e?"undefined":_typeof(e))||null===e)throw new TypeError("Object.values object parameter must be an object");return Object.keys(e).map(function(t){return e[t]})}}),String.prototype.padStart||Object.defineProperty(String.prototype,"padStart",{configurable:!0,writable:!0,value:function(t,r){if(null==this)throw new TypeError("String.prototype.padStart called on null or undefined");var n=String(this),a=n.length,i=Number.parseInt(t,10);return i<=a?n:e(i-a,r)+n}}),String.prototype.padEnd||Object.defineProperty(String.prototype,"padEnd",{configurable:!0,writable:!0,value:function(t,r){if(null==this)throw new TypeError("String.prototype.padEnd called on null or undefined");var n=String(this),a=n.length,i=Number.parseInt(t,10);return i<=a?n:n+e(i-a,r)}}),String.prototype.trimStart||Object.defineProperty(String.prototype,"trimStart",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.trimStart called on null or undefined");return t(this,"start")}}),String.prototype.trimLeft||Object.defineProperty(String.prototype,"trimLeft",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.trimLeft called on null or undefined");return t(this,"start")}}),String.prototype.trimEnd||Object.defineProperty(String.prototype,"trimEnd",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.trimEnd called on null or undefined");return t(this,"end")}}),String.prototype.trimRight||Object.defineProperty(String.prototype,"trimRight",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.trimRight called on null or undefined");return t(this,"end")}})}(),function(){function _random(){var e=void 0,t=void 0;switch(arguments.length){case 0:throw new Error("_random called with insufficient parameters");case 1:e=0,t=arguments[0];break;default:e=arguments[0],t=arguments[1]}if(e>t){var r=[t,e];e=r[0],t=r[1]}return Math.floor(_nativeMathRandom()*(t-e+1))+e}function _randomIndex(e,t){var r=void 0,n=void 0;switch(t.length){case 1:r=0,n=e-1;break;case 2:r=0,n=Math.trunc(t[1]);break;default:r=Math.trunc(t[1]),n=Math.trunc(t[2])}return Number.isNaN(r)?r=0:!Number.isFinite(r)||r>=e?r=e-1:r<0&&(r=e+r)<0&&(r=0),Number.isNaN(n)?n=0:!Number.isFinite(n)||n>=e?n=e-1:n<0&&(n=e+n)<0&&(n=e-1),_random(r,n)}function _getCodePointStartAndEnd(e,t){var r=e.charCodeAt(t);if(Number.isNaN(r))return{char:"",start:-1,end:-1};if(r<55296||r>57343)return{char:e.charAt(t),start:t,end:t};if(r>=55296&&r<=56319){var n=t+1;if(n>=e.length)throw new Error("high surrogate without trailing low surrogate");var a=e.charCodeAt(n);if(a<56320||a>57343)throw new Error("high surrogate without trailing low surrogate");return{char:e.charAt(t)+e.charAt(n),start:t,end:n}}if(0===t)throw new Error("low surrogate without leading high surrogate");var i=t-1,o=e.charCodeAt(i);if(o<55296||o>56319)throw new Error("low surrogate without leading high surrogate");return{char:e.charAt(i)+e.charAt(t),start:i,end:t}}var _nativeMathRandom=Math.random;Object.defineProperty(Array,"random",{configurable:!0,writable:!0,value:function(e){if("object"!==(void 0===e?"undefined":_typeof(e))||null===e||!Object.prototype.hasOwnProperty.call(e,"length"))throw new TypeError("Array.random array parameter must be an array or array-lke object");var t=e.length>>>0;if(0!==t){return e[0===arguments.length?_random(0,t-1):_randomIndex(t,Array.prototype.slice.call(arguments,1))]}}}),Object.defineProperty(Array.prototype,"concatUnique",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.concatUnique called on null or undefined");var e=Array.from(this);if(0===arguments.length)return e;var t=Array.prototype.reduce.call(arguments,function(e,t){return e.concat(t)},[]),r=t.length;if(0===r)return e;for(var n=Array.prototype.indexOf,a=Array.prototype.push,i=0;i<r;++i){var o=t[i];-1===n.call(e,o)&&a.call(e,o)}return e}}),Object.defineProperty(Array.prototype,"count",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.count called on null or undefined");for(var e=Array.prototype.indexOf,t=arguments[0],r=Number(arguments[1])||0,n=0;-1!==(r=e.call(this,t,r));)++n,++r;return n}}),Object.defineProperty(Array.prototype,"delete",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.delete called on null or undefined");if(0===arguments.length)return[];var e=this.length>>>0;if(0===e)return[];for(var t=Array.prototype.concat.apply([],arguments),r=t.length,n=[],a=0;a<e;++a)for(var i=this[a],o=0;o<r;++o){var s=t[o];if(i===s||i!==i&&s!==s){n.push(a);break}}for(var u=[],l=0,c=n.length;l<c;++l)u[l]=this[n[l]];for(var d=Array.prototype.splice,f=n.length-1;f>=0;--f)d.call(this,n[f],1);return u}}),Object.defineProperty(Array.prototype,"deleteAt",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.deleteAt called on null or undefined");if(0===arguments.length)return[];var e=this.length>>>0;if(0===e)return[];for(var t=Array.prototype.splice,r=[].concat(_toConsumableArray(new Set(Array.prototype.concat.apply([],arguments).map(function(t){return t<0?Math.max(0,e+t):t})).values())),n=[].concat(_toConsumableArray(r)).sort(function(e,t){return t-e}),a=[],i=0,o=r.length;i<o;++i)a[i]=this[r[i]];for(var s=0,u=n.length;s<u;++s)t.call(this,n[s],1);return a}}),Object.defineProperty(Array.prototype,"deleteWith",{configurable:!0,writable:!0,value:function(e,t){if(null==this)throw new TypeError("Array.prototype.deleteWith called on null or undefined");if("function"!=typeof e)throw new Error("Array.prototype.deleteWith predicate parameter must be a function");var r=this.length>>>0;if(0===r)return[];for(var n=Array.prototype.splice,a=[],i=[],o=0;o<r;++o)e.call(t,this[o],o,this)&&(i.push(this[o]),a.push(o));for(var s=a.length-1;s>=0;--s)n.call(this,a[s],1);return i}}),Object.defineProperty(Array.prototype,"first",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.first called on null or undefined");if(0!=this.length>>>0)return this[0]}}),Object.defineProperty(Array.prototype,"includesAll",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.includesAll called on null or undefined");if(1===arguments.length)return Array.isArray(arguments[0])?Array.prototype.includesAll.apply(this,arguments[0]):Array.prototype.includes.apply(this,arguments);for(var e=0,t=arguments.length;e<t;++e)if(!Array.prototype.some.call(this,function(e){return e===this.val||e!==e&&this.val!==this.val},{val:arguments[e]}))return!1;return!0}}),Object.defineProperty(Array.prototype,"includesAny",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.includesAny called on null or undefined");if(1===arguments.length)return Array.isArray(arguments[0])?Array.prototype.includesAny.apply(this,arguments[0]):Array.prototype.includes.apply(this,arguments);for(var e=0,t=arguments.length;e<t;++e)if(Array.prototype.some.call(this,function(e){return e===this.val||e!==e&&this.val!==this.val},{val:arguments[e]}))return!0;return!1}}),Object.defineProperty(Array.prototype,"last",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.last called on null or undefined");var e=this.length>>>0;if(0!==e)return this[e-1]}}),Object.defineProperty(Array.prototype,"pluck",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.pluck called on null or undefined");var e=this.length>>>0;if(0!==e){var t=0===arguments.length?_random(0,e-1):_randomIndex(e,[].concat(Array.prototype.slice.call(arguments)));return Array.prototype.splice.call(this,t,1)[0]}}}),Object.defineProperty(Array.prototype,"pluckMany",{configurable:!0,writable:!0,value:function(e){if(null==this)throw new TypeError("Array.prototype.pluckMany called on null or undefined");var t=this.length>>>0;if(0===t)return[];var r=Math.trunc(e);if(!Number.isInteger(r))throw new Error("Array.prototype.pluckMany want parameter must be an integer");if(r<1)return[];r>t&&(r=t);var n=Array.prototype.splice,a=[],i=t-1;do{a.push(n.call(this,_random(0,i--),1)[0])}while(a.length<r);return a}}),Object.defineProperty(Array.prototype,"pushUnique",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.pushUnique called on null or undefined");var e=arguments.length;if(0===e)return this.length>>>0;for(var t=Array.prototype.indexOf,r=Array.prototype.push,n=0;n<e;++n){var a=arguments[n];-1===t.call(this,a)&&r.call(this,a)}return this.length>>>0}}),Object.defineProperty(Array.prototype,"random",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.random called on null or undefined");var e=this.length>>>0;if(0!==e){return this[0===arguments.length?_random(0,e-1):_randomIndex(e,[].concat(Array.prototype.slice.call(arguments)))]}}}),Object.defineProperty(Array.prototype,"randomMany",{configurable:!0,writable:!0,value:function(e){if(null==this)throw new TypeError("Array.prototype.randomMany called on null or undefined");var t=this.length>>>0;if(0===t)return[];var r=Math.trunc(e);if(!Number.isInteger(r))throw new Error("Array.prototype.randomMany want parameter must be an integer");if(r<1)return[];r>t&&(r=t);var n=new Map,a=[],i=t-1;do{var o=void 0;do{o=_random(0,i)}while(n.has(o));n.set(o,!0),a.push(this[o])}while(a.length<r);return a}}),Object.defineProperty(Array.prototype,"shuffle",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.shuffle called on null or undefined");var e=this.length>>>0;if(0===e)return this;for(var t=e-1;t>0;--t){var r=Math.floor(_nativeMathRandom()*(t+1));if(t!==r){var n=this[t];this[t]=this[r],this[r]=n}}return this}}),Object.defineProperty(Array.prototype,"unshiftUnique",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.unshiftUnique called on null or undefined");var e=arguments.length;if(0===e)return this.length>>>0;for(var t=Array.prototype.indexOf,r=Array.prototype.unshift,n=0;n<e;++n){var a=arguments[n];-1===t.call(this,a)&&r.call(this,a)}return this.length>>>0}}),Object.defineProperty(Function.prototype,"partial",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Function.prototype.partial called on null or undefined");var e=Array.prototype.slice,t=this,r=e.call(arguments,0);return function(){for(var n=[],a=0,i=0;i<r.length;++i)n.push(r[i]===undefined?arguments[a++]:r[i]);return t.apply(this,n.concat(e.call(arguments,a)))}}}),Object.defineProperty(Math,"clamp",{configurable:!0,writable:!0,value:function(e,t,r){var n=Number(e);return Number.isNaN(n)?NaN:n.clamp(t,r)}}),Object.defineProperty(Math,"easeInOut",{configurable:!0,writable:!0,value:function(e){return 1-(Math.cos(Number(e)*Math.PI)+1)/2}}),Object.defineProperty(Number.prototype,"clamp",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Number.prototype.clamp called on null or undefined");if(2!==arguments.length)throw new Error("Number.prototype.clamp called with an incorrect number of parameters");var e=Number(arguments[0]),t=Number(arguments[1]);if(e>t){var r=[t,e];e=r[0],t=r[1]}return Math.min(Math.max(this,e),t)}}),RegExp.escape||function(){var e=/[\\^$*+?.()|[\]{}]/g,t=new RegExp(e.source);Object.defineProperty(RegExp,"escape",{configurable:!0,writable:!0,value:function(r){var n=String(r);return n&&t.test(n)?n.replace(e,"\\$&"):n}})}(),function(){var e=/{(\d+)(?:,([+-]?\d+))?}/g,t=new RegExp(e.source);Object.defineProperty(String,"format",{configurable:!0,writable:!0,value:function(r){function n(e,t,r){if(!t)return e;var n=Math.abs(t)-e.length;if(n<1)return e;var a=String(r).repeat(n);return t<0?e+a:a+e}if(arguments.length<2)return 0===arguments.length?"":r;var a=2===arguments.length&&Array.isArray(arguments[1])?[].concat(_toConsumableArray(arguments[1])):Array.prototype.slice.call(arguments,1);return 0===a.length?r:t.test(r)?(e.lastIndex=0,r.replace(e,function(e,t,r){var i=a[t];if(null==i)return"";for(;"function"==typeof i;)i=i();switch(void 0===i?"undefined":_typeof(i)){case"string":break;case"object":i=JSON.stringify(i);break;default:i=String(i)}return n(i,r?Number.parseInt(r,10):0," ")})):r}})}(),Object.defineProperty(String.prototype,"contains",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.contains called on null or undefined");return-1!==String.prototype.indexOf.apply(this,arguments)}}),Object.defineProperty(String.prototype,"count",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.count called on null or undefined");var e=String(arguments[0]||"");if(""===e)return 0;for(var t=String.prototype.indexOf,r=e.length,n=Number(arguments[1])||0,a=0;-1!==(n=t.call(this,e,n));)++a,n+=r;return a}}),Object.defineProperty(String.prototype,"first",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.first called on null or undefined");return _getCodePointStartAndEnd(String(this),0).char}}),Object.defineProperty(String.prototype,"last",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.last called on null or undefined");var e=String(this);return _getCodePointStartAndEnd(e,e.length-1).char}}),Object.defineProperty(String.prototype,"splice",{configurable:!0,writable:!0,value:function(e,t,r){if(null==this)throw new TypeError("String.prototype.splice called on null or undefined");var n=this.length>>>0;if(0===n)return"";var a=Number(e);Number.isSafeInteger(a)?a<0&&(a+=n)<0&&(a=0):a=0,a>n&&(a=n);var i=Number(t);(!Number.isSafeInteger(i)||i<0)&&(i=0);var o=this.slice(0,a);return void 0!==r&&(o+=r),a+i<n&&(o+=this.slice(a+i)),o}}),Object.defineProperty(String.prototype,"splitOrEmpty",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.splitOrEmpty called on null or undefined");return""===String(this)?[]:String.prototype.split.apply(this,arguments)}}),Object.defineProperty(String.prototype,"toLocaleUpperFirst",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.toLocaleUpperFirst called on null or undefined");var e=String(this),t=_getCodePointStartAndEnd(e,0),r=t.char,n=t.end;return-1===n?"":r.toLocaleUpperCase()+e.slice(n+1)}}),Object.defineProperty(String.prototype,"toUpperFirst",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.toUpperFirst called on null or undefined");var e=String(this),t=_getCodePointStartAndEnd(e,0),r=t.char,n=t.end;return-1===n?"":r.toUpperCase()+e.slice(n+1)}}),Object.defineProperty(Date.prototype,"toJSON",{configurable:!0,writable:!0,value:function(){return["(revive:date)",this.toISOString()]}}),Object.defineProperty(Function.prototype,"toJSON",{configurable:!0,writable:!0,value:function(){return["(revive:eval)","("+this.toString()+")"]}}),Object.defineProperty(Map.prototype,"toJSON",{configurable:!0,writable:!0,value:function(){return["(revive:map)",[].concat(_toConsumableArray(this))]}}),Object.defineProperty(RegExp.prototype,"toJSON",{configurable:!0,writable:!0,value:function(){return["(revive:eval)",this.toString()]}}),Object.defineProperty(Set.prototype,"toJSON",{configurable:!0,writable:!0,value:function(){return["(revive:set)",[].concat(_toConsumableArray(this))]}}),Object.defineProperty(JSON,"reviveWrapper",{configurable:!0,writable:!0,value:function(e,t){if("string"!=typeof e)throw new TypeError("JSON.reviveWrapper code parameter must be a string");return["(revive:eval)",[e,t]]}}),Object.defineProperty(JSON,"_real_parse",{value:JSON.parse}),Object.defineProperty(JSON,"parse",{configurable:!0,writable:!0,value:function value(text,reviver){return JSON._real_parse(text,function(key,val){var value=val;if(Array.isArray(value)&&2===value.length)switch(value[0]){case"(revive:set)":value=new Set(value[1]);break;case"(revive:map)":value=new Map(value[1]);break;case"(revive:date)":value=new Date(value[1]);break;case"(revive:eval)":try{if(Array.isArray(value[1])){var $ReviveData$=value[1][1];value=eval(value[1][0])}else value=eval(value[1])}catch(e){}}else if("string"==typeof value&&"@@revive@@"===value.slice(0,10))try{value=eval(value.slice(10))}catch(e){}if("function"==typeof reviver)try{value=reviver(key,value)}catch(e){}return value})}}),Object.defineProperty(Array.prototype,"contains",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.contains called on null or undefined");return Array.prototype.includes.apply(this,arguments)}}),Object.defineProperty(Array.prototype,"containsAll",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.containsAll called on null or undefined");return Array.prototype.includesAll.apply(this,arguments)}}),Object.defineProperty(Array.prototype,"containsAny",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.containsAny called on null or undefined");return Array.prototype.includesAny.apply(this,arguments)}}),Object.defineProperty(Array.prototype,"flatten",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.flatten called on null or undefined");return Array.prototype.flat.call(this,1/0)}}),Object.defineProperty(String.prototype,"readBracketedList",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.readBracketedList called on null or undefined");for(var e=new RegExp("(?:\\[\\[((?:\\s|\\S)*?)\\]\\])|([^\"'\\s]\\S*)","gm"),t=[],r=void 0;null!==(r=e.exec(this));)r[1]?t.push(r[1]):r[2]&&t.push(r[2]);return t}})}();var Browser=function(){var e=navigator.userAgent.toLowerCase(),t=e.includes("windows phone"),r=Object.freeze({Android:!t&&e.includes("android"),BlackBerry:/blackberry|bb10/.test(e),iOS:!t&&/ip(?:hone|ad|od)/.test(e),Opera:!t&&("object"===_typeof(window.operamini)||e.includes("opera mini")),Windows:t||/iemobile|wpdesktop/.test(e),any:function(){return r.Android||r.BlackBerry||r.iOS||r.Opera||r.Windows}}),n=!r.Windows&&!/khtml|trident|edge/.test(e)&&e.includes("gecko"),a=!e.includes("opera")&&/msie|trident/.test(e),i=a?function(){var t=/(?:msie\s+|rv:)(\d+\.\d)/.exec(e);return t?Number(t[1]):0}():null,o=e.includes("opera")||e.includes(" opr/"),s=o?function(){var t=new RegExp((/khtml|chrome/.test(e)?"opr":"version")+"\\/(\\d+\\.\\d+)"),r=t.exec(e);return r?Number(r[1]):0}():null,u=e.includes("vivaldi");return Object.freeze({userAgent:e,isMobile:r,isGecko:n,isIE:a,ieVersion:i,isOpera:o,operaVersion:s,isVivaldi:u})}(),Has=function(){var e=function(){try{return"function"==typeof document.createElement("audio").canPlayType}catch(e){}return!1}(),t=function(){try{return"Blob"in window&&"File"in window&&"FileList"in window&&"FileReader"in window&&!Browser.isMobile.any()&&(!Browser.isOpera||Browser.operaVersion>=15)}catch(e){}return!1}(),r=function(){try{return"geolocation"in navigator&&"function"==typeof navigator.geolocation.getCurrentPosition&&"function"==typeof navigator.geolocation.watchPosition}catch(e){}return!1}(),n=function(){try{return"MutationObserver"in window&&"function"==typeof window.MutationObserver}catch(e){}return!1}(),a=function(){try{return"performance"in window&&"function"==typeof window.performance.now}catch(e){}return!1}(),i=function(){try{return"ontouchstart"in window||!!window.DocumentTouch&&document instanceof window.DocumentTouch||!!navigator.maxTouchPoints||!!navigator.msMaxTouchPoints}catch(e){}return!1}(),o=function(){try{for(var e=new Map([["transition","transitionend"],["MSTransition","msTransitionEnd"],["WebkitTransition","webkitTransitionEnd"],["MozTransition","transitionend"]]),t=[].concat(_toConsumableArray(e.keys())),r=document.createElement("div"),n=0;n<t.length;++n)if(r.style[t[n]]!==undefined)return e.get(t[n])}catch(e){}return!1}();return Object.freeze({audio:e,fileAPI:t,geolocation:r,mutationObserver:n,performance:a,touch:i,transitionEndEvent:o})}(),Visibility=function(){function e(){return a}function t(){return a&&document[a.stateProperty]||"visible"}function r(){return Boolean(a)}function n(){return Boolean(a&&document[a.hiddenProperty])}var a=function(){try{return Object.freeze([{hiddenProperty:"hidden",stateProperty:"visibilityState",changeEvent:"visibilitychange"},{hiddenProperty:"webkitHidden",stateProperty:"webkitVisibilityState",changeEvent:"webkitvisibilitychange"},{hiddenProperty:"mozHidden",stateProperty:"mozVisibilityState",changeEvent:"mozvisibilitychange"},{hiddenProperty:"msHidden",stateProperty:"msVisibilityState",changeEvent:"msvisibilitychange"}].find(function(e){return e.hiddenProperty in document}))}catch(e){}return undefined}();return Object.freeze(Object.defineProperties({},{vendor:{get:e},state:{get:t},isEnabled:{value:r},isHidden:{value:n},hiddenProperty:{value:a&&a.hiddenProperty},stateProperty:{value:a&&a.stateProperty},changeEvent:{value:a&&a.changeEvent}}))}(),Fullscreen=function(){function e(e){var t=e||document.documentElement;return t===document.documentElement&&("msRequestFullscreen"===f.requestFn||Browser.isOpera&&Browser.operaVersion<15)&&(t=document.body),t}function t(){return f}function r(){return(f||null)&&document[f.element]}function n(){return Boolean(f&&document[f.isEnabled])}function a(){return Boolean(f&&document[f.element])}function i(t,r){var n=this;if(!f)return Promise.reject(new Error("fullscreen not supported"));var i=e(r);if("function"!=typeof i[f.requestFn])return Promise.reject(new Error("fullscreen not supported"));if(a())return Promise.resolve();if(p())return i[f.requestFn](t);var o=".Fullscreen_requestFullscreen";return new Promise(function(e,r){jQuery(i).off(o).one(""+f.errorEvent+o+" "+f.changeEvent+o,function(t){jQuery(n).off(o),t.type===f.errorEvent?r(new Error("unknown fullscreen request error")):e()}),i[f.requestFn](t)})}function o(){var e=this;if(!f||"function"!=typeof document[f.exitFn])return Promise.reject(new TypeError("fullscreen not supported"));if(!a())return Promise.reject(new TypeError("fullscreen mode not active"));if(p())return document[f.exitFn]();var t=".Fullscreen_exitFullscreen";return new Promise(function(r,n){jQuery(document).off(t).one(""+f.errorEvent+t+" "+f.changeEvent+t,function(a){jQuery(e).off(t),a.type===f.errorEvent?n(new Error("unknown fullscreen exit error")):r()}),document[f.exitFn]()})}function s(e,t){return a()?o():i(e,t)}function u(t,r){if(f){var n=e(r);$(n).on(f.changeEvent,t)}}function l(t,r){if(f){var n=e(r);t?$(n).off(f.changeEvent,t):$(n).off(f.changeEvent)}}function c(t,r){if(f){var n=e(r);$(n).on(f.errorEvent,t)}}function d(t,r){if(f){var n=e(r);t?$(n).off(f.errorEvent,t):$(n).off(f.errorEvent)}}var f=function(){try{return Object.freeze([{isEnabled:"fullscreenEnabled",element:"fullscreenElement",requestFn:"requestFullscreen",exitFn:"exitFullscreen",changeEvent:"fullscreenchange",errorEvent:"fullscreenerror"},{isEnabled:"webkitFullscreenEnabled",element:"webkitFullscreenElement",requestFn:"webkitRequestFullscreen",exitFn:"webkitExitFullscreen",changeEvent:"webkitfullscreenchange",errorEvent:"webkitfullscreenerror"},{isEnabled:"mozFullScreenEnabled",element:"mozFullScreenElement",requestFn:"mozRequestFullScreen",exitFn:"mozCancelFullScreen",changeEvent:"mozfullscreenchange",errorEvent:"mozfullscreenerror"},{isEnabled:"msFullscreenEnabled",element:"msFullscreenElement",requestFn:"msRequestFullscreen",exitFn:"msExitFullscreen",changeEvent:"MSFullscreenChange",errorEvent:"MSFullscreenError"}].find(function(e){return e.isEnabled in document}))}catch(e){}return undefined}(),p=function(){function e(){if(null!==t)return t;if(t=!1,f)try{var e=document.exitFullscreen();e.catch(function(){}),t=e instanceof Promise}catch(e){}return t}var t=null;return e}();return Object.freeze(Object.defineProperties({},{vendor:{get:t},element:{get:r},isEnabled:{value:n},isFullscreen:{value:a},request:{value:i},exit:{value:o},toggle:{value:s},onChange:{value:u},offChange:{value:l},onError:{value:c},offError:{value:d}}))}(),_ref3=function(){function e(e){for(var t=e.cloneNode(!0),r=document.createDocumentFragment(),n=void 0;null!==(n=t.firstChild);){if(n.nodeType===Node.ELEMENT_NODE)switch(n.nodeName.toUpperCase()){case"BR":case"DIV":case"P":r.appendChild(document.createTextNode(" "))}r.appendChild(n)}return r.textContent}function t(e){if("object"!==(void 0===e?"undefined":_typeof(e))||null===e)return e;if(e instanceof String)return String(e);if(e instanceof Number)return Number(e);if(e instanceof Boolean)return Boolean(e);if("function"==typeof e.clone)return e.clone(!0);if(e.nodeType&&"function"==typeof e.cloneNode)return e.cloneNode(!0);var r=void 0;return e instanceof Array?r=new Array(e.length):e instanceof Date?r=new Date(e.getTime()):e instanceof Map?(r=new Map,e.forEach(function(e,n){return r.set(n,t(e))})):e instanceof RegExp?r=new RegExp(e):e instanceof Set?(r=new Set,e.forEach(function(e){return r.add(t(e))})):r=Object.create(Object.getPrototypeOf(e)),Object.keys(e).forEach(function(n){return r[n]=t(e[n])}),r}function r(e){

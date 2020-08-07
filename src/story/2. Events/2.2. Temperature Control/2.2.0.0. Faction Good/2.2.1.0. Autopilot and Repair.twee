@@ -1,18 +1,29 @@
 :: 2.2.1.0. Autopilot and Repair
+<<type 40ms skipkey "Control">>\
+\@@color:gray;>@@ @@color:orange;ENTERING EMERGENCY 🛠️ REPAIR MODE.@@
+<</type>>\
+<<type 40ms skipkey "Control">>\
+\@@color:gray;>@@ AUTOPILOT ENGAGED TO PRESET DESTINATION.
+<</type>>
+<<type 40ms skipkey "Control">>\
+----
+!!!! @@color:cyan; 💬 THIS MODE ENGAGES AUTOMATICALLY TO PREVENT ADDITIONAL DAMAGES AND ENSURE THE SAFETY OF THE CARGO.@@
 
-ENTERING EMERGENCY REPAIR MODE.
+@@color:orange;You may experience a shift in temperature at this time.@@
+<</type>>\
+<<type 40ms skipkey "Control">>\
+----
+\@@color:gray;>@@ Initiating system 🛠️ repair. . .
 
-AUTOPILOT ENGAGED TO PRESET DESTINATION.
-THIS MODE ENGAGES AUTOMATICALLY TO PREVENT ADDITIONAL DAMAGES AND ENSURE THE SAFETY OF THE CARGO.
-
-You may experience a shift in temperature at this time.
-
-\@@color:gray;>@@ Initiating system repair. . .
 \@@color:gray;>@@ System repair in progress. . .
-\@@color:gray;>@@ System repair complete
-\@@color:gray;>@@ Calibrating temperature control
 
-TEMPERATURE CONTROL STATUS - ONLINE AND OPERATIONAL
+\@@color:gray;>@@ System repair ✔️ complete
+
+\@@color:gray;>@@ Calibrating temperature 🌡️ control
+<</type>>
+<<type 40ms skipkey "Control">>\
+!!!! @@color:green;TEMPERATURE 🌡️ CONTROL STATUS - ✔️ ONLINE AND OPERATIONAL@@
+<</type>>\
 
 <<nobr>>
 <!-- ************************************ -->

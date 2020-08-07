@@ -1,13 +1,25 @@
 :: 3.3. Faction Bad Ambush
 
-PRESSURIZATION SYSTEM OPERATIONAL
-SYSTEM RESTORED - 40% CAPACITY
-
-WARNING - UNKNOWN SPACESHIP INCOMING
-SEVERAL UNAUTHORIZED WEAPONS DETECTED
-ADDITIONAL DAMAGE MIGHT COMPROMISE THE SHIP FUNCTIONALITY INDEFINITELY
-
-YOU HAVE RECEIVED [2] NEW TRANSMISSIONS
+<<type 40ms skipkey "Control">>
+    \@@color:gray;>@@ PRESSURIZATION SYSTEM ✔️ OPERATIONAL
+    
+    \@@color:gray;>@@ SYSTEM RESTORED - @@color:orange;40@@% CAPACITY
+<</type>>\
+<<type 40ms skipkey "Control">>
+----
+!!! @@color:orange; ⚠️ WARNING - UNKNOWN SPACESHIP INCOMING@@
+<</type>>\
+<<type 40ms skipkey "Control">>\
+----
+\@@color:gray;>@@ SEVERAL UNAUTHORIZED WEAPONS DETECTED
+<</type>>\
+<<type 40ms skipkey "Control">>
+    \@@color:gray;>@@ @@color:red;ADDITIONAL DAMAGE MIGHT COMPROMISE THE SHIP@@ FUNCTIONALITY INDEFINITELY
+<</type>>\
+<<type 40ms skipkey "Control">>
+----
+    \@@color:gray;>@@ @@color:green;You have 📡 received @@@@color:red;<b>[2]</b>@@@@color:green; new transmissions.@@
+<</type>>\
 
 
 <<nobr>>

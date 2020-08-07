@@ -1,11 +1,17 @@
 :: 2.1.1.1. Push Forward
-
-WARNING - CRITICAL DAMAGE
-THE PRESSURIZATION SYSTEM HAS RECEIVED CRITICAL DAMAGE AND IT WILL SHUT DOWN SOON.
-CONTINUING THIS COURSE OF ACTION MIGHT CAUSE IRREVERSIBLE DAMAGE TO THE SHIP AND/OR THE PASSENGERS.
-THIS ACTION IS NOT ADVISED.
-
-PROCEED ANYWAY?
+<<type 40ms skipkey "Control">>\
+!!! ⚠️ @@color:orange;WARNING - CRITICAL DAMAGE@@
+<</type>>\
+<<type 40ms skipkey "Control">>\
+----
+    \@@color:gray;>@@ THE PRESSURIZATION SYSTEM HAS RECEIVED @@color:red;CRITICAL DAMAGE@@ AND IT WILL SHUT DOWN SOON.
+<</type>>
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ CONTINUING THIS COURSE OF ACTION MIGHT CAUSE IRREVERSIBLE DAMAGE TO THE SHIP AND/OR THE PASSENGERS. @@color:red;THIS ACTION IS NOT ADVISED.@@
+<</type>>
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ PROCEED REGARDLESS?
+<</type>>\
 
 <<nobr>>
 <!-- ************************************ -->

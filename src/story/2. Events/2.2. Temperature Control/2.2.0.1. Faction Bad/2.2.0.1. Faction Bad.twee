@@ -1,14 +1,30 @@
 :: 2.2.0.1. Faction Bad
-
-Hello? Somehow, it seems you have made it. 
-This is unbelievable - I mean, good. Unbelievably good.
-We were not aware you were familiar with the territory.
-
-Unfortunately, it seems your ship has sustained damage. There is no time for you to initiate proper system repairs.
-An emergency maneuver will be necessary. Simply overloading your ship's engine should compensate for the drop in temperature you are about to experience.
-As you are almost at your destination, this is for certain a viable option.
-
-You almost made it. Your ship can carry you a little further.
+<<type 40ms skipkey "Control">>\
+    <h3>👨‍🚀 FREQUENCY 99.9</h3>\
+----
+<</type>>\
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ Hello? Somehow, it seems you have made it. 
+<</type>>
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ This is unbelievable - I mean, good. Unbelievably good. We were not aware you were familiar with the territory.
+<</type>>
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ Unfortunately, it seems your ship has sustained damage. There is no time for you to initiate proper system repairs.
+<</type>>
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ An emergency maneuver will be necessary. Simply overloading your ship's engine should compensate for the drop in temperature you are about to experience.
+<</type>>
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ As you are almost at your destination, this is for certain a viable option.
+<</type>>
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ You almost made it. Your ship can carry you a little further.
+<</type>>\
+<<type 40ms skipkey "Control">>\
+----
+    <h3>❌ @@color:red;ENDED TRANSMISSION 99.9@@</h3>\
+<</type>>\
 
 <<nobr>>
 <!-- ************************************ -->

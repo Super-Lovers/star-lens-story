@@ -1,24 +1,55 @@
 :: 3.3.1.1. Wait
+<<type 40ms skipkey "Control">>\
+!!! ⚠️ @@color:orange;WARNING - INCOMING ATTACK DETECTED@@
 
-WARNING - INCOMING ATTACK DETECTED
-ENGAGE SHIELDS
-SHIELDS EFFICACY - 70%
-This is an automated response from the system
+...
+<</type>>\
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ ENGAGE SHIELDS
 
-WARNING - COLLISION REGISTERED ON RIGHT [R] ENGINE
+    \@@color:gray;>@@ SHIELDS EFFICIENCY - 70%
+<</type>>
+<<type 0ms skipkey "Control">>\
+    <span class="boom-title pulse">''@@color:orange;B@@ @@color:red;O@@ 💥 @@color:red;O@@ @@color:orange;M@@''</span>
+    <<script>>
+        $('#choices-screen').css('backgroundImage', 'url("./assets/UI/bottomconsole_broken.png")');
+    <</script>>
+<</type>>\
+<<type 40ms skipkey "Control">>\
+----
+\@@color:gray;>@@ This is an automated response from the system
+<</type>>\
+<<type 40ms skipkey "Control">>\
+!!! ⚠️ @@color:orange;WARNING - COLLISION REGISTERED ON RIGHT [R] ENGINE@@
+<</type>>\
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ Analysing damage received. . . 
+<</type>>\
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ Analysis ✔️ complete. 
+<</type>>\
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ SYSTEM AT 30% CAPACITY
+<</type>>
+<<type 40ms skipkey "Control">>\
+----
+!!! ⚠️ @@color:orange;WARNING - INCOMING ATTACK DETECTED@@
 
-Analysing damage received. . . 
-
-Analysis complete. 
-
-SYSTEM AT 30% CAPACITY
-
-WARNING - INCOMING ATTACK DETECTED
-SHIELDS EFFICACY - 30%
-
-WARNING - IRREVERSIBLE DAMAGE DETECTED
-
-SYSTEM SHUT DOWN IMMINENT
+\@@color:gray;>@@ SHIELDS EFFICACY - 30%
+<</type>>
+<<type 0ms skipkey "Control">>\
+    <span class="boom-title pulse">''@@color:orange;B@@ @@color:red;O@@ 💥 @@color:red;O@@ @@color:orange;M@@''</span>
+    <<script>>
+        $('#console-screen').css('backgroundImage', 'url("./assets/UI/mainconsole_broken.png")');
+    <</script>>
+<</type>>
+<<type 40ms skipkey "Control">>\
+----
+!!! ⚠️ @@color:orange;WARNING - IRREVERSIBLE DAMAGE DETECTED@@
+<</type>>\
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ @@color:red;SYSTEM SHUT DOWN IMMINENT@@
+<</type>>\
 
 <<nobr>>
 <!-- ************************************ -->

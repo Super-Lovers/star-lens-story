@@ -1,15 +1,33 @@
 :: 3.3.0.1. Faction Bad
-
-Hello~
-
-So, question. Why won't you die? We have been really trying to get you out of our way, but you just can't seem to get the memo.
-It's getting really annoying.
-
-Yes, yes, we know. You thought you could "trust us", but isn't it your own fault for trusting the first transmission your ship received?
-And then again and again while you kept failing?
-
-So, we have decided to take a more direct approach. Don't worry, we will make it just as painfull as you've been annoying.
-Now sit tight, and wait for death.
+<<type 40ms skipkey "Control">>\
+    <h3>👨‍🚀 FREQUENCY 99.9</h3>\
+----
+<</type>>\
+<<type 40ms skipkey "Control">>
+    \@@color:gray;>@@ Hello~
+<</type>>
+<<type 40ms skipkey "Control">>
+    \@@color:gray;>@@ So, question. Why won't you die? We have been really trying to get you out of our way, but you just can't seem to get the memo.
+<</type>>
+<<type 40ms skipkey "Control">>
+    \@@color:gray;>@@ It's getting really annoying.
+<</type>>
+<<type 40ms skipkey "Control">>
+    \@@color:gray;>@@ Yes, yes, we know. You thought you could "trust us", but isn't it your own fault for trusting the first transmission your ship received?
+<</type>>
+<<type 40ms skipkey "Control">>
+    \@@color:gray;>@@ And then again and again while you kept failing?
+<</type>>
+<<type 40ms skipkey "Control">>
+    \@@color:gray;>@@ So, we have decided to take a more direct approach. Don't worry, we will make it just as painfull as you've been annoying.
+<</type>>
+<<type 40ms skipkey "Control">>
+    \@@color:gray;>@@ Now sit tight, and wait for death.
+<</type>>\
+<<type 40ms skipkey "Control">>\
+----
+    <h3>❌ @@color:red;ENDED TRANSMISSION 99.9@@</h3>\
+<</type>>\
 
 <<nobr>>
 <!-- ************************************ -->

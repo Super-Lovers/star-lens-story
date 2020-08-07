@@ -1,17 +1,31 @@
 :: 3.3.1.0. Maneuver
 
-WARNING - UNKNOWN SPACESHIP INCOMING
-SEVERAL UNAUTHORIZED WEAPONS DETECTED
-ADDITIONAL DAMAGE MIGHT COMPROMISE THE SHIP FUNCTIONALITY INDEFINITELY
+<<type 40ms skipkey "Control">>\
+!!! ⚠️ @@color:orange;WARNING - UNKNOWN SPACESHIP INCOMING@@
+<</type>>\
+<<type 40ms skipkey "Control">>\
+----
+    \@@color:gray;>@@ SEVERAL UNAUTHORIZED WEAPONS DETECTED
 
-Estimated survival rate - 30%
+    \@@color:gray;>@@ ADDITIONAL DAMAGE MIGHT @@color:red;COMPROMISE THE SHIP@@ FUNCTIONALITY INDEFINITELY
+<</type>>\
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ Estimated survival rate - @@color:orange;30@@%
+<</type>>
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ ENGAGE SHIELDS
 
-ENGAGE SHIELDS
-SHIELDS EFFICACY - 70%
-Engaging the shields will increase your survival rate of approximately 30%
+    \@@color:gray;>@@ SHIELDS EFFICACY - @@color:green;70@@%
+<</type>>\
+<<type 40ms skipkey "Control">>\
+----
+!!! Engaging the shields will increase your survival rate of approximately @@color:green;30@@%
+<</type>>
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ EXTERNAL COORDINATES ✔️ RECEIVED
 
-EXTERNAL COORDINATES RECEIVED
-Commencing rerouting. . .
+    \@@color:gray;>@@ Commencing rerouting. . .
+<</type>>\
  
 
 <<nobr>>

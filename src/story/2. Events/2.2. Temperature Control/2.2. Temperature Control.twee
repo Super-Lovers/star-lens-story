@@ -1,26 +1,42 @@
 :: 2.2. Temperature Control
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ 🌑 Asteroid belt has successfully been passed.
+<</type>>\
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ Analysing damage received. . . 
+<</type>>\
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ ✔️ Analysis complete.
+<</type>>
+<<type 40ms skipkey "Control">>\
+----
+!!! ⚠️ @@color:orange; WARNING - ISSUE WITHIN THE TEMPERATURE 🌡️ CONTROL SYSTEM DETECTED.@@
 
-\@@color:gray;>@@ 🌑 Asteroid belt has successfully been passed.
 
-\@@color:gray;>@@ Analysing damage received. . . 
+    \@@color:gray;>@@ The temperature 🌡️ control system is part of the vital apparatus of the ship. 
+<</type>>\
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ CAUSE ANALYSIS. . .
+<</type>>
+<<type 40ms skipkey "Control">>\
+----
+!!! 📝 LIKELY CAUSE
+<</type>>\
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ OUTSIDE SOURCE (ASTEROID GRAZING) - 100%
+<</type>>\
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ @@color:red;IMMEDIATE ACTION REQUIRED.@@
 
-\@@color:gray;>@@ Analysis complete.
-
-WARNING - ISSUE WITHIN THE TEMPERATURE CONTROL SYSTEM DETECTED.
-The temperature control system is part of the vital apparatus of the ship. 
-
-\@@color:gray;>@@ CAUSE ANALYSIS. . .
-
-LIKELY CAUSE
-
-\@@color:gray;>@@ OUTSIDE SOURCE (ASTEROID GRAZING) - 100%
-
-IMMEDIATE ACTION REQUIRED.
-SUGGESTED ACTION: CRITICAL REPAIR.
-
-YOU HAVE RECEIVED [3] NEW TRANSMISSIONS.
-
-PLEASE BE WARNED, EXCESSIVE DELAY MAY CAUSE IRREVERSIBLE DAMAGE TO THE SHIP.
+    \@@color:gray;>@@ SUGGESTED ACTION: CRITICAL REPAIR.
+<</type>>
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ @@color:green;You have 📡 received @@@@color:red;<b>[3]</b>@@@@color:green; new transmissions.@@
+<</type>>
+<<type 40ms skipkey "Control">>\
+----
+!!! ⚠️ @@color:orange; PLEASE BE WARNED, EXCESSIVE DELAY MAY CAUSE IRREVERSIBLE DAMAGE TO THE SHIP.@@
+<</type>>
 
 <<nobr>>
 <!-- ************************************ -->

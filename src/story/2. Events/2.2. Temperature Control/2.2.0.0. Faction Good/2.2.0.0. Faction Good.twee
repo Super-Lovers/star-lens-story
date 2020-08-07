@@ -1,16 +1,36 @@
 :: 2.2.0.0. Faction Good
-
-Hello? Hello??
-Hey, if you receive this, we hope you are okay.
-
-We followed your signal THROUGH THE 🌑 ASTEROID BELT, MAN. WHAT THE HELL. THAT WAS SICK.
-HOW DID YOU DO THAT?? Scratch that, how are you alive????
-
-If there's any critical damage you should follow your ship's instruction and avoid getting into trouble.
-Our bros are almost back with the carrier ship so we'll be able to come for your as long as you SURVIVE.
-ALTHO THAT WAS SICK, SO WHO KNOWS WHAT ELSE YOU CAN DO MAN.
-
-PEACE OUT.
+<<type 40ms skipkey "Control">>\
+    <h3>👽 FREQUENCY 108.5</h3>\
+----
+<</type>>\
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ Hello? Hello??
+<</type>>
+<<type 40ms skipkey "Control">>
+    \@@color:gray;>@@ Hey, if you receive this, we hope you are okay.
+<</type>>
+<<type 40ms skipkey "Control">>
+    \@@color:gray;>@@ We followed your signal THROUGH THE 🌑 ASTEROID BELT, MAN. WHAT THE HELL. THAT WAS SICK.
+<</type>>
+<<type 40ms skipkey "Control">>
+    \@@color:gray;>@@ HOW DID YOU DO THAT?? Scratch that, how are you alive????
+<</type>>
+<<type 40ms skipkey "Control">>
+    \@@color:gray;>@@ If there's any critical damage you should follow your ship's instruction and avoid getting into trouble.
+<</type>>
+<<type 40ms skipkey "Control">>
+    \@@color:gray;>@@ Our bros are almost back with the carrier ship so we'll be able to come for your as long as you SURVIVE.
+<</type>>
+<<type 40ms skipkey "Control">>
+    \@@color:gray;>@@ ALTHO THAT WAS SICK, SO WHO KNOWS WHAT ELSE YOU CAN DO MAN.
+<</type>>
+<<type 40ms skipkey "Control">>
+    \@@color:gray;>@@ ✌️ PEACE OUT.
+<</type>>\
+<<type 40ms skipkey "Control">>\
+----
+    <h3>❌ @@color:red;ENDED TRANSMISSION 108.5@@</h3>\
+<</type>>\
 
 <<nobr>>
 <!-- ************************************ -->

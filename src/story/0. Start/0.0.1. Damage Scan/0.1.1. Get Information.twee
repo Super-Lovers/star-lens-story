@@ -7,7 +7,7 @@
     \@@color:gray;>@@ Damage sustained - @@color:green;repairable@@
 <</type>>\
 <<type 40ms skipkey "Control">>\
-    \@@color:gray;>@@ Engine at @@color:orange;60%@@ capacity
+    \@@color:gray;>@@ Engine ⚙️ at @@color:orange;60%@@ capacity
 <</type>>\
 <<type 40ms skipkey "Control">>\
     \@@color:gray;>@@ <b>Operating System restored</b>

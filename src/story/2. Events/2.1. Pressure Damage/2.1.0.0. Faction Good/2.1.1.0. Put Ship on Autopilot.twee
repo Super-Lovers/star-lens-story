@@ -1,10 +1,14 @@
 :: 2.1.1.0. Put Ship on Autopilot
-
-ENTERING EMERGENCY REPAIR MODE.
-
-AUTOPILOT ENGAGED TO PRESET DESTINATION.
-THIS MODE ENGAGES AUTOMATICALLY TO PREVENT ADDITIONAL DAMAGES AND ENSURE THE SAFETY OF THE CARGO.
-
+<<type 40ms skipkey "Control">>
+    \@@color:gray;>@@ @@color:orange;ENTERING EMERGENCY 🛠️ REPAIR MODE.@@
+<</type>>\
+<<type 40ms skipkey "Control">>
+    \@@color:gray;>@@ AUTOPILOT ENGAGED TO PRESET DESTINATION.
+<</type>>\
+<<type 40ms skipkey "Control">>
+----
+    \@@color:gray;>@@ @@color:cyan; 💬 THIS MODE ENGAGES AUTOMATICALLY TO PREVENT ADDITIONAL DAMAGES AND ENSURE THE SAFETY OF THE CARGO.@@
+<</type>>\
 
 <<nobr>>
 <!-- ************************************ -->

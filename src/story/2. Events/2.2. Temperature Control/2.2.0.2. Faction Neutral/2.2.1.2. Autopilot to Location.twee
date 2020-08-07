@@ -1,30 +1,53 @@
 :: 2.2.1.2. Autopilot to Location
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ New coordinates received
 
-\@@color:gray;>@@ New coordinates received
+    \@@color:gray;>@@ Analysing new coordinates
 
-\@@color:gray;>@@ Analysing new coordinates
+    \@@color:gray;>@@ Analysis ✔️ complete.
 
-\@@color:gray;>@@ Analysis complete.
+    ...
+<</type>>
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ Inputting new route. . .
 
-\@@color:gray;>@@ Inputting new route. . .
+    \@@color:gray;>@@ Route changed.
+<</type>>
+<<type 40ms skipkey "Control">>\
+----
+!!! ⚠️ @@color:orange;WARNING - ENTERING EMERGENCY PATCH MODE?@@
 
-\@@color:gray;>@@ Route changed.
 
-WARNING - ENTERING EMERGENCY PATCH MODE?
-THIS MODE SUPPLIES AN EMERGENCY TEMPORARY SYSTEM REPAIR AND IS ADVISED AS A SHORT TERM SOLUTION ONLY.
+    \@@color:gray;>@@ 💬 @@color:cyan;THIS MODE SUPPLIES AN EMERGENCY TEMPORARY SYSTEM REPAIR AND IS ADVISED AS A SHORT TERM SOLUTION ONLY.@@
+<</type>>
+<<type 40ms skipkey "Control">>\
+----
+    \@@color:gray;>@@ Entering emergency patch mode. . .
 
-\@@color:gray;>@@ Entering emergency patch mode. . .
-AUTOPILOT ENGAGED TO PRESET DESTINATION.
-THIS MODE ENGAGES AUTOMATICALLY TO PREVENT ADDITIONAL DAMAGES AND ENSURE THE SAFETY OF THE CARGO.
+    \@@color:gray;>@@ AUTOPILOT ENGAGED TO PRESET DESTINATION.
+<</type>>
+<<type 40ms skipkey "Control">>\
+----
+    \@@color:gray;>@@ 💬  @@color:cyan;THIS MODE ENGAGES AUTOMATICALLY TO PREVENT ADDITIONAL DAMAGES AND ENSURE THE SAFETY OF THE CARGO.@@
 
-You may experience a shift in temperature at this time.
 
-\@@color:gray;>@@ Initiating system patch. . .
-\@@color:gray;>@@ System patch in progress. . .
-\@@color:gray;>@@ System patch complete
-\@@color:gray;>@@ Calibrating temperature control
+    \@@color:gray;>@@ @@color:orange;You may experience a shift in temperature 🌡️ at this time.@@
+<</type>>
+<<type 40ms skipkey "Control">>\
+----
+    \@@color:gray;>@@ Initiating system patch. . .
 
-TEMPERATURE CONTROL STATUS - OPERATIONAL AT 65% CAPACITY
+    \@@color:gray;>@@ System patch in progress. . .
+<</type>>\
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ System patch ✔️ complete
+
+    \@@color:gray;>@@ Calibrating temperature 🌡️ control..
+<</type>>
+<<type 40ms skipkey "Control">>\
+----
+    \@@color:gray;>@@ TEMPERATURE 🌡️ CONTROL STATUS - OPERATIONAL AT 65% CAPACITY
+<</type>>\
 
 <<nobr>>
 <!-- ************************************ -->
