@@ -1,6 +1,18 @@
 :: 3.5.1. Wait
 
-<!-- WRITE PASSAGE STARTING OVER THIS LINE -->
+WARNING - CRITICAL SYSTEM FAILURE
+
+CHANCE OF SURVIVAL: 0%
+
+WARNING - SYSTEM OVERHEATING
+WARNING - SYSTEM OVERHEATING
+WARNING - SYSTEM UNSTABLE
+SYSTEM INSTABILITY WILL CAUSE CRAFT TO DETONATE
+WARNING - SYSTEM OVERHEATING
+WARNING - SYSTEM OVERHEATING
+
+ERROR
+ERROR
 
 <<nobr>>
 <!-- ************************************ -->
@@ -11,6 +23,6 @@
     type="button"
     tabindex="0"
     name="3.5.2. Explosion (Ending)">
-        Continue
+        ERROR
 </button>
 <</nobr>>

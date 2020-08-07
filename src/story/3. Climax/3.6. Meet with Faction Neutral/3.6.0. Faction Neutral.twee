@@ -1,6 +1,19 @@
 :: 3.6.0. Faction Neutral
 
-<!-- WRITE PASSAGE STARTING OVER THIS LINE -->
+YOU HAVE REACHED YOUR DESTINATION.
+
+INITIATING LANDING PROCEDURE. . .
+PLEASE REMAIN SEATED AT THIS TIME
+
+ANALYSING TERRITORY AND ATMOSPHERE. . .
+ANALYSIS COMPLETE
+LOCATION IS SAFE FOR LIFEFORMS
+
+ALIEN LIFEFORMS DETECTED. . .
+PRESENCE OF UNAUTHORIZED WEAPONS DETECTED. WEAPONS CURRENTLY INACTIVE.
+
+OPEN AIRLOCK?
+
 
 <<nobr>>
 <!-- ************************************ -->
@@ -11,6 +24,6 @@
     type="button"
     tabindex="0"
     name="3.6.1. Join Faction Neutral">
-        Join faction Neutral
+        Continue
 </button>
 <</nobr>>

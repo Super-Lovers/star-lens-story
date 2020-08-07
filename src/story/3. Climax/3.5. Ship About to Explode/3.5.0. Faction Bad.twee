@@ -1,6 +1,10 @@
 :: 3.5.0. Faction Bad
 
-<!-- WRITE PASSAGE STARTING OVER THIS LINE -->
+Hello?
+It seems like it's finally the end for you. It's incredible that you lasted this long, but it will be over soon for you now.
+
+What did you say? Rescue you? Aw.
+After all this time, you really thought we would actually help you? Did you not notice we have been sabotaging you every step of the way?
 
 <<nobr>>
 <!-- ************************************ -->
@@ -11,6 +15,6 @@
     type="button"
     tabindex="0"
     name="3.5.1. Wait">
-        Wait
+        Continue
 </button>
 <</nobr>>
