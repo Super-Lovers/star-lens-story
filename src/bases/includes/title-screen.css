@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 /**************************************
 TITLE SCREEN STYLES
 **************************************/
@@ -35,6 +42,10 @@ TITLE SCREEN STYLES
     width: 155px;
     height: 65px;
 
+    -webkit-transition: 0.1s ease;
+
+    -o-transition: 0.1s ease;
+
     transition: 0.1s ease;
 
     text-transform: uppercase;
@@ -49,6 +60,10 @@ TITLE SCREEN STYLES
     
     background-image: url('./assets/UI/startscreen_start_selected.png');
     background-size: contain;
+
+    -webkit-transition: 0.1s ease;
+
+    -o-transition: 0.1s ease;
 
     transition: 0.1s ease;
     color: rgba(255, 255, 255, 0.5);

@@ -242,4 +242,19 @@ $(document).on(':typingcomplete', function(ev) {
         }
     });
 });
+
+$(document).on(':typingstart', function(ev) {
+    $(document).ready(function() {
+        SimpleAudio.select("console_output")
+            .volume(0.3)
+            .loop(true)
+            .play();
+    });
+});
+
+$(document).on(':typingstop', function(ev) {
+    $(document).ready(function() {
+        SimpleAudio.select("console_output").stop();
+    });
+});
 <</script>>

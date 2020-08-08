@@ -227,9 +227,18 @@ CHOICES CONSOLE
     right: 0;
     bottom: 0;
 
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
     display: flex;
-    justify-content: center;
-    flex-direction: column-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
 
     background-position: center bottom;
     background-color: transparent;
@@ -239,7 +248,9 @@ textarea {
     overflow: none;
     resize: none;
 
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+
+            box-sizing: border-box;
     width: 100%;
 
     background-color: #c5c5c5;
@@ -278,6 +289,10 @@ textarea:not(:disabled):hover {
     border: 2px solid #1871d4;
     border-radius: 5px;
 
+    -webkit-transition: 0.3s ease;
+
+    -o-transition: 0.3s ease;
+
     transition: 0.3s ease;
 }
 
@@ -304,6 +319,13 @@ SCROLL BAR FOR THE MAIN CONSOLE
     border-radius: 5px;
 }
 /* twine-user-stylesheet #2: "conversation.css" */
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 /**************************************
 ENDINGS STYLES
 **************************************/
@@ -353,6 +375,13 @@ IMPORTS
     src: url("./fonts/Fairfax.ttf");
 }
 /* twine-user-stylesheet #4: "text-styles.css" */
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 /**************************************
 TEXT STYLES
 **************************************/
@@ -378,7 +407,8 @@ TEXT STYLES
 
 .mirror {
 	display: inline-block;
-	transform: scaleX(-1);
+	-ms-transform: scaleX(-1);
+	    transform: scaleX(-1);
 	-webkit-transform: scaleX(-1);
 }
 
@@ -413,6 +443,13 @@ TEXT STYLES
 	animation: pulse 0.8s;
 }
 /* twine-user-stylesheet #5: "title-screen.css" */
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 /**************************************
 TITLE SCREEN STYLES
 **************************************/
@@ -450,6 +487,10 @@ TITLE SCREEN STYLES
     width: 155px;
     height: 65px;
 
+    -webkit-transition: 0.1s ease;
+
+    -o-transition: 0.1s ease;
+
     transition: 0.1s ease;
 
     text-transform: uppercase;
@@ -464,6 +505,10 @@ TITLE SCREEN STYLES
     
     background-image: url('./assets/UI/startscreen_start_selected.png');
     background-size: contain;
+
+    -webkit-transition: 0.1s ease;
+
+    -o-transition: 0.1s ease;
 
     transition: 0.1s ease;
     color: rgba(255, 255, 255, 0.5);
@@ -502,7 +547,9 @@ TITLE SCREEN STYLES
 }</style><script role="script" id="twine-user-script" type="text/twine-javascript">/* twine-user-script #1: "audio.js" */
 var sound_effects_volume = 0.3;
 
+// Console sounds
 SimpleAudio.tracks.add("boom", "audio/sounds/explosion.wav");
+SimpleAudio.tracks.add("console_output", "audio/sounds/console_output.wav");
 
 // Buttons
 SimpleAudio.tracks.add("start_button", "audio/sounds/start_button.wav");
@@ -797,6 +844,21 @@ $(document).on(&#39;:typingcomplete&#39;, function(ev) {
                 SimpleAudio.select(&quot;button&quot;).volume(0.3).play();
             });
         }
+    });
+});
+
+$(document).on(&#39;:typingstart&#39;, function(ev) {
+    $(document).ready(function() {
+        SimpleAudio.select(&quot;console_output&quot;)
+            .volume(0.3)
+            .loop(true)
+            .play();
+    });
+});
+
+$(document).on(&#39;:typingstop&#39;, function(ev) {
+    $(document).ready(function() {
+        SimpleAudio.select(&quot;console_output&quot;).stop();
     });
 });
 &lt;&lt;/script&gt;&gt;</tw-passagedata><tw-passagedata pid="5" name="PassageHeader" tags="" position="600,100" size="100,100">&lt;&lt;nobr&gt;&gt;

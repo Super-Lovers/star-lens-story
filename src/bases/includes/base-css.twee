@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 :: base-styles [stylesheet]
 
 /**************************************
@@ -128,9 +135,18 @@ CHOICES CONSOLE
     right: 0;
     bottom: 0;
 
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
     display: flex;
-    justify-content: center;
-    flex-direction: column-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
 
     background-position: center bottom;
     background-color: transparent;
@@ -140,7 +156,9 @@ textarea {
     overflow: none;
     resize: none;
 
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+
+            box-sizing: border-box;
     width: 100%;
 
     background-color: #c5c5c5;
@@ -178,6 +196,10 @@ textarea:not(:disabled):hover {
     line-height: 18px;
     border: 2px solid #1871d4;
     border-radius: 5px;
+
+    -webkit-transition: 0.3s ease;
+
+    -o-transition: 0.3s ease;
 
     transition: 0.3s ease;
 }
