@@ -100,29 +100,6 @@ var saveAs=saveAs||navigator.msSaveBlob&&navigator.msSaveBlob.bind(navigator)||f
 	</div>
 	<!-- UUID://BEC78A1F-A3D2-4484-B58F-46CD201F9CA0// --><tw-storydata name="Starry Story" startnode="78" creator="Tweego" creator-version="2.1.1" ifid="BEC78A1F-A3D2-4484-B58F-46CD201F9CA0" zoom="1" format="SugarCube" format-version="2.33.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">/* twine-user-stylesheet #1: "base-styles" */
 /**************************************
-IMPORTS
-**************************************/
-@font-face {
-    font-family: "VT323";
-    src: url("./fonts/VT323-Regular.ttf");
-}
-
-@font-face {
-    font-family: "Cozette";
-    src: url("./fonts/cozette.woff");
-}
-
-@font-face {
-    font-family: "Cordata";
-    src: url("./fonts/cordata_ppc.woff");
-}
-
-@font-face {
-    font-family: "Fairfax";
-    src: url("./fonts/Fairfax.ttf");
-}
-
-/**************************************
 ABSTRACTS
 **************************************/
 .screen {
@@ -326,7 +303,56 @@ SCROLL BAR FOR THE MAIN CONSOLE
 
     border-radius: 5px;
 }
+/* twine-user-stylesheet #2: "conversation.css" */
+/**************************************
+ENDINGS STYLES
+**************************************/
+.neutral-chicken {
+    display: inline-block;
+    text-align: center;
+}
 
+.neutral-chicken > span:first-of-type {
+    position: relative;
+    left: 30px;
+
+    font-size: 7em;
+    text-align: center;
+}
+
+.neutral-chicken > span:last-of-type {
+    position: relative;
+    left: -10px;
+
+    font-size: 4em;
+    text-align: center;
+
+    vertical-align: top;
+}
+/* twine-user-stylesheet #3: "fonts.css" */
+/**************************************
+IMPORTS
+**************************************/
+@font-face {
+    font-family: "VT323";
+    src: url("./fonts/VT323-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Cozette";
+    src: url("./fonts/cozette.woff");
+}
+
+@font-face {
+    font-family: "Cordata";
+    src: url("./fonts/cordata_ppc.woff");
+}
+
+@font-face {
+    font-family: "Fairfax";
+    src: url("./fonts/Fairfax.ttf");
+}
+/* twine-user-stylesheet #4: "text-styles.css" */
 /**************************************
 TEXT STYLES
 **************************************/
@@ -336,17 +362,20 @@ TEXT STYLES
 		transform: translateX(0.2em)
 	}
 }
+
 @keyframes shudder {
 	50% {
 		-webkit-transform: translateX(0.2em);
 		transform: translateX(0.2em)
 	}
 }
+
 .shudder {
 	-webkit-animation: shudder linear 0.1s 0s infinite;
 	animation: shudder linear 0.1s 0s infinite;
 	display: inline-block;
 }
+
 .mirror {
 	display: inline-block;
 	transform: scaleX(-1);
@@ -369,6 +398,7 @@ TEXT STYLES
 	80% { -webkit-transform: scale(0.925, 0.925); transform:scale(0.925, 0.925) }
 	to  { -webkit-transform: scale(1, 1); transform: scale(1, 1) }
 }
+
 @keyframes pulse {
 	0%  { -webkit-transform: scale(0, 0); transform: scale(0, 0) }
 	20% { -webkit-transform: scale(1.2, 1.2); transform: scale(1.2, 1.2) }
@@ -377,11 +407,12 @@ TEXT STYLES
 	80% { -webkit-transform: scale(0.925, 0.925); transform: scale(0.925, 0.925) }
 	to  { -webkit-transform: scale(1, 1); transform: scale(1, 1) }
 }
+
 .pulse {
 	-webkit-animation: pulse 0.8s;
 	animation: pulse 0.8s;
 }
-
+/* twine-user-stylesheet #5: "title-screen.css" */
 /**************************************
 TITLE SCREEN STYLES
 **************************************/
@@ -413,6 +444,8 @@ TITLE SCREEN STYLES
     border: none;
     background-image: url('./assets/UI/startscreen_start_unselected.png');
     background-size: contain;
+    background-color: #191970;
+    border-radius: 5px;
 
     width: 155px;
     height: 65px;
@@ -444,7 +477,7 @@ TITLE SCREEN STYLES
 
     width: 100%;
 
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 1);
     text-align: center;
 }
 
@@ -466,33 +499,16 @@ TITLE SCREEN STYLES
 
     background-image: url("./assets/UI/startscreen_bg.png");
     background-size: cover;
-}
-/* twine-user-stylesheet #2: "conversation.css" */
-/**************************************
-ENDINGS STYLES
-**************************************/
-.neutral-chicken {
-    display: inline-block;
-    text-align: center;
-}
+}</style><script role="script" id="twine-user-script" type="text/twine-javascript">/* twine-user-script #1: "audio.js" */
+var sound_effects_volume = 0.3;
 
-.neutral-chicken > span:first-of-type {
-    position: relative;
-    left: 30px;
+SimpleAudio.tracks.add("boom", "audio/sounds/explosion.wav");
 
-    font-size: 7em;
-    text-align: center;
-}
-
-.neutral-chicken > span:last-of-type {
-    position: relative;
-    left: -10px;
-
-    font-size: 4em;
-    text-align: center;
-
-    vertical-align: top;
-}</style><script role="script" id="twine-user-script" type="text/twine-javascript">// UIBar.destroy();
+// Buttons
+SimpleAudio.tracks.add("start_button", "audio/sounds/start_button.wav");
+SimpleAudio.tracks.add("button", "audio/sounds/button.wav");
+/* twine-user-script #2: "base-script" */
+// UIBar.destroy();
 // UI.alert("test");
 
 /****************************************
@@ -837,6 +853,8 @@ $(document).on(&#39;:passagerender&#39;, function (ev) {
     &lt;&lt;script&gt;&gt;
         $(document).ready(function() {
             $(&#39;.start-button&#39;).on(&#39;click&#39;, function() {
+                SimpleAudio.select(&quot;start_button&quot;).volume(0.3).play();
+
                 Engine.play(&#39;0. Intro&#39;);
             });
         });
@@ -879,13 +897,16 @@ sDDGDFDBCBDGFJGHKMN
     &lt;!-- NECESSARY TO ACTIVE THE BUTTONS AT THIS SPECIFIC POINT IN THE PASSAGE --&gt;
     &lt;&lt;type 0ms skipkey &quot;Control&quot;&gt;&gt;\
         &lt;&lt;script&gt;&gt;
-            $(document).ready(function() {
-                let choice_buttons = $(&#39;.choice-button&#39;);
-
-                for (let i = 0; i &lt; choice_buttons.length; i++) {
-                    $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
-                }
-            });
+                $(document).ready(function() {
+                    let choice_buttons = $(&#39;.choice-button&#39;);
+    
+                    for (let i = 0; i &lt; choice_buttons.length; i++) {
+                        $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
+                        $(choice_buttons[i]).on(&#39;click&#39;, function() {
+                            SimpleAudio.select(&quot;button&quot;).volume(0.3).play();
+                        });
+                    }
+                });
         &lt;&lt;/script&gt;&gt;
     &lt;&lt;/type&gt;&gt;
 &lt;&lt;/nobr&gt;&gt;\
@@ -925,13 +946,16 @@ sDDGDFDBCBDGFJGHKMN
     &lt;!-- NECESSARY TO ACTIVE THE BUTTONS AT THIS SPECIFIC POINT IN THE PASSAGE --&gt;
     &lt;&lt;type 0ms skipkey &quot;Control&quot;&gt;&gt;\
         &lt;&lt;script&gt;&gt;
-            $(document).ready(function() {
-                let choice_buttons = $(&#39;.choice-button&#39;);
-
-                for (let i = 0; i &lt; choice_buttons.length; i++) {
-                    $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
-                }
-            });
+                $(document).ready(function() {
+                    let choice_buttons = $(&#39;.choice-button&#39;);
+    
+                    for (let i = 0; i &lt; choice_buttons.length; i++) {
+                        $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
+                        $(choice_buttons[i]).on(&#39;click&#39;, function() {
+                            SimpleAudio.select(&quot;button&quot;).volume(0.3).play();
+                        });
+                    }
+                });
         &lt;&lt;/script&gt;&gt;
     &lt;&lt;/type&gt;&gt;
 &lt;&lt;/nobr&gt;&gt;\
@@ -966,6 +990,9 @@ sDDGDFDBCBDGFJGHKMN
     
                     for (let i = 0; i &lt; choice_buttons.length; i++) {
                         $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
+                        $(choice_buttons[i]).on(&#39;click&#39;, function() {
+                            SimpleAudio.select(&quot;button&quot;).volume(0.3).play();
+                        });
                     }
                 });
             &lt;&lt;/script&gt;&gt;
@@ -1018,13 +1045,16 @@ sDDGDFDBCBDGFJGHKMN
     &lt;!-- NECESSARY TO ACTIVE THE BUTTONS AT THIS SPECIFIC POINT IN THE PASSAGE --&gt;
     &lt;&lt;type 0ms skipkey &quot;Control&quot;&gt;&gt;\
         &lt;&lt;script&gt;&gt;
-            $(document).ready(function() {
-                let choice_buttons = $(&#39;.choice-button&#39;);
-
-                for (let i = 0; i &lt; choice_buttons.length; i++) {
-                    $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
-                }
-            });
+                $(document).ready(function() {
+                    let choice_buttons = $(&#39;.choice-button&#39;);
+    
+                    for (let i = 0; i &lt; choice_buttons.length; i++) {
+                        $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
+                        $(choice_buttons[i]).on(&#39;click&#39;, function() {
+                            SimpleAudio.select(&quot;button&quot;).volume(0.3).play();
+                        });
+                    }
+                });
         &lt;&lt;/script&gt;&gt;
     &lt;&lt;/type&gt;&gt;
 &lt;&lt;/nobr&gt;&gt;\
@@ -1050,13 +1080,16 @@ sDDGDFDBCBDGFJGHKMN
     &lt;!-- NECESSARY TO ACTIVE THE BUTTONS AT THIS SPECIFIC POINT IN THE PASSAGE --&gt;
     &lt;&lt;type 0ms skipkey &quot;Control&quot;&gt;&gt;\
         &lt;&lt;script&gt;&gt;
-            $(document).ready(function() {
-                let choice_buttons = $(&#39;.choice-button&#39;);
-
-                for (let i = 0; i &lt; choice_buttons.length; i++) {
-                    $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
-                }
-            });
+                $(document).ready(function() {
+                    let choice_buttons = $(&#39;.choice-button&#39;);
+    
+                    for (let i = 0; i &lt; choice_buttons.length; i++) {
+                        $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
+                        $(choice_buttons[i]).on(&#39;click&#39;, function() {
+                            SimpleAudio.select(&quot;button&quot;).volume(0.3).play();
+                        });
+                    }
+                });
         &lt;&lt;/script&gt;&gt;
     &lt;&lt;/type&gt;&gt;
 &lt;&lt;/nobr&gt;&gt;\
@@ -1116,13 +1149,16 @@ Please
     &lt;!-- NECESSARY TO ACTIVE THE BUTTONS AT THIS SPECIFIC POINT IN THE PASSAGE --&gt;
     &lt;&lt;type 0ms skipkey &quot;Control&quot;&gt;&gt;\
         &lt;&lt;script&gt;&gt;
-            $(document).ready(function() {
-                let choice_buttons = $(&#39;.choice-button&#39;);
-
-                for (let i = 0; i &lt; choice_buttons.length; i++) {
-                    $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
-                }
-            });
+                $(document).ready(function() {
+                    let choice_buttons = $(&#39;.choice-button&#39;);
+    
+                    for (let i = 0; i &lt; choice_buttons.length; i++) {
+                        $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
+                        $(choice_buttons[i]).on(&#39;click&#39;, function() {
+                            SimpleAudio.select(&quot;button&quot;).volume(0.3).play();
+                        });
+                    }
+                });
         &lt;&lt;/script&gt;&gt;
     &lt;&lt;/type&gt;&gt;
 &lt;&lt;/nobr&gt;&gt;\
@@ -1163,6 +1199,9 @@ Please
     
                     for (let i = 0; i &lt; choice_buttons.length; i++) {
                         $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
+                        $(choice_buttons[i]).on(&#39;click&#39;, function() {
+                            SimpleAudio.select(&quot;button&quot;).volume(0.3).play();
+                        });
                     }
                 });
             &lt;&lt;/script&gt;&gt;
@@ -1247,6 +1286,9 @@ Please
     
                     for (let i = 0; i &lt; choice_buttons.length; i++) {
                         $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
+                        $(choice_buttons[i]).on(&#39;click&#39;, function() {
+                            SimpleAudio.select(&quot;button&quot;).volume(0.3).play();
+                        });
                     }
                 });
             &lt;&lt;/script&gt;&gt;
@@ -1302,6 +1344,9 @@ Please
     
                     for (let i = 0; i &lt; choice_buttons.length; i++) {
                         $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
+                        $(choice_buttons[i]).on(&#39;click&#39;, function() {
+                            SimpleAudio.select(&quot;button&quot;).volume(0.3).play();
+                        });
                     }
                 });
             &lt;&lt;/script&gt;&gt;
@@ -1352,6 +1397,9 @@ Please
     
                     for (let i = 0; i &lt; choice_buttons.length; i++) {
                         $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
+                        $(choice_buttons[i]).on(&#39;click&#39;, function() {
+                            SimpleAudio.select(&quot;button&quot;).volume(0.3).play();
+                        });
                     }
                 });
             &lt;&lt;/script&gt;&gt;
@@ -1391,10 +1439,10 @@ Please
 &lt;&lt;/type&gt;&gt;\
 &lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
     \@@color:gray;&gt;@@ LIKELIHOOD OF IRREVERSIBLE DAMAGE - 30%
-&lt;&lt;/type&gt;&gt;\
+&lt;&lt;/type&gt;&gt;
 &lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
     \@@color:gray;&gt;@@ The selected route is @@color:red;potentially the most dangerous@@, however it is the shortest to the destination.
-&lt;&lt;/type&gt;&gt;\
+&lt;&lt;/type&gt;&gt;
 &lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
     \@@color:gray;&gt;@@ PROCEED?
     
@@ -1402,13 +1450,16 @@ Please
     &lt;!-- NECESSARY TO ACTIVE THE BUTTONS AT THIS SPECIFIC POINT IN THE PASSAGE --&gt;
     &lt;&lt;type 0ms skipkey &quot;Control&quot;&gt;&gt;\
         &lt;&lt;script&gt;&gt;
-            $(document).ready(function() {
-                let choice_buttons = $(&#39;.choice-button&#39;);
-
-                for (let i = 0; i &lt; choice_buttons.length; i++) {
-                    $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
-                }
-            });
+                $(document).ready(function() {
+                    let choice_buttons = $(&#39;.choice-button&#39;);
+    
+                    for (let i = 0; i &lt; choice_buttons.length; i++) {
+                        $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
+                        $(choice_buttons[i]).on(&#39;click&#39;, function() {
+                            SimpleAudio.select(&quot;button&quot;).volume(0.3).play();
+                        });
+                    }
+                });
         &lt;&lt;/script&gt;&gt;
     &lt;&lt;/type&gt;&gt;
 &lt;&lt;/nobr&gt;&gt;\
@@ -1469,6 +1520,9 @@ Please
     
                     for (let i = 0; i &lt; choice_buttons.length; i++) {
                         $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
+                        $(choice_buttons[i]).on(&#39;click&#39;, function() {
+                            SimpleAudio.select(&quot;button&quot;).volume(0.3).play();
+                        });
                     }
                 });
             &lt;&lt;/script&gt;&gt;
@@ -1531,6 +1585,9 @@ Please
     
                     for (let i = 0; i &lt; choice_buttons.length; i++) {
                         $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
+                        $(choice_buttons[i]).on(&#39;click&#39;, function() {
+                            SimpleAudio.select(&quot;button&quot;).volume(0.3).play();
+                        });
                     }
                 });
             &lt;&lt;/script&gt;&gt;
@@ -1571,6 +1628,9 @@ Please
     
                     for (let i = 0; i &lt; choice_buttons.length; i++) {
                         $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
+                        $(choice_buttons[i]).on(&#39;click&#39;, function() {
+                            SimpleAudio.select(&quot;button&quot;).volume(0.3).play();
+                        });
                     }
                 });
             &lt;&lt;/script&gt;&gt;
@@ -1646,6 +1706,9 @@ Please
     
                     for (let i = 0; i &lt; choice_buttons.length; i++) {
                         $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
+                        $(choice_buttons[i]).on(&#39;click&#39;, function() {
+                            SimpleAudio.select(&quot;button&quot;).volume(0.3).play();
+                        });
                     }
                 });
             &lt;&lt;/script&gt;&gt;
@@ -1688,6 +1751,7 @@ Please
 &lt;&lt;/type&gt;&gt;\
 &lt;&lt;type 100ms skipkey &quot;Control&quot;&gt;&gt;\
     \@@color:gray;&gt;@@ Ulisse, how did you turn up here?
+
     \@@color:gray;&gt;@@ Is everything alright?
 
 ...
@@ -1721,6 +1785,9 @@ Please
     
                     for (let i = 0; i &lt; choice_buttons.length; i++) {
                         $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
+                        $(choice_buttons[i]).on(&#39;click&#39;, function() {
+                            SimpleAudio.select(&quot;button&quot;).volume(0.3).play();
+                        });
                     }
                 });
             &lt;&lt;/script&gt;&gt;
@@ -1774,6 +1841,9 @@ Please
     
                     for (let i = 0; i &lt; choice_buttons.length; i++) {
                         $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
+                        $(choice_buttons[i]).on(&#39;click&#39;, function() {
+                            SimpleAudio.select(&quot;button&quot;).volume(0.3).play();
+                        });
                     }
                 });
             &lt;&lt;/script&gt;&gt;
@@ -1835,6 +1905,9 @@ Please
     
                     for (let i = 0; i &lt; choice_buttons.length; i++) {
                         $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
+                        $(choice_buttons[i]).on(&#39;click&#39;, function() {
+                            SimpleAudio.select(&quot;button&quot;).volume(0.3).play();
+                        });
                     }
                 });
             &lt;&lt;/script&gt;&gt;
@@ -1900,6 +1973,9 @@ Please
     
                     for (let i = 0; i &lt; choice_buttons.length; i++) {
                         $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
+                        $(choice_buttons[i]).on(&#39;click&#39;, function() {
+                            SimpleAudio.select(&quot;button&quot;).volume(0.3).play();
+                        });
                     }
                 });
             &lt;&lt;/script&gt;&gt;
@@ -1960,6 +2036,9 @@ Please
     
                     for (let i = 0; i &lt; choice_buttons.length; i++) {
                         $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
+                        $(choice_buttons[i]).on(&#39;click&#39;, function() {
+                            SimpleAudio.select(&quot;button&quot;).volume(0.3).play();
+                        });
                     }
                 });
             &lt;&lt;/script&gt;&gt;
@@ -2035,6 +2114,9 @@ Please
     
                     for (let i = 0; i &lt; choice_buttons.length; i++) {
                         $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
+                        $(choice_buttons[i]).on(&#39;click&#39;, function() {
+                            SimpleAudio.select(&quot;button&quot;).volume(0.3).play();
+                        });
                     }
                 });
             &lt;&lt;/script&gt;&gt;
@@ -2080,6 +2162,9 @@ Please
     
                     for (let i = 0; i &lt; choice_buttons.length; i++) {
                         $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
+                        $(choice_buttons[i]).on(&#39;click&#39;, function() {
+                            SimpleAudio.select(&quot;button&quot;).volume(0.3).play();
+                        });
                     }
                 });
             &lt;&lt;/script&gt;&gt;
@@ -2127,6 +2212,9 @@ Please
     
                     for (let i = 0; i &lt; choice_buttons.length; i++) {
                         $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
+                        $(choice_buttons[i]).on(&#39;click&#39;, function() {
+                            SimpleAudio.select(&quot;button&quot;).volume(0.3).play();
+                        });
                     }
                 });
             &lt;&lt;/script&gt;&gt;
@@ -2175,6 +2263,9 @@ Please
     
                     for (let i = 0; i &lt; choice_buttons.length; i++) {
                         $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
+                        $(choice_buttons[i]).on(&#39;click&#39;, function() {
+                            SimpleAudio.select(&quot;button&quot;).volume(0.3).play();
+                        });
                     }
                 });
             &lt;&lt;/script&gt;&gt;
@@ -2225,6 +2316,9 @@ Please
     
                     for (let i = 0; i &lt; choice_buttons.length; i++) {
                         $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
+                        $(choice_buttons[i]).on(&#39;click&#39;, function() {
+                            SimpleAudio.select(&quot;button&quot;).volume(0.3).play();
+                        });
                     }
                 });
             &lt;&lt;/script&gt;&gt;
@@ -2373,6 +2467,9 @@ Please
     
                     for (let i = 0; i &lt; choice_buttons.length; i++) {
                         $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
+                        $(choice_buttons[i]).on(&#39;click&#39;, function() {
+                            SimpleAudio.select(&quot;button&quot;).volume(0.3).play();
+                        });
                     }
                 });
             &lt;&lt;/script&gt;&gt;
@@ -2486,6 +2583,9 @@ Please
     
                     for (let i = 0; i &lt; choice_buttons.length; i++) {
                         $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
+                        $(choice_buttons[i]).on(&#39;click&#39;, function() {
+                            SimpleAudio.select(&quot;button&quot;).volume(0.3).play();
+                        });
                     }
                 });
             &lt;&lt;/script&gt;&gt;
@@ -2600,6 +2700,9 @@ That&#39;s quite the feat for a stranger. We are impressed.
     
                     for (let i = 0; i &lt; choice_buttons.length; i++) {
                         $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
+                        $(choice_buttons[i]).on(&#39;click&#39;, function() {
+                            SimpleAudio.select(&quot;button&quot;).volume(0.3).play();
+                        });
                     }
                 });
             &lt;&lt;/script&gt;&gt;
@@ -2692,6 +2795,9 @@ That&#39;s quite the feat for a stranger. We are impressed.
     
                     for (let i = 0; i &lt; choice_buttons.length; i++) {
                         $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
+                        $(choice_buttons[i]).on(&#39;click&#39;, function() {
+                            SimpleAudio.select(&quot;button&quot;).volume(0.3).play();
+                        });
                     }
                 });
             &lt;&lt;/script&gt;&gt;
@@ -2744,6 +2850,9 @@ That&#39;s quite the feat for a stranger. We are impressed.
     
                     for (let i = 0; i &lt; choice_buttons.length; i++) {
                         $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
+                        $(choice_buttons[i]).on(&#39;click&#39;, function() {
+                            SimpleAudio.select(&quot;button&quot;).volume(0.3).play();
+                        });
                     }
                 });
             &lt;&lt;/script&gt;&gt;
@@ -2813,13 +2922,16 @@ That&#39;s quite the feat for a stranger. We are impressed.
     &lt;!-- NECESSARY TO ACTIVE THE BUTTONS AT THIS SPECIFIC POINT IN THE PASSAGE --&gt;
     &lt;&lt;type 0ms skipkey &quot;Control&quot;&gt;&gt;\
         &lt;&lt;script&gt;&gt;
-            $(document).ready(function() {
-                let choice_buttons = $(&#39;.choice-button&#39;);
-
-                for (let i = 0; i &lt; choice_buttons.length; i++) {
-                    $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
-                }
-            });
+                $(document).ready(function() {
+                    let choice_buttons = $(&#39;.choice-button&#39;);
+    
+                    for (let i = 0; i &lt; choice_buttons.length; i++) {
+                        $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
+                        $(choice_buttons[i]).on(&#39;click&#39;, function() {
+                            SimpleAudio.select(&quot;button&quot;).volume(0.3).play();
+                        });
+                    }
+                });
         &lt;&lt;/script&gt;&gt;
     &lt;&lt;/type&gt;&gt;
 &lt;&lt;/nobr&gt;&gt;\
@@ -2869,13 +2981,16 @@ That&#39;s quite the feat for a stranger. We are impressed.
     &lt;!-- NECESSARY TO ACTIVE THE BUTTONS AT THIS SPECIFIC POINT IN THE PASSAGE --&gt;
     &lt;&lt;type 0ms skipkey &quot;Control&quot;&gt;&gt;\
         &lt;&lt;script&gt;&gt;
-            $(document).ready(function() {
-                let choice_buttons = $(&#39;.choice-button&#39;);
-
-                for (let i = 0; i &lt; choice_buttons.length; i++) {
-                    $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
-                }
-            });
+                $(document).ready(function() {
+                    let choice_buttons = $(&#39;.choice-button&#39;);
+    
+                    for (let i = 0; i &lt; choice_buttons.length; i++) {
+                        $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
+                        $(choice_buttons[i]).on(&#39;click&#39;, function() {
+                            SimpleAudio.select(&quot;button&quot;).volume(0.3).play();
+                        });
+                    }
+                });
         &lt;&lt;/script&gt;&gt;
     &lt;&lt;/type&gt;&gt;
 &lt;&lt;/nobr&gt;&gt;\
@@ -2932,13 +3047,16 @@ That&#39;s quite the feat for a stranger. We are impressed.
     &lt;!-- NECESSARY TO ACTIVE THE BUTTONS AT THIS SPECIFIC POINT IN THE PASSAGE --&gt;
     &lt;&lt;type 0ms skipkey &quot;Control&quot;&gt;&gt;\
         &lt;&lt;script&gt;&gt;
-            $(document).ready(function() {
-                let choice_buttons = $(&#39;.choice-button&#39;);
-
-                for (let i = 0; i &lt; choice_buttons.length; i++) {
-                    $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
-                }
-            });
+                $(document).ready(function() {
+                    let choice_buttons = $(&#39;.choice-button&#39;);
+    
+                    for (let i = 0; i &lt; choice_buttons.length; i++) {
+                        $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
+                        $(choice_buttons[i]).on(&#39;click&#39;, function() {
+                            SimpleAudio.select(&quot;button&quot;).volume(0.3).play();
+                        });
+                    }
+                });
         &lt;&lt;/script&gt;&gt;
     &lt;&lt;/type&gt;&gt;
 &lt;&lt;/nobr&gt;&gt;\
@@ -2992,13 +3110,16 @@ That&#39;s quite the feat for a stranger. We are impressed.
     &lt;!-- NECESSARY TO ACTIVE THE BUTTONS AT THIS SPECIFIC POINT IN THE PASSAGE --&gt;
     &lt;&lt;type 0ms skipkey &quot;Control&quot;&gt;&gt;\
         &lt;&lt;script&gt;&gt;
-            $(document).ready(function() {
-                let choice_buttons = $(&#39;.choice-button&#39;);
-
-                for (let i = 0; i &lt; choice_buttons.length; i++) {
-                    $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
-                }
-            });
+                $(document).ready(function() {
+                    let choice_buttons = $(&#39;.choice-button&#39;);
+    
+                    for (let i = 0; i &lt; choice_buttons.length; i++) {
+                        $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
+                        $(choice_buttons[i]).on(&#39;click&#39;, function() {
+                            SimpleAudio.select(&quot;button&quot;).volume(0.3).play();
+                        });
+                    }
+                });
         &lt;&lt;/script&gt;&gt;
     &lt;&lt;/type&gt;&gt;
 &lt;&lt;/nobr&gt;&gt;\
@@ -3021,6 +3142,8 @@ That&#39;s quite the feat for a stranger. We are impressed.
 &lt;&lt;timed 2s&gt;&gt;\
     &lt;span class=&quot;boom-title pulse&quot;&gt;&#39;&#39;@@color:orange;B@@ @@color:red;O@@ 💥 @@color:red;O@@ @@color:orange;M@@&#39;&#39;&lt;/span&gt;
     &lt;&lt;script&gt;&gt;
+        SimpleAudio.select(&quot;boom&quot;).volume(0.3).play();
+
         $(&#39;#console-screen&#39;).css(&#39;backgroundImage&#39;, &#39;url(&quot;./assets/UI/mainconsole_broken.png&quot;)&#39;);
         $(&#39;#choices-screen&#39;).css(&#39;backgroundImage&#39;, &#39;url(&quot;./assets/UI/bottomconsole_broken.png&quot;)&#39;);
     &lt;&lt;/script&gt;&gt;
@@ -3049,6 +3172,9 @@ That&#39;s quite the feat for a stranger. We are impressed.
     
                     for (let i = 0; i &lt; choice_buttons.length; i++) {
                         $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
+                        $(choice_buttons[i]).on(&#39;click&#39;, function() {
+                            SimpleAudio.select(&quot;button&quot;).volume(0.3).play();
+                        });
                     }
                 });
             &lt;&lt;/script&gt;&gt;
@@ -3121,13 +3247,16 @@ That&#39;s quite the feat for a stranger. We are impressed.
     &lt;!-- NECESSARY TO ACTIVE THE BUTTONS AT THIS SPECIFIC POINT IN THE PASSAGE --&gt;
     &lt;&lt;type 0ms skipkey &quot;Control&quot;&gt;&gt;\
         &lt;&lt;script&gt;&gt;
-            $(document).ready(function() {
-                let choice_buttons = $(&#39;.choice-button&#39;);
-
-                for (let i = 0; i &lt; choice_buttons.length; i++) {
-                    $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
-                }
-            });
+                $(document).ready(function() {
+                    let choice_buttons = $(&#39;.choice-button&#39;);
+    
+                    for (let i = 0; i &lt; choice_buttons.length; i++) {
+                        $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
+                        $(choice_buttons[i]).on(&#39;click&#39;, function() {
+                            SimpleAudio.select(&quot;button&quot;).volume(0.3).play();
+                        });
+                    }
+                });
         &lt;&lt;/script&gt;&gt;
     &lt;&lt;/type&gt;&gt;
 &lt;&lt;/nobr&gt;&gt;\
@@ -3177,13 +3306,16 @@ That&#39;s quite the feat for a stranger. We are impressed.
     &lt;!-- NECESSARY TO ACTIVE THE BUTTONS AT THIS SPECIFIC POINT IN THE PASSAGE --&gt;
     &lt;&lt;type 0ms skipkey &quot;Control&quot;&gt;&gt;\
         &lt;&lt;script&gt;&gt;
-            $(document).ready(function() {
-                let choice_buttons = $(&#39;.choice-button&#39;);
-
-                for (let i = 0; i &lt; choice_buttons.length; i++) {
-                    $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
-                }
-            });
+                $(document).ready(function() {
+                    let choice_buttons = $(&#39;.choice-button&#39;);
+    
+                    for (let i = 0; i &lt; choice_buttons.length; i++) {
+                        $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
+                        $(choice_buttons[i]).on(&#39;click&#39;, function() {
+                            SimpleAudio.select(&quot;button&quot;).volume(0.3).play();
+                        });
+                    }
+                });
         &lt;&lt;/script&gt;&gt;
     &lt;&lt;/type&gt;&gt;
 &lt;&lt;/nobr&gt;&gt;\
@@ -3237,13 +3369,16 @@ That&#39;s quite the feat for a stranger. We are impressed.
     &lt;!-- NECESSARY TO ACTIVE THE BUTTONS AT THIS SPECIFIC POINT IN THE PASSAGE --&gt;
     &lt;&lt;type 0ms skipkey &quot;Control&quot;&gt;&gt;\
         &lt;&lt;script&gt;&gt;
-            $(document).ready(function() {
-                let choice_buttons = $(&#39;.choice-button&#39;);
-
-                for (let i = 0; i &lt; choice_buttons.length; i++) {
-                    $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
-                }
-            });
+                $(document).ready(function() {
+                    let choice_buttons = $(&#39;.choice-button&#39;);
+    
+                    for (let i = 0; i &lt; choice_buttons.length; i++) {
+                        $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
+                        $(choice_buttons[i]).on(&#39;click&#39;, function() {
+                            SimpleAudio.select(&quot;button&quot;).volume(0.3).play();
+                        });
+                    }
+                });
         &lt;&lt;/script&gt;&gt;
     &lt;&lt;/type&gt;&gt;
 &lt;&lt;/nobr&gt;&gt;\
@@ -3290,6 +3425,8 @@ That&#39;s quite the feat for a stranger. We are impressed.
 &lt;&lt;type 0ms skipkey &quot;Control&quot;&gt;&gt;\
     &lt;span class=&quot;boom-title pulse&quot;&gt;&#39;&#39;@@color:orange;B@@ @@color:red;O@@ 💥 @@color:red;O@@ @@color:orange;M@@&#39;&#39;&lt;/span&gt;
     &lt;&lt;script&gt;&gt;
+        SimpleAudio.select(&quot;boom&quot;).volume(0.3).play();
+
         $(&#39;#console-screen&#39;).css(&#39;backgroundImage&#39;, &#39;url(&quot;./assets/UI/mainconsole_broken.png&quot;)&#39;);
         $(&#39;#choices-screen&#39;).css(&#39;backgroundImage&#39;, &#39;url(&quot;./assets/UI/bottomconsole_broken.png&quot;)&#39;);
     &lt;&lt;/script&gt;&gt;
@@ -3303,6 +3440,9 @@ That&#39;s quite the feat for a stranger. We are impressed.
     
                     for (let i = 0; i &lt; choice_buttons.length; i++) {
                         $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
+                        $(choice_buttons[i]).on(&#39;click&#39;, function() {
+                            SimpleAudio.select(&quot;button&quot;).volume(0.3).play();
+                        });
                     }
                 });
             &lt;&lt;/script&gt;&gt;
@@ -3357,6 +3497,9 @@ That&#39;s quite the feat for a stranger. We are impressed.
     
                     for (let i = 0; i &lt; choice_buttons.length; i++) {
                         $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
+                        $(choice_buttons[i]).on(&#39;click&#39;, function() {
+                            SimpleAudio.select(&quot;button&quot;).volume(0.3).play();
+                        });
                     }
                 });
             &lt;&lt;/script&gt;&gt;
@@ -3411,6 +3554,9 @@ That&#39;s quite the feat for a stranger. We are impressed.
     
                     for (let i = 0; i &lt; choice_buttons.length; i++) {
                         $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
+                        $(choice_buttons[i]).on(&#39;click&#39;, function() {
+                            SimpleAudio.select(&quot;button&quot;).volume(0.3).play();
+                        });
                     }
                 });
             &lt;&lt;/script&gt;&gt;
@@ -3465,6 +3611,9 @@ That&#39;s quite the feat for a stranger. We are impressed.
     
                     for (let i = 0; i &lt; choice_buttons.length; i++) {
                         $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
+                        $(choice_buttons[i]).on(&#39;click&#39;, function() {
+                            SimpleAudio.select(&quot;button&quot;).volume(0.3).play();
+                        });
                     }
                 });
             &lt;&lt;/script&gt;&gt;
@@ -3528,6 +3677,9 @@ That&#39;s quite the feat for a stranger. We are impressed.
     
                     for (let i = 0; i &lt; choice_buttons.length; i++) {
                         $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
+                        $(choice_buttons[i]).on(&#39;click&#39;, function() {
+                            SimpleAudio.select(&quot;button&quot;).volume(0.3).play();
+                        });
                     }
                 });
             &lt;&lt;/script&gt;&gt;
@@ -3576,6 +3728,9 @@ That&#39;s quite the feat for a stranger. We are impressed.
     
                     for (let i = 0; i &lt; choice_buttons.length; i++) {
                         $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
+                        $(choice_buttons[i]).on(&#39;click&#39;, function() {
+                            SimpleAudio.select(&quot;button&quot;).volume(0.3).play();
+                        });
                     }
                 });
             &lt;&lt;/script&gt;&gt;
@@ -3623,6 +3778,9 @@ That&#39;s quite the feat for a stranger. We are impressed.
     
                     for (let i = 0; i &lt; choice_buttons.length; i++) {
                         $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
+                        $(choice_buttons[i]).on(&#39;click&#39;, function() {
+                            SimpleAudio.select(&quot;button&quot;).volume(0.3).play();
+                        });
                     }
                 });
             &lt;&lt;/script&gt;&gt;
@@ -3694,6 +3852,9 @@ That&#39;s quite the feat for a stranger. We are impressed.
     
                     for (let i = 0; i &lt; choice_buttons.length; i++) {
                         $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
+                        $(choice_buttons[i]).on(&#39;click&#39;, function() {
+                            SimpleAudio.select(&quot;button&quot;).volume(0.3).play();
+                        });
                     }
                 });
             &lt;&lt;/script&gt;&gt;
@@ -3747,6 +3908,9 @@ That&#39;s quite the feat for a stranger. We are impressed.
     
                     for (let i = 0; i &lt; choice_buttons.length; i++) {
                         $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
+                        $(choice_buttons[i]).on(&#39;click&#39;, function() {
+                            SimpleAudio.select(&quot;button&quot;).volume(0.3).play();
+                        });
                     }
                 });
             &lt;&lt;/script&gt;&gt;
@@ -3815,6 +3979,9 @@ You can come out once we pull you in the carrier! We got food and first aid if y
     
                     for (let i = 0; i &lt; choice_buttons.length; i++) {
                         $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
+                        $(choice_buttons[i]).on(&#39;click&#39;, function() {
+                            SimpleAudio.select(&quot;button&quot;).volume(0.3).play();
+                        });
                     }
                 });
             &lt;&lt;/script&gt;&gt;
@@ -3846,6 +4013,8 @@ You can come out once we pull you in the carrier! We got food and first aid if y
 &lt;&lt;type 0ms skipkey &quot;Control&quot;&gt;&gt;\
     &lt;span class=&quot;boom-title pulse&quot;&gt;&#39;&#39;@@color:orange;B@@ @@color:red;O@@ 💥 @@color:red;O@@ @@color:orange;M@@&#39;&#39;&lt;/span&gt;
     &lt;&lt;script&gt;&gt;
+        SimpleAudio.select(&quot;boom&quot;).volume(0.3).play();
+
         $(&#39;#choices-screen&#39;).css(&#39;backgroundImage&#39;, &#39;url(&quot;./assets/UI/bottomconsole_broken.png&quot;)&#39;);
     &lt;&lt;/script&gt;&gt;
 &lt;&lt;/type&gt;&gt;\
@@ -3874,6 +4043,8 @@ You can come out once we pull you in the carrier! We got food and first aid if y
 &lt;&lt;type 0ms skipkey &quot;Control&quot;&gt;&gt;\
     &lt;span class=&quot;boom-title pulse&quot;&gt;&#39;&#39;@@color:orange;B@@ @@color:red;O@@ 💥 @@color:red;O@@ @@color:orange;M@@&#39;&#39;&lt;/span&gt;
     &lt;&lt;script&gt;&gt;
+        SimpleAudio.select(&quot;boom&quot;).volume(0.3).play();
+
         $(&#39;#console-screen&#39;).css(&#39;backgroundImage&#39;, &#39;url(&quot;./assets/UI/mainconsole_broken.png&quot;)&#39;);
     &lt;&lt;/script&gt;&gt;
 &lt;&lt;/type&gt;&gt;
@@ -3893,6 +4064,9 @@ You can come out once we pull you in the carrier! We got food and first aid if y
     
                     for (let i = 0; i &lt; choice_buttons.length; i++) {
                         $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
+                        $(choice_buttons[i]).on(&#39;click&#39;, function() {
+                            SimpleAudio.select(&quot;button&quot;).volume(0.3).play();
+                        });
                     }
                 });
             &lt;&lt;/script&gt;&gt;
@@ -3947,6 +4121,9 @@ Is this really the end for me?
     
                     for (let i = 0; i &lt; choice_buttons.length; i++) {
                         $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
+                        $(choice_buttons[i]).on(&#39;click&#39;, function() {
+                            SimpleAudio.select(&quot;button&quot;).volume(0.3).play();
+                        });
                     }
                 });
             &lt;&lt;/script&gt;&gt;
@@ -4011,6 +4188,9 @@ How unfortunate for you, you really did almost make it.
     
                     for (let i = 0; i &lt; choice_buttons.length; i++) {
                         $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
+                        $(choice_buttons[i]).on(&#39;click&#39;, function() {
+                            SimpleAudio.select(&quot;button&quot;).volume(0.3).play();
+                        });
                     }
                 });
             &lt;&lt;/script&gt;&gt;
@@ -4058,6 +4238,9 @@ How unfortunate for you, you really did almost make it.
     
                     for (let i = 0; i &lt; choice_buttons.length; i++) {
                         $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
+                        $(choice_buttons[i]).on(&#39;click&#39;, function() {
+                            SimpleAudio.select(&quot;button&quot;).volume(0.3).play();
+                        });
                     }
                 });
             &lt;&lt;/script&gt;&gt;
@@ -4110,6 +4293,9 @@ How unfortunate for you, you really did almost make it.
     
                     for (let i = 0; i &lt; choice_buttons.length; i++) {
                         $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
+                        $(choice_buttons[i]).on(&#39;click&#39;, function() {
+                            SimpleAudio.select(&quot;button&quot;).volume(0.3).play();
+                        });
                     }
                 });
             &lt;&lt;/script&gt;&gt;
@@ -4167,6 +4353,9 @@ no no no no no no no no no no no
     
                     for (let i = 0; i &lt; choice_buttons.length; i++) {
                         $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
+                        $(choice_buttons[i]).on(&#39;click&#39;, function() {
+                            SimpleAudio.select(&quot;button&quot;).volume(0.3).play();
+                        });
                     }
                 });
             &lt;&lt;/script&gt;&gt;
