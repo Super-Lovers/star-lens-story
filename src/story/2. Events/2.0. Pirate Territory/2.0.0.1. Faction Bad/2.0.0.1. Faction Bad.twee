@@ -5,6 +5,7 @@
 <</type>>\
 <<type 100ms skipkey "Control">>\
     \@@color:gray;>@@ Ulisse, how did you turn up here?
+
     \@@color:gray;>@@ Is everything alright?
 
 ...
@@ -38,6 +39,9 @@
     
                     for (let i = 0; i < choice_buttons.length; i++) {
                         $(choice_buttons[i]).css('display', 'block');
+                        $(choice_buttons[i]).on('click', function() {
+                            SimpleAudio.select("button").volume(0.3).play();
+                        });
                     }
                 });
             <</script>>

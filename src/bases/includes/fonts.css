@@ -1,0 +1,22 @@
+/**************************************
+IMPORTS
+**************************************/
+@font-face {
+    font-family: "VT323";
+    src: url("./fonts/VT323-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Cozette";
+    src: url("./fonts/cozette.woff");
+}
+
+@font-face {
+    font-family: "Cordata";
+    src: url("./fonts/cordata_ppc.woff");
+}
+
+@font-face {
+    font-family: "Fairfax";
+    src: url("./fonts/Fairfax.ttf");
+}

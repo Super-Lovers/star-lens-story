@@ -5,6 +5,8 @@
 <<timed 2s>>\
     <span class="boom-title pulse">''@@color:orange;B@@ @@color:red;O@@ 💥 @@color:red;O@@ @@color:orange;M@@''</span>
     <<script>>
+        SimpleAudio.select("boom").volume(0.3).play();
+
         $('#console-screen').css('backgroundImage', 'url("./assets/UI/mainconsole_broken.png")');
         $('#choices-screen').css('backgroundImage', 'url("./assets/UI/bottomconsole_broken.png")');
     <</script>>
@@ -33,6 +35,9 @@
     
                     for (let i = 0; i < choice_buttons.length; i++) {
                         $(choice_buttons[i]).css('display', 'block');
+                        $(choice_buttons[i]).on('click', function() {
+                            SimpleAudio.select("button").volume(0.3).play();
+                        });
                     }
                 });
             <</script>>

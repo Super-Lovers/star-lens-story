@@ -67,6 +67,8 @@
     <<script>>
         $(document).ready(function() {
             $('.start-button').on('click', function() {
+                SimpleAudio.select("start_button").volume(0.3).play();
+
                 Engine.play('0. Intro');
             });
         });

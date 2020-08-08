@@ -29,6 +29,9 @@
     
                     for (let i = 0; i < choice_buttons.length; i++) {
                         $(choice_buttons[i]).css('display', 'block');
+                        $(choice_buttons[i]).on('click', function() {
+                            SimpleAudio.select("button").volume(0.3).play();
+                        });
                     }
                 });
             <</script>>
