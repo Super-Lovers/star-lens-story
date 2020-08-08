@@ -1,19 +1,44 @@
 :: 3.5. Ship About to Explode
+<<type 40ms skipkey "Control">>\
+!!! ⚠️ @@color:orange;WARNING - CRITICAL SYSTEM FAILURE@@
+<</type>>
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ CAUSE: ⚙️ ENGINE OVERLOAD
+<</type>>
+<<type 40ms skipkey "Control">>\
+----
+!!!! ⚠️ @@color:orange;WARNING - SYSTEM OVERHEATING@@
+!!!! ⚠️ @@color:orange;WARNING - PRESSURIZATION SYSTEM FAILURE@@
+!!!! ⚠️ @@color:orange;WARNING - VENTILATION SYSTEM FAILURE@@
+<</type>>
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ CHANCE OF SURVIVAL: @@color:red;0@@%
+<</type>>\
+<<type 40ms skipkey "Control">>\
+----
+!!! ⚠️ @@color:red; WARNING - SYSTEM OVERHEATING@@
+<</type>>\
+<<type 40ms skipkey "Control">>\
+----
+    \@@color:gray;>@@ @@color:green;You have 📡 received@@ @@color:red;[1]@@ @@color:green;new transmission.@@
 
-WARNING - CRITICAL SYSTEM FAILURE
-CAUSE: ENGINE OVERLOAD
-
-WARNING - SYSTEM OVERHEATING
-WARNING - PRESSURIZATION SYSTEM FAILURE
-WARNING - VENTILATION SYSTEM FAILURE
-
-CHANCE OF SURVIVAL: 0%
-
-WARNING - SYSTEM OVERHEATING
-
-YOU HAVE RECEIVED [1] NEW TRANSMISSION
-
-EXTERNAL HELP CAN INCREASE THE SURVIVAL RATE BY 12%
+    \@@color:gray;>@@ EXTERNAL HELP CAN INCREASE THE SURVIVAL RATE BY 12%
+    
+    <<nobr>>\
+        <!-- NECESSARY TO ACTIVE THE BUTTONS AT THIS SPECIFIC POINT IN THE PASSAGE -->
+        <<type 0ms skipkey "Control">>\
+            <<script>>
+                $(document).ready(function() {
+                    let choice_buttons = $('.choice-button');
+    
+                    for (let i = 0; i < choice_buttons.length; i++) {
+                        $(choice_buttons[i]).css('display', 'block');
+                    }
+                });
+            <</script>>
+        <</type>>
+    <</nobr>>\
+<</type>>\
 
 <<nobr>>
 <!-- ************************************ -->

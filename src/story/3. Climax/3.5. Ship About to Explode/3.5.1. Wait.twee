@@ -1,18 +1,44 @@
 :: 3.5.1. Wait
-
-WARNING - CRITICAL SYSTEM FAILURE
-
-CHANCE OF SURVIVAL: 0%
-
-WARNING - SYSTEM OVERHEATING
-WARNING - SYSTEM OVERHEATING
-WARNING - SYSTEM UNSTABLE
-SYSTEM INSTABILITY WILL CAUSE CRAFT TO DETONATE
-WARNING - SYSTEM OVERHEATING
-WARNING - SYSTEM OVERHEATING
-
-ERROR
-ERROR
+<<type 40ms skipkey "Control">>\
+!!! ⚠️ @@color:orange;WARNING - CRITICAL SYSTEM FAILURE@@
+<</type>>
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ CHANCE OF SURVIVAL: @@color:red;0@@%
+<</type>>
+<<type 40ms skipkey "Control">>\
+----
+!!!! ⚠️ @@color:orange;WARNING - SYSTEM OVERHEATING@@
+!!!! ⚠️ @@color:orange;WARNING - SYSTEM OVERHEATING@@
+!!!! ⚠️ @@color:orange;WARNING - SYSTEM UNSTABLE@@
+<<script>>
+    $('#choices-screen').css('backgroundImage', 'url("./assets/UI/bottomconsole_broken.png")');
+<</script>>
+<</type>>\
+<<type 40ms skipkey "Control">>
+    \@@color:gray;>@@ @@color:red;SYSTEM INSTABILITY WILL CAUSE CRAFT TO DETONATE@@
+<</type>>\
+<<type 40ms skipkey "Control">>
+----
+!!!! ⚠️ @@color:red;WARNING - SYSTEM OVERHEATING@@
+!!!! ⚠️ @@color:red;WARNING - SYSTEM OVERHEATING@@
+<<script>>
+    $('#console-screen').css('backgroundImage', 'url("./assets/UI/mainconsole_broken.png")');
+<</script>>
+    <<nobr>>\
+        <!-- NECESSARY TO ACTIVE THE BUTTONS AT THIS SPECIFIC POINT IN THE PASSAGE -->
+        <<type 0ms skipkey "Control">>\
+            <<script>>
+                $(document).ready(function() {
+                    let choice_buttons = $('.choice-button');
+    
+                    for (let i = 0; i < choice_buttons.length; i++) {
+                        $(choice_buttons[i]).css('display', 'block');
+                    }
+                });
+            <</script>>
+        <</type>>
+    <</nobr>>\
+<</type>>
 
 <<nobr>>
 <!-- ************************************ -->
@@ -23,6 +49,6 @@ ERROR
     type="button"
     tabindex="0"
     name="3.5.2. Explosion (Ending)">
-        ERROR
+        <span class="glitch-text">ERROR</span>OR
 </button>
 <</nobr>>

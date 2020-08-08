@@ -36,6 +36,10 @@
             <<print "\\@@color:gray;>@@">> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc cursus odio ut neque vulputate consectetur. Aenean ut urna nec neque ornare tristique. Aliquam varius consectetur vulputate. Mauris condimentum mauris ultricies, maximus ante quis, ornare velit. Curabitur eget massa pulvinar felis rutrum ultrices.
         </div>
     </div>
+<<elseif passage() == "3.6.1. Join Faction Neutral">>
+    <div class="neutral-chicken">
+        <span>🐔</span><span>💬</span>
+    </div>
 <<else>>
     <div id="console-screen" class="screen" style="background-image: url('./assets/UI/mainconsole_fixed.png')">
         <div class="passage-content">\

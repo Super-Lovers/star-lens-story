@@ -1,10 +1,39 @@
 :: 3.5.0. Faction Bad
-
-Hello?
-It seems like it's finally the end for you. It's incredible that you lasted this long, but it will be over soon for you now.
-
-What did you say? Rescue you? Aw.
-After all this time, you really thought we would actually help you? Did you not notice we have been sabotaging you every step of the way?
+<<type 40ms skipkey "Control">>\
+    <h3>👨‍🚀 FREQUENCY 99.9</h3>\
+----
+<</type>>\
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ Hello?
+<</type>>
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ It seems like it's finally the end for you. It's incredible that you lasted this long, but it will be over soon for you now.
+<</type>>
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ What did you say? Rescue you? Aw.
+<</type>>
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ After all this time, you really thought we would actually help you? Did you not notice we have been sabotaging you every step of the way?
+<</type>>\
+<<type 40ms skipkey "Control">>\
+----
+    <h3>❌ @@color:red;ENDED TRANSMISSION 99.9@@</h3>\
+    
+    <<nobr>>\
+        <!-- NECESSARY TO ACTIVE THE BUTTONS AT THIS SPECIFIC POINT IN THE PASSAGE -->
+        <<type 0ms skipkey "Control">>\
+            <<script>>
+                $(document).ready(function() {
+                    let choice_buttons = $('.choice-button');
+    
+                    for (let i = 0; i < choice_buttons.length; i++) {
+                        $(choice_buttons[i]).css('display', 'block');
+                    }
+                });
+            <</script>>
+        <</type>>
+    <</nobr>>\
+<</type>>\
 
 <<nobr>>
 <!-- ************************************ -->

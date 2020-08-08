@@ -18,6 +18,11 @@ IMPORTS
     src: url("./fonts/cordata_ppc.woff");
 }
 
+@font-face {
+    font-family: "Fairfax";
+    src: url("./fonts/Fairfax.ttf");
+}
+
 /**************************************
 ABSTRACTS
 **************************************/
@@ -275,4 +280,40 @@ TEXT STYLES
 .pulse {
 	-webkit-animation: pulse 0.8s;
 	animation: pulse 0.8s;
+}
+
+/**************************************
+ENDINGS STYLES
+**************************************/
+.neutral-chicken {
+    display: inline-block;
+    text-align: center;
+}
+
+.neutral-chicken > span:first-of-type {
+    position: relative;
+    left: 30px;
+
+    font-size: 7em;
+    text-align: center;
+}
+
+.neutral-chicken > span:last-of-type {
+    position: relative;
+    left: -10px;
+
+    font-size: 4em;
+    text-align: center;
+
+    vertical-align: top;
+}
+
+#passages {
+    font-family: "Fairfax";
+
+    width: 300px;
+}
+
+.passage {
+    text-align: center;
 }

@@ -1,22 +1,33 @@
 :: 3.6.1. Join Faction Neutral
+<<type 40ms skipkey "Control">>\
+    So you made it.
+<</type>>
+<<type 40ms skipkey "Control">>\
+    Not everyone manages to survive the trip. Feel free to stay here until the rescue team can come for you.
 
-((for nikolay - this is the neutral faction speaking. it is not a transmission))
-So you made it.
-Not everyone manages to survive the trip. Feel free to stay here until the rescue team can come for you.
+    . . .
 
-. . .
+    . . .
 
-. . .
-
-Actually. . .
-
-You impressed us. Not often do we meet someone with such a drive to survive.
-We like it. You are like us. You listen to us.
-You could be one of us.
-
-Nobody has joined us in a long time.
-
-We could teach you how to live out here, and help you make friends with those who live in this territory.
-Some are lovely, and pirates are very friendly.
-
-<<link [[Would you like to join us?|3.6.2. Join Faction Neutral (Ending)]]>><</link>>
+<</type>>
+<<type 40ms skipkey "Control">>\
+    Actually. . .
+<</type>>
+<<type 40ms skipkey "Control">>\
+    You impressed us. Not often do we meet someone with such a drive to survive.
+<</type>>
+<<type 40ms skipkey "Control">>\
+    We like it. You are like us. You listen to us. You could be one of us.
+<</type>>
+<<type 40ms skipkey "Control">>\
+    Nobody has joined us in a long time.
+<</type>>
+<<type 40ms skipkey "Control">>\
+    We could teach you how to live out here, and help you make friends with those who live in this territory.
+<</type>>
+<<type 40ms skipkey "Control">>\
+    Some are lovely, and pirates are very friendly.
+<</type>>
+<<type 40ms skipkey "Control">>\
+    <<link [[Would you like to join us?|3.6.2. Join Faction Neutral (Ending)]]>><</link>>
+<</type>>

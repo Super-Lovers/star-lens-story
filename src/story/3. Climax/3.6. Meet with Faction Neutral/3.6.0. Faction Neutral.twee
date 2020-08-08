@@ -1,19 +1,45 @@
 :: 3.6.0. Faction Neutral
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ YOU HAVE ✔️ REACHED YOUR DESTINATION.
+<</type>>
+<<type 40ms skipkey "Control">>\
+----
+    \@@color:gray;>@@ INITIATING 🚀 LANDING PROCEDURE. . .
 
-YOU HAVE REACHED YOUR DESTINATION.
+    \@@color:gray;>@@ PLEASE REMAIN SEATED AT THIS TIME
+<</type>>
+<<type 40ms skipkey "Control">>\
+----
+    \@@color:gray;>@@ ANALYSING 🌍 TERRITORY AND ATMOSPHERE. . .
+<</type>>\
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ ANALYSIS ✔️ COMPLETE
 
-INITIATING LANDING PROCEDURE. . .
-PLEASE REMAIN SEATED AT THIS TIME
+    \@@color:gray;>@@ LOCATION IS SAFE FOR 🧟 LIFEFORMS
+<</type>>
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ @@color:orange;ALIEN LIFEFORMS DETECTED@@. . .
 
-ANALYSING TERRITORY AND ATMOSPHERE. . .
-ANALYSIS COMPLETE
-LOCATION IS SAFE FOR LIFEFORMS
-
-ALIEN LIFEFORMS DETECTED. . .
-PRESENCE OF UNAUTHORIZED WEAPONS DETECTED. WEAPONS CURRENTLY INACTIVE.
-
-OPEN AIRLOCK?
-
+    \@@color:gray;>@@ @@color:red;PRESENCE OF UNAUTHORIZED WEAPONS DETECTED.@@ WEAPONS CURRENTLY INACTIVE.
+<</type>>
+<<type 40ms skipkey "Control">>\
+----
+    \@@color:gray;>@@ OPEN AIRLOCK?
+    <<nobr>>\
+        <!-- NECESSARY TO ACTIVE THE BUTTONS AT THIS SPECIFIC POINT IN THE PASSAGE -->
+        <<type 0ms skipkey "Control">>\
+            <<script>>
+                $(document).ready(function() {
+                    let choice_buttons = $('.choice-button');
+    
+                    for (let i = 0; i < choice_buttons.length; i++) {
+                        $(choice_buttons[i]).css('display', 'block');
+                    }
+                });
+            <</script>>
+        <</type>>
+    <</nobr>>\
+<</type>>
 
 <<nobr>>
 <!-- ************************************ -->
