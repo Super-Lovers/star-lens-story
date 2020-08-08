@@ -42,10 +42,15 @@
     </div>
     <<script>>
         $(document).ready(function() {
-            $('#passages').css('fontFamily', 'Fairfax');
-            $('#passages').css('width', '300');
+            const passages_container = $('#passages');
+            passages_container.css('fontFamily', 'Fairfax');
+            passages_container.css('width', '300');
 
-            $('.passage').css('textAlign', 'center');
+            passages_container.css('textAlign', 'center');
+        });
+
+        $(document).on(':passageend', function(ev) {
+            console.log("test");
         });
     <</script>>
 <<elseif passage() == "Start">>

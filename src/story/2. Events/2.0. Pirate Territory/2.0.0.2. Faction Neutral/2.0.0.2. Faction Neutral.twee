@@ -32,24 +32,7 @@
     \@@color:gray;>@@ ☁️ Dust clouds have been spotted in this area
 <hr style="border-top: 1px solid rgba(255, 255, 255, 0.2);">
     \@@color:gray;>@@ 📚 Dust clouds might damage systems of your ship and slow you down.
-    
-    <<nobr>>\
-        <!-- NECESSARY TO ACTIVE THE BUTTONS AT THIS SPECIFIC POINT IN THE PASSAGE -->
-        <<type 0ms skipkey "Control">>\
-            <<script>>
-                $(document).ready(function() {
-                    let choice_buttons = $('.choice-button');
-    
-                    for (let i = 0; i < choice_buttons.length; i++) {
-                        $(choice_buttons[i]).css('display', 'block');
-                        $(choice_buttons[i]).on('click', function() {
-                            SimpleAudio.select("button").volume(0.3).play();
-                        });
-                    }
-                });
-            <</script>>
-        <</type>>
-    <</nobr>>\
+
 <</type>>\
 
 <<nobr>>

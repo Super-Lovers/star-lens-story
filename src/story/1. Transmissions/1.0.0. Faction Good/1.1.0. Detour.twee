@@ -18,24 +18,7 @@
 <</type>>\
 <<type 40ms skipkey "Control">>\
     \@@color:gray;>@@ Confirm performing "Rich Purnell" Maneuver.
-    
-    <<nobr>>\
-        <!-- NECESSARY TO ACTIVE THE BUTTONS AT THIS SPECIFIC POINT IN THE PASSAGE -->
-        <<type 0ms skipkey "Control">>\
-            <<script>>
-                $(document).ready(function() {
-                    let choice_buttons = $('.choice-button');
-    
-                    for (let i = 0; i < choice_buttons.length; i++) {
-                        $(choice_buttons[i]).css('display', 'block');
-                        $(choice_buttons[i]).on('click', function() {
-                            SimpleAudio.select("button").volume(0.3).play();
-                        });
-                    }
-                });
-            <</script>>
-        <</type>>
-    <</nobr>>\
+
 <</type>>\
 
 <<nobr>>

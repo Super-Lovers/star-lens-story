@@ -229,4 +229,17 @@ $(document).on(':passagerender', function (ev) {
         }
     }
 });
+
+$(document).on(':typingcomplete', function(ev) {
+    $(document).ready(function() {
+        let choice_buttons = $('.choice-button');
+
+        for (let i = 0; i < choice_buttons.length; i++) {
+            $(choice_buttons[i]).css('display', 'block');
+            $(choice_buttons[i]).on('click', function() {
+                SimpleAudio.select("button").volume(0.3).play();
+            });
+        }
+    });
+});
 <</script>>
