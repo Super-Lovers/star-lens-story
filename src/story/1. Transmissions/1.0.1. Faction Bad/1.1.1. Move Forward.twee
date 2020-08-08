@@ -17,7 +17,22 @@
     \@@color:gray;>@@ The selected route is @@color:red;potentially the most dangerous@@, however it is the shortest to the destination.
 <</type>>\
 <<type 40ms skipkey "Control">>\
-\@@color:gray;>@@ PROCEED?
+    \@@color:gray;>@@ PROCEED?
+    
+<<nobr>>\
+    <!-- NECESSARY TO ACTIVE THE BUTTONS AT THIS SPECIFIC POINT IN THE PASSAGE -->
+    <<type 0ms skipkey "Control">>\
+        <<script>>
+            $(document).ready(function() {
+                let choice_buttons = $('.choice-button');
+
+                for (let i = 0; i < choice_buttons.length; i++) {
+                    $(choice_buttons[i]).css('display', 'block');
+                }
+            });
+        <</script>>
+    <</type>>
+<</nobr>>\
 <</type>>\
 
 <<nobr>>

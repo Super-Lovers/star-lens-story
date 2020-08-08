@@ -18,6 +18,20 @@
 
     ⚠️ @@color:orange;Warning  - all routes to the rescue station are marked as dangerous on intergalactic databases. Assistance might be required to cross the territory.@@
 <</type>>\
+<<nobr>>\
+    <!-- NECESSARY TO ACTIVE THE BUTTONS AT THIS SPECIFIC POINT IN THE PASSAGE -->
+    <<type 0ms skipkey "Control">>\
+        <<script>>
+            $(document).ready(function() {
+                let choice_buttons = $('.choice-button');
+
+                for (let i = 0; i < choice_buttons.length; i++) {
+                    $(choice_buttons[i]).css('display', 'block');
+                }
+            });
+        <</script>>
+    <</type>>
+<</nobr>>\
 
 <<nobr>>
 <!-- ************************************ -->

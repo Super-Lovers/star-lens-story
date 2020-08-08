@@ -275,7 +275,7 @@ textarea:not(:disabled):hover {
 }
 
 #choices-screen > span > span > .macro-button, #choices-screen > .macro-button {
-    display: block;
+    display: none;
 
     margin-left: auto;
     margin-right: auto;
@@ -293,6 +293,8 @@ textarea:not(:disabled):hover {
     line-height: 18px;
     border: 2px solid #1871d4;
     border-radius: 5px;
+
+    transition: 0.3s ease;
 }
 
 #choices-screen > span > span > .macro-button:hover, #choices-screen > .macro-button:hover {
@@ -718,6 +720,21 @@ sDDGDFDBCBDGFJGHKMN
 &lt;/span&gt;\
 
 ! SYSTEM ERROR
+    
+&lt;&lt;nobr&gt;&gt;\
+    &lt;!-- NECESSARY TO ACTIVE THE BUTTONS AT THIS SPECIFIC POINT IN THE PASSAGE --&gt;
+    &lt;&lt;type 0ms skipkey &quot;Control&quot;&gt;&gt;\
+        &lt;&lt;script&gt;&gt;
+            $(document).ready(function() {
+                let choice_buttons = $(&#39;.choice-button&#39;);
+
+                for (let i = 0; i &lt; choice_buttons.length; i++) {
+                    $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
+                }
+            });
+        &lt;&lt;/script&gt;&gt;
+    &lt;&lt;/type&gt;&gt;
+&lt;&lt;/nobr&gt;&gt;\
 
 &lt;&lt;nobr&gt;&gt;
 &lt;!-- ************************************ --&gt;
@@ -750,6 +767,21 @@ sDDGDFDBCBDGFJGHKMN
 
 \@@color:gray;&gt;@@ This &lt;span class=&quot;glitch-text&quot;&gt;choice wi&lt;/span&gt;ll &lt;b&gt;reset the system&lt;/b&gt; &lt;span class=&quot;glitch-text&quot;&gt;to the&lt;/span&gt; most recent backup and lose all &lt;span class=&quot;glitch-text&quot;&gt;recent&lt;/span&gt; data.
 
+&lt;&lt;nobr&gt;&gt;\
+    &lt;!-- NECESSARY TO ACTIVE THE BUTTONS AT THIS SPECIFIC POINT IN THE PASSAGE --&gt;
+    &lt;&lt;type 0ms skipkey &quot;Control&quot;&gt;&gt;\
+        &lt;&lt;script&gt;&gt;
+            $(document).ready(function() {
+                let choice_buttons = $(&#39;.choice-button&#39;);
+
+                for (let i = 0; i &lt; choice_buttons.length; i++) {
+                    $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
+                }
+            });
+        &lt;&lt;/script&gt;&gt;
+    &lt;&lt;/type&gt;&gt;
+&lt;&lt;/nobr&gt;&gt;\
+
 &lt;&lt;nobr&gt;&gt;
 &lt;!-- ************************************ --&gt;
 &lt;!--       Bottom interface buttons       --&gt;
@@ -763,13 +795,28 @@ sDDGDFDBCBDGFJGHKMN
 &lt;/button&gt;
 &lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="8" name="0.0.1. Damage Scan" tags="broken-ui" position="975,100" size="100,100">\@@color:gray;&gt;@@ Retri&lt;span class=&quot;glitch-text&quot;&gt;eving information on&lt;/span&gt; damage sustained . . .
 &lt;&lt;timed 800ms&gt;&gt;
-\@@color:gray;&gt;@@ Retrieving information on possible causes . . .
+    \@@color:gray;&gt;@@ Retrieving information on possible causes . . .
 \&lt;&lt;/timed&gt;&gt;
 &lt;&lt;timed 1000ms&gt;&gt;
-\@@color:gray;&gt;@@ Backing up data . . .
+    \@@color:gray;&gt;@@ Backing up data . . .
 \&lt;&lt;/timed&gt;&gt;
 &lt;&lt;timed 1200ms&gt;&gt;
-\@@color:gray;&gt;@@ DONE
+    \@@color:gray;&gt;@@ DONE
+    
+    &lt;&lt;nobr&gt;&gt;\
+        &lt;!-- NECESSARY TO ACTIVE THE BUTTONS AT THIS SPECIFIC POINT IN THE PASSAGE --&gt;
+        &lt;&lt;type 0ms skipkey &quot;Control&quot;&gt;&gt;\
+            &lt;&lt;script&gt;&gt;
+                $(document).ready(function() {
+                    let choice_buttons = $(&#39;.choice-button&#39;);
+    
+                    for (let i = 0; i &lt; choice_buttons.length; i++) {
+                        $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
+                    }
+                });
+            &lt;&lt;/script&gt;&gt;
+        &lt;&lt;/type&gt;&gt;
+    &lt;&lt;/nobr&gt;&gt;\
 &lt;&lt;/timed&gt;&gt;
 
 &lt;&lt;nobr&gt;&gt;
@@ -812,6 +859,21 @@ sDDGDFDBCBDGFJGHKMN
 &lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
     \@@color:gray;&gt;@@ Other - 9.8%
 &lt;&lt;/type&gt;&gt;\
+    
+&lt;&lt;nobr&gt;&gt;\
+    &lt;!-- NECESSARY TO ACTIVE THE BUTTONS AT THIS SPECIFIC POINT IN THE PASSAGE --&gt;
+    &lt;&lt;type 0ms skipkey &quot;Control&quot;&gt;&gt;\
+        &lt;&lt;script&gt;&gt;
+            $(document).ready(function() {
+                let choice_buttons = $(&#39;.choice-button&#39;);
+
+                for (let i = 0; i &lt; choice_buttons.length; i++) {
+                    $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
+                }
+            });
+        &lt;&lt;/script&gt;&gt;
+    &lt;&lt;/type&gt;&gt;
+&lt;&lt;/nobr&gt;&gt;\
 
 &lt;&lt;nobr&gt;&gt;
 &lt;!-- ************************************ --&gt;
@@ -829,6 +891,21 @@ sDDGDFDBCBDGFJGHKMN
 
 \@@color:gray;&gt;@@ Disemba&lt;span class=&quot;glitch-text&quot;&gt;rk  recommended &lt;/span&gt;
 \@@color:gray;&gt;@@ Proceed?
+
+&lt;&lt;nobr&gt;&gt;\
+    &lt;!-- NECESSARY TO ACTIVE THE BUTTONS AT THIS SPECIFIC POINT IN THE PASSAGE --&gt;
+    &lt;&lt;type 0ms skipkey &quot;Control&quot;&gt;&gt;\
+        &lt;&lt;script&gt;&gt;
+            $(document).ready(function() {
+                let choice_buttons = $(&#39;.choice-button&#39;);
+
+                for (let i = 0; i &lt; choice_buttons.length; i++) {
+                    $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
+                }
+            });
+        &lt;&lt;/script&gt;&gt;
+    &lt;&lt;/type&gt;&gt;
+&lt;&lt;/nobr&gt;&gt;\
 
 &lt;&lt;nobr&gt;&gt;
 &lt;!-- ************************************ --&gt;
@@ -881,6 +958,20 @@ Please
 
     ⚠️ @@color:orange;Warning  - all routes to the rescue station are marked as dangerous on intergalactic databases. Assistance might be required to cross the territory.@@
 &lt;&lt;/type&gt;&gt;\
+&lt;&lt;nobr&gt;&gt;\
+    &lt;!-- NECESSARY TO ACTIVE THE BUTTONS AT THIS SPECIFIC POINT IN THE PASSAGE --&gt;
+    &lt;&lt;type 0ms skipkey &quot;Control&quot;&gt;&gt;\
+        &lt;&lt;script&gt;&gt;
+            $(document).ready(function() {
+                let choice_buttons = $(&#39;.choice-button&#39;);
+
+                for (let i = 0; i &lt; choice_buttons.length; i++) {
+                    $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
+                }
+            });
+        &lt;&lt;/script&gt;&gt;
+    &lt;&lt;/type&gt;&gt;
+&lt;&lt;/nobr&gt;&gt;\
 
 &lt;&lt;nobr&gt;&gt;
 &lt;!-- ************************************ --&gt;
@@ -908,6 +999,21 @@ Please
     \@@color:gray;&gt;@@ We are currently on the quickest route to the rescue station.
 
     @@color:orange;Please be warned, we are entering dangerous territory. Caution is advised.@@
+    
+    &lt;&lt;nobr&gt;&gt;\
+        &lt;!-- NECESSARY TO ACTIVE THE BUTTONS AT THIS SPECIFIC POINT IN THE PASSAGE --&gt;
+        &lt;&lt;type 0ms skipkey &quot;Control&quot;&gt;&gt;\
+            &lt;&lt;script&gt;&gt;
+                $(document).ready(function() {
+                    let choice_buttons = $(&#39;.choice-button&#39;);
+    
+                    for (let i = 0; i &lt; choice_buttons.length; i++) {
+                        $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
+                    }
+                });
+            &lt;&lt;/script&gt;&gt;
+        &lt;&lt;/type&gt;&gt;
+    &lt;&lt;/nobr&gt;&gt;\
 &lt;&lt;/type&gt;&gt;\
 
 &lt;&lt;nobr&gt;&gt;
@@ -977,6 +1083,21 @@ Please
 &lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
 ----
     &lt;h3&gt;❌ @@color:red;ENDED TRANSMISSION 108.5@@&lt;/h3&gt;\
+    
+    &lt;&lt;nobr&gt;&gt;\
+        &lt;!-- NECESSARY TO ACTIVE THE BUTTONS AT THIS SPECIFIC POINT IN THE PASSAGE --&gt;
+        &lt;&lt;type 0ms skipkey &quot;Control&quot;&gt;&gt;\
+            &lt;&lt;script&gt;&gt;
+                $(document).ready(function() {
+                    let choice_buttons = $(&#39;.choice-button&#39;);
+    
+                    for (let i = 0; i &lt; choice_buttons.length; i++) {
+                        $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
+                    }
+                });
+            &lt;&lt;/script&gt;&gt;
+        &lt;&lt;/type&gt;&gt;
+    &lt;&lt;/nobr&gt;&gt;\
 &lt;&lt;/type&gt;&gt;\
 
 &lt;&lt;nobr&gt;&gt;
@@ -1017,6 +1138,21 @@ Please
 &lt;&lt;/type&gt;&gt;\
 &lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
     \@@color:gray;&gt;@@ Confirm performing &quot;Rich Purnell&quot; Maneuver.
+    
+    &lt;&lt;nobr&gt;&gt;\
+        &lt;!-- NECESSARY TO ACTIVE THE BUTTONS AT THIS SPECIFIC POINT IN THE PASSAGE --&gt;
+        &lt;&lt;type 0ms skipkey &quot;Control&quot;&gt;&gt;\
+            &lt;&lt;script&gt;&gt;
+                $(document).ready(function() {
+                    let choice_buttons = $(&#39;.choice-button&#39;);
+    
+                    for (let i = 0; i &lt; choice_buttons.length; i++) {
+                        $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
+                    }
+                });
+            &lt;&lt;/script&gt;&gt;
+        &lt;&lt;/type&gt;&gt;
+    &lt;&lt;/nobr&gt;&gt;\
 &lt;&lt;/type&gt;&gt;\
 
 &lt;&lt;nobr&gt;&gt;
@@ -1052,6 +1188,21 @@ Please
 &lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
 ----
     &lt;h3&gt;❌ @@color:red;ENDED TRANSMISSION 99.9@@&lt;/h3&gt;\
+    
+    &lt;&lt;nobr&gt;&gt;\
+        &lt;!-- NECESSARY TO ACTIVE THE BUTTONS AT THIS SPECIFIC POINT IN THE PASSAGE --&gt;
+        &lt;&lt;type 0ms skipkey &quot;Control&quot;&gt;&gt;\
+            &lt;&lt;script&gt;&gt;
+                $(document).ready(function() {
+                    let choice_buttons = $(&#39;.choice-button&#39;);
+    
+                    for (let i = 0; i &lt; choice_buttons.length; i++) {
+                        $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
+                    }
+                });
+            &lt;&lt;/script&gt;&gt;
+        &lt;&lt;/type&gt;&gt;
+    &lt;&lt;/nobr&gt;&gt;\
 &lt;&lt;/type&gt;&gt;\
 
 &lt;&lt;nobr&gt;&gt;
@@ -1091,7 +1242,22 @@ Please
     \@@color:gray;&gt;@@ The selected route is @@color:red;potentially the most dangerous@@, however it is the shortest to the destination.
 &lt;&lt;/type&gt;&gt;\
 &lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
-\@@color:gray;&gt;@@ PROCEED?
+    \@@color:gray;&gt;@@ PROCEED?
+    
+&lt;&lt;nobr&gt;&gt;\
+    &lt;!-- NECESSARY TO ACTIVE THE BUTTONS AT THIS SPECIFIC POINT IN THE PASSAGE --&gt;
+    &lt;&lt;type 0ms skipkey &quot;Control&quot;&gt;&gt;\
+        &lt;&lt;script&gt;&gt;
+            $(document).ready(function() {
+                let choice_buttons = $(&#39;.choice-button&#39;);
+
+                for (let i = 0; i &lt; choice_buttons.length; i++) {
+                    $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
+                }
+            });
+        &lt;&lt;/script&gt;&gt;
+    &lt;&lt;/type&gt;&gt;
+&lt;&lt;/nobr&gt;&gt;\
 &lt;&lt;/type&gt;&gt;\
 
 &lt;&lt;nobr&gt;&gt;
@@ -1139,6 +1305,21 @@ Please
     \@@color:gray;&gt;@@ Good luck. We will see you on the other side. If you survive.
 ----
     &lt;h3&gt;❌ @@color:red;ENDED TRANSMISSION 96.3@@&lt;/h3&gt;\
+    
+    &lt;&lt;nobr&gt;&gt;\
+        &lt;!-- NECESSARY TO ACTIVE THE BUTTONS AT THIS SPECIFIC POINT IN THE PASSAGE --&gt;
+        &lt;&lt;type 0ms skipkey &quot;Control&quot;&gt;&gt;\
+            &lt;&lt;script&gt;&gt;
+                $(document).ready(function() {
+                    let choice_buttons = $(&#39;.choice-button&#39;);
+    
+                    for (let i = 0; i &lt; choice_buttons.length; i++) {
+                        $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
+                    }
+                });
+            &lt;&lt;/script&gt;&gt;
+        &lt;&lt;/type&gt;&gt;
+    &lt;&lt;/nobr&gt;&gt;\
 &lt;&lt;/type&gt;&gt;\
 
 &lt;&lt;nobr&gt;&gt;
@@ -1186,6 +1367,21 @@ Please
     &lt;h3&gt; ⚠️ @@color:orange; WARNING - PROBABILITY OF COLLISION CALCULATED AT 12% @@&lt;/h3&gt;\
 ----
     \@@color:gray;&gt;@@ Engage new trajectory?
+    
+    &lt;&lt;nobr&gt;&gt;\
+        &lt;!-- NECESSARY TO ACTIVE THE BUTTONS AT THIS SPECIFIC POINT IN THE PASSAGE --&gt;
+        &lt;&lt;type 0ms skipkey &quot;Control&quot;&gt;&gt;\
+            &lt;&lt;script&gt;&gt;
+                $(document).ready(function() {
+                    let choice_buttons = $(&#39;.choice-button&#39;);
+    
+                    for (let i = 0; i &lt; choice_buttons.length; i++) {
+                        $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
+                    }
+                });
+            &lt;&lt;/script&gt;&gt;
+        &lt;&lt;/type&gt;&gt;
+    &lt;&lt;/nobr&gt;&gt;\
 &lt;&lt;/type&gt;&gt;\
 
 &lt;&lt;nobr&gt;&gt;
@@ -1211,6 +1407,21 @@ Please
 !!! ⚠️ WARNING
 ----
     \@@color:gray;&gt;@@ @@color:orange;Scans have revealed the presence of &lt;b&gt;pirate signatures&lt;/b&gt; in this region of space.@@ Caution is advised.
+    
+    &lt;&lt;nobr&gt;&gt;\
+        &lt;!-- NECESSARY TO ACTIVE THE BUTTONS AT THIS SPECIFIC POINT IN THE PASSAGE --&gt;
+        &lt;&lt;type 0ms skipkey &quot;Control&quot;&gt;&gt;\
+            &lt;&lt;script&gt;&gt;
+                $(document).ready(function() {
+                    let choice_buttons = $(&#39;.choice-button&#39;);
+    
+                    for (let i = 0; i &lt; choice_buttons.length; i++) {
+                        $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
+                    }
+                });
+            &lt;&lt;/script&gt;&gt;
+        &lt;&lt;/type&gt;&gt;
+    &lt;&lt;/nobr&gt;&gt;\
 &lt;&lt;/type&gt;&gt;
 
 &lt;&lt;nobr&gt;&gt;
@@ -1271,6 +1482,21 @@ Please
 &lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
 ----
     &lt;h3&gt;❌ @@color:red;ENDED TRANSMISSION 108.5@@&lt;/h3&gt;\
+    
+    &lt;&lt;nobr&gt;&gt;\
+        &lt;!-- NECESSARY TO ACTIVE THE BUTTONS AT THIS SPECIFIC POINT IN THE PASSAGE --&gt;
+        &lt;&lt;type 0ms skipkey &quot;Control&quot;&gt;&gt;\
+            &lt;&lt;script&gt;&gt;
+                $(document).ready(function() {
+                    let choice_buttons = $(&#39;.choice-button&#39;);
+    
+                    for (let i = 0; i &lt; choice_buttons.length; i++) {
+                        $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
+                    }
+                });
+            &lt;&lt;/script&gt;&gt;
+        &lt;&lt;/type&gt;&gt;
+    &lt;&lt;/nobr&gt;&gt;\
 &lt;&lt;/type&gt;&gt;\
 
 &lt;&lt;nobr&gt;&gt;
@@ -1331,6 +1557,21 @@ Please
     \@@color:gray;&gt;@@ ☁️ Dust clouds have been spotted in this area
 ----
     \@@color:gray;&gt;@@ 📚 Dust clouds might damage systems of your ship and slow you down.
+    
+    &lt;&lt;nobr&gt;&gt;\
+        &lt;!-- NECESSARY TO ACTIVE THE BUTTONS AT THIS SPECIFIC POINT IN THE PASSAGE --&gt;
+        &lt;&lt;type 0ms skipkey &quot;Control&quot;&gt;&gt;\
+            &lt;&lt;script&gt;&gt;
+                $(document).ready(function() {
+                    let choice_buttons = $(&#39;.choice-button&#39;);
+    
+                    for (let i = 0; i &lt; choice_buttons.length; i++) {
+                        $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
+                    }
+                });
+            &lt;&lt;/script&gt;&gt;
+        &lt;&lt;/type&gt;&gt;
+    &lt;&lt;/nobr&gt;&gt;\
 &lt;&lt;/type&gt;&gt;\
 
 &lt;&lt;nobr&gt;&gt;
@@ -1369,6 +1610,21 @@ Please
 ----
 !!! 🛑 @@color:red;Pirate ships entered weapons proximity@@
     &lt;&lt;/type&gt;&gt;
+    
+    &lt;&lt;nobr&gt;&gt;\
+        &lt;!-- NECESSARY TO ACTIVE THE BUTTONS AT THIS SPECIFIC POINT IN THE PASSAGE --&gt;
+        &lt;&lt;type 0ms skipkey &quot;Control&quot;&gt;&gt;\
+            &lt;&lt;script&gt;&gt;
+                $(document).ready(function() {
+                    let choice_buttons = $(&#39;.choice-button&#39;);
+    
+                    for (let i = 0; i &lt; choice_buttons.length; i++) {
+                        $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
+                    }
+                });
+            &lt;&lt;/script&gt;&gt;
+        &lt;&lt;/type&gt;&gt;
+    &lt;&lt;/nobr&gt;&gt;\
 &lt;&lt;/timed&gt;&gt;\
 
 &lt;&lt;nobr&gt;&gt;
@@ -1415,6 +1671,21 @@ Please
     \@@color:gray;&gt;@@ ☁️ Dust clouds have been spotted in this area
 &lt;hr style=&quot;border-top: 1px solid rgba(255, 255, 255, 0.2);&quot;&gt;
     \@@color:gray;&gt;@@ 📚 Dust clouds might damage systems of your ship and slow you down.
+    
+    &lt;&lt;nobr&gt;&gt;\
+        &lt;!-- NECESSARY TO ACTIVE THE BUTTONS AT THIS SPECIFIC POINT IN THE PASSAGE --&gt;
+        &lt;&lt;type 0ms skipkey &quot;Control&quot;&gt;&gt;\
+            &lt;&lt;script&gt;&gt;
+                $(document).ready(function() {
+                    let choice_buttons = $(&#39;.choice-button&#39;);
+    
+                    for (let i = 0; i &lt; choice_buttons.length; i++) {
+                        $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
+                    }
+                });
+            &lt;&lt;/script&gt;&gt;
+        &lt;&lt;/type&gt;&gt;
+    &lt;&lt;/nobr&gt;&gt;\
 &lt;&lt;/type&gt;&gt;\
 
 &lt;&lt;nobr&gt;&gt;
@@ -1465,6 +1736,21 @@ Please
 ----
         \@@color:gray;&gt;@@ @@color:orange;Pirate ships maintaining safe proximity@@
     &lt;&lt;/type&gt;&gt;
+    
+    &lt;&lt;nobr&gt;&gt;\
+        &lt;!-- NECESSARY TO ACTIVE THE BUTTONS AT THIS SPECIFIC POINT IN THE PASSAGE --&gt;
+        &lt;&lt;type 0ms skipkey &quot;Control&quot;&gt;&gt;\
+            &lt;&lt;script&gt;&gt;
+                $(document).ready(function() {
+                    let choice_buttons = $(&#39;.choice-button&#39;);
+    
+                    for (let i = 0; i &lt; choice_buttons.length; i++) {
+                        $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
+                    }
+                });
+            &lt;&lt;/script&gt;&gt;
+        &lt;&lt;/type&gt;&gt;
+    &lt;&lt;/nobr&gt;&gt;\
 &lt;&lt;/timed&gt;&gt;\
 
 &lt;&lt;nobr&gt;&gt;
@@ -1510,6 +1796,21 @@ Please
 &lt;&lt;/type&gt;&gt;\
 &lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
     \@@color:gray;&gt;@@ @@color:orange;PLEASE BE WARNED, EXCESSIVE DELAY MAY CAUSE IRREVERSIBLE DAMAGE TO THE SHIP.@@
+    
+    &lt;&lt;nobr&gt;&gt;\
+        &lt;!-- NECESSARY TO ACTIVE THE BUTTONS AT THIS SPECIFIC POINT IN THE PASSAGE --&gt;
+        &lt;&lt;type 0ms skipkey &quot;Control&quot;&gt;&gt;\
+            &lt;&lt;script&gt;&gt;
+                $(document).ready(function() {
+                    let choice_buttons = $(&#39;.choice-button&#39;);
+    
+                    for (let i = 0; i &lt; choice_buttons.length; i++) {
+                        $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
+                    }
+                });
+            &lt;&lt;/script&gt;&gt;
+        &lt;&lt;/type&gt;&gt;
+    &lt;&lt;/nobr&gt;&gt;\
 &lt;&lt;/type&gt;&gt;
 
 &lt;&lt;nobr&gt;&gt;
@@ -1570,6 +1871,21 @@ Please
 &lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
 ----
     &lt;h3&gt;❌ @@color:red;ENDED TRANSMISSION 108.5@@&lt;/h3&gt;\
+    
+    &lt;&lt;nobr&gt;&gt;\
+        &lt;!-- NECESSARY TO ACTIVE THE BUTTONS AT THIS SPECIFIC POINT IN THE PASSAGE --&gt;
+        &lt;&lt;type 0ms skipkey &quot;Control&quot;&gt;&gt;\
+            &lt;&lt;script&gt;&gt;
+                $(document).ready(function() {
+                    let choice_buttons = $(&#39;.choice-button&#39;);
+    
+                    for (let i = 0; i &lt; choice_buttons.length; i++) {
+                        $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
+                    }
+                });
+            &lt;&lt;/script&gt;&gt;
+        &lt;&lt;/type&gt;&gt;
+    &lt;&lt;/nobr&gt;&gt;\
 &lt;&lt;/type&gt;&gt;\
 
 &lt;&lt;nobr&gt;&gt;
@@ -1600,6 +1916,21 @@ Please
 &lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;
 ----
     \@@color:gray;&gt;@@ @@color:cyan; 💬 THIS MODE ENGAGES AUTOMATICALLY TO PREVENT ADDITIONAL DAMAGES AND ENSURE THE SAFETY OF THE CARGO.@@
+    
+    &lt;&lt;nobr&gt;&gt;\
+        &lt;!-- NECESSARY TO ACTIVE THE BUTTONS AT THIS SPECIFIC POINT IN THE PASSAGE --&gt;
+        &lt;&lt;type 0ms skipkey &quot;Control&quot;&gt;&gt;\
+            &lt;&lt;script&gt;&gt;
+                $(document).ready(function() {
+                    let choice_buttons = $(&#39;.choice-button&#39;);
+    
+                    for (let i = 0; i &lt; choice_buttons.length; i++) {
+                        $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
+                    }
+                });
+            &lt;&lt;/script&gt;&gt;
+        &lt;&lt;/type&gt;&gt;
+    &lt;&lt;/nobr&gt;&gt;\
 &lt;&lt;/type&gt;&gt;\
 
 &lt;&lt;nobr&gt;&gt;
@@ -1632,6 +1963,21 @@ Please
 &lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
 ----
     &lt;h3&gt;❌ @@color:red;ENDED TRANSMISSION 99.9@@&lt;/h3&gt;\
+    
+    &lt;&lt;nobr&gt;&gt;\
+        &lt;!-- NECESSARY TO ACTIVE THE BUTTONS AT THIS SPECIFIC POINT IN THE PASSAGE --&gt;
+        &lt;&lt;type 0ms skipkey &quot;Control&quot;&gt;&gt;\
+            &lt;&lt;script&gt;&gt;
+                $(document).ready(function() {
+                    let choice_buttons = $(&#39;.choice-button&#39;);
+    
+                    for (let i = 0; i &lt; choice_buttons.length; i++) {
+                        $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
+                    }
+                });
+            &lt;&lt;/script&gt;&gt;
+        &lt;&lt;/type&gt;&gt;
+    &lt;&lt;/nobr&gt;&gt;\
 &lt;&lt;/type&gt;&gt;\
 
 &lt;&lt;nobr&gt;&gt;
@@ -1665,6 +2011,21 @@ Please
 &lt;&lt;/type&gt;&gt;
 &lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
     \@@color:gray;&gt;@@ PROCEED REGARDLESS?
+    
+    &lt;&lt;nobr&gt;&gt;\
+        &lt;!-- NECESSARY TO ACTIVE THE BUTTONS AT THIS SPECIFIC POINT IN THE PASSAGE --&gt;
+        &lt;&lt;type 0ms skipkey &quot;Control&quot;&gt;&gt;\
+            &lt;&lt;script&gt;&gt;
+                $(document).ready(function() {
+                    let choice_buttons = $(&#39;.choice-button&#39;);
+    
+                    for (let i = 0; i &lt; choice_buttons.length; i++) {
+                        $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
+                    }
+                });
+            &lt;&lt;/script&gt;&gt;
+        &lt;&lt;/type&gt;&gt;
+    &lt;&lt;/nobr&gt;&gt;\
 &lt;&lt;/type&gt;&gt;\
 
 &lt;&lt;nobr&gt;&gt;
@@ -1700,6 +2061,21 @@ Please
 &lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
 ----
     &lt;h3&gt;❌ @@color:red;ENDED TRANSMISSION 96.3@@&lt;/h3&gt;\
+    
+    &lt;&lt;nobr&gt;&gt;\
+        &lt;!-- NECESSARY TO ACTIVE THE BUTTONS AT THIS SPECIFIC POINT IN THE PASSAGE --&gt;
+        &lt;&lt;type 0ms skipkey &quot;Control&quot;&gt;&gt;\
+            &lt;&lt;script&gt;&gt;
+                $(document).ready(function() {
+                    let choice_buttons = $(&#39;.choice-button&#39;);
+    
+                    for (let i = 0; i &lt; choice_buttons.length; i++) {
+                        $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
+                    }
+                });
+            &lt;&lt;/script&gt;&gt;
+        &lt;&lt;/type&gt;&gt;
+    &lt;&lt;/nobr&gt;&gt;\
 &lt;&lt;/type&gt;&gt;\
 
 &lt;&lt;nobr&gt;&gt;
@@ -1758,6 +2134,21 @@ Please
 &lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
 ----
 !!! ⚠️ @@color:orange; PLEASE BE WARNED, EXCESSIVE DELAY MAY CAUSE IRREVERSIBLE DAMAGE TO THE SHIP.@@
+    
+    &lt;&lt;nobr&gt;&gt;\
+        &lt;!-- NECESSARY TO ACTIVE THE BUTTONS AT THIS SPECIFIC POINT IN THE PASSAGE --&gt;
+        &lt;&lt;type 0ms skipkey &quot;Control&quot;&gt;&gt;\
+            &lt;&lt;script&gt;&gt;
+                $(document).ready(function() {
+                    let choice_buttons = $(&#39;.choice-button&#39;);
+
+                    for (let i = 0; i &lt; choice_buttons.length; i++) {
+                        $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
+                    }
+                });
+            &lt;&lt;/script&gt;&gt;
+        &lt;&lt;/type&gt;&gt;
+    &lt;&lt;/nobr&gt;&gt;\
 &lt;&lt;/type&gt;&gt;
 
 &lt;&lt;nobr&gt;&gt;
@@ -1818,6 +2209,21 @@ Please
 &lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
 ----
     &lt;h3&gt;❌ @@color:red;ENDED TRANSMISSION 108.5@@&lt;/h3&gt;\
+    
+    &lt;&lt;nobr&gt;&gt;\
+        &lt;!-- NECESSARY TO ACTIVE THE BUTTONS AT THIS SPECIFIC POINT IN THE PASSAGE --&gt;
+        &lt;&lt;type 0ms skipkey &quot;Control&quot;&gt;&gt;\
+            &lt;&lt;script&gt;&gt;
+                $(document).ready(function() {
+                    let choice_buttons = $(&#39;.choice-button&#39;);
+    
+                    for (let i = 0; i &lt; choice_buttons.length; i++) {
+                        $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
+                    }
+                });
+            &lt;&lt;/script&gt;&gt;
+        &lt;&lt;/type&gt;&gt;
+    &lt;&lt;/nobr&gt;&gt;\
 &lt;&lt;/type&gt;&gt;\
 
 &lt;&lt;nobr&gt;&gt;
@@ -1863,6 +2269,21 @@ Please
 &lt;&lt;/type&gt;&gt;
 &lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
 !!!! @@color:green;TEMPERATURE 🌡️ CONTROL STATUS - ✔️ ONLINE AND OPERATIONAL@@
+    
+    &lt;&lt;nobr&gt;&gt;\
+        &lt;!-- NECESSARY TO ACTIVE THE BUTTONS AT THIS SPECIFIC POINT IN THE PASSAGE --&gt;
+        &lt;&lt;type 0ms skipkey &quot;Control&quot;&gt;&gt;\
+            &lt;&lt;script&gt;&gt;
+                $(document).ready(function() {
+                    let choice_buttons = $(&#39;.choice-button&#39;);
+
+                    for (let i = 0; i &lt; choice_buttons.length; i++) {
+                        $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
+                    }
+                });
+            &lt;&lt;/script&gt;&gt;
+        &lt;&lt;/type&gt;&gt;
+    &lt;&lt;/nobr&gt;&gt;\
 &lt;&lt;/type&gt;&gt;\
 
 &lt;&lt;nobr&gt;&gt;
@@ -1901,6 +2322,21 @@ Please
 &lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
 ----
     &lt;h3&gt;❌ @@color:red;ENDED TRANSMISSION 99.9@@&lt;/h3&gt;\
+    
+    &lt;&lt;nobr&gt;&gt;\
+        &lt;!-- NECESSARY TO ACTIVE THE BUTTONS AT THIS SPECIFIC POINT IN THE PASSAGE --&gt;
+        &lt;&lt;type 0ms skipkey &quot;Control&quot;&gt;&gt;\
+            &lt;&lt;script&gt;&gt;
+                $(document).ready(function() {
+                    let choice_buttons = $(&#39;.choice-button&#39;);
+    
+                    for (let i = 0; i &lt; choice_buttons.length; i++) {
+                        $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
+                    }
+                });
+            &lt;&lt;/script&gt;&gt;
+        &lt;&lt;/type&gt;&gt;
+    &lt;&lt;/nobr&gt;&gt;\
 &lt;&lt;/type&gt;&gt;\
 
 &lt;&lt;nobr&gt;&gt;
@@ -1942,7 +2378,22 @@ Please
 &lt;&lt;/type&gt;&gt;
 &lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
 ----
-OVERLOAD ⚙️ ENGINE?
+    \@@color:gray;&gt;@@OVERLOAD ⚙️ ENGINE?
+    
+    &lt;&lt;nobr&gt;&gt;\
+        &lt;!-- NECESSARY TO ACTIVE THE BUTTONS AT THIS SPECIFIC POINT IN THE PASSAGE --&gt;
+        &lt;&lt;type 0ms skipkey &quot;Control&quot;&gt;&gt;\
+            &lt;&lt;script&gt;&gt;
+                $(document).ready(function() {
+                    let choice_buttons = $(&#39;.choice-button&#39;);
+
+                    for (let i = 0; i &lt; choice_buttons.length; i++) {
+                        $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
+                    }
+                });
+            &lt;&lt;/script&gt;&gt;
+        &lt;&lt;/type&gt;&gt;
+    &lt;&lt;/nobr&gt;&gt;\
 &lt;&lt;/type&gt;&gt;\
 
 &lt;&lt;nobr&gt;&gt;
@@ -1985,6 +2436,21 @@ That&#39;s quite the feat for a stranger. We are impressed.
 &lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
 ----
     &lt;h3&gt;❌ @@color:red;ENDED TRANSMISSION 96.3@@&lt;/h3&gt;\
+    
+    &lt;&lt;nobr&gt;&gt;\
+        &lt;!-- NECESSARY TO ACTIVE THE BUTTONS AT THIS SPECIFIC POINT IN THE PASSAGE --&gt;
+        &lt;&lt;type 0ms skipkey &quot;Control&quot;&gt;&gt;\
+            &lt;&lt;script&gt;&gt;
+                $(document).ready(function() {
+                    let choice_buttons = $(&#39;.choice-button&#39;);
+    
+                    for (let i = 0; i &lt; choice_buttons.length; i++) {
+                        $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
+                    }
+                });
+            &lt;&lt;/script&gt;&gt;
+        &lt;&lt;/type&gt;&gt;
+    &lt;&lt;/nobr&gt;&gt;\
 &lt;&lt;/type&gt;&gt;\
 
 &lt;&lt;nobr&gt;&gt;
@@ -2062,6 +2528,21 @@ That&#39;s quite the feat for a stranger. We are impressed.
 &lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
 ----
     \@@color:gray;&gt;@@ TEMPERATURE 🌡️ CONTROL STATUS - OPERATIONAL AT 65% CAPACITY
+    
+    &lt;&lt;nobr&gt;&gt;\
+        &lt;!-- NECESSARY TO ACTIVE THE BUTTONS AT THIS SPECIFIC POINT IN THE PASSAGE --&gt;
+        &lt;&lt;type 0ms skipkey &quot;Control&quot;&gt;&gt;\
+            &lt;&lt;script&gt;&gt;
+                $(document).ready(function() {
+                    let choice_buttons = $(&#39;.choice-button&#39;);
+    
+                    for (let i = 0; i &lt; choice_buttons.length; i++) {
+                        $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
+                    }
+                });
+            &lt;&lt;/script&gt;&gt;
+        &lt;&lt;/type&gt;&gt;
+    &lt;&lt;/nobr&gt;&gt;\
 &lt;&lt;/type&gt;&gt;\
 
 &lt;&lt;nobr&gt;&gt;
@@ -2099,6 +2580,21 @@ That&#39;s quite the feat for a stranger. We are impressed.
 !!! 📡 YOU HAVE RECEIVED @@color:green;[2]@@ NEW TRANSMISSIONS.
 ...
     &lt;&lt;/type&gt;&gt;\
+    
+    &lt;&lt;nobr&gt;&gt;\
+        &lt;!-- NECESSARY TO ACTIVE THE BUTTONS AT THIS SPECIFIC POINT IN THE PASSAGE --&gt;
+        &lt;&lt;type 0ms skipkey &quot;Control&quot;&gt;&gt;\
+            &lt;&lt;script&gt;&gt;
+                $(document).ready(function() {
+                    let choice_buttons = $(&#39;.choice-button&#39;);
+    
+                    for (let i = 0; i &lt; choice_buttons.length; i++) {
+                        $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
+                    }
+                });
+            &lt;&lt;/script&gt;&gt;
+        &lt;&lt;/type&gt;&gt;
+    &lt;&lt;/nobr&gt;&gt;\
 &lt;&lt;/timed&gt;&gt;\
 
 &lt;&lt;nobr&gt;&gt;
@@ -2158,6 +2654,21 @@ That&#39;s quite the feat for a stranger. We are impressed.
 * Shields - ⚡ @@color:orange;Damaged@@
 * Life-support - ✔️ @@color:green;OK@@
 * Weapons - ✔️ @@color:green;OK@@
+    
+&lt;&lt;nobr&gt;&gt;\
+    &lt;!-- NECESSARY TO ACTIVE THE BUTTONS AT THIS SPECIFIC POINT IN THE PASSAGE --&gt;
+    &lt;&lt;type 0ms skipkey &quot;Control&quot;&gt;&gt;\
+        &lt;&lt;script&gt;&gt;
+            $(document).ready(function() {
+                let choice_buttons = $(&#39;.choice-button&#39;);
+
+                for (let i = 0; i &lt; choice_buttons.length; i++) {
+                    $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
+                }
+            });
+        &lt;&lt;/script&gt;&gt;
+    &lt;&lt;/type&gt;&gt;
+&lt;&lt;/nobr&gt;&gt;\
 &lt;&lt;/type&gt;&gt;\
 
 &lt;&lt;nobr&gt;&gt;
@@ -2199,6 +2710,21 @@ That&#39;s quite the feat for a stranger. We are impressed.
 &lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
 ----
 !!! 📡 Sending transmisson to 🛰️ ship..
+    
+&lt;&lt;nobr&gt;&gt;\
+    &lt;!-- NECESSARY TO ACTIVE THE BUTTONS AT THIS SPECIFIC POINT IN THE PASSAGE --&gt;
+    &lt;&lt;type 0ms skipkey &quot;Control&quot;&gt;&gt;\
+        &lt;&lt;script&gt;&gt;
+            $(document).ready(function() {
+                let choice_buttons = $(&#39;.choice-button&#39;);
+
+                for (let i = 0; i &lt; choice_buttons.length; i++) {
+                    $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
+                }
+            });
+        &lt;&lt;/script&gt;&gt;
+    &lt;&lt;/type&gt;&gt;
+&lt;&lt;/nobr&gt;&gt;\
 &lt;&lt;/type&gt;&gt;
 
 &lt;&lt;nobr&gt;&gt;
@@ -2247,6 +2773,21 @@ That&#39;s quite the feat for a stranger. We are impressed.
 * Shields - ⚡ @@color:orange;Damaged@@
 * Life-support - ✔️ @@color:green;OK@@
 * Weapons - ✔️ @@color:green;OK@@
+    
+&lt;&lt;nobr&gt;&gt;\
+    &lt;!-- NECESSARY TO ACTIVE THE BUTTONS AT THIS SPECIFIC POINT IN THE PASSAGE --&gt;
+    &lt;&lt;type 0ms skipkey &quot;Control&quot;&gt;&gt;\
+        &lt;&lt;script&gt;&gt;
+            $(document).ready(function() {
+                let choice_buttons = $(&#39;.choice-button&#39;);
+
+                for (let i = 0; i &lt; choice_buttons.length; i++) {
+                    $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
+                }
+            });
+        &lt;&lt;/script&gt;&gt;
+    &lt;&lt;/type&gt;&gt;
+&lt;&lt;/nobr&gt;&gt;\
 &lt;&lt;/type&gt;&gt;\
 
 &lt;&lt;nobr&gt;&gt;
@@ -2292,6 +2833,21 @@ That&#39;s quite the feat for a stranger. We are impressed.
 ----
 !!! 📡 Sending transmisson to 🛰️ ship..
 \@@color:gray;&gt;@@ Approaching to assist..
+    
+&lt;&lt;nobr&gt;&gt;\
+    &lt;!-- NECESSARY TO ACTIVE THE BUTTONS AT THIS SPECIFIC POINT IN THE PASSAGE --&gt;
+    &lt;&lt;type 0ms skipkey &quot;Control&quot;&gt;&gt;\
+        &lt;&lt;script&gt;&gt;
+            $(document).ready(function() {
+                let choice_buttons = $(&#39;.choice-button&#39;);
+
+                for (let i = 0; i &lt; choice_buttons.length; i++) {
+                    $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
+                }
+            });
+        &lt;&lt;/script&gt;&gt;
+    &lt;&lt;/type&gt;&gt;
+&lt;&lt;/nobr&gt;&gt;\
 &lt;&lt;/type&gt;&gt;\
 
 &lt;&lt;nobr&gt;&gt;
@@ -2329,6 +2885,21 @@ That&#39;s quite the feat for a stranger. We are impressed.
 !!! 📡 YOU HAVE RECEIVED @@color:green;[2]@@ NEW TRANSMISSIONS.
 ...
     &lt;&lt;/type&gt;&gt;\
+    
+    &lt;&lt;nobr&gt;&gt;\
+        &lt;!-- NECESSARY TO ACTIVE THE BUTTONS AT THIS SPECIFIC POINT IN THE PASSAGE --&gt;
+        &lt;&lt;type 0ms skipkey &quot;Control&quot;&gt;&gt;\
+            &lt;&lt;script&gt;&gt;
+                $(document).ready(function() {
+                    let choice_buttons = $(&#39;.choice-button&#39;);
+    
+                    for (let i = 0; i &lt; choice_buttons.length; i++) {
+                        $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
+                    }
+                });
+            &lt;&lt;/script&gt;&gt;
+        &lt;&lt;/type&gt;&gt;
+    &lt;&lt;/nobr&gt;&gt;\
 &lt;&lt;/timed&gt;&gt;\
 
 &lt;&lt;nobr&gt;&gt;
@@ -2391,6 +2962,21 @@ That&#39;s quite the feat for a stranger. We are impressed.
 * Shields - ⚡ @@color:orange;Damaged@@
 * Life-support - ✔️ @@color:green;OK@@
 * Weapons - ✔️ @@color:green;OK@@
+    
+&lt;&lt;nobr&gt;&gt;\
+    &lt;!-- NECESSARY TO ACTIVE THE BUTTONS AT THIS SPECIFIC POINT IN THE PASSAGE --&gt;
+    &lt;&lt;type 0ms skipkey &quot;Control&quot;&gt;&gt;\
+        &lt;&lt;script&gt;&gt;
+            $(document).ready(function() {
+                let choice_buttons = $(&#39;.choice-button&#39;);
+
+                for (let i = 0; i &lt; choice_buttons.length; i++) {
+                    $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
+                }
+            });
+        &lt;&lt;/script&gt;&gt;
+    &lt;&lt;/type&gt;&gt;
+&lt;&lt;/nobr&gt;&gt;\
 &lt;&lt;/type&gt;&gt;\
 
 &lt;&lt;nobr&gt;&gt;
@@ -2432,6 +3018,21 @@ That&#39;s quite the feat for a stranger. We are impressed.
 &lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
 ----
 !!! 📡 Sending transmisson to 🛰️ ship..
+    
+&lt;&lt;nobr&gt;&gt;\
+    &lt;!-- NECESSARY TO ACTIVE THE BUTTONS AT THIS SPECIFIC POINT IN THE PASSAGE --&gt;
+    &lt;&lt;type 0ms skipkey &quot;Control&quot;&gt;&gt;\
+        &lt;&lt;script&gt;&gt;
+            $(document).ready(function() {
+                let choice_buttons = $(&#39;.choice-button&#39;);
+
+                for (let i = 0; i &lt; choice_buttons.length; i++) {
+                    $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
+                }
+            });
+        &lt;&lt;/script&gt;&gt;
+    &lt;&lt;/type&gt;&gt;
+&lt;&lt;/nobr&gt;&gt;\
 &lt;&lt;/type&gt;&gt;
 
 &lt;&lt;nobr&gt;&gt;
@@ -2445,98 +3046,7 @@ That&#39;s quite the feat for a stranger. We are impressed.
     name=&quot;3.1.2.0. Join Rescuers (Ending)&quot;&gt;
         Continue
 &lt;/button&gt;
-&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="51" name="3.1.1.1. Maximize Engines" tags="broken-ui" position="100,725" size="100,100">&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
-    \@@color:gray;&gt;@@ Engines to maximum
-&lt;&lt;/type&gt;&gt;\
-&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
-    \@@color:gray;&gt;@@ Executing evasive pattern delta
-&lt;&lt;/type&gt;&gt;\
-&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
-    ...
-&lt;&lt;/type&gt;&gt;
-&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
-📑 Battle Updates
-----
-⚠️ @@color:red;[2]@@ Incoming missles detected
-&lt;&lt;/type&gt;&gt;\
-&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
-    ✔️ @@color:red;[1]@@ Evaded
-&lt;&lt;/type&gt;&gt;\
-&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
-    ...
-&lt;&lt;/type&gt;&gt;\
-&lt;&lt;type 0ms skipkey &quot;Control&quot;&gt;&gt;\
-    &lt;span class=&quot;boom-title pulse&quot;&gt;&#39;&#39;@@color:orange;B@@ @@color:red;O@@ 💥 @@color:red;O@@ @@color:orange;M@@&#39;&#39;&lt;/span&gt;
-    &lt;&lt;script&gt;&gt;
-        $(&#39;#console-screen&#39;).css(&#39;backgroundImage&#39;, &#39;url(&quot;./assets/UI/mainconsole_broken.png&quot;)&#39;);
-        $(&#39;#choices-screen&#39;).css(&#39;backgroundImage&#39;, &#39;url(&quot;./assets/UI/bottomconsole_broken.png&quot;)&#39;);
-    &lt;&lt;/script&gt;&gt;
-&lt;&lt;/type&gt;&gt;\
-
-&lt;&lt;nobr&gt;&gt;
-&lt;!-- ************************************ --&gt;
-&lt;!--       Bottom interface buttons       --&gt;
-&lt;!-- ************************************ --&gt;
-&lt;button
-    class=&quot;link-internal macro-button choice-button&quot;
-    type=&quot;button&quot;
-    tabindex=&quot;0&quot;
-    name=&quot;3.1.2.1. Ship Destroyed (Ending)&quot;&gt;
-        Continue
-&lt;/button&gt;
-&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="52" name="3.1.1.2. Surrender to Pirates" tags="broken-ui" position="225,725" size="100,100">&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
-!!! ✍️ Writing message to ☠️ pirates..
-----
-&lt;&lt;/type&gt;&gt;\
-//\
-&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
-    \@@color:gray;&gt;@@ Okay! fine, I surrender..
-&lt;&lt;/type&gt;&gt;
-&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
-    \@@color:gray;&gt;@@ Just don&#39;t destroy me or my ship, take whatever you want and leave!
-&lt;&lt;/type&gt;&gt;\
-//\
-&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
-----
-!!! 📡 Sending transmisson to 🛰️ ship..
-&lt;&lt;/type&gt;&gt;\
-&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
-    &lt;h3&gt;☠️ FREQUENCY 99.9&lt;/h3&gt;\
-----
-&lt;&lt;/type&gt;&gt;\
-&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
-    \@@color:gray;&gt;@@ Good, we will, and don&#39;t try anything stupid.
-&lt;&lt;/type&gt;&gt;\
-&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
-----
-    &lt;h3&gt;❌ @@color:red;ENDED TRANSMISSION 99.9@@&lt;/h3&gt;\
-&lt;&lt;/type&gt;&gt;\
-
-&lt;&lt;nobr&gt;&gt;
-&lt;!-- ************************************ --&gt;
-&lt;!--       Bottom interface buttons       --&gt;
-&lt;!-- ************************************ --&gt;
-&lt;button
-    class=&quot;link-internal macro-button choice-button&quot;
-    type=&quot;button&quot;
-    tabindex=&quot;0&quot;
-    name=&quot;3.1.2.1. Ship Destroyed (Ending)&quot;&gt;
-        Continue
-&lt;/button&gt;
-&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="53" name="3.1.2.0. Join Rescuers (Ending)" tags="" position="350,725" size="100,100"></tw-passagedata><tw-passagedata pid="54" name="3.1.2.1. Ship Destroyed (Ending)" tags="" position="475,725" size="100,100">&lt;!-- WRITE PASSAGE STARTING OVER THIS LINE --&gt;
-
-&lt;&lt;nobr&gt;&gt;
-&lt;!-- ************************************ --&gt;
-&lt;!--       Bottom interface buttons       --&gt;
-&lt;!-- ************************************ --&gt;
-&lt;button
-    class=&quot;link-internal macro-button choice-button&quot;
-    type=&quot;button&quot;
-    tabindex=&quot;0&quot;
-    name=&quot;3.1.2.2. Ship Destroyed (Ending)&quot;&gt;
-        Continue
-&lt;/button&gt;
-&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="55" name="3.1.0.1. Faction Bad" tags="broken-ui" position="600,725" size="100,100">&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="51" name="3.1.2.0. Join Rescuers (Ending)" tags="" position="100,725" size="100,100"></tw-passagedata><tw-passagedata pid="52" name="3.1.0.1. Faction Bad" tags="broken-ui" position="225,725" size="100,100">&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
     &lt;h3&gt;☠️ FREQUENCY 99.9&lt;/h3&gt;\
 ----
 &lt;&lt;/type&gt;&gt;\
@@ -2568,6 +3078,21 @@ That&#39;s quite the feat for a stranger. We are impressed.
 * Shields - ⚡ @@color:orange;Damaged@@
 * Life-support - ✔️ @@color:green;OK@@
 * Weapons - ✔️ @@color:green;OK@@
+    
+&lt;&lt;nobr&gt;&gt;\
+    &lt;!-- NECESSARY TO ACTIVE THE BUTTONS AT THIS SPECIFIC POINT IN THE PASSAGE --&gt;
+    &lt;&lt;type 0ms skipkey &quot;Control&quot;&gt;&gt;\
+        &lt;&lt;script&gt;&gt;
+            $(document).ready(function() {
+                let choice_buttons = $(&#39;.choice-button&#39;);
+
+                for (let i = 0; i &lt; choice_buttons.length; i++) {
+                    $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
+                }
+            });
+        &lt;&lt;/script&gt;&gt;
+    &lt;&lt;/type&gt;&gt;
+&lt;&lt;/nobr&gt;&gt;\
 &lt;&lt;/type&gt;&gt;\
 
 &lt;&lt;nobr&gt;&gt;
@@ -2588,6 +3113,127 @@ That&#39;s quite the feat for a stranger. We are impressed.
     name=&quot;3.1.1.2. Surrender to Pirates&quot;&gt;
         Surrender to pirates
 &lt;/button&gt;
+&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="53" name="3.1.1.1. Maximize Engines" tags="broken-ui" position="350,725" size="100,100">&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+    \@@color:gray;&gt;@@ Engines to maximum
+&lt;&lt;/type&gt;&gt;\
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+    \@@color:gray;&gt;@@ Executing evasive pattern delta
+&lt;&lt;/type&gt;&gt;\
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+    ...
+&lt;&lt;/type&gt;&gt;
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+📑 Battle Updates
+----
+⚠️ @@color:red;[2]@@ Incoming missles detected
+&lt;&lt;/type&gt;&gt;\
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+    ✔️ @@color:red;[1]@@ Evaded
+&lt;&lt;/type&gt;&gt;\
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+    ...
+&lt;&lt;/type&gt;&gt;\
+&lt;&lt;type 0ms skipkey &quot;Control&quot;&gt;&gt;\
+    &lt;span class=&quot;boom-title pulse&quot;&gt;&#39;&#39;@@color:orange;B@@ @@color:red;O@@ 💥 @@color:red;O@@ @@color:orange;M@@&#39;&#39;&lt;/span&gt;
+    &lt;&lt;script&gt;&gt;
+        $(&#39;#console-screen&#39;).css(&#39;backgroundImage&#39;, &#39;url(&quot;./assets/UI/mainconsole_broken.png&quot;)&#39;);
+        $(&#39;#choices-screen&#39;).css(&#39;backgroundImage&#39;, &#39;url(&quot;./assets/UI/bottomconsole_broken.png&quot;)&#39;);
+    &lt;&lt;/script&gt;&gt;
+    
+    &lt;&lt;nobr&gt;&gt;\
+        &lt;!-- NECESSARY TO ACTIVE THE BUTTONS AT THIS SPECIFIC POINT IN THE PASSAGE --&gt;
+        &lt;&lt;type 0ms skipkey &quot;Control&quot;&gt;&gt;\
+            &lt;&lt;script&gt;&gt;
+                $(document).ready(function() {
+                    let choice_buttons = $(&#39;.choice-button&#39;);
+    
+                    for (let i = 0; i &lt; choice_buttons.length; i++) {
+                        $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
+                    }
+                });
+            &lt;&lt;/script&gt;&gt;
+        &lt;&lt;/type&gt;&gt;
+    &lt;&lt;/nobr&gt;&gt;\
+&lt;&lt;/type&gt;&gt;\
+
+&lt;&lt;nobr&gt;&gt;
+&lt;!-- ************************************ --&gt;
+&lt;!--       Bottom interface buttons       --&gt;
+&lt;!-- ************************************ --&gt;
+&lt;button
+    class=&quot;link-internal macro-button choice-button&quot;
+    type=&quot;button&quot;
+    tabindex=&quot;0&quot;
+    name=&quot;3.1.2.1. Ship Destroyed (Ending)&quot;&gt;
+        Continue
+&lt;/button&gt;
+&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="54" name="3.1.1.2. Surrender to Pirates" tags="broken-ui" position="475,725" size="100,100">&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+!!! ✍️ Writing message to ☠️ pirates..
+----
+&lt;&lt;/type&gt;&gt;\
+//\
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+    \@@color:gray;&gt;@@ Okay! fine, I surrender..
+&lt;&lt;/type&gt;&gt;
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+    \@@color:gray;&gt;@@ Just don&#39;t destroy me or my ship, take whatever you want and leave!
+&lt;&lt;/type&gt;&gt;\
+//\
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+----
+!!! 📡 Sending transmisson to 🛰️ ship..
+&lt;&lt;/type&gt;&gt;\
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+    &lt;h3&gt;☠️ FREQUENCY 99.9&lt;/h3&gt;\
+----
+&lt;&lt;/type&gt;&gt;\
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+    \@@color:gray;&gt;@@ Good, we will, and don&#39;t try anything stupid.
+&lt;&lt;/type&gt;&gt;\
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+----
+    &lt;h3&gt;❌ @@color:red;ENDED TRANSMISSION 99.9@@&lt;/h3&gt;\
+    
+    &lt;&lt;nobr&gt;&gt;\
+        &lt;!-- NECESSARY TO ACTIVE THE BUTTONS AT THIS SPECIFIC POINT IN THE PASSAGE --&gt;
+        &lt;&lt;type 0ms skipkey &quot;Control&quot;&gt;&gt;\
+            &lt;&lt;script&gt;&gt;
+                $(document).ready(function() {
+                    let choice_buttons = $(&#39;.choice-button&#39;);
+    
+                    for (let i = 0; i &lt; choice_buttons.length; i++) {
+                        $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
+                    }
+                });
+            &lt;&lt;/script&gt;&gt;
+        &lt;&lt;/type&gt;&gt;
+    &lt;&lt;/nobr&gt;&gt;\
+&lt;&lt;/type&gt;&gt;\
+
+&lt;&lt;nobr&gt;&gt;
+&lt;!-- ************************************ --&gt;
+&lt;!--       Bottom interface buttons       --&gt;
+&lt;!-- ************************************ --&gt;
+&lt;button
+    class=&quot;link-internal macro-button choice-button&quot;
+    type=&quot;button&quot;
+    tabindex=&quot;0&quot;
+    name=&quot;3.1.2.1. Ship Destroyed (Ending)&quot;&gt;
+        Continue
+&lt;/button&gt;
+&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="55" name="3.1.2.1. Ship Destroyed (Ending)" tags="" position="600,725" size="100,100">&lt;!-- WRITE PASSAGE STARTING OVER THIS LINE --&gt;
+
+&lt;&lt;nobr&gt;&gt;
+&lt;!-- ************************************ --&gt;
+&lt;!--       Bottom interface buttons       --&gt;
+&lt;!-- ************************************ --&gt;
+&lt;button
+    class=&quot;link-internal macro-button choice-button&quot;
+    type=&quot;button&quot;
+    tabindex=&quot;0&quot;
+    name=&quot;3.1.2.2. Ship Destroyed (Ending)&quot;&gt;
+        Continue
+&lt;/button&gt;
 &lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="56" name="3.2. Pirates Approach You" tags="" position="725,725" size="100,100">&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
     \@@color:gray;&gt;@@ Pirate ships maintaining safe proximity
 &lt;&lt;/type&gt;&gt;\
@@ -2601,6 +3247,21 @@ That&#39;s quite the feat for a stranger. We are impressed.
 &lt;&lt;/type&gt;&gt;\
 &lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
     \@@color:gray;&gt;@@ @@color:green;You have received @@@@color:red;&lt;b&gt;[2]&lt;/b&gt;@@@@color:green; new transmissions.@@
+    
+    &lt;&lt;nobr&gt;&gt;\
+        &lt;!-- NECESSARY TO ACTIVE THE BUTTONS AT THIS SPECIFIC POINT IN THE PASSAGE --&gt;
+        &lt;&lt;type 0ms skipkey &quot;Control&quot;&gt;&gt;\
+            &lt;&lt;script&gt;&gt;
+                $(document).ready(function() {
+                    let choice_buttons = $(&#39;.choice-button&#39;);
+    
+                    for (let i = 0; i &lt; choice_buttons.length; i++) {
+                        $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
+                    }
+                });
+            &lt;&lt;/script&gt;&gt;
+        &lt;&lt;/type&gt;&gt;
+    &lt;&lt;/nobr&gt;&gt;\
 &lt;&lt;/type&gt;&gt;\
 
 &lt;&lt;nobr&gt;&gt;
@@ -2640,6 +3301,21 @@ That&#39;s quite the feat for a stranger. We are impressed.
 &lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
 ----
     &lt;h3&gt;❌ @@color:red;ENDED TRANSMISSION 108.5@@&lt;/h3&gt;\
+    
+    &lt;&lt;nobr&gt;&gt;\
+        &lt;!-- NECESSARY TO ACTIVE THE BUTTONS AT THIS SPECIFIC POINT IN THE PASSAGE --&gt;
+        &lt;&lt;type 0ms skipkey &quot;Control&quot;&gt;&gt;\
+            &lt;&lt;script&gt;&gt;
+                $(document).ready(function() {
+                    let choice_buttons = $(&#39;.choice-button&#39;);
+    
+                    for (let i = 0; i &lt; choice_buttons.length; i++) {
+                        $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
+                    }
+                });
+            &lt;&lt;/script&gt;&gt;
+        &lt;&lt;/type&gt;&gt;
+    &lt;&lt;/nobr&gt;&gt;\
 &lt;&lt;/type&gt;&gt;\
 
 &lt;&lt;nobr&gt;&gt;
@@ -2688,6 +3364,21 @@ That&#39;s quite the feat for a stranger. We are impressed.
 &lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
 ----
     &lt;h3&gt;❌ @@color:red;ENDED TRANSMISSION 99.9@@&lt;/h3&gt;\
+    
+    &lt;&lt;nobr&gt;&gt;\
+        &lt;!-- NECESSARY TO ACTIVE THE BUTTONS AT THIS SPECIFIC POINT IN THE PASSAGE --&gt;
+        &lt;&lt;type 0ms skipkey &quot;Control&quot;&gt;&gt;\
+            &lt;&lt;script&gt;&gt;
+                $(document).ready(function() {
+                    let choice_buttons = $(&#39;.choice-button&#39;);
+    
+                    for (let i = 0; i &lt; choice_buttons.length; i++) {
+                        $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
+                    }
+                });
+            &lt;&lt;/script&gt;&gt;
+        &lt;&lt;/type&gt;&gt;
+    &lt;&lt;/nobr&gt;&gt;\
 &lt;&lt;/type&gt;&gt;\
 
 &lt;&lt;nobr&gt;&gt;
@@ -2721,6 +3412,21 @@ That&#39;s quite the feat for a stranger. We are impressed.
 &lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
 ----
     &lt;h3&gt;❌ @@color:red;ENDED TRANSMISSION 99.9@@&lt;/h3&gt;\
+    
+    &lt;&lt;nobr&gt;&gt;\
+        &lt;!-- NECESSARY TO ACTIVE THE BUTTONS AT THIS SPECIFIC POINT IN THE PASSAGE --&gt;
+        &lt;&lt;type 0ms skipkey &quot;Control&quot;&gt;&gt;\
+            &lt;&lt;script&gt;&gt;
+                $(document).ready(function() {
+                    let choice_buttons = $(&#39;.choice-button&#39;);
+    
+                    for (let i = 0; i &lt; choice_buttons.length; i++) {
+                        $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
+                    }
+                });
+            &lt;&lt;/script&gt;&gt;
+        &lt;&lt;/type&gt;&gt;
+    &lt;&lt;/nobr&gt;&gt;\
 &lt;&lt;/type&gt;&gt;\
 
 &lt;&lt;nobr&gt;&gt;
@@ -2753,6 +3459,21 @@ That&#39;s quite the feat for a stranger. We are impressed.
 &lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;
 ----
     \@@color:gray;&gt;@@ @@color:green;You have 📡 received @@@@color:red;&lt;b&gt;[2]&lt;/b&gt;@@@@color:green; new transmissions.@@
+    
+    &lt;&lt;nobr&gt;&gt;\
+        &lt;!-- NECESSARY TO ACTIVE THE BUTTONS AT THIS SPECIFIC POINT IN THE PASSAGE --&gt;
+        &lt;&lt;type 0ms skipkey &quot;Control&quot;&gt;&gt;\
+            &lt;&lt;script&gt;&gt;
+                $(document).ready(function() {
+                    let choice_buttons = $(&#39;.choice-button&#39;);
+    
+                    for (let i = 0; i &lt; choice_buttons.length; i++) {
+                        $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
+                    }
+                });
+            &lt;&lt;/script&gt;&gt;
+        &lt;&lt;/type&gt;&gt;
+    &lt;&lt;/nobr&gt;&gt;\
 &lt;&lt;/type&gt;&gt;\
 
 
@@ -2809,6 +3530,21 @@ That&#39;s quite the feat for a stranger. We are impressed.
 &lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
 ----
     &lt;h3&gt;❌ @@color:red;ENDED TRANSMISSION 108.5@@&lt;/h3&gt;\
+    
+    &lt;&lt;nobr&gt;&gt;\
+        &lt;!-- NECESSARY TO ACTIVE THE BUTTONS AT THIS SPECIFIC POINT IN THE PASSAGE --&gt;
+        &lt;&lt;type 0ms skipkey &quot;Control&quot;&gt;&gt;\
+            &lt;&lt;script&gt;&gt;
+                $(document).ready(function() {
+                    let choice_buttons = $(&#39;.choice-button&#39;);
+    
+                    for (let i = 0; i &lt; choice_buttons.length; i++) {
+                        $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
+                    }
+                });
+            &lt;&lt;/script&gt;&gt;
+        &lt;&lt;/type&gt;&gt;
+    &lt;&lt;/nobr&gt;&gt;\
 &lt;&lt;/type&gt;&gt;\
 
 &lt;&lt;nobr&gt;&gt;
@@ -2847,6 +3583,21 @@ That&#39;s quite the feat for a stranger. We are impressed.
     \@@color:gray;&gt;@@ EXTERNAL COORDINATES ✔️ RECEIVED
 
     \@@color:gray;&gt;@@ Commencing rerouting. . .
+    
+    &lt;&lt;nobr&gt;&gt;\
+        &lt;!-- NECESSARY TO ACTIVE THE BUTTONS AT THIS SPECIFIC POINT IN THE PASSAGE --&gt;
+        &lt;&lt;type 0ms skipkey &quot;Control&quot;&gt;&gt;\
+            &lt;&lt;script&gt;&gt;
+                $(document).ready(function() {
+                    let choice_buttons = $(&#39;.choice-button&#39;);
+    
+                    for (let i = 0; i &lt; choice_buttons.length; i++) {
+                        $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
+                    }
+                });
+            &lt;&lt;/script&gt;&gt;
+        &lt;&lt;/type&gt;&gt;
+    &lt;&lt;/nobr&gt;&gt;\
 &lt;&lt;/type&gt;&gt;\
  
 
@@ -2900,6 +3651,21 @@ You can come out once we pull you in the carrier! We got food and first aid if y
 &lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
 ----
     &lt;h3&gt;❌ @@color:red;ENDED TRANSMISSION 99.9@@&lt;/h3&gt;\
+    
+    &lt;&lt;nobr&gt;&gt;\
+        &lt;!-- NECESSARY TO ACTIVE THE BUTTONS AT THIS SPECIFIC POINT IN THE PASSAGE --&gt;
+        &lt;&lt;type 0ms skipkey &quot;Control&quot;&gt;&gt;\
+            &lt;&lt;script&gt;&gt;
+                $(document).ready(function() {
+                    let choice_buttons = $(&#39;.choice-button&#39;);
+    
+                    for (let i = 0; i &lt; choice_buttons.length; i++) {
+                        $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
+                    }
+                });
+            &lt;&lt;/script&gt;&gt;
+        &lt;&lt;/type&gt;&gt;
+    &lt;&lt;/nobr&gt;&gt;\
 &lt;&lt;/type&gt;&gt;\
 
 &lt;&lt;nobr&gt;&gt;
@@ -2963,6 +3729,21 @@ You can come out once we pull you in the carrier! We got food and first aid if y
 &lt;&lt;/type&gt;&gt;\
 &lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
     \@@color:gray;&gt;@@ @@color:red;SYSTEM SHUT DOWN IMMINENT@@
+    
+    &lt;&lt;nobr&gt;&gt;\
+        &lt;!-- NECESSARY TO ACTIVE THE BUTTONS AT THIS SPECIFIC POINT IN THE PASSAGE --&gt;
+        &lt;&lt;type 0ms skipkey &quot;Control&quot;&gt;&gt;\
+            &lt;&lt;script&gt;&gt;
+                $(document).ready(function() {
+                    let choice_buttons = $(&#39;.choice-button&#39;);
+    
+                    for (let i = 0; i &lt; choice_buttons.length; i++) {
+                        $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
+                    }
+                });
+            &lt;&lt;/script&gt;&gt;
+        &lt;&lt;/type&gt;&gt;
+    &lt;&lt;/nobr&gt;&gt;\
 &lt;&lt;/type&gt;&gt;\
 
 &lt;&lt;nobr&gt;&gt;
@@ -3002,6 +3783,21 @@ Is this really the end for me?
         $(&#39;#console-screen&#39;).css(&#39;backgroundImage&#39;, &#39;url(&quot;./assets/UI/mainconsole_broken.png&quot;)&#39;);
         $(&#39;#choices-screen&#39;).css(&#39;backgroundImage&#39;, &#39;url(&quot;./assets/UI/bottomconsole_broken.png&quot;)&#39;);
     &lt;&lt;/script&gt;&gt;
+    
+    &lt;&lt;nobr&gt;&gt;\
+        &lt;!-- NECESSARY TO ACTIVE THE BUTTONS AT THIS SPECIFIC POINT IN THE PASSAGE --&gt;
+        &lt;&lt;type 0ms skipkey &quot;Control&quot;&gt;&gt;\
+            &lt;&lt;script&gt;&gt;
+                $(document).ready(function() {
+                    let choice_buttons = $(&#39;.choice-button&#39;);
+    
+                    for (let i = 0; i &lt; choice_buttons.length; i++) {
+                        $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
+                    }
+                });
+            &lt;&lt;/script&gt;&gt;
+        &lt;&lt;/type&gt;&gt;
+    &lt;&lt;/nobr&gt;&gt;\
 &lt;&lt;/type&gt;&gt;\
 
 &lt;&lt;nobr&gt;&gt;

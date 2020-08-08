@@ -8,6 +8,21 @@
 <<type 40ms skipkey "Control">>
 ----
     \@@color:gray;>@@ @@color:cyan; 💬 THIS MODE ENGAGES AUTOMATICALLY TO PREVENT ADDITIONAL DAMAGES AND ENSURE THE SAFETY OF THE CARGO.@@
+    
+    <<nobr>>\
+        <!-- NECESSARY TO ACTIVE THE BUTTONS AT THIS SPECIFIC POINT IN THE PASSAGE -->
+        <<type 0ms skipkey "Control">>\
+            <<script>>
+                $(document).ready(function() {
+                    let choice_buttons = $('.choice-button');
+    
+                    for (let i = 0; i < choice_buttons.length; i++) {
+                        $(choice_buttons[i]).css('display', 'block');
+                    }
+                });
+            <</script>>
+        <</type>>
+    <</nobr>>\
 <</type>>\
 
 <<nobr>>

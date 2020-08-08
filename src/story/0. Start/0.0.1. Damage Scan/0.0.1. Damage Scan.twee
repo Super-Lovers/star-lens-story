@@ -1,13 +1,28 @@
 :: 0.0.1. Damage Scan [broken-ui]
 \@@color:gray;>@@ Retri<span class="glitch-text">eving information on</span> damage sustained . . .
 <<timed 800ms>>
-\@@color:gray;>@@ Retrieving information on possible causes . . .
+    \@@color:gray;>@@ Retrieving information on possible causes . . .
 \<</timed>>
 <<timed 1000ms>>
-\@@color:gray;>@@ Backing up data . . .
+    \@@color:gray;>@@ Backing up data . . .
 \<</timed>>
 <<timed 1200ms>>
-\@@color:gray;>@@ DONE
+    \@@color:gray;>@@ DONE
+    
+    <<nobr>>\
+        <!-- NECESSARY TO ACTIVE THE BUTTONS AT THIS SPECIFIC POINT IN THE PASSAGE -->
+        <<type 0ms skipkey "Control">>\
+            <<script>>
+                $(document).ready(function() {
+                    let choice_buttons = $('.choice-button');
+    
+                    for (let i = 0; i < choice_buttons.length; i++) {
+                        $(choice_buttons[i]).css('display', 'block');
+                    }
+                });
+            <</script>>
+        <</type>>
+    <</nobr>>\
 <</timed>>
 
 <<nobr>>

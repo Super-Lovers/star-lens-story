@@ -177,7 +177,7 @@ textarea:not(:disabled):hover {
 }
 
 #choices-screen > span > span > .macro-button, #choices-screen > .macro-button {
-    display: block;
+    display: none;
 
     margin-left: auto;
     margin-right: auto;
@@ -195,6 +195,8 @@ textarea:not(:disabled):hover {
     line-height: 18px;
     border: 2px solid #1871d4;
     border-radius: 5px;
+
+    transition: 0.3s ease;
 }
 
 #choices-screen > span > span > .macro-button:hover, #choices-screen > .macro-button:hover {
