@@ -116,6 +116,11 @@ IMPORTS
     src: url("./fonts/cordata_ppc.woff");
 }
 
+@font-face {
+    font-family: "Fairfax";
+    src: url("./fonts/Fairfax.ttf");
+}
+
 /**************************************
 ABSTRACTS
 **************************************/
@@ -373,6 +378,42 @@ TEXT STYLES
 .pulse {
 	-webkit-animation: pulse 0.8s;
 	animation: pulse 0.8s;
+}
+
+/**************************************
+ENDINGS STYLES
+**************************************/
+.neutral-chicken {
+    display: inline-block;
+    text-align: center;
+}
+
+.neutral-chicken > span:first-of-type {
+    position: relative;
+    left: 30px;
+
+    font-size: 7em;
+    text-align: center;
+}
+
+.neutral-chicken > span:last-of-type {
+    position: relative;
+    left: -10px;
+
+    font-size: 4em;
+    text-align: center;
+
+    vertical-align: top;
+}
+
+#passages {
+    font-family: "Fairfax";
+
+    width: 300px;
+}
+
+.passage {
+    text-align: center;
 }</style><script role="script" id="twine-user-script" type="text/twine-javascript">// UIBar.destroy();
 // UI.alert("test");
 
@@ -686,6 +727,10 @@ $(document).on(&#39;:passagerender&#39;, function (ev) {
         &lt;div class=&quot;passage-content&quot; style=&quot;overflow-y: hidden; background: none;&quot;&gt;
             &lt;&lt;print &quot;\\@@color:gray;&gt;@@&quot;&gt;&gt; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc cursus odio ut neque vulputate consectetur. Aenean ut urna nec neque ornare tristique. Aliquam varius consectetur vulputate. Mauris condimentum mauris ultricies, maximus ante quis, ornare velit. Curabitur eget massa pulvinar felis rutrum ultrices.
         &lt;/div&gt;
+    &lt;/div&gt;
+&lt;&lt;elseif passage() == &quot;3.6.1. Join Faction Neutral&quot;&gt;&gt;
+    &lt;div class=&quot;neutral-chicken&quot;&gt;
+        &lt;span&gt;🐔&lt;/span&gt;&lt;span&gt;💬&lt;/span&gt;
     &lt;/div&gt;
 &lt;&lt;else&gt;&gt;
     &lt;div id=&quot;console-screen&quot; class=&quot;screen&quot; style=&quot;background-image: url(&#39;./assets/UI/mainconsole_fixed.png&#39;)&quot;&gt;
@@ -2378,7 +2423,7 @@ Please
 &lt;&lt;/type&gt;&gt;
 &lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
 ----
-    \@@color:gray;&gt;@@OVERLOAD ⚙️ ENGINE?
+    \@@color:gray;&gt;@@ OVERLOAD ⚙️ ENGINE?
     
     &lt;&lt;nobr&gt;&gt;\
         &lt;!-- NECESSARY TO ACTIVE THE BUTTONS AT THIS SPECIFIC POINT IN THE PASSAGE --&gt;
@@ -3823,20 +3868,46 @@ Unfortunately you survived the first attack, so we had to get a bit creative.
 
 How unfortunate for you, you really did almost make it.
 
-&lt;&lt;link [[Too bad, so sad..|Start]]&gt;&gt;&lt;&lt;/link&gt;&gt;</tw-passagedata><tw-passagedata pid="71" name="3.5. Ship About to Explode" tags="" position="100,975" size="100,100">WARNING - CRITICAL SYSTEM FAILURE
-CAUSE: ENGINE OVERLOAD
+&lt;&lt;link [[Too bad, so sad..|Start]]&gt;&gt;&lt;&lt;/link&gt;&gt;</tw-passagedata><tw-passagedata pid="71" name="3.5. Ship About to Explode" tags="" position="100,975" size="100,100">&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+!!! ⚠️ @@color:orange;WARNING - CRITICAL SYSTEM FAILURE@@
+&lt;&lt;/type&gt;&gt;
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+    \@@color:gray;&gt;@@ CAUSE: ⚙️ ENGINE OVERLOAD
+&lt;&lt;/type&gt;&gt;
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+----
+!!!! ⚠️ @@color:orange;WARNING - SYSTEM OVERHEATING@@
+!!!! ⚠️ @@color:orange;WARNING - PRESSURIZATION SYSTEM FAILURE@@
+!!!! ⚠️ @@color:orange;WARNING - VENTILATION SYSTEM FAILURE@@
+&lt;&lt;/type&gt;&gt;
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+    \@@color:gray;&gt;@@ CHANCE OF SURVIVAL: @@color:red;0@@%
+&lt;&lt;/type&gt;&gt;\
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+----
+!!! ⚠️ @@color:red; WARNING - SYSTEM OVERHEATING@@
+&lt;&lt;/type&gt;&gt;\
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+----
+    \@@color:gray;&gt;@@ @@color:green;You have 📡 received@@ @@color:red;[1]@@ @@color:green;new transmission.@@
 
-WARNING - SYSTEM OVERHEATING
-WARNING - PRESSURIZATION SYSTEM FAILURE
-WARNING - VENTILATION SYSTEM FAILURE
-
-CHANCE OF SURVIVAL: 0%
-
-WARNING - SYSTEM OVERHEATING
-
-YOU HAVE RECEIVED [1] NEW TRANSMISSION
-
-EXTERNAL HELP CAN INCREASE THE SURVIVAL RATE BY 12%
+    \@@color:gray;&gt;@@ EXTERNAL HELP CAN INCREASE THE SURVIVAL RATE BY 12%
+    
+    &lt;&lt;nobr&gt;&gt;\
+        &lt;!-- NECESSARY TO ACTIVE THE BUTTONS AT THIS SPECIFIC POINT IN THE PASSAGE --&gt;
+        &lt;&lt;type 0ms skipkey &quot;Control&quot;&gt;&gt;\
+            &lt;&lt;script&gt;&gt;
+                $(document).ready(function() {
+                    let choice_buttons = $(&#39;.choice-button&#39;);
+    
+                    for (let i = 0; i &lt; choice_buttons.length; i++) {
+                        $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
+                    }
+                });
+            &lt;&lt;/script&gt;&gt;
+        &lt;&lt;/type&gt;&gt;
+    &lt;&lt;/nobr&gt;&gt;\
+&lt;&lt;/type&gt;&gt;\
 
 &lt;&lt;nobr&gt;&gt;
 &lt;!-- ************************************ --&gt;
@@ -3849,11 +3920,41 @@ EXTERNAL HELP CAN INCREASE THE SURVIVAL RATE BY 12%
     name=&quot;3.5.0. Faction Bad&quot;&gt;
         Frequency (99.9)
 &lt;/button&gt;
-&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="72" name="3.5.0. Faction Bad" tags="" position="225,975" size="100,100">Hello?
-It seems like it&#39;s finally the end for you. It&#39;s incredible that you lasted this long, but it will be over soon for you now.
-
-What did you say? Rescue you? Aw.
-After all this time, you really thought we would actually help you? Did you not notice we have been sabotaging you every step of the way?
+&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="72" name="3.5.0. Faction Bad" tags="" position="225,975" size="100,100">&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+    &lt;h3&gt;👨‍🚀 FREQUENCY 99.9&lt;/h3&gt;\
+----
+&lt;&lt;/type&gt;&gt;\
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+    \@@color:gray;&gt;@@ Hello?
+&lt;&lt;/type&gt;&gt;
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+    \@@color:gray;&gt;@@ It seems like it&#39;s finally the end for you. It&#39;s incredible that you lasted this long, but it will be over soon for you now.
+&lt;&lt;/type&gt;&gt;
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+    \@@color:gray;&gt;@@ What did you say? Rescue you? Aw.
+&lt;&lt;/type&gt;&gt;
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+    \@@color:gray;&gt;@@ After all this time, you really thought we would actually help you? Did you not notice we have been sabotaging you every step of the way?
+&lt;&lt;/type&gt;&gt;\
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+----
+    &lt;h3&gt;❌ @@color:red;ENDED TRANSMISSION 99.9@@&lt;/h3&gt;\
+    
+    &lt;&lt;nobr&gt;&gt;\
+        &lt;!-- NECESSARY TO ACTIVE THE BUTTONS AT THIS SPECIFIC POINT IN THE PASSAGE --&gt;
+        &lt;&lt;type 0ms skipkey &quot;Control&quot;&gt;&gt;\
+            &lt;&lt;script&gt;&gt;
+                $(document).ready(function() {
+                    let choice_buttons = $(&#39;.choice-button&#39;);
+    
+                    for (let i = 0; i &lt; choice_buttons.length; i++) {
+                        $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
+                    }
+                });
+            &lt;&lt;/script&gt;&gt;
+        &lt;&lt;/type&gt;&gt;
+    &lt;&lt;/nobr&gt;&gt;\
+&lt;&lt;/type&gt;&gt;\
 
 &lt;&lt;nobr&gt;&gt;
 &lt;!-- ************************************ --&gt;
@@ -3866,19 +3967,46 @@ After all this time, you really thought we would actually help you? Did you not 
     name=&quot;3.5.1. Wait&quot;&gt;
         Continue
 &lt;/button&gt;
-&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="73" name="3.5.1. Wait" tags="" position="350,975" size="100,100">WARNING - CRITICAL SYSTEM FAILURE
-
-CHANCE OF SURVIVAL: 0%
-
-WARNING - SYSTEM OVERHEATING
-WARNING - SYSTEM OVERHEATING
-WARNING - SYSTEM UNSTABLE
-SYSTEM INSTABILITY WILL CAUSE CRAFT TO DETONATE
-WARNING - SYSTEM OVERHEATING
-WARNING - SYSTEM OVERHEATING
-
-ERROR
-ERROR
+&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="73" name="3.5.1. Wait" tags="" position="350,975" size="100,100">&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+!!! ⚠️ @@color:orange;WARNING - CRITICAL SYSTEM FAILURE@@
+&lt;&lt;/type&gt;&gt;
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+    \@@color:gray;&gt;@@ CHANCE OF SURVIVAL: @@color:red;0@@%
+&lt;&lt;/type&gt;&gt;
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+----
+!!!! ⚠️ @@color:orange;WARNING - SYSTEM OVERHEATING@@
+!!!! ⚠️ @@color:orange;WARNING - SYSTEM OVERHEATING@@
+!!!! ⚠️ @@color:orange;WARNING - SYSTEM UNSTABLE@@
+&lt;&lt;script&gt;&gt;
+    $(&#39;#choices-screen&#39;).css(&#39;backgroundImage&#39;, &#39;url(&quot;./assets/UI/bottomconsole_broken.png&quot;)&#39;);
+&lt;&lt;/script&gt;&gt;
+&lt;&lt;/type&gt;&gt;\
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;
+    \@@color:gray;&gt;@@ @@color:red;SYSTEM INSTABILITY WILL CAUSE CRAFT TO DETONATE@@
+&lt;&lt;/type&gt;&gt;\
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;
+----
+!!!! ⚠️ @@color:red;WARNING - SYSTEM OVERHEATING@@
+!!!! ⚠️ @@color:red;WARNING - SYSTEM OVERHEATING@@
+&lt;&lt;script&gt;&gt;
+    $(&#39;#console-screen&#39;).css(&#39;backgroundImage&#39;, &#39;url(&quot;./assets/UI/mainconsole_broken.png&quot;)&#39;);
+&lt;&lt;/script&gt;&gt;
+    &lt;&lt;nobr&gt;&gt;\
+        &lt;!-- NECESSARY TO ACTIVE THE BUTTONS AT THIS SPECIFIC POINT IN THE PASSAGE --&gt;
+        &lt;&lt;type 0ms skipkey &quot;Control&quot;&gt;&gt;\
+            &lt;&lt;script&gt;&gt;
+                $(document).ready(function() {
+                    let choice_buttons = $(&#39;.choice-button&#39;);
+    
+                    for (let i = 0; i &lt; choice_buttons.length; i++) {
+                        $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
+                    }
+                });
+            &lt;&lt;/script&gt;&gt;
+        &lt;&lt;/type&gt;&gt;
+    &lt;&lt;/nobr&gt;&gt;\
+&lt;&lt;/type&gt;&gt;
 
 &lt;&lt;nobr&gt;&gt;
 &lt;!-- ************************************ --&gt;
@@ -3889,26 +4017,53 @@ ERROR
     type=&quot;button&quot;
     tabindex=&quot;0&quot;
     name=&quot;3.5.2. Explosion (Ending)&quot;&gt;
-        ERROR
+        &lt;span class=&quot;glitch-text&quot;&gt;ERROR&lt;/span&gt;OR
 &lt;/button&gt;
 &lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="74" name="3.5.2. Explosion (Ending)" tags="" position="475,975" size="100,100">No, no, 
 no no no no no no no no no no no
 
 
-&lt;&lt;link [[Is this how it ends for me?|Start]]&gt;&gt;&lt;&lt;/link&gt;&gt;</tw-passagedata><tw-passagedata pid="75" name="3.6.0. Faction Neutral" tags="" position="600,975" size="100,100">YOU HAVE REACHED YOUR DESTINATION.
+&lt;&lt;link [[Is this how it ends for me?|Start]]&gt;&gt;&lt;&lt;/link&gt;&gt;</tw-passagedata><tw-passagedata pid="75" name="3.6.0. Faction Neutral" tags="" position="600,975" size="100,100">&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+    \@@color:gray;&gt;@@ YOU HAVE ✔️ REACHED YOUR DESTINATION.
+&lt;&lt;/type&gt;&gt;
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+----
+    \@@color:gray;&gt;@@ INITIATING 🚀 LANDING PROCEDURE. . .
 
-INITIATING LANDING PROCEDURE. . .
-PLEASE REMAIN SEATED AT THIS TIME
+    \@@color:gray;&gt;@@ PLEASE REMAIN SEATED AT THIS TIME
+&lt;&lt;/type&gt;&gt;
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+----
+    \@@color:gray;&gt;@@ ANALYSING 🌍 TERRITORY AND ATMOSPHERE. . .
+&lt;&lt;/type&gt;&gt;\
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+    \@@color:gray;&gt;@@ ANALYSIS ✔️ COMPLETE
 
-ANALYSING TERRITORY AND ATMOSPHERE. . .
-ANALYSIS COMPLETE
-LOCATION IS SAFE FOR LIFEFORMS
+    \@@color:gray;&gt;@@ LOCATION IS SAFE FOR 🧟 LIFEFORMS
+&lt;&lt;/type&gt;&gt;
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+    \@@color:gray;&gt;@@ @@color:orange;ALIEN LIFEFORMS DETECTED@@. . .
 
-ALIEN LIFEFORMS DETECTED. . .
-PRESENCE OF UNAUTHORIZED WEAPONS DETECTED. WEAPONS CURRENTLY INACTIVE.
-
-OPEN AIRLOCK?
-
+    \@@color:gray;&gt;@@ @@color:red;PRESENCE OF UNAUTHORIZED WEAPONS DETECTED.@@ WEAPONS CURRENTLY INACTIVE.
+&lt;&lt;/type&gt;&gt;
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+----
+    \@@color:gray;&gt;@@ OPEN AIRLOCK?
+    &lt;&lt;nobr&gt;&gt;\
+        &lt;!-- NECESSARY TO ACTIVE THE BUTTONS AT THIS SPECIFIC POINT IN THE PASSAGE --&gt;
+        &lt;&lt;type 0ms skipkey &quot;Control&quot;&gt;&gt;\
+            &lt;&lt;script&gt;&gt;
+                $(document).ready(function() {
+                    let choice_buttons = $(&#39;.choice-button&#39;);
+    
+                    for (let i = 0; i &lt; choice_buttons.length; i++) {
+                        $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
+                    }
+                });
+            &lt;&lt;/script&gt;&gt;
+        &lt;&lt;/type&gt;&gt;
+    &lt;&lt;/nobr&gt;&gt;\
+&lt;&lt;/type&gt;&gt;
 
 &lt;&lt;nobr&gt;&gt;
 &lt;!-- ************************************ --&gt;
@@ -3921,26 +4076,38 @@ OPEN AIRLOCK?
     name=&quot;3.6.1. Join Faction Neutral&quot;&gt;
         Continue
 &lt;/button&gt;
-&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="76" name="3.6.1. Join Faction Neutral" tags="" position="725,975" size="100,100">((for nikolay - this is the neutral faction speaking. it is not a transmission))
-So you made it.
-Not everyone manages to survive the trip. Feel free to stay here until the rescue team can come for you.
+&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="76" name="3.6.1. Join Faction Neutral" tags="" position="725,975" size="100,100">&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+    So you made it.
+&lt;&lt;/type&gt;&gt;
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+    Not everyone manages to survive the trip. Feel free to stay here until the rescue team can come for you.
 
-. . .
+    . . .
 
-. . .
+    . . .
 
-Actually. . .
-
-You impressed us. Not often do we meet someone with such a drive to survive.
-We like it. You are like us. You listen to us.
-You could be one of us.
-
-Nobody has joined us in a long time.
-
-We could teach you how to live out here, and help you make friends with those who live in this territory.
-Some are lovely, and pirates are very friendly.
-
-&lt;&lt;link [[Would you like to join us?|3.6.2. Join Faction Neutral (Ending)]]&gt;&gt;&lt;&lt;/link&gt;&gt;</tw-passagedata><tw-passagedata pid="77" name="3.6.2. Join Faction Neutral (Ending)" tags="" position="850,975" size="100,100">((for nikolay - this is the player talking))
+&lt;&lt;/type&gt;&gt;
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+    Actually. . .
+&lt;&lt;/type&gt;&gt;
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+    You impressed us. Not often do we meet someone with such a drive to survive.
+&lt;&lt;/type&gt;&gt;
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+    We like it. You are like us. You listen to us. You could be one of us.
+&lt;&lt;/type&gt;&gt;
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+    Nobody has joined us in a long time.
+&lt;&lt;/type&gt;&gt;
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+    We could teach you how to live out here, and help you make friends with those who live in this territory.
+&lt;&lt;/type&gt;&gt;
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+    Some are lovely, and pirates are very friendly.
+&lt;&lt;/type&gt;&gt;
+&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+    &lt;&lt;link [[Would you like to join us?|3.6.2. Join Faction Neutral (Ending)]]&gt;&gt;&lt;&lt;/link&gt;&gt;
+&lt;&lt;/type&gt;&gt;</tw-passagedata><tw-passagedata pid="77" name="3.6.2. Join Faction Neutral (Ending)" tags="" position="850,975" size="100,100">((for nikolay - this is the player talking))
 
 So in the end, I joined them.
 Honestly, it seemed like the only logical thing to do.
