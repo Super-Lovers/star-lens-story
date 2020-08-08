@@ -22,14 +22,14 @@
         </div>
         <div id="choices-screen" class="screen" style="background-image: url('./assets/UI/bottomconsole_fixed.png')"></div>
     </div>
-<<elseif passage() == "Start" or passage() == "0.1.2. Death (Ending 1)">>
+<<elseif passage() == "0. Intro" or passage() == "0.1.2. Death (Ending 1)">>
     <div id="console-screen" class="screen" style="background-image: none">
         <video class="wallpaper" src="assets/0. Start/videos/blank.mp4" playsinline autoplay muted loop></video>
         <div class="passage-content" style="overflow-y: hidden; background: none;">
             <<print "\\@@color:gray;>@@">> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc cursus odio ut neque vulputate consectetur. Aenean ut urna nec neque ornare tristique. Aliquam varius consectetur vulputate. Mauris condimentum mauris ultricies, maximus ante quis, ornare velit. Curabitur eget massa pulvinar felis rutrum ultrices.
         </div>
     </div>
-<<elseif passage() == "Start" or passage() == "2.0.1.0. Hide Behind Dust Clouds">>
+<<elseif passage() == "0. Intro" or passage() == "2.0.1.0. Hide Behind Dust Clouds">>
     <div id="console-screen" class="screen" style="background-image: none">
         <video class="wallpaper" src="assets/2. Events/videos/dust_clouds.mp4" playsinline autoplay muted loop></video>
         <div class="passage-content" style="overflow-y: hidden; background: none;">
@@ -40,6 +40,37 @@
     <div class="neutral-chicken">
         <span>🐔</span><span>💬</span>
     </div>
+    <<script>>
+        $(document).ready(function() {
+            $('#passages').css('fontFamily', 'Fairfax');
+            $('#passages').css('width', '300');
+
+            $('.passage').css('textAlign', 'center');
+        });
+    <</script>>
+<<elseif passage() == "Start">>
+    <div class="background"></div>
+
+    <div class="notification">
+        <p>❤️ Learn more about the development of this game and the <b style="color:grey">attributed sources</b> used to create it <a href="https://github.com/Super-Lovers/star-lens-story/">on GitHub</a></p>
+    </div>
+
+    <div class="container">
+        <div class="title">
+            <img src="assets/UI/startscreen_title.png" alt="title art">
+        </div>
+        <div class="main">
+            <button class="start-button">Begin</button>
+        </div>
+    </div>
+
+    <<script>>
+        $(document).ready(function() {
+            $('.start-button').on('click', function() {
+                Engine.play('0. Intro');
+            });
+        });
+    <</script>>
 <<else>>
     <div id="console-screen" class="screen" style="background-image: url('./assets/UI/mainconsole_fixed.png')">
         <div class="passage-content">\

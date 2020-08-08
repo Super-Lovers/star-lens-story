@@ -59,6 +59,7 @@ PASSAGES CONSOLE
     background-size: contain;
     background-color: transparent;
 
+    border-radius: 4px;
 }
 
 .passage-content {
@@ -283,37 +284,87 @@ TEXT STYLES
 }
 
 /**************************************
-ENDINGS STYLES
+TITLE SCREEN STYLES
 **************************************/
-.neutral-chicken {
-    display: inline-block;
+.container {
+    position: absolute;
+    top: -200px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    margin: auto;
+    padding: 20px;
+
+    max-width: 511px;
+    height: 359px;
+}
+
+.container > div {
+    margin: 20px 0;
     text-align: center;
 }
 
-.neutral-chicken > span:first-of-type {
-    position: relative;
-    left: 30px;
-
-    font-size: 7em;
-    text-align: center;
+.title > img {
+    width: 100%;
 }
 
-.neutral-chicken > span:last-of-type {
-    position: relative;
-    left: -10px;
+.start-button {
+    background: none;
+    border: none;
+    background-image: url('./assets/UI/startscreen_start_unselected.png');
+    background-size: contain;
 
-    font-size: 4em;
-    text-align: center;
+    width: 155px;
+    height: 65px;
 
-    vertical-align: top;
-}
+    transition: 0.1s ease;
 
-#passages {
+    text-transform: uppercase;
     font-family: "Fairfax";
-
-    width: 300px;
+    font-size: 1.7em;
+    letter-spacing: 1px;
 }
 
-.passage {
+.start-button:hover {
+    background: none;
+    border: none;
+    
+    background-image: url('./assets/UI/startscreen_start_selected.png');
+    background-size: contain;
+
+    transition: 0.1s ease;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.notification {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 5px 20px;
+
+    width: 100%;
+
+    background: rgba(0, 0, 0, 0.6);
     text-align: center;
+}
+
+.notification > p {
+    margin: 0;
+    padding: 0;
+
+    font-size: 0.8em;
+    letter-spacing: 0.4px;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100vh;
+
+    background-image: url("./assets/UI/startscreen_bg.png");
+    background-size: cover;
 }

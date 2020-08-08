@@ -10,6 +10,6 @@ Please
 <</timed>>\
 <<timed 4000ms>>\
 <span style="font-size: 20px;">\
-    <span class="shudder"><<link [[Please..|0. Start]]>><</link>></span>
+    <span class="shudder"><<link [[Please..|0. Intro]]>><</link>></span>
 </span>
 <</timed>>
