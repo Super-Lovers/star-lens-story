@@ -16,8 +16,9 @@
     \@@color:gray;>@@ ✔️ Analysis complete.
 <</type>>
 <<type 40ms skipkey "Control">>\
+!!! ⚠️ Warning
 ----
-!!! @@color:orange; ⚠️ WARNING - CRITICAL DAMAGE TO PRESSURIZATION SYSTEM DETECTED.@@
+@@color:orange;CRITICAL DAMAGE TO PRESSURIZATION SYSTEM DETECTED.@@
 <</type>>\
 <<type 40ms skipkey "Control">>\
     \@@color:gray;>@@ @@color:red;IMMEDIATE ACTION REQUIRED.@@

@@ -1,6 +1,8 @@
 :: 2.1.1.1. Push Forward
 <<type 40ms skipkey "Control">>\
-!!! ⚠️ @@color:orange;WARNING - CRITICAL DAMAGE@@
+!!! ⚠️ Warning
+----
+@@color:orange;CRITICAL DAMAGE@@
 <</type>>\
 <<type 40ms skipkey "Control">>\
 ----

@@ -1,7 +1,9 @@
 :: 3.3.1.0. Maneuver
 
 <<type 40ms skipkey "Control">>\
-!!! ⚠️ @@color:orange;WARNING - UNKNOWN SPACESHIP INCOMING@@
+!!! ⚠️ Warning
+----
+    @@color:orange;UNKNOWN SPACESHIP INCOMING@@
 <</type>>\
 <<type 40ms skipkey "Control">>\
 ----

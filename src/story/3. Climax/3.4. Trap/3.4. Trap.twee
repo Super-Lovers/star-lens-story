@@ -1,6 +1,8 @@
 :: 3.4. Trap
 <<type 40ms skipkey "Control">>\
-!!! ⚠️ @@color:orange;WARNING - CRITICAL SYSTEM FAILURE @@
+!!! ⚠️ Warning
+----
+    @@color:orange;CRITICAL SYSTEM FAILURE @@
 <</type>>\
 <<type 40ms skipkey "Control">>\
 ----

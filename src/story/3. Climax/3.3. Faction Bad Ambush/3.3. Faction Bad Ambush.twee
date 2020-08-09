@@ -6,8 +6,9 @@
     \@@color:gray;>@@ SYSTEM RESTORED - @@color:orange;40@@% CAPACITY
 <</type>>\
 <<type 40ms skipkey "Control">>
+!!! ⚠️ Warning
 ----
-!!! @@color:orange; ⚠️ WARNING - UNKNOWN SPACESHIP INCOMING@@
+    @@color:orange; UNKNOWN SPACESHIP INCOMING@@
 <</type>>\
 <<type 40ms skipkey "Control">>\
 ----

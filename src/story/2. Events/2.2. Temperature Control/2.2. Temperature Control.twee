@@ -9,8 +9,9 @@
     \@@color:gray;>@@ ✔️ Analysis complete.
 <</type>>
 <<type 40ms skipkey "Control">>\
+!!! ⚠️ Warning
 ----
-!!! ⚠️ @@color:orange; WARNING - ISSUE WITHIN THE TEMPERATURE 🌡️ CONTROL SYSTEM DETECTED.@@
+    @@color:orange;ISSUE WITHIN THE TEMPERATURE 🌡️ CONTROL SYSTEM DETECTED.@@
 
 
     \@@color:gray;>@@ The temperature 🌡️ control system is part of the vital apparatus of the ship. 

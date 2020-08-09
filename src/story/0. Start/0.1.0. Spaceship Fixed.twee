@@ -16,7 +16,9 @@
 ----
     \@@color:gray;>@@ ✔️ OBJECTIVE ACQUIRED - reach Pathos 125E
 
-    ⚠️ @@color:orange;Warning  - all routes to the rescue station are marked as dangerous on intergalactic databases. Assistance might be required to cross the territory.@@
+!!! ⚠️ Warning
+----
+@@color:orange;All routes to the rescue station are marked as dangerous on intergalactic databases. Assistance might be required to cross the territory.@@
 <</type>>\
 
 <<nobr>>

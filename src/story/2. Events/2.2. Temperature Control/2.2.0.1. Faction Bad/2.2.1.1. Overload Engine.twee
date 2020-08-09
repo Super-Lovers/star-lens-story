@@ -8,8 +8,9 @@
     \@@color:gray;>@@ Analysis ✔️ complete.
 <</type>>
 <<type 40ms skipkey "Control">>\
+!!! ⚠️ Warning
 ----
-!!! ⚠️ @@color:orange; WARNING - ⚙️ ENGINE OVERLOAD@@
+    @@color:orange; ⚙️ ENGINE OVERLOAD@@
 
 
     \@@color:gray;>@@ THE SELECTED COURSE OF ACTION @@color:red;MIGHT RESULT IN CRITICAL SYSTEM FAILURE AND/OR DEATH.@@

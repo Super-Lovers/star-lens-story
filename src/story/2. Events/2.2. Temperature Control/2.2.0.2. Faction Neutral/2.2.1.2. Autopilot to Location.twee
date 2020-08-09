@@ -14,8 +14,9 @@
     \@@color:gray;>@@ Route changed.
 <</type>>
 <<type 40ms skipkey "Control">>\
+!!! ⚠️ Warning
 ----
-!!! ⚠️ @@color:orange;WARNING - ENTERING EMERGENCY PATCH MODE?@@
+    @@color:orange;WARNING - ENTERING EMERGENCY PATCH MODE?@@
 
 
     \@@color:gray;>@@ 💬 @@color:cyan;THIS MODE SUPPLIES AN EMERGENCY TEMPORARY SYSTEM REPAIR AND IS ADVISED AS A SHORT TERM SOLUTION ONLY.@@

@@ -1,6 +1,8 @@
 :: 3.0.2.1. Ambush and Join Rescuers
 <<type 40ms skipkey "Control">>\
-!!!! ⚠️ @@color:orange;WARNING - Another 🚀 ship detected coming in hot through a 🌌 Hyperspace window nearby.@@
+!!! ⚠️ Warning
+----
+    @@color:orange;Another 🚀 ship detected coming in hot through a 🌌 Hyperspace window nearby.@@
 <</type>>
 <<type 40ms skipkey "Control">>\
     \@@color:gray;>@@ Foreign 🚀 ship approaching...

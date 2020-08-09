@@ -7,7 +7,9 @@
 ----
 <</type>>\
 <<type 40ms skipkey "Control">>\
-!!! ⚠️ @@color:orange;WARNING - DIRECT ROUTE SELECTED INCREASES RISK OF ADDITIONAL DAMAGES TO SHIP BY 64%@@
+!!! ⚠️ Warning
+----
+@@color:orange;DIRECT ROUTE SELECTED INCREASES RISK OF ADDITIONAL DAMAGES TO SHIP BY 64%@@
 ----
 <</type>>\
 <<type 40ms skipkey "Control">>\

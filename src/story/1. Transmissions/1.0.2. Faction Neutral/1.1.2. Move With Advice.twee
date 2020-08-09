@@ -14,7 +14,9 @@
 ----
 <</type>>\
 <<type 40ms skipkey "Control">>\
-    <h3> ⚠️ @@color:orange; WARNING - PROBABILITY OF COLLISION CALCULATED AT 12% @@</h3>\
+!!! ⚠️ Warning
+----
+    PROBABILITY OF COLLISION CALCULATED AT 12% @@
 ----
     \@@color:gray;>@@ Engage new trajectory?
 

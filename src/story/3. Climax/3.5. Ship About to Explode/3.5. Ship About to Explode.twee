@@ -1,22 +1,26 @@
 :: 3.5. Ship About to Explode
 <<type 40ms skipkey "Control">>\
-!!! ⚠️ @@color:orange;WARNING - CRITICAL SYSTEM FAILURE@@
+!!! ⚠️ Warning
+----
+    @@color:orange;CRITICAL SYSTEM FAILURE@@
 <</type>>
 <<type 40ms skipkey "Control">>\
     \@@color:gray;>@@ CAUSE: ⚙️ ENGINE OVERLOAD
 <</type>>
 <<type 40ms skipkey "Control">>\
+!!! ⚠️ Warning
 ----
-!!!! ⚠️ @@color:orange;WARNING - SYSTEM OVERHEATING@@
-!!!! ⚠️ @@color:orange;WARNING - PRESSURIZATION SYSTEM FAILURE@@
-!!!! ⚠️ @@color:orange;WARNING - VENTILATION SYSTEM FAILURE@@
+    @@color:orange;SYSTEM OVERHEATING@@
+    @@color:orange;PRESSURIZATION SYSTEM FAILURE@@
+    @@color:orange;VENTILATION SYSTEM FAILURE@@
 <</type>>
 <<type 40ms skipkey "Control">>\
     \@@color:gray;>@@ CHANCE OF SURVIVAL: @@color:red;0@@%
 <</type>>\
 <<type 40ms skipkey "Control">>\
+!!! ⚠️ Warning
 ----
-!!! ⚠️ @@color:red; WARNING - SYSTEM OVERHEATING@@
+    @@color:red;SYSTEM OVERHEATING@@
 <</type>>\
 <<type 40ms skipkey "Control">>\
 ----

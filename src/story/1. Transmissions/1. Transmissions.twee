@@ -9,7 +9,9 @@
 <<type 40ms skipkey "Control">>\
     \@@color:gray;>@@ We are currently on the quickest route to the rescue station.
 
-    @@color:orange;Please be warned, we are entering dangerous territory. Caution is advised.@@
+!!! ⚠️ Warning
+----
+    @@color:orange; Please be aware, we are entering dangerous territory. Caution is advised.@@
 
 <</type>>\
 
