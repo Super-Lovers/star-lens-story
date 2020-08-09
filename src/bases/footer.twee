@@ -171,6 +171,7 @@ $(window).resize(function() {
 
 $(document).on(':passagerender', function (ev) {
     if ($passages != null) {
+        
         passages_width = $passages.width();
         choices_screen_width = $choices_screen.width();
 
@@ -230,16 +231,25 @@ $(document).on(':passagerender', function (ev) {
     }
 });
 
-$(document).on(':typingcomplete', function(ev) {
-    $(document).ready(function() {
-        let choice_buttons = $('.choice-button');
+function toggleChoiceButtons(boolean) {
+    let choice_buttons = $('.choice-button');
 
-        for (let i = 0; i < choice_buttons.length; i++) {
+    for (let i = 0; i < choice_buttons.length; i++) {
+        if (boolean == true) {
             $(choice_buttons[i]).css('display', 'block');
+
             $(choice_buttons[i]).on('click', function() {
                 SimpleAudio.select("button").volume(0.2).play();
             });
+        } else if (boolean == false) {
+            $(choice_buttons[i]).css('display', 'none');
         }
+    }
+}
+
+$(document).on(':typingcomplete', function(ev) {
+    $(document).ready(function() {
+        toggleChoiceButtons(true);
     });
 });
 

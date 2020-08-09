@@ -19,6 +19,19 @@
 ----
     <h3>❌ @@color:red;ENDED TRANSMISSION 108.5@@</h3>\
 
+    <<nobr>>
+    <<script>>
+        let choice_buttons = $('.choice-button');
+    
+        for (let i = 0; i < choice_buttons.length; i++) {
+            $(choice_buttons[i]).css('display', 'block');
+    
+            $(choice_buttons[i]).on('click', function() {
+                SimpleAudio.select("button").volume(0.2).play();
+            });
+        }
+    <</script>>
+    <</nobr>>
 <</type>>\
 
 <<nobr>>
@@ -31,5 +44,12 @@
     tabindex="0"
     name="3.2.1.0. Factions Clash">
         Continue
+</button>
+<button
+    class="link-internal macro-button choice-button"
+    type="button"
+    tabindex="0"
+    name="3.2. Pirates Approach You">
+        Back
 </button>
 <</nobr>>

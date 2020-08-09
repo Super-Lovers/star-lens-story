@@ -28,6 +28,19 @@
 ----
     <h3>❌ @@color:red;ENDED TRANSMISSION 99.9@@</h3>\
 
+    <<nobr>>
+    <<script>>
+        let choice_buttons = $('.choice-button');
+    
+        for (let i = 0; i < choice_buttons.length; i++) {
+            $(choice_buttons[i]).css('display', 'block');
+    
+            $(choice_buttons[i]).on('click', function() {
+                SimpleAudio.select("button").volume(0.2).play();
+            });
+        }
+    <</script>>
+    <</nobr>>
 <</type>>\
 
 <<nobr>>

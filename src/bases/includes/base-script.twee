@@ -1,7 +1,13 @@
 :: base-script [script]
 
-// UIBar.destroy();
-// UI.alert("test");
+/****************************************
+// Default settings for all passages
+****************************************/
+// Removes the sidebar
+UIBar.destroy();
+// Stops the passages from loading all the letters one by one if
+// that specific passage was already passed.
+Config.macros.typeVisitedPassages = false;
 
 /****************************************
 // Interface elements (including consoles)
