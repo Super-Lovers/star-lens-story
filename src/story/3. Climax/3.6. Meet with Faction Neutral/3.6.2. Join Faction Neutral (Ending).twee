@@ -19,5 +19,16 @@
 . . .
 <</type>>
 <<type 40ms skipkey "Control">>\
-    <<link [[I can't help but feel like I could have gotten into much more trouble if I hadn't listened to them|Start]]>><</link>>
+    <<link [[I can't help but feel like I could have gotten into much more trouble if I hadn't listened to them|Start]]>>
+        <<script>>
+            $(document).ready(function() {
+                const passages_container = $('#passages');
+                
+                passages_container.css('fontFamily', 'initial');
+                passages_container.css('width', 'initial');
+
+                $('.passage').css('textAlign', 'initial');
+            });
+        <</script>>
+    <</link>>
 <</type>>

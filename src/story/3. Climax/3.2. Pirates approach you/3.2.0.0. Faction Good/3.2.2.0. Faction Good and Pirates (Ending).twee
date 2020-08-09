@@ -22,5 +22,16 @@
         ... pretty interesting
 <</type>>
 <<type 40ms skipkey "Control">>\
-    <<link [[It was a good ride out there|Start]]>><</link>>
+    <<link [[It was a good ride out there|Start]]>>
+        <<script>>
+            $(document).ready(function() {
+                const passages_container = $('#passages');
+                
+                passages_container.css('fontFamily', 'initial');
+                passages_container.css('width', 'initial');
+
+                $('.passage').css('textAlign', 'initial');
+            });
+        <</script>>
+    <</link>>
 <</type>>

@@ -16,5 +16,16 @@
 . . .
 <</type>>
 <<type 40ms skipkey "Control">>\
-    <<link [[The galaxy ain't gonna see me coming.|Start]]>><</link>>
+    <<link [[The galaxy ain't gonna see me coming.|Start]]>>
+        <<script>>
+            $(document).ready(function() {
+                const passages_container = $('#passages');
+                
+                passages_container.css('fontFamily', 'initial');
+                passages_container.css('width', 'initial');
+
+                $('.passage').css('textAlign', 'initial');
+            });
+        <</script>>
+    <</link>>
 <</type>>

@@ -29,5 +29,16 @@
     Some are lovely, and pirates are very friendly.
 <</type>>
 <<type 40ms skipkey "Control">>\
-    <<link [[Would you like to join us?|3.6.2. Join Faction Neutral (Ending)]]>><</link>>
+    <<link [[Would you like to join us?|3.6.2. Join Faction Neutral (Ending)]]>>
+        <<script>>
+            $(document).ready(function() {
+                const passages_container = $('#passages');
+                
+                passages_container.css('fontFamily', 'initial');
+                passages_container.css('width', 'initial');
+
+                $('.passage').css('textAlign', 'initial');
+            });
+        <</script>>
+    <</link>>
 <</type>>
