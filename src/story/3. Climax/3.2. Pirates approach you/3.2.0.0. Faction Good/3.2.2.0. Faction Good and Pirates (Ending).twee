@@ -1,5 +1,26 @@
-:: 3.2.1.0. Faction Good and Pirates (Ending)
+:: 3.2.2.0. Faction Good and Pirates (Ending) [conversation]
+
 <<type 40ms skipkey "Control">>\
-    <h3>👽 FREQUENCY 108.5</h3>\
-----
-<</type>>\
+    It was a long journey, but I made it.
+<</type>>
+<<type 40ms skipkey "Control">>\
+    Shortly after the exchange, I left on my journey home and a funny thing happened during one of the updates my bro from the rescuers sent me.
+<</type>>
+<<type 40ms skipkey "Control">>\
+    It turns out, the relationship between the pirates and rescuers got better after that exchange, as it was like an ice-breaker.
+<</type>>
+<<type 40ms skipkey "Control">>\
+. . .
+<</type>>
+<<type 40ms skipkey "Control">>\
+    They opened up to the idea of trading resources and both improving their odds against each other.
+<</type>>
+<<type 40ms skipkey "Control">>\
+    At one point they began collaborating to help travelers as in some cases, like mine, there weren't enough ships to spare, so the pirates offered to help in exchange for resources.
+<</type>>
+<<type 40ms skipkey "Control">>\
+        ... pretty interesting
+<</type>>
+<<type 40ms skipkey "Control">>\
+    <<link [[It was a good ride out there|Start]]>><</link>>
+<</type>>

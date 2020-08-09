@@ -1,0 +1,49 @@
+:: 3.2.1.0. Factions Clash
+<<type 40ms skipkey "Control">>\
+    <h3>👨‍🚀 FREQUENCY 99.9</h3>\
+----
+<</type>>\
+<<type 40ms skipkey "Control">>\
+    Don't go anywhere, slime. Did you really think we'd let an imposter through our perimeter?
+<</type>>
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ That's right, @@color:red;we are the pirates.@@
+<</type>>
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ Just because you have a signature, doesn't mean your ship follows our dress code and pattern. We could spot you from a distance, but wanted to see where you were going before revealing our intentions.
+<</type>>
+<<type 40ms skipkey "Control">>\
+    <h3>👽 FREQUENCY 108.5</h3>\
+----
+<</type>>\
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ Brooo, guess who just got here. You're not laying your dirty hands on my bro here 😡.
+<</type>>
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ Here's the deal, you let my friend here go, and we will give you some upgrades for your ship in return. Spare parts if you'd like to call them.
+<</type>>
+<<type 40ms skipkey "Control">>\
+    <h3>👨‍🚀 FREQUENCY 99.9</h3>\
+----
+<</type>>\
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ Interesting proposal, but we agree, seems like a win-win. We will let him go. Contact us on a private channel for the exchange.
+<</type>>
+<<type 40ms skipkey "Control">>\
+----
+    <h3>❌ @@color:red;ENDED TRANSMISSIONS 99.9 and 108.5@@</h3>\
+
+<</type>>\
+
+<<nobr>>
+<!-- ************************************ -->
+<!--       Bottom interface buttons       -->
+<!-- ************************************ -->
+<button
+    class="link-internal macro-button choice-button"
+    type="button"
+    tabindex="0"
+    name="3.2.2.0. Faction Good and Pirates (Ending)">
+        Continue
+</button>
+<</nobr>>
