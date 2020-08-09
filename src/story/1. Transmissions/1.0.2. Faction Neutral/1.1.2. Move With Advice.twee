@@ -16,7 +16,7 @@
 <<type 40ms skipkey "Control">>\
 !!! ⚠️ Warning
 ----
-    PROBABILITY OF COLLISION CALCULATED AT 12% @@
+    \@@color:gray;>@@ @@color:red;PROBABILITY OF COLLISION CALCULATED AT 12% @@
 ----
     \@@color:gray;>@@ Engage new trajectory?
 
