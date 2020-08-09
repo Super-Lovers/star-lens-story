@@ -1,15 +1,15 @@
 :: 0.1.2. Death (Ending 1)
 <<type 40ms skipkey "Control">>\
     No...this isn’t right. . .
-<</timed>>\
+<</type>>
 <<type 40ms skipkey "Control">>\
     The pod is too damaged. . .oh no, I do not want to die here
-    <</type>>\
+<</type>>
 <<type 40ms skipkey "Control">>\
     Please
 <</type>>
 <<type 40ms skipkey "Control">>\
     <span style="font-size: 20px;">\
-        <span class="shudder"><<link [[Please..|0. Intro]]>><</link>></span>
+        <span class="shudder"><<link [[Please..|Start]]>><</link>></span>
     </span>
 <</type>>
