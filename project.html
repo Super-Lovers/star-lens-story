@@ -570,8 +570,14 @@ SimpleAudio.tracks.add("console_output", "audio/sounds/console_output.wav");
 // Buttons
 SimpleAudio.tracks.add("button", "audio/sounds/button.wav");
 /* twine-user-script #2: "base-script" */
-// UIBar.destroy();
-// UI.alert("test");
+/****************************************
+// Default settings for all passages
+****************************************/
+// Removes the sidebar
+UIBar.destroy();
+// Stops the passages from loading all the letters one by one if
+// that specific passage was already passed.
+Config.macros.typeVisitedPassages = false;
 
 /****************************************
 // Interface elements (including consoles)
@@ -629,7 +635,7 @@ $(window).resize(function() {
     // Choices screen
     $choices_screen.height(choices_screen_width - (choices_screen_width / 2));
     choices_screen_width = $choices_screen.width();
-});</script><tw-passagedata pid="1" name="StorySubtitle" tags="" position="100,100" size="100,100">The subtitle of this story</tw-passagedata><tw-passagedata pid="2" name="StoryAuthor" tags="" position="225,100" size="100,100">Roger Recaldini and Nikolay Ivanov</tw-passagedata><tw-passagedata pid="3" name="PassageFooter" tags="" position="350,100" size="100,100">&lt;!--****************************************
+});</script><tw-passagedata pid="1" name="StorySubtitle" tags="" position="100,100" size="100,100">In Cosmic Relay you play as an unfortunate traveller trying to pick the right choices to make it out alive. &quot;Right&quot; being a relative term.</tw-passagedata><tw-passagedata pid="2" name="StoryAuthor" tags="" position="225,100" size="100,100">Roger Recaldini and Nikolay Ivanov</tw-passagedata><tw-passagedata pid="3" name="PassageFooter" tags="" position="350,100" size="100,100">&lt;!--****************************************
 // Passage elements implementation
 ****************************************--&gt;
 &lt;&lt;script&gt;&gt;
@@ -800,6 +806,7 @@ $(window).resize(function() {
 
 $(document).on(&#39;:passagerender&#39;, function (ev) {
     if ($passages != null) {
+        
         passages_width = $passages.width();
         choices_screen_width = $choices_screen.width();
 
@@ -859,16 +866,25 @@ $(document).on(&#39;:passagerender&#39;, function (ev) {
     }
 });
 
-$(document).on(&#39;:typingcomplete&#39;, function(ev) {
-    $(document).ready(function() {
-        let choice_buttons = $(&#39;.choice-button&#39;);
+function toggleChoiceButtons(boolean) {
+    let choice_buttons = $(&#39;.choice-button&#39;);
 
-        for (let i = 0; i &lt; choice_buttons.length; i++) {
+    for (let i = 0; i &lt; choice_buttons.length; i++) {
+        if (boolean == true) {
             $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
+
             $(choice_buttons[i]).on(&#39;click&#39;, function() {
                 SimpleAudio.select(&quot;button&quot;).volume(0.2).play();
             });
+        } else if (boolean == false) {
+            $(choice_buttons[i]).css(&#39;display&#39;, &#39;none&#39;);
         }
+    }
+}
+
+$(document).on(&#39;:typingcomplete&#39;, function(ev) {
+    $(document).ready(function() {
+        toggleChoiceButtons(true);
     });
 });
 
@@ -3230,6 +3246,20 @@ That&#39;s quite the feat for a stranger. We are impressed.
 &lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
     \@@color:gray;&gt;@@ @@color:green;You have received @@@@color:red;&lt;b&gt;[2]&lt;/b&gt;@@@@color:green; new transmissions.@@
 
+
+    &lt;&lt;nobr&gt;&gt;
+    &lt;&lt;script&gt;&gt;
+        let choice_buttons = $(&#39;.choice-button&#39;);
+    
+        for (let i = 0; i &lt; choice_buttons.length; i++) {
+            $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
+    
+            $(choice_buttons[i]).on(&#39;click&#39;, function() {
+                SimpleAudio.select(&quot;button&quot;).volume(0.2).play();
+            });
+        }
+    &lt;&lt;/script&gt;&gt;
+    &lt;&lt;/nobr&gt;&gt;
 &lt;&lt;/type&gt;&gt;\
 
 &lt;&lt;nobr&gt;&gt;
@@ -3270,6 +3300,19 @@ That&#39;s quite the feat for a stranger. We are impressed.
 ----
     &lt;h3&gt;❌ @@color:red;ENDED TRANSMISSION 108.5@@&lt;/h3&gt;\
 
+    &lt;&lt;nobr&gt;&gt;
+    &lt;&lt;script&gt;&gt;
+        let choice_buttons = $(&#39;.choice-button&#39;);
+    
+        for (let i = 0; i &lt; choice_buttons.length; i++) {
+            $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
+    
+            $(choice_buttons[i]).on(&#39;click&#39;, function() {
+                SimpleAudio.select(&quot;button&quot;).volume(0.2).play();
+            });
+        }
+    &lt;&lt;/script&gt;&gt;
+    &lt;&lt;/nobr&gt;&gt;
 &lt;&lt;/type&gt;&gt;\
 
 &lt;&lt;nobr&gt;&gt;
@@ -3282,6 +3325,13 @@ That&#39;s quite the feat for a stranger. We are impressed.
     tabindex=&quot;0&quot;
     name=&quot;3.2.1.0. Factions Clash&quot;&gt;
         Continue
+&lt;/button&gt;
+&lt;button
+    class=&quot;link-internal macro-button choice-button&quot;
+    type=&quot;button&quot;
+    tabindex=&quot;0&quot;
+    name=&quot;3.2. Pirates Approach You&quot;&gt;
+        Back
 &lt;/button&gt;
 &lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="59" name="3.2.1.0. Factions Clash" tags="" position="1100,725" size="100,100">&lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
     &lt;h3&gt;👨‍🚀 FREQUENCY 99.9&lt;/h3&gt;\
@@ -3394,6 +3444,19 @@ That&#39;s quite the feat for a stranger. We are impressed.
 ----
     &lt;h3&gt;❌ @@color:red;ENDED TRANSMISSION 99.9@@&lt;/h3&gt;\
 
+    &lt;&lt;nobr&gt;&gt;
+    &lt;&lt;script&gt;&gt;
+        let choice_buttons = $(&#39;.choice-button&#39;);
+    
+        for (let i = 0; i &lt; choice_buttons.length; i++) {
+            $(choice_buttons[i]).css(&#39;display&#39;, &#39;block&#39;);
+    
+            $(choice_buttons[i]).on(&#39;click&#39;, function() {
+                SimpleAudio.select(&quot;button&quot;).volume(0.2).play();
+            });
+        }
+    &lt;&lt;/script&gt;&gt;
+    &lt;&lt;/nobr&gt;&gt;
 &lt;&lt;/type&gt;&gt;\
 
 &lt;&lt;nobr&gt;&gt;
