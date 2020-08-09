@@ -2,11 +2,6 @@
 IMPORTS
 **************************************/
 @font-face {
-    font-family: "VT323";
-    src: url("./fonts/VT323-Regular.ttf");
-}
-
-@font-face {
     font-family: "Cozette";
     src: url("./fonts/cozette.woff");
 }
@@ -19,4 +14,9 @@ IMPORTS
 @font-face {
     font-family: "Fairfax";
     src: url("./fonts/Fairfax.ttf");
+}
+
+@font-face {
+    font-family: "Space Patrol";
+    src: url("./fonts/space_patrol.TTF");
 }

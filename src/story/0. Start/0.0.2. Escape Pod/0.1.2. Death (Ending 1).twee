@@ -1,15 +1,15 @@
 :: 0.1.2. Death (Ending 1)
-<<timed 500ms>>\
-No...this isn’t right. . .
+<<type 40ms skipkey "Control">>\
+    No...this isn’t right. . .
 <</timed>>\
-<<timed 1500ms>>\
-The pod is too damaged. . .oh no, I do not want to die here
-<</timed>>\
-<<timed 3000ms>>\
-Please
-<</timed>>\
-<<timed 4000ms>>\
-<span style="font-size: 20px;">\
-    <span class="shudder"><<link [[Please..|0. Intro]]>><</link>></span>
-</span>
-<</timed>>
+<<type 40ms skipkey "Control">>\
+    The pod is too damaged. . .oh no, I do not want to die here
+    <</type>>\
+<<type 40ms skipkey "Control">>\
+    Please
+<</type>>
+<<type 40ms skipkey "Control">>\
+    <span style="font-size: 20px;">\
+        <span class="shudder"><<link [[Please..|0. Intro]]>><</link>></span>
+    </span>
+<</type>>

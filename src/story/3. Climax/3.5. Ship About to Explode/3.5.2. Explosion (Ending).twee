@@ -1,7 +1,11 @@
-:: 3.5.2. Explosion (Ending)
+:: 3.5.2. Explosion (Ending) [ending]
 
-No, no, 
-no no no no no no no no no no no
-
-
-<<link [[Is this how it ends for me?|Start]]>><</link>>
+<<type 40ms skipkey "Control">>\
+    No, no, 
+<</type>>\
+<<type 40ms skipkey "Control">>\
+    <span class="shudder">no no no no no no no no no no no</span>
+<</type>>
+<<type 40ms skipkey "Control">>\
+    <span class="shudder"><<link [[Is this how it ends for me?|Start]]>><</link>>
+<</type>>

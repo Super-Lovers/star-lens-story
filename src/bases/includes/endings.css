@@ -1,0 +1,18 @@
+.ending-container {
+    position: absolute;
+    top: -200px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    margin: auto;
+    padding: 20px;
+
+    max-width: 511px;
+    height: 359px;
+
+    text-align: center;
+}
+
+.ending-container > h1 {
+}

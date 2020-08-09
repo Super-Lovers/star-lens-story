@@ -8,12 +8,12 @@
 /**************************************
 ENDINGS STYLES
 **************************************/
-.neutral-chicken {
+.speaker {
     display: inline-block;
     text-align: center;
 }
 
-.neutral-chicken > span:first-of-type {
+.speaker > span:first-of-type {
     position: relative;
     left: 30px;
 
@@ -21,7 +21,7 @@ ENDINGS STYLES
     text-align: center;
 }
 
-.neutral-chicken > span:last-of-type {
+.speaker > span:last-of-type {
     position: relative;
     left: -10px;
 

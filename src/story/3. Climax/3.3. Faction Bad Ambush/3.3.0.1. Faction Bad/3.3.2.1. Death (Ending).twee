@@ -1,7 +1,14 @@
-:: 3.3.2.1. Death (Ending)
+:: 3.3.2.1. Death (Ending) [ending]
 
-Is this it. . .?
-Is this how I die?
-Is this really the end for me?
-
-<<link [[I don't want to die here. . .|Start]]>><</link>>
+<<type 40ms skipkey "Control">>\
+    Is this it. . .?
+<</type>>\
+<<type 40ms skipkey "Control">>\
+    Is this how I die?
+<</type>>\
+<<type 40ms skipkey "Control">>\
+    Is this really the end for me?
+<</type>>
+<<type 40ms skipkey "Control">>\
+    <span class="shudder"><<link [[I don't want to die here. . .|Start]]>><</link>></span>
+<</type>>

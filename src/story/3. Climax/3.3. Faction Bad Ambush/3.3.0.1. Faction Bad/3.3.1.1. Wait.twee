@@ -46,7 +46,7 @@
 
         $('#console-screen').css('backgroundImage', 'url("./assets/UI/mainconsole_broken.png")');
     <</script>>
-<</type>>
+<</type>>\
 <<type 40ms skipkey "Control">>\
 ----
 !!! ⚠️ @@color:orange;WARNING - IRREVERSIBLE DAMAGE DETECTED@@

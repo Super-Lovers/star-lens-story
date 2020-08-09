@@ -1,15 +1,23 @@
-:: 3.6.2. Join Faction Neutral (Ending)
+:: 3.6.2. Join Faction Neutral (Ending) [conversation]
 
-((for nikolay - this is the player talking))
-
-So in the end, I joined them.
-Honestly, it seemed like the only logical thing to do.
-They helped me through thick and thin, and then offered me a place to stay and their friendship.
-
-And the void of space is so lonely.
-
-Now, I can be happy here.
-
+<<type 40ms skipkey "Control">>\
+    So in the end, I joined them.
+<</type>>
+<<type 40ms skipkey "Control">>\
+    Honestly, it seemed like the only logical thing to do.
+<</type>>
+<<type 40ms skipkey "Control">>\
+    They helped me through thick and thin, and then offered me a place to stay and their friendship.
+<</type>>
+<<type 40ms skipkey "Control">>\
+    And the void of space is so lonely.
+<</type>>
+<<type 40ms skipkey "Control">>\
+    Now, I can be happy here.
+<</type>>
+<<type 40ms skipkey "Control">>\
 . . .
-
-<<link [[I can't help but feel like I could have gotten into much more trouble if I hadn't listened to them|Start]]>><</link>>
+<</type>>
+<<type 40ms skipkey "Control">>\
+    <<link [[I can't help but feel like I could have gotten into much more trouble if I hadn't listened to them|Start]]>><</link>>
+<</type>>

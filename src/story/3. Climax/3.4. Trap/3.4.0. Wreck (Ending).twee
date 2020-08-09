@@ -1,15 +1,47 @@
-:: 3.4.0. Wreck (Ending)
+:: 3.4.0. Wreck (Ending) [broken-ui]
+<<type 40ms skipkey "Control">>\
+    <h3>👨‍🚀 FREQUENCY 99.9</h3>\
+----
+<</type>>\
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ Hello?
+<</type>>
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ Wow, so you are still alive? Not for long, probably.
+<</type>>
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ Good job wrecking your own ship beyond repair, you made it a lot easier for us.
+<</type>>
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ Oh? You don't get it yet? How stupid can you be?
+<</type>>
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ We needed your ship to break down a little bit more before we could attack you.
+<</type>>
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ We don't like to fail, you see?
+<</type>>
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ Unfortunately you survived the first attack, so we had to get a bit creative.
+<</type>>
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ How unfortunate for you, you really did almost make it.
+<</type>>
+<<type 40ms skipkey "Control">>\
+----
+    <h3>❌ @@color:red;ENDED TRANSMISSION 99.9@@</h3>\
 
-Hello?
-Wow, so you are still alive? Not for long, probably.
-Good job wrecking your own ship beyond repair, you made it a lot easier for us.
+<</type>>\
 
-Oh? You don't get it yet? How stupid can you be?
-
-We needed your ship to break down a little bit more before we could attack you.
-We don't like to fail, you see?
-Unfortunately you survived the first attack, so we had to get a bit creative.
-
-How unfortunate for you, you really did almost make it.
-
-<<link [[Too bad, so sad..|Start]]>><</link>>
+<<nobr>>
+<!-- ************************************ -->
+<!--       Bottom interface buttons       -->
+<!-- ************************************ -->
+<button
+    class="link-internal macro-button choice-button"
+    type="button"
+    tabindex="0"
+    name="Start">
+    Too bad, so sad..
+</button>
+<</nobr>>

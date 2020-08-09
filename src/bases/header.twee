@@ -8,6 +8,7 @@
         </div>
         <div id="choices-screen" class="screen" style="background-image: url('./assets/UI/bottomconsole_broken.png')"></div>
     </div>
+
 <<elseif tags().includes("fixed-ui")>>
     <div id="console-screen" class="screen" style="background-image: url('./assets/UI/mainconsole_fixed.png')">
         <div class="passage-content">\
@@ -15,6 +16,7 @@
         </div>
         <div id="choices-screen" class="screen" style="background-image: url('./assets/UI/bottomconsole_fixed.png')"></div>
     </div>
+
 <<elseif tags().includes("semifixed-ui")>>
     <div id="console-screen" class="screen" style="background-image: url('./assets/UI/mainconsole_broken.png')">
         <div class="passage-content">\
@@ -22,35 +24,32 @@
         </div>
         <div id="choices-screen" class="screen" style="background-image: url('./assets/UI/bottomconsole_fixed.png')"></div>
     </div>
-<<elseif passage() == "0. Intro" or passage() == "0.1.2. Death (Ending 1)">>
-    <div id="console-screen" class="screen" style="background-image: none">
-        <video class="wallpaper" src="assets/0. Start/videos/blank.mp4" playsinline autoplay muted loop></video>
-        <div class="passage-content" style="overflow-y: hidden; background: none;">
-            <<print "\\@@color:gray;>@@">> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc cursus odio ut neque vulputate consectetur. Aenean ut urna nec neque ornare tristique. Aliquam varius consectetur vulputate. Mauris condimentum mauris ultricies, maximus ante quis, ornare velit. Curabitur eget massa pulvinar felis rutrum ultrices.
-        </div>
-    </div>
-<<elseif passage() == "0. Intro" or passage() == "2.0.1.0. Hide Behind Dust Clouds">>
+
+<<elseif passage() == "2.0.1.0. Hide Behind Dust Clouds">>
     <div id="console-screen" class="screen" style="background-image: none">
         <video class="wallpaper" src="assets/2. Events/videos/dust_clouds.mp4" playsinline autoplay muted loop></video>
         <div class="passage-content" style="overflow-y: hidden; background: none;">
             <<print "\\@@color:gray;>@@">> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc cursus odio ut neque vulputate consectetur. Aenean ut urna nec neque ornare tristique. Aliquam varius consectetur vulputate. Mauris condimentum mauris ultricies, maximus ante quis, ornare velit. Curabitur eget massa pulvinar felis rutrum ultrices.
         </div>
     </div>
-<<elseif passage() == "3.6.1. Join Faction Neutral">>
-    <div class="neutral-chicken">
-        <span>🐔</span><span>💬</span>
+<<elseif tags().includes("conversation")>>
+    <div class="speaker">
+        <<if passage() == "3.6.1. Join Faction Neutral">>
+            <span>🐔</span>
+        <<elseif passage() == "3.6.2. Join Faction Neutral (Ending)">>
+            <span>🤠</span>
+        <</if>>
+        <span>💬</span>
     </div>
+    <br>
     <<script>>
         $(document).ready(function() {
             const passages_container = $('#passages');
+            
             passages_container.css('fontFamily', 'Fairfax');
             passages_container.css('width', '300');
 
-            passages_container.css('textAlign', 'center');
-        });
-
-        $(document).on(':passageend', function(ev) {
-            console.log("test");
+            $('.passage').css('textAlign', 'center');
         });
     <</script>>
 <<elseif passage() == "Start">>
@@ -74,11 +73,27 @@
             $('.start-button').on('click', function() {
                 SimpleAudio.select("start_button").volume(0.3).play();
 
-                Engine.play('0. Intro');
+                Engine.play('Waking Up');
             });
         });
     <</script>>
-<<else>>
+
+<<elseif passage() == "Waking Up" or
+         passage() == "0.1.2. Death (Ending 1)" or
+         passage() == "3.5.2. Explosion (Ending)" or
+         passage() == "3.3.2.1. Death (Ending)">>
+
+    <div id="console-screen" class="screen" style="background-image: none">
+        <video class="wallpaper" src="assets/0. Start/videos/blank.mp4" playsinline autoplay muted loop></video>
+        <div class="passage-content" style="overflow-y: hidden; background: none;">
+            <<print "\\@@color:gray;>@@">> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc cursus odio ut neque vulputate consectetur. Aenean ut urna nec neque ornare tristique. Aliquam varius consectetur vulputate. Mauris condimentum mauris ultricies, maximus ante quis, ornare velit. Curabitur eget massa pulvinar felis rutrum ultrices.
+        </div>
+    </div>
+
+<<elseif tags().includes("ending") == false and
+        passage() != "Start" and
+        passage() != "Intro" and
+        tags().includes("conversation") == false>>
     <div id="console-screen" class="screen" style="background-image: url('./assets/UI/mainconsole_fixed.png')">
         <div class="passage-content">\
             <<print "\\@@color:gray;>@@">> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc cursus odio ut neque vulputate consectetur. Aenean ut urna nec neque ornare tristique. Aliquam varius consectetur vulputate. Mauris condimentum mauris ultricies, maximus ante quis, ornare velit. Curabitur eget massa pulvinar felis rutrum ultrices.

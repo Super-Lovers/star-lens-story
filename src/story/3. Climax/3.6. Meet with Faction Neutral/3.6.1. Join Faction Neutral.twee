@@ -1,4 +1,4 @@
-:: 3.6.1. Join Faction Neutral
+:: 3.6.1. Join Faction Neutral [conversation]
 <<type 40ms skipkey "Control">>\
     So you made it.
 <</type>>

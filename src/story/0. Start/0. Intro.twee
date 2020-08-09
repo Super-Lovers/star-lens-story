@@ -24,7 +24,7 @@ sDDGDFDBCBDGFJGHKMN
 </span>\
 
 ! SYSTEM ERROR
-
+<<nobr>>
 <<script>>
     $(document).ready(function() {
         let choice_buttons = $('.choice-button');
@@ -37,6 +37,7 @@ sDDGDFDBCBDGFJGHKMN
         }
 });
 <</script>>
+<</nobr>>
 
 <<nobr>>
 <!-- ************************************ -->
