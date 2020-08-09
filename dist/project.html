@@ -590,6 +590,16 @@ var console_screen_width, console_screen_height;
 var choices_screen_width, choices_screen_height;
 
 $(document).ready(function() {
+    $(document.head).append(`
+        <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+        <link rel="manifest" href="favicon/site.webmanifest">
+        <link rel="mask-icon" href="/faviconsafari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff"></meta>
+    `);
+
     $passages = $('#passages');
     $console_screen = $('#console-screen');
     $choices_screen = $('#choices-screen');
@@ -955,7 +965,7 @@ $(document).on(&#39;:typingstop&#39;, function(ev) {
     &lt;&lt;script&gt;&gt;
         $(document).ready(function() {
             $(&#39;.start-button&#39;).on(&#39;click&#39;, function() {
-                SimpleAudio.select(&quot;start_button&quot;).volume(0.3).play();
+                SimpleAudio.select(&quot;start_button&quot;).volume(0.1).play();
 
                 Engine.play(&#39;Waking Up&#39;);
             });
@@ -1558,8 +1568,8 @@ sDDGDFDBCBDGFJGHKMN
 
     \@@color:gray;&gt;@@ No damage was caused in the maneuver.
 &lt;&lt;/type&gt;&gt;\
-----
 &lt;&lt;type 40ms skipkey &quot;Control&quot;&gt;&gt;\
+----
     &lt;h3&gt;📡 SIGNALS ACQUIRED&lt;/h3&gt;\
     \@@color:gray;&gt;@@ @@color:green;You have received@@ @@color:red;[3]@@ @@color:green;new transmissions.@@
 !!! ⚠️ WARNING

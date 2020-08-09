@@ -73,7 +73,7 @@
     <<script>>
         $(document).ready(function() {
             $('.start-button').on('click', function() {
-                SimpleAudio.select("start_button").volume(0.3).play();
+                SimpleAudio.select("start_button").volume(0.1).play();
 
                 Engine.play('Waking Up');
             });
