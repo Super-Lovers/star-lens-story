@@ -1,0 +1,35 @@
+:: 3.1.2.0. Join Rescuers [broken-ui]
+<<type 40ms skipkey "Control">>\
+    <h3>👽 FREQUENCY 108.5</h3>\
+----
+<</type>>\
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ Bro, really smart move to team up with that ship. With the both of you working together, the pirates couldn't beat you and we got here to capture them just in time :D
+<</type>>
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ Now that we think about it, you always seemed like a chill bro who just stumbled on the wrong neighborhood.
+<</type>>
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ @@color:green;Why don't you consider joining our cause?@@ You can help other people like yourself stay safe in this corner of the galaxy. It'll be of great help for everybody!
+<</type>>
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ We can teach those pirates a lesson together, you will get rewards for your service, and finally, exploring the galaxy with us 😉
+<</type>>\
+<<type 40ms skipkey "Control">>\
+----
+    <h3>❌ @@color:red;ENDED TRANSMISSION 108.5@@</h3>\
+
+<</type>>\
+
+<<nobr>>
+<!-- ************************************ -->
+<!--       Bottom interface buttons       -->
+<!-- ************************************ -->
+<button
+    class="link-internal macro-button choice-button"
+    type="button"
+    tabindex="0"
+    name="3.1.3.0. Join Rescuers (Ending)">
+        Continue
+</button>
+<</nobr>>

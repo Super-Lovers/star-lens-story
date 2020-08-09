@@ -1,0 +1,17 @@
+:: 3.1.3.0. Join Rescuers (Ending) [conversation]
+
+<<type 40ms skipkey "Control">>\
+    Really nice deal to be honest.
+<</type>>
+<<type 40ms skipkey "Control">>\
+    Those guys talk pretty chill and they know what they're doing... most of the time.
+<</type>>
+<<type 40ms skipkey "Control">>\
+    I can learn a lot from working together with them while also earning myself some assets to repair and upgrade my ship.
+<</type>>
+<<type 40ms skipkey "Control">>\
+    Really excited to blast some pirates out some airlock!
+<</type>>
+<<type 40ms skipkey "Control">>\
+    <<link [[Lets go baby!|Start]]>><</link>>
+<</type>>

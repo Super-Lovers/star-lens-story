@@ -6,19 +6,16 @@
 <<type 40ms skipkey "Control">>\
     ...
 <</type>>\
-<<timed 3s>>\
-    <<type 40ms skipkey "Control">>\
-        \@@color:gray;>@@ Ulisse is being scanned
-    <</type>>\
-    <<type 40ms skipkey "Control">>\
-        ...
-    <</type>>\
-    <<type 40ms skipkey "Control">>\
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ Ulisse is being scanned
+<</type>>\
+<<type 40ms skipkey "Control">>\
+    ...
+<</type>>\
+<<type 40ms skipkey "Control">>\
 ----
 !!! 🛑 @@color:red;Pirate ships entered weapons proximity@@
-    <</type>>
-
-<</timed>>\
+<</type>>
 
 <<nobr>>
 <!-- ************************************ -->

@@ -1,16 +1,12 @@
 :: 3.1.2.1. Ship Destroyed (Ending)
 
-<!-- WRITE PASSAGE STARTING OVER THIS LINE -->
+<<type 40ms skipkey "Control">>\
+    I wish I could take it all back...
+<</type>>
+<<type 40ms skipkey "Control">>\
+    Dying alone and cheated, like this
+<</type>>
 
-<<nobr>>
-<!-- ************************************ -->
-<!--       Bottom interface buttons       -->
-<!-- ************************************ -->
-<button
-    class="link-internal macro-button choice-button"
-    type="button"
-    tabindex="0"
-    name="3.1.2.2. Ship Destroyed (Ending)">
-        Continue
-</button>
-<</nobr>>
+<<type 40ms skipkey "Control">>\
+    <span class="shudder">''<<link [[Please save me, somebody|Start]]>><</link>>''</span>
+<</type>>

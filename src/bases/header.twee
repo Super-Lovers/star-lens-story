@@ -36,7 +36,9 @@
     <div class="speaker">
         <<if passage() == "3.6.1. Join Faction Neutral">>
             <span>🐔</span>
-        <<elseif passage() == "3.6.2. Join Faction Neutral (Ending)">>
+        <<elseif passage() == "3.6.2. Join Faction Neutral (Ending)" or
+                 passage() == "3.2.2.1. Join Pirates (Ending)" or
+                 passage() == "3.1.3.0. Join Rescuers (Ending)">>
             <span>🤠</span>
         <</if>>
         <span>💬</span>
@@ -81,7 +83,8 @@
 <<elseif passage() == "Waking Up" or
          passage() == "0.1.2. Death (Ending 1)" or
          passage() == "3.5.2. Explosion (Ending)" or
-         passage() == "3.3.2.1. Death (Ending)">>
+         passage() == "3.3.2.1. Death (Ending)" or
+         passage() == "3.1.2.1. Ship Destroyed (Ending)">>
 
     <div id="console-screen" class="screen" style="background-image: none">
         <video class="wallpaper" src="assets/0. Start/videos/blank.mp4" playsinline autoplay muted loop></video>

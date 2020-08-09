@@ -1,8 +1,8 @@
 :: 3.1. You Are Attacked
 <<type 40ms skipkey "Control">>\
 \@@color:gray;>@@ ⚠️ Pirate missiles incoming
-<</type>>\
-<<timed 2s>>\
+<</type>>
+<<type 0ms skipkey "Control">>\
     <span class="boom-title pulse">''@@color:orange;B@@ @@color:red;O@@ 💥 @@color:red;O@@ @@color:orange;M@@''</span>
     <<script>>
         SimpleAudio.select("boom").volume(0.3).play();
@@ -10,9 +10,8 @@
         $('#console-screen').css('backgroundImage', 'url("./assets/UI/mainconsole_broken.png")');
         $('#choices-screen').css('backgroundImage', 'url("./assets/UI/bottomconsole_broken.png")');
     <</script>>
-<</timed>>\
-<<timed 3s>>\
-    <<type 40ms skipkey "Control">>\
+<</type>>\
+<<type 40ms skipkey "Control">>\
 !!! 📑 DAMAGE REPORT
 ----
 * Engine - ✔️ @@color:green;OK@@
@@ -21,12 +20,12 @@
 * Shields - ⚡ @@color:orange;Damaged@@
 * Life-support - ⚡ @@color:orange;Damaged@@
 * Weapons - ⚡ @@color:orange;Damaged@@
+<</type>>
+<<type 40ms skipkey "Control">>\
 ----
 !!! 📡 YOU HAVE RECEIVED @@color:green;[2]@@ NEW TRANSMISSIONS.
 ...
-    <</type>>\
-
-<</timed>>\
+<</type>>\
 
 <<nobr>>
 <!-- ************************************ -->

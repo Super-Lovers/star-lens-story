@@ -8,15 +8,18 @@
     \@@color:gray;>@@ Hey!
 <</type>>
 <<type 40ms skipkey "Control">>\
-    \@@color:gray;>@@ This is the 🚢 Ulisse speaking to you, I have contacted rescuers in frequency 108.5 to come for you.
+    \@@color:gray;>@@ This is the 🚢 Ulisse speaking to you, I have contacted rescuers in frequency 108.5 to come for us, in the meantime, I really need your help!
 <</type>>
 <<type 40ms skipkey "Control">>\
-    \@@color:gray;>@@ My ship is damaged but can still fly, so when I make it to the outpost, they will send help to you as soon as they have somebody available!
+    \@@color:gray;>@@ Do you see those pirates chasing me? If we can team up to fight them off by the time 108.5 arrive, we can probably make it out of this mess.
 <</type>>
 <<type 40ms skipkey "Control">>\
-    \@@color:gray;>@@ Good luck!
+    \@@color:gray;>@@ You seem like somebody who got into this situation the same way I did, so just follow my lead and watch my six.
+<</type>>
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ They're no match for both of us!
 <</type>>\
-//
+//\
 <<type 40ms skipkey "Control">>\
 ----
 !!! 📡 Sending transmisson to 🛰️ ship..
@@ -32,7 +35,7 @@
     class="link-internal macro-button choice-button"
     type="button"
     tabindex="0"
-    name="3.1.2.0. Join Rescuers (Ending)">
+    name="3.1.2.0. Join Rescuers">
         Continue
 </button>
 <</nobr>>

@@ -1,1 +1,38 @@
-:: 3.0.2.0. Rescue (Ending) [ending]
+:: 3.0.2.0. Rescue (Ending)
+<<type 40ms skipkey "Control">>\
+    <h3>👽 FREQUENCY 108.5</h3>\
+----
+<</type>>\
+<<type 40ms skipkey "Control">>
+    \@@color:gray;>@@ Yoo, what did I tell you, you're all good!
+<</type>>
+<<type 40ms skipkey "Control">>
+    \@@color:gray;>@@ You're safe here with us, we have first aid in case you were injured in the dust clouds or storms and we have supplies to keep you fed until you're ready to go on your way!
+<</type>>
+<<type 40ms skipkey "Control">>
+    \@@color:gray;>@@ These 'pirates' are so weak that they depend on deception to weaken you, since their weapons and defense capabilities are pathetic.
+<</type>>
+<<type 40ms skipkey "Control">>
+    \@@color:gray;>@@ They wont bother you anymore after we patch-up your ship.
+<</type>>
+<<type 40ms skipkey "Control">>
+    \@@color:gray;>@@ Man, it was cool chatting with you, you can chill now!
+<</type>>\
+<<type 40ms skipkey "Control">>\
+----
+    <h3>❌ @@color:red;ENDED TRANSMISSION 108.5@@</h3>\
+
+<</type>>\
+
+<<nobr>>
+<!-- ************************************ -->
+<!--       Bottom interface buttons       -->
+<!-- ************************************ -->
+<button
+    class="link-internal macro-button choice-button"
+    type="button"
+    tabindex="0"
+    name="Start">
+        Fin
+</button>
+<</nobr>>

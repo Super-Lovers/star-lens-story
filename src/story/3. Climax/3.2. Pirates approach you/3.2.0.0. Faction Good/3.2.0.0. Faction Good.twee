@@ -4,7 +4,7 @@
 ----
 <</type>>\
 <<type 40ms skipkey "Control">>\
-    \@@color:gray;>@@ Bro, ay, did you just fool the pirates into thinking youre one of them. I sense great potential in you, man.
+    \@@color:gray;>@@ Bro, ay, did you just fool the pirates into thinking you're one of them. I sense great potential in you, man.
 <</type>>
 <<type 40ms skipkey "Control">>\
     \@@color:gray;>@@ Ok, this is the easy part, just keep your head down and you'll be out of this mess in no time.
@@ -29,14 +29,7 @@
     class="link-internal macro-button choice-button"
     type="button"
     tabindex="0"
-    name="3.2.1.0. Keep Distance Be Polite">
-        Distance & Be polite
-</button>
-<button
-    class="link-internal macro-button choice-button"
-    type="button"
-    tabindex="0"
-    name="3.2. Pirates Approach You">
-        Back
+    name="3.2.1.0. Faction Good and Pirates (Ending)">
+        Continue
 </button>
 <</nobr>>

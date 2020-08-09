@@ -1,1 +1,20 @@
-:: 3.2.2.1. Join Pirates (Ending)
+:: 3.2.2.1. Join Pirates (Ending) [conversation]
+
+<<type 40ms skipkey "Control">>\
+    Seems like a fun opportunity.
+<</type>>
+<<type 40ms skipkey "Control">>\
+    If I really do get to travel to all sorts of places and meet different kinds of people, it sounds like a good deal.
+<</type>>
+<<type 40ms skipkey "Control">>\
+    I'll make a lot of enemies, but have a lot of fun and action and meet badass folk.
+<</type>>
+<<type 40ms skipkey "Control">>\
+    And I can't wait to have all sorts of cool loot and upgrades for my ship!
+<</type>>
+<<type 40ms skipkey "Control">>\
+. . .
+<</type>>
+<<type 40ms skipkey "Control">>\
+    <<link [[The galaxy ain't gonna see me coming.|Start]]>><</link>>
+<</type>>
