@@ -5,7 +5,7 @@
 <<type 0ms skipkey "Control">>\
     <span class="boom-title pulse">''@@color:orange;B@@ @@color:red;O@@ 💥 @@color:red;O@@ @@color:orange;M@@''</span>
     <<script>>
-        SimpleAudio.select("boom").volume(0.3).play();
+        SimpleAudio.select("boom").volume(0.2).play();
 
         $('#console-screen').css('backgroundImage', 'url("./assets/UI/mainconsole_broken.png")');
         $('#choices-screen').css('backgroundImage', 'url("./assets/UI/bottomconsole_broken.png")');

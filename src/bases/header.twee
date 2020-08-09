@@ -38,7 +38,8 @@
             <span>🐔</span>
         <<elseif passage() == "3.6.2. Join Faction Neutral (Ending)" or
                  passage() == "3.2.2.1. Join Pirates (Ending)" or
-                 passage() == "3.1.3.0. Join Rescuers (Ending)">>
+                 passage() == "3.1.3.0. Join Rescuers (Ending)" or
+                 passage() == "3.0.3.1. Ambush and Join Rescuers (Ending)">>
             <span>🤠</span>
         <</if>>
         <span>💬</span>
@@ -73,7 +74,7 @@
     <<script>>
         $(document).ready(function() {
             $('.start-button').on('click', function() {
-                SimpleAudio.select("start_button").volume(0.1).play();
+                SimpleAudio.select("button").volume(0.1).play();
 
                 Engine.play('Waking Up');
             });

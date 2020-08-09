@@ -237,7 +237,7 @@ $(document).on(':typingcomplete', function(ev) {
         for (let i = 0; i < choice_buttons.length; i++) {
             $(choice_buttons[i]).css('display', 'block');
             $(choice_buttons[i]).on('click', function() {
-                SimpleAudio.select("button").volume(0.3).play();
+                SimpleAudio.select("button").volume(0.2).play();
             });
         }
     });
@@ -246,7 +246,7 @@ $(document).on(':typingcomplete', function(ev) {
 $(document).on(':typingstart', function(ev) {
     $(document).ready(function() {
         SimpleAudio.select("console_output")
-            .volume(0.6)
+            .volume(0.3)
             .loop(true)
             .play();
     });

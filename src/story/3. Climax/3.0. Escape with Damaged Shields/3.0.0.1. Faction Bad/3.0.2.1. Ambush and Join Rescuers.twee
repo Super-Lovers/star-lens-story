@@ -1,0 +1,49 @@
+:: 3.0.2.1. Ambush and Join Rescuers
+<<type 40ms skipkey "Control">>\
+!!!! ⚠️ @@color:orange;WARNING - Another 🚀 ship detected coming in hot through a 🌌 Hyperspace window nearby.@@
+<</type>>
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ Foreign 🚀 ship approaching...
+<</type>>\
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ Foreign ship opening a ☎️ channel...
+<</type>>
+<<type 40ms skipkey "Control">>\
+    <h3>👽 FREQUENCY 108.5</h3>\
+----
+<</type>>\
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ Yoo, you didn't see that coming did you :D
+<</type>>
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ Ever since you got this close to our outpost, I've been observing you and left my friend in this old, rusty ship here to test you!
+<</type>>
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ I wanted to see if you had the kindness and courage to help a stranger in space.
+<</type>>
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ Bro, ever since our faction made contact with you, we noticed you were a cool guy but stuck in the wrong neighborhood.
+<</type>>
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ @@color:green;Why don't you consider joining our cause?@@ You can help other people like yourself stay safe in this corner of the galaxy. It'll be of great help for everybody!
+<</type>>
+<<type 40ms skipkey "Control">>\
+    \@@color:gray;>@@ We can teach those pirates a lesson together, you will get rewards for your service, and finally, exploring the galaxy with us 😉
+<</type>>\
+<<type 40ms skipkey "Control">>\
+----
+    <h3>❌ @@color:red;ENDED TRANSMISSION 108.5@@</h3>\
+<</type>>\
+
+<<nobr>>
+<!-- ************************************ -->
+<!--       Bottom interface buttons       -->
+<!-- ************************************ -->
+<button
+    class="link-internal macro-button choice-button"
+    type="button"
+    tabindex="0"
+    name="3.0.3.1. Ambush and Join Rescuers (Ending)">
+        Continue
+</button>
+<</nobr>>
