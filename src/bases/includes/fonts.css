@@ -15,8 +15,3 @@ IMPORTS
     font-family: "Fairfax";
     src: url("./fonts/Fairfax.ttf");
 }
-
-@font-face {
-    font-family: "Space Patrol";
-    src: url("./fonts/space_patrol.TTF");
-}

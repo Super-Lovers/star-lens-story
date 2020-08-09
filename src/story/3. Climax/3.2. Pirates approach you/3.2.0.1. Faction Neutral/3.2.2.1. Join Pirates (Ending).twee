@@ -22,6 +22,7 @@
                 const passages_container = $('#passages');
                 
                 passages_container.css('fontFamily', 'initial');
+                passages_container.css('fontSize', 'initial');
                 passages_container.css('width', 'initial');
 
                 $('.passage').css('textAlign', 'initial');

@@ -50,7 +50,8 @@
         $(document).ready(function() {
             const passages_container = $('#passages');
             
-            passages_container.css('fontFamily', 'Fairfax');
+            passages_container.css('fontFamily', 'Cozette');
+            passages_container.css('fontSize', 'calc(0.7em + 0.7vw)');
             passages_container.css('width', '300');
 
             $('.passage').css('textAlign', 'center');

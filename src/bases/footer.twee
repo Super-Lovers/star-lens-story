@@ -246,7 +246,7 @@ $(document).on(':typingcomplete', function(ev) {
 $(document).on(':typingstart', function(ev) {
     $(document).ready(function() {
         SimpleAudio.select("console_output")
-            .volume(0.3)
+            .volume(0.7)
             .loop(true)
             .play();
     });
