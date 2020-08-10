@@ -1,4 +1,4 @@
-# Starry Story  documentation
+# Cosmic Relay  documentation
 
 
 
