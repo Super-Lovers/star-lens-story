@@ -23,6 +23,8 @@ In Cosmic Relay you play as an unfortunate traveler trying to pick the right cho
 
 The sound effect for the loading text used is called "UI, Mechanical, Text-Scroll, 03, FX, 01, LOOP.wav" by InspectorJ ([www.jshaw.co.uk](http://www.jshaw.co.uk/)) retrieved from [https://freesound.org/people/InspectorJ/sounds/458587/](https://freesound.org/people/InspectorJ/sounds/458587/).
 
+The art assets were created in Clip Studio Paint with the contribution of [https://assets.clip-studio.com/en-us/detail?id=1719532](https://assets.clip-studio.com/en-us/detail?id=1719532).
+
 ## 🎁 Contribution <a name = "contribution"></a>
 
 If you want to extend the functionality of the game, please don't hesitate to send me changes to approve. If you wish you can also fork it and work off of that. To learn how to work and contribute effectively to this game, head over to the documentation markdown file where I explain how I make changes to the code, test and deploy them.
