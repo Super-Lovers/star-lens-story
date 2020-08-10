@@ -14,7 +14,7 @@
 
 1. First, clone the repository either by using a git client (sourcetree/git kraken), or by using the console.
 
-       $ git clone https://github.com/Super-Lovers/star-lens-story
+       $ git clone https://github.com/Super-Lovers/cosmic-relay
 
 2. Open the repository and enter the ``dist`` folder and **copy all the contents** inside (images, fonts folders and project html file).
 3. Go to the folder where Twine keeps its stories ("Documents > Twine > Stories" for me). If you don't know where that is, then:
@@ -40,14 +40,14 @@
 
 ![](images/folder_story.png)
 
-11. You can wait a minute for GitHub to build the application's new story and after that you can open it online from [here](https://super-lovers.github.io/star-lens-story/project.html) to see it and share it with others. **(If the changes don't appear right away, try F5 refreshing or CTRL-F5 refreshing)**.
+11. You can wait a minute for GitHub to build the application's new story and after that you can open it online from [here](https://super-lovers.github.io/cosmic-relay/index.html) to see it and share it with others. **(If the changes don't appear right away, try F5 refreshing or CTRL-F5 refreshing)**.
 
     
 ### 📘 Instructions to modify and build story for programmers <a name = "instructions-for-programmers"></a>
 
 1. First, clone the repository either by using a git client (sourcetree/git kraken), or by using the console.
 
-       $ git clone https://github.com/Super-Lovers/star-lens-story
+       $ git clone https://github.com/Super-Lovers/cosmic-relay
 
 2. Download the Tweego compiler from [https://www.motoslave.net/tweego/](https://www.motoslave.net/tweego/) and extract the contents.
 3. Open the cloned repository and then open a git bash console from it by right clicking and selecting the Git Bash option:
@@ -56,7 +56,7 @@
 
 4. In the console, run the tweego compiler with the following command but with the path to the tweego compiler on your computer instead:
     ````
-    $ "C:\Users\Nikolay Ivanov\Downloads\tweego-2.1.1-windows-x64\tweego.exe" -o dist/project.html src/ --watch
+    $ "C:\Users\Nikolay Ivanov\Downloads\tweego-2.1.1-windows-x64\tweego.exe" -o dist/index.html src/ --watch
     ````
     
 
@@ -66,4 +66,4 @@ The program will then continue running until you close it by typing CTRL-C. It w
 
 ### 📘 Notes <a name = "notes"></a>
 
-Whenever you commit changes, the build.yml github actions file in ``.github > workflows/`` will instruct the github actions how to build and deploy the distributable folder's files so that you and others can view the updated game online at [https://super-lovers.github.io/star-lens-story/index.html](https://super-lovers.github.io/star-lens-story/index.html), but I advise you first test everything in your environment using the UI bar and commit with the UI bar disabled, as its not intended for the players (I think).
+Whenever you commit changes, the build.yml github actions file in ``.github > workflows/`` will instruct the github actions how to build and deploy the distributable folder's files so that you and others can view the updated game online at [https://super-lovers.github.io/cosmic-relay/index.html](https://super-lovers.github.io/cosmic-relay/index.html), but I advise you first test everything in your environment using the UI bar and commit with the UI bar disabled, as its not intended for the players (I think).
