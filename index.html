@@ -123,6 +123,11 @@ ABSTRACTS
     left: 0;
 }
 
+#story {
+    margin-top: 10px;
+    /* padding: 30px; */
+}
+
 /**************************************
 PASSAGES CONSOLE
 **************************************/
@@ -277,7 +282,7 @@ textarea:not(:disabled):hover {
     margin-bottom: 10px;
     padding: 5px 10px;
 
-    width: 60%;
+    width: 70%;
 
     background-color: transparent;
     border: none;
@@ -574,7 +579,7 @@ SimpleAudio.tracks.add("button", "audio/sounds/button.wav");
 // Default settings for all passages
 ****************************************/
 // Removes the sidebar
-UIBar.destroy();
+// UIBar.destroy();
 // Stops the passages from loading all the letters one by one if
 // that specific passage was already passed.
 Config.macros.typeVisitedPassages = false;
@@ -608,32 +613,16 @@ $(document).ready(function() {
     const initial_width_console = passages_width;
 
     // Console screen
-    console_screen_width = passages_width - (passages_width / 4);
-    console_screen_height = initial_width_console - (passages_width / 4);
+    console_screen_width = passages_width;
+    console_screen_height = initial_width_console;
 
     $console_screen.width(console_screen_width);
     $console_screen.height(console_screen_height);
 
     // Choices screen
-    choices_screen_height = initial_width_console - (initial_width_console / 1.3);
+    choices_screen_height = initial_width_console - initial_width_console;
 
     $choices_screen.height(choices_screen_height);
-    choices_screen_width = $choices_screen.width();
-});
-
-$(window).resize(function() {
-    passages_width = $passages.width();
-    choices_screen_width = $choices_screen.width();
-    
-    // Console screen
-    console_screen_width = passages_width - (passages_width / 4);
-    console_screen_height = passages_width - (passages_width / 4);
-
-    $console_screen.width(console_screen_width);
-    $console_screen.height(console_screen_height);
-
-    // Choices screen
-    $choices_screen.height(choices_screen_width - (choices_screen_width / 2));
     choices_screen_width = $choices_screen.width();
 });</script><tw-passagedata pid="1" name="StorySubtitle" tags="" position="100,100" size="100,100">A sci-fi, interactive fiction game about a dangerous adventure in space with the goal of saving your character and his ship from aliens.</tw-passagedata><tw-passagedata pid="2" name="StoryAuthor" tags="" position="225,100" size="100,100">Roger Recaldini and Nikolay Ivanov</tw-passagedata><tw-passagedata pid="3" name="PassageFooter" tags="" position="350,100" size="100,100">&lt;!--****************************************
 // Passage elements implementation
@@ -661,8 +650,8 @@ $(document).ready(function() {
     const initial_width_console = passages_width;
 
     // Console screen
-    console_screen_width = passages_width - (passages_width / 4);
-    console_screen_height = initial_width_console - (passages_width / 4);
+    console_screen_width = passages_width - (passages_width / 2.5);
+    console_screen_height = initial_width_console - (passages_width / 2.5);
 
     $console_screen.width(console_screen_width);
     $console_screen.height(console_screen_height);
@@ -673,7 +662,7 @@ $(document).ready(function() {
     $choices_screen.height(choices_screen_height);
     choices_screen_width = $choices_screen.width();
 
-    const $passage_content = $(&#39;#console-screen&gt;.passage-content&#39;);
+    $passage_content = $(&#39;#console-screen&gt;.passage-content&#39;);
 
     $passage_content.height(console_screen_width - (console_screen_width / 2.5));
 
@@ -769,61 +758,17 @@ $(document).ready(function() {
                 glitch_element.text(original_element);
             }
         }, 500);
-        
-        // for (let i = 0; i &lt; glitch_texts_original.length; i++) {
-        //     const text = $(glitch_texts_original[i]);
-        //     const text_content = text.text();
-
-        //     $(glitch_texts[i]).text(text_content);
-        // }
     }
-});
-
-$(window).resize(function() {
-    passages_width = $passages.width();
-    choices_screen_width = $choices_screen.width();
-
-    const $passage_content = $(&#39;#console-screen&gt;.passage-content&#39;);
-    $wallpaper = $(&#39;.wallpaper&#39;);
-    
-    // Console screen
-    console_screen_width = passages_width - (passages_width / 4);
-    console_screen_height = passages_width - (passages_width / 4);
-
-    $console_screen.width(console_screen_width);
-    $console_screen.height(console_screen_height);
-
-    // Choices screen
-    $choices_screen.height(choices_screen_width - (choices_screen_width / 2));
-    choices_screen_width = $choices_screen.width();
-
-    $passage_content.height(console_screen_width - (console_screen_width / 2.5));
-
-    // Wallpaper
-    $wallpaper.width($console_screen);
-    $wallpaper.height($console_screen);
 });
 
 $(document).on(&#39;:passagerender&#39;, function (ev) {
     if ($passages != null) {
-        
-        passages_width = $passages.width();
-        choices_screen_width = $choices_screen.width();
-
-        $console_screen.width(console_screen_width);
-        $console_screen.height(console_screen_height);
-    
-        $choices_screen.height(choices_screen_width - (choices_screen_width / 2));
-
-        const $passage_content = $(&#39;#console-screen&gt;.passage-content&#39;);
-
-        $passage_content.height(console_screen_width - (console_screen_width / 2.5));
-        
         $wallpaper = $(&#39;.wallpaper&#39;);
 
         // Wallpaper
         $wallpaper.width($console_screen);
         $wallpaper.height($console_screen);
+
         // Cleaning up the DOM after rendering the passage
         $console_screen.empty();
 
