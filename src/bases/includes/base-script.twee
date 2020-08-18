@@ -4,7 +4,7 @@
 // Default settings for all passages
 ****************************************/
 // Removes the sidebar
-UIBar.destroy();
+// UIBar.destroy();
 // Stops the passages from loading all the letters one by one if
 // that specific passage was already passed.
 Config.macros.typeVisitedPassages = false;
@@ -38,31 +38,15 @@ $(document).ready(function() {
     const initial_width_console = passages_width;
 
     // Console screen
-    console_screen_width = passages_width - (passages_width / 4);
-    console_screen_height = initial_width_console - (passages_width / 4);
+    console_screen_width = passages_width;
+    console_screen_height = initial_width_console;
 
     $console_screen.width(console_screen_width);
     $console_screen.height(console_screen_height);
 
     // Choices screen
-    choices_screen_height = initial_width_console - (initial_width_console / 1.3);
+    choices_screen_height = initial_width_console - initial_width_console;
 
     $choices_screen.height(choices_screen_height);
-    choices_screen_width = $choices_screen.width();
-});
-
-$(window).resize(function() {
-    passages_width = $passages.width();
-    choices_screen_width = $choices_screen.width();
-    
-    // Console screen
-    console_screen_width = passages_width - (passages_width / 4);
-    console_screen_height = passages_width - (passages_width / 4);
-
-    $console_screen.width(console_screen_width);
-    $console_screen.height(console_screen_height);
-
-    // Choices screen
-    $choices_screen.height(choices_screen_width - (choices_screen_width / 2));
     choices_screen_width = $choices_screen.width();
 });

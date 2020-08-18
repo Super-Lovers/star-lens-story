@@ -26,8 +26,8 @@ $(document).ready(function() {
     const initial_width_console = passages_width;
 
     // Console screen
-    console_screen_width = passages_width - (passages_width / 4);
-    console_screen_height = initial_width_console - (passages_width / 4);
+    console_screen_width = passages_width - (passages_width / 2.5);
+    console_screen_height = initial_width_console - (passages_width / 2.5);
 
     $console_screen.width(console_screen_width);
     $console_screen.height(console_screen_height);
@@ -38,7 +38,7 @@ $(document).ready(function() {
     $choices_screen.height(choices_screen_height);
     choices_screen_width = $choices_screen.width();
 
-    const $passage_content = $('#console-screen>.passage-content');
+    $passage_content = $('#console-screen>.passage-content');
 
     $passage_content.height(console_screen_width - (console_screen_width / 2.5));
 
@@ -134,61 +134,17 @@ $(document).ready(function() {
                 glitch_element.text(original_element);
             }
         }, 500);
-        
-        // for (let i = 0; i < glitch_texts_original.length; i++) {
-        //     const text = $(glitch_texts_original[i]);
-        //     const text_content = text.text();
-
-        //     $(glitch_texts[i]).text(text_content);
-        // }
     }
-});
-
-$(window).resize(function() {
-    passages_width = $passages.width();
-    choices_screen_width = $choices_screen.width();
-
-    const $passage_content = $('#console-screen>.passage-content');
-    $wallpaper = $('.wallpaper');
-    
-    // Console screen
-    console_screen_width = passages_width - (passages_width / 4);
-    console_screen_height = passages_width - (passages_width / 4);
-
-    $console_screen.width(console_screen_width);
-    $console_screen.height(console_screen_height);
-
-    // Choices screen
-    $choices_screen.height(choices_screen_width - (choices_screen_width / 2));
-    choices_screen_width = $choices_screen.width();
-
-    $passage_content.height(console_screen_width - (console_screen_width / 2.5));
-
-    // Wallpaper
-    $wallpaper.width($console_screen);
-    $wallpaper.height($console_screen);
 });
 
 $(document).on(':passagerender', function (ev) {
     if ($passages != null) {
-        
-        passages_width = $passages.width();
-        choices_screen_width = $choices_screen.width();
-
-        $console_screen.width(console_screen_width);
-        $console_screen.height(console_screen_height);
-    
-        $choices_screen.height(choices_screen_width - (choices_screen_width / 2));
-
-        const $passage_content = $('#console-screen>.passage-content');
-
-        $passage_content.height(console_screen_width - (console_screen_width / 2.5));
-        
         $wallpaper = $('.wallpaper');
 
         // Wallpaper
         $wallpaper.width($console_screen);
         $wallpaper.height($console_screen);
+
         // Cleaning up the DOM after rendering the passage
         $console_screen.empty();
 

@@ -31,6 +31,11 @@ ABSTRACTS
     left: 0;
 }
 
+#story {
+    margin-top: 10px;
+    /* padding: 30px; */
+}
+
 /**************************************
 PASSAGES CONSOLE
 **************************************/
@@ -185,7 +190,7 @@ textarea:not(:disabled):hover {
     margin-bottom: 10px;
     padding: 5px 10px;
 
-    width: 60%;
+    width: 70%;
 
     background-color: transparent;
     border: none;
