@@ -579,7 +579,7 @@ SimpleAudio.tracks.add("button", "audio/sounds/button.wav");
 // Default settings for all passages
 ****************************************/
 // Removes the sidebar
-// UIBar.destroy();
+UIBar.destroy();
 // Stops the passages from loading all the letters one by one if
 // that specific passage was already passed.
 Config.macros.typeVisitedPassages = false;
@@ -650,8 +650,8 @@ $(document).ready(function() {
     const initial_width_console = passages_width;
 
     // Console screen
-    console_screen_width = passages_width - (passages_width / 2.5);
-    console_screen_height = initial_width_console - (passages_width / 2.5);
+    console_screen_width = passages_width - (passages_width / 3);
+    console_screen_height = initial_width_console - (passages_width / 3);
 
     $console_screen.width(console_screen_width);
     $console_screen.height(console_screen_height);
