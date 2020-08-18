@@ -26,8 +26,8 @@ $(document).ready(function() {
     const initial_width_console = passages_width;
 
     // Console screen
-    console_screen_width = passages_width - (passages_width / 2.5);
-    console_screen_height = initial_width_console - (passages_width / 2.5);
+    console_screen_width = passages_width - (passages_width / 3);
+    console_screen_height = initial_width_console - (passages_width / 3);
 
     $console_screen.width(console_screen_width);
     $console_screen.height(console_screen_height);
